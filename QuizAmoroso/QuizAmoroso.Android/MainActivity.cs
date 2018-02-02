@@ -7,14 +7,19 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using static QuizAmoroso.Droid.MainActivity;
 using Xfx;
+using Android.Content;
+using Plugin.InAppBilling;
 
 [assembly: ExportRenderer(typeof(WebView), typeof(ScrollableWebViewRendererAndroid))]
 
 namespace QuizAmoroso.Droid
 {
+
     [Activity(Label = "Amoroso Concorsi", Icon = "@drawable/icon", Theme = "@style/MainTheme", ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges =  ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -24,6 +29,8 @@ namespace QuizAmoroso.Droid
             
             XfxControls.Init();
 
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
             Xamarin.FormsMaps.Init(this, bundle);
             // Serve per non far andare l'applicazione in onSleep automaticamente
@@ -32,6 +39,14 @@ namespace QuizAmoroso.Droid
             LoadApplication(new App());
         }
 
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            InAppBillingImplementation.HandleActivityResult(requestCode, resultCode, data);
+
+        }
         public override void OnBackPressed()
         {
             

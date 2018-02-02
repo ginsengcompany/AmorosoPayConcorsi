@@ -64,6 +64,9 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Plugin.Connectivity, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Connectivity.3.0.3\lib\MonoAndroid10\Plugin.Connectivity.dll</HintPath>
     </Reference>
@@ -78,6 +81,15 @@
     </Reference>
     <Reference Include="Plugin.DeviceInfo.Abstractions, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.DeviceInfo.3.0.2\lib\MonoAndroid10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling.Abstractions, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling.VendingLibrary, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.VendingLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Messaging.5.0.0\lib\MonoAndroid10\Plugin.Messaging.dll</HintPath>
@@ -344,6 +356,7 @@
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Plugin\CurrentActivity\CrossCurrentActivity\Current\" />
     <Folder Include="res\drawable-hdpi\" />
     <Folder Include="res\drawable-xhdpi\" />
     <Folder Include="res\drawable-xxhdpi\" />

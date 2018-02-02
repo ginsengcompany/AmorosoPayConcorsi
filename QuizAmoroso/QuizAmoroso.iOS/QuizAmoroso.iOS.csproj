@@ -84,7 +84,7 @@
     <OptimizePNGs>true</OptimizePNGs>
     <MtouchLink>Full</MtouchLink>
     <CodesignProvision>VS: it.gesan.QuizAmoroso Development</CodesignProvision>
-<MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -194,6 +194,12 @@
     </Reference>
     <Reference Include="Plugin.DeviceInfo.Abstractions, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.DeviceInfo.3.0.2\lib\Xamarin.iOS10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\Xamarin.iOS10\Plugin.InAppBilling.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling.Abstractions, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\Xamarin.iOS10\Plugin.InAppBilling.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Messaging.5.0.0\lib\Xamarin.iOS10\Plugin.Messaging.dll</HintPath>

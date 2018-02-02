@@ -9,6 +9,8 @@ using Newtonsoft.Json;
 using Plugin.Connectivity;
 using System.Net.Http.Headers;
 using QuizAmoroso.DataModel;
+using Plugin.InAppBilling;
+using Plugin.InAppBilling.Abstractions;
 
 namespace QuizAmoroso
 {
@@ -236,6 +238,46 @@ namespace QuizAmoroso
                 inputPassword.IsPassword = true;
                 ShowPassw.Source = "shwpsswblue.png";
             }
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var productId = "test_pagamento.1";
+
+                var connected = await CrossInAppBilling.Current.ConnectAsync();
+
+                if (!connected)
+                {
+                    //Couldn't connect to billing, could be offline, alert user
+                    return;
+                }
+
+                //try to purchase item
+                var purchase = await CrossInAppBilling.Current.PurchaseAsync(productId, ItemType.InAppPurchase, "apppayload");
+                if (purchase == null)
+                {
+                    //Not purchased, alert the user
+                }
+                else
+                {
+                    //Purchased, save this information
+                    var id = purchase.Id;
+                    var token = purchase.PurchaseToken;
+                    var state = purchase.State;
+                }
+            }
+            catch (Exception ex)
+            {
+                //Something bad has occurred, alert user
+            }
+            finally
+            {
+                //Disconnect, it is okay if we never connected
+                await CrossInAppBilling.Current.DisconnectAsync();
+            }
+
         }
     }
 }
