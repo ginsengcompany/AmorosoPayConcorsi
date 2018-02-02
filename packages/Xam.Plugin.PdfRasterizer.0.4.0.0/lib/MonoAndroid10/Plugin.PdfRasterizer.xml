@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.PdfRasterizer</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.PdfRasterizer.PdfRasterizerImplementation">
+            <summary>
+            Implementation for Pdf
+            </summary>
+        </member>
+        <member name="T:Plugin.PdfRasterizer.CrossPdfRasterizer">
+            <summary>
+            Cross platform Pdf implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.PdfRasterizer.CrossPdfRasterizer.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

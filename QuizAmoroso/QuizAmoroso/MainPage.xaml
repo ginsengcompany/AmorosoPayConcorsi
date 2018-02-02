@@ -9,9 +9,9 @@
     <TabbedPage.Children>
         <me:Info NavigationPage.HasNavigationBar="False"></me:Info>
         <me:PianoFormativo NavigationPage.HasNavigationBar="False"></me:PianoFormativo>
-        <me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>
+        <!--<me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>-->
         <me:Historyquiz NavigationPage.HasNavigationBar="False"></me:Historyquiz>
-        <me:Statistiche NavigationPage.HasNavigationBar="False"></me:Statistiche>
+        <!--<me:Statistiche NavigationPage.HasNavigationBar="False"></me:Statistiche>-->
        
     </TabbedPage.Children>
 </TabbedPage>

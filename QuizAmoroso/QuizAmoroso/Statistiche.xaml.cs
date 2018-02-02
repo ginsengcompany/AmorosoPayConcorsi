@@ -21,12 +21,6 @@ namespace QuizAmoroso
         public Statistiche()
         {
             InitializeComponent();
-            /**
-             * Viene indicato il link a cui la WebView punta. Si noti che viene fatta una post 
-             * direttamente sulla pagina web homes.html
-             * */
-            Browser.Source = Costanti.statisticheURL + Utente.Instance.getUserName;
-            LinkSitoWebAk12();
         }
 
         public void LinkSitoWebAk12()

@@ -73,7 +73,7 @@ namespace QuizAmoroso
                 caricamentoPagina.IsVisible = true;
 
                 lstCategorie.SelectedItem = Color.Blue;
-                await Navigation.PushAsync(new ModalitaQuiz());
+                await Navigation.PushAsync(new QuizVeloce());
 
                 caricamentoPagina.IsRunning = false;
                 caricamentoPagina.IsVisible = false;
