@@ -91,6 +91,10 @@
                         Clicked="loginButton_Clicked"
                         Style="{StaticResource buttonStyle}">
                 </Button>
+                <Button
+                    Text="spendi 1000 euro per essere bocciato"
+                    Clicked="Button_Clicked"
+                />
 
                 <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3"
