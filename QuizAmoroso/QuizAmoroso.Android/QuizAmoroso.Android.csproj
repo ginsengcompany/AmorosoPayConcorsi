@@ -26,6 +26,11 @@
     <JavaOptions />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\AlessioRivoli\AppData\Local\Xamarin\Mono for Android\Keystore\AmorosoPay\AmorosoPay.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>lavoro</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>AmorosoPay</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>lavoro</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
