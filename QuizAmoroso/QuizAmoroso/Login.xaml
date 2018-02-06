@@ -38,7 +38,7 @@
                         
                         <xfx:XfxEntry HeightRequest="50"
                                       x:Name="inputUsername"
-                                      Placeholder="Username"
+                                      Placeholder="Inserisci E-mail"
                                       PlaceholderColor="LightGray"
                                       HorizontalOptions="FillAndExpand">
                             <Entry.TextColor>
@@ -92,31 +92,15 @@
                         Style="{StaticResource buttonStyle}">
                 </Button>
                 <Button
-                    Text="spendi 1000 euro per essere bocciato"
+                    Text="Registrati"
+                    Style="{StaticResource buttonStyle}"
                     Clicked="Button_Clicked"
                 />
 
                 <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3"
                                    IsVisible="False"/>
-
-                <StackLayout VerticalOptions="End" Padding="10">
-                    
-                    <Frame  HasShadow="True"
-                            CornerRadius="10"
-                            Margin="5"
-                            BackgroundColor="#0069c0">
-                        
-                        <StackLayout>
-                            
-                            <Label Text="News:" FontSize="Medium" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Start" VerticalOptions="StartAndExpand"/>
-                            
-                            <Label x:Name="lblNews" FontSize="Medium" TextColor="White" XAlign="Center"/>
-                            
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
-
+                
                 <StackLayout VerticalOptions="EndAndExpand">
 
                     <Image x:Name="ImmagineAK12Login"

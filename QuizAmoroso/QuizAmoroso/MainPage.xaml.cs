@@ -15,7 +15,6 @@ namespace QuizAmoroso
         
         public MainPage()
         {
-            Utente.Instance.getBitLogin = 0;
             InitializeComponent();
             
         }

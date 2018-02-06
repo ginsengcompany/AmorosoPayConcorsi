@@ -6,6 +6,9 @@ using Xamarin.Forms.Xaml;
 using System.Net.Http;
 using Newtonsoft.Json;
 using QuizAmoroso.DataModel;
+using Plugin.InAppBilling;
+using Plugin.InAppBilling.Abstractions;
+using System.Net.Http.Headers;
 
 /*
  * @Author: Alessio Calabrese
@@ -23,22 +26,15 @@ namespace QuizAmoroso
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PianoFormativo : ContentPage
     {
-        // Variabile per la risposta del metodo invioDatiSelezionati()
-        public static string risultatoSetDiDomandeAssociateAlPiano = "";
-        // Inizializzazione dell'oggetto della classe StrutturaJsonPianoFormativo
-        public static DatiPianoFormativo pianoFormativoSelezionato = new DatiPianoFormativo();
-        // Variabile per la risposta del metodo ConnessioniConcorso()
-        private string risultatoChiamataPianoFormativo = "";
-        // Variabile per controllare la connessione nei metodi invioDatiSelezionati() e ConnessioniConcorso()
-        private bool  flagConnessionePiano = false;
-        private bool flag = false;
 
+        private List<ConcorsiAquistabili> ListaConcorsi = new List<ConcorsiAquistabili>();
+        private string risultatojson;
+        private bool flagConnessione = false;
 
 
         public PianoFormativo()
         {
             InitializeComponent();
-            LinkSitoWebAk12();
         }
 
         /*
@@ -49,28 +45,25 @@ namespace QuizAmoroso
             base.OnAppearing();
             try
             {
-                DisabilitaLayoutActivityIndicator.IsVisible = true;
-               
-                caricamentoPagina.IsRunning = true;
-                caricamentoPagina.IsVisible = true;
-                await ConnessioneConcorsi();
-                caricamentoPagina.IsVisible = false;
-                caricamentoPagina.IsRunning = false;
-                DisabilitaLayoutActivityIndicator.IsVisible = false;
-                lstConcorsi.IsVisible = true;
-                lstConcorsi.IsEnabled = true;
-            } catch (Exception errore)
+               DisabilitaLayoutActivityIndicator.IsVisible = true;
+               caricamentoPagina.IsRunning = true;
+               caricamentoPagina.IsVisible = true;
+                await creaGriglia();
+
+               caricamentoPagina.IsVisible = false;
+               caricamentoPagina.IsRunning = false;
+               DisabilitaLayoutActivityIndicator.IsVisible = false;
+            }
+            catch (Exception errore)
             {
-                await DisplayAlert("Errore", "Errore nel caricamento del set di domande!", "Ok");
-                DisabilitaLayoutActivityIndicator.IsVisible = false;
-                caricamentoPagina.IsVisible = false;
-                caricamentoPagina.IsRunning = false;
-                lstConcorsi.IsVisible = false;
-                lstConcorsi.IsEnabled = false;
+                //await DisplayAlert("Errore", "Problema sulla connessione", "Ok");
+                //DisabilitaLayoutActivityIndicator.IsVisible = false;
+                //caricamentoPagina.IsVisible = false;
+                //caricamentoPagina.IsRunning = false;
             }
         }
 
-        public async Task ConnessioneConcorsi()
+        public async Task<List<ConcorsiAquistabili>> ConnessioneConcorsi()
         {
             string username = Utente.Instance.getUserName;
             var client = new HttpClient();
@@ -79,100 +72,167 @@ namespace QuizAmoroso
                 var values = new List<KeyValuePair<string, string>>();
                 values.Add(new KeyValuePair<string, string>("username", username));
                 var content = new FormUrlEncodedContent(values);
-                var result = await client.PostAsync(Costanti.pianoformativo, content);
-                risultatoChiamataPianoFormativo = await result.Content.ReadAsStringAsync();
-                if (risultatoChiamataPianoFormativo.ToString() == "Impossibile connettersi al servizio")
+                var result = await client.PostAsync(Costanti.concorsiDisponibili, content);
+                risultatojson = await result.Content.ReadAsStringAsync();
+                if (risultatojson == "Impossibile connettersi al servizio")
                 {
-                    flagConnessionePiano = true;
+                    flagConnessione = true;
                     throw new Exception();
+                    return new List<ConcorsiAquistabili>();
                 }
                 else
                 {
-                    flagConnessionePiano = false;
-                    List<DatiPianoFormativo> items = JsonConvert.DeserializeObject<List<DatiPianoFormativo>>(risultatoChiamataPianoFormativo);
-                    lstConcorsi.ItemsSource = items;
+                    flagConnessione = false;
+                    ListaConcorsi = JsonConvert.DeserializeObject<List<ConcorsiAquistabili>>(risultatojson);
+                    return ListaConcorsi;
                 }
             }
             catch (Exception e)
             {
-                flagConnessionePiano = true;
-                risultatoChiamataPianoFormativo = "Impossibile connettersi al servizio";
-                await DisplayAlert("Errore", risultatoChiamataPianoFormativo.ToString(), "Ok");
-                await Navigation.PopToRootAsync();
+                return new List<ConcorsiAquistabili>();
             }
         }
 
         /*
          * Questo metodo invia il piano formativo selezionato dall'utente  
          * */
-        public async Task invioDatiSelezionati()
+        public async Task creaGriglia()
         {
-            string nomeDelPiano = pianoFormativoSelezionato.nome_piano;
-            var client = new HttpClient();
-            try
-            {
-                var values = new List<KeyValuePair<string, string>>();
-                values.Add(new KeyValuePair<string, string>("nome_piano", pianoFormativoSelezionato.nome_piano));
-                var content = new FormUrlEncodedContent(values);
-                var result = await client.PostAsync(Costanti.setdomande, content);
-                risultatoSetDiDomandeAssociateAlPiano = await result.Content.ReadAsStringAsync();
-                if (risultatoSetDiDomandeAssociateAlPiano.ToString() == "Impossibile connettersi al servizio")
+            Grid grigliaConcorsitemp = new Grid();
+
+            grigliaConcorsitemp.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3, GridUnitType.Star) });
+            grigliaConcorsitemp.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            List<ConcorsiAquistabili> ListaConcorsi = await ConnessioneConcorsi();
+
+            /*prova.Titolo = "Carabineri";
+            prova.Prezzo = "350€";
+            prova.Descrizione = "test1";
+            prova.ProductId = "test_pagamento.1";
+            ListaConcorsi.Add(prova);*/
+            int righe =0 , colonne = 0;
+                foreach (var i in ListaConcorsi)
                 {
-                    flag = true;
-                    throw new Exception();
+                    grigliaConcorsitemp.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                    
+
+                    StackLayout prova = new StackLayout
+                    {
+                        Orientation = StackOrientation.Vertical
+                    };
+                    StackLayout provabtn = new StackLayout
+                    {
+                        Orientation = StackOrientation.Vertical
+                    };
+                    Label titolo = new Label();
+                    Label descrizione = new Label();
+                    Label prezzo = new Label();
+                Button acquista = new Button
+                {
+                    Text = ""
+                 };
+                if (i.state.Equals("Purchased"))
+                {
+                    acquista.Text = "ACQUISTATO";
+                    acquista.IsEnabled = false;
                 }
                 else
                 {
-                    flag = false;
+                    acquista.Text = "ACQUISTA";
+                    acquista.Clicked += async delegate (object sender, EventArgs e)
+                    {
+                        try
+                        {
+                            var productId = i.ProductId;
+
+                            var connected = await CrossInAppBilling.Current.ConnectAsync();
+
+                            if (!connected)
+                            {
+                                //Couldn't connect to billing, could be offline, alert user
+                                return;
+                            }
+
+                            //try to purchase item
+                            var purchase = await CrossInAppBilling.Current.PurchaseAsync(productId, ItemType.InAppPurchase, i.codiceControllo);
+                            if (purchase == null)
+                            {
+                                //Not purchased, alert the user
+
+                            }
+                            else
+                            {
+                                //Purchased, save this information
+                                var id = purchase.Id;
+                                var token = purchase.PurchaseToken;
+                                var state = purchase.State;
+                                var codControllo = purchase.Payload;
+                                var data = purchase.TransactionDateUtc;
+
+                                await invioDatiPagamento(productId, id, token, state.ToString(), codControllo, data.ToString());
+
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            //Something bad has occurred, alert user
+                        }
+                        finally
+                        {
+                            //Disconnect, it is okay if we never connected
+                            await CrossInAppBilling.Current.DisconnectAsync();
+                        }
+                    };
                 }
-            }
-            catch (Exception e)
-            {
-                flag = true;
-                risultatoSetDiDomandeAssociateAlPiano = "Impossibile connettersi al servizio";
-                await DisplayAlert("Errore", risultatoSetDiDomandeAssociateAlPiano.ToString(), "Ok");
-                
-            }
+               
+                    titolo.Text = i.Titolo;
+                    descrizione.Text = i.Descrizione;
+                    prezzo.Text = i.Prezzo + "€";
+
+                    prova.Children.Add(titolo);
+                    prova.Children.Add(descrizione);
+                    prova.Children.Add(prezzo);
+
+
+                    grigliaConcorsitemp.Children.Add(prova, colonne, righe);
+                    provabtn.Children.Add(acquista);
+                colonne++;
+                    grigliaConcorsitemp.Children.Add(provabtn, colonne, righe);
+                colonne = 0;
+                righe++;
+
+                }
+            steckGrigliaConcorsi.Children.Clear();
+            steckGrigliaConcorsi.Children.Add(grigliaConcorsitemp);
         }
 
-        /*
-        * Questo metodo assegna alle proprietà dell'oggetto pianoFormativoSelezionato i valori del piano formativo scelto dalla listview
-        * */
-        private async void lstConcorsi_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async Task invioDatiPagamento(string productId,string purchaseId, string token, string state, string codiceControllo, string data)
         {
-            if (flagConnessionePiano != true)
-            {
-                lstConcorsi.IsEnabled = false;
-                var elementoTappato = e.Item as DatiPianoFormativo;
-                pianoFormativoSelezionato.Corpo = elementoTappato.Corpo;
-                pianoFormativoSelezionato.nome_piano = elementoTappato.nome_piano;
-                pianoFormativoSelezionato.id_concorso = elementoTappato.id_concorso;
-                await invioDatiSelezionati();
-
-                DisabilitaLayoutActivityIndicator.IsVisible = true;
-                caricamentoPagina.IsRunning = true;
-                caricamentoPagina.IsVisible = true;
-                lstConcorsi.SelectedItem = Color.Blue;
-
-                await Navigation.PushAsync(new SetDomande());
-                DisabilitaLayoutActivityIndicator.IsVisible = false;
-                caricamentoPagina.IsRunning = false;
-                caricamentoPagina.IsVisible = false;
-                lstConcorsi.IsEnabled = true;
-            }
-            else
-            {
-                await Navigation.PopToRootAsync();
-            }
+            string username = Utente.Instance.getUserName;
+             var client = new HttpClient();
+             try
+             {
+                 var values = new List<KeyValuePair<string, string>>();
+                 values.Add(new KeyValuePair<string, string>("username", username));
+                 values.Add(new KeyValuePair<string, string>("productId", productId));
+                 values.Add(new KeyValuePair<string, string>("purchaseId", purchaseId));
+                 values.Add(new KeyValuePair<string, string>("token", token));
+                 values.Add(new KeyValuePair<string, string>("state", state));
+                 values.Add(new KeyValuePair<string, string>("codiceControllo", codiceControllo));
+                 values.Add(new KeyValuePair<string, string>("data", data));
+                 var content = new FormUrlEncodedContent(values);
+                 var result = await client.PostAsync(Costanti.salvaPagamento, content);
+                 risultatojson = await result.Content.ReadAsStringAsync();
+                 if (risultatojson == "Impossibile connettersi al servizio")
+                 {
+                     await invioDatiPagamento(productId,purchaseId, token, state, codiceControllo, data);
+                 }
+             }
+             catch (Exception e)
+             {
+                 await invioDatiPagamento(productId, purchaseId, token, state, codiceControllo, data);
+             }
         }
 
-        public void LinkSitoWebAk12()
-        {
-            var tapGestureLinkSito = new TapGestureRecognizer();
-            tapGestureLinkSito.Tapped += (s, e) => {
-                Device.OpenUri(new Uri(Costanti.sitoAK12));
-            };
-            logoFooter.GestureRecognizers.Add(tapGestureLinkSito);
-        }
-    }
+
+    }   
 }

@@ -18,12 +18,10 @@ namespace QuizAmoroso.DataModel
         // Indica la Password dell'utente
         private string password;
         // Indica il nome di battesimo dell'utente
-        private string nomeDiBattesimo;
+
         // Costituisce la dichiarazione di un oggetto di tipo Utente
         private static Utente instance;
-        private string devInfo;
-        //Il bit di login assumerà valore 1 durante l'esecuzione della loginpage;
-        private int bitLogin = 0;
+
         
         /**
          * @param us: parametro che indica l'username, serve per inizializzare l'oggetto
@@ -31,19 +29,14 @@ namespace QuizAmoroso.DataModel
          * dell'oggetto Utente
          * Il costruttore privato permette i generare un signleton della classe utente.
          * */
-        private Utente(string us, string pass,string devInfo)
+        private Utente(string us, string pass)
         {
             this.userName = us;
             this.password = pass;
-            this.devInfo = devInfo;
         }
 
         public string getUserName { get; set ;}
         public string getPassword { get; set ;}
-        public string getNomeDiBattesimo { get; set ;}
-        public int getBitLogin { get; set ; }
-
-        public string getDevInfo { get; set; }
         
         /**
          * Questo metodo genera un singleton della classe Utente
@@ -54,7 +47,7 @@ namespace QuizAmoroso.DataModel
             {
                 if (instance == null)
                 {
-                    instance = new Utente("","","");
+                    instance = new Utente("","");
                 }
                 return instance;
             }

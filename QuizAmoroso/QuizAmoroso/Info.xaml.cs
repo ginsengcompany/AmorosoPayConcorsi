@@ -28,8 +28,7 @@ namespace QuizAmoroso
         {
             InitializeComponent();
             labelLuogo.FormattedText = "Viale Italia n° 53"+"\n"+"San Nicola La Strada (CE)";
-            labelBenvenuto.FormattedText = "BENVENUTO " + Utente.Instance.getNomeDiBattesimo;
-           LabelInformazioneLog.Text=  Utente.Instance.getNomeDiBattesimo+ " sei connesso con il dispositivo " + CrossDeviceInfo.Current.Model;
+            labelBenvenuto.FormattedText = "BENVENUTO " + Utente.Instance.getUserName;
             
             var tapGestureLuogo = new TapGestureRecognizer();
             tapGestureLuogo.Tapped += (s, e) =>
@@ -89,29 +88,6 @@ namespace QuizAmoroso
                 Device.OpenUri(new Uri(Costanti.sitoAK12));
             };
            logoFooter.GestureRecognizers.Add(tapGestureLinkSito);
-        }
-
-        private async void LogOut_Clicked(object sender, EventArgs e)
-        {
-            /**
-             * In questa parte di codice si controllerà se il bit di login in ogni pagina 
-             * è zero o uno. 
-             * Se il bit assume valore uguale 1 allora il sistema non effettuerà il logout.
-             * Si ricora che il bit di login vale 1 solo quando è attiva la pagina di login e 
-             * solo quando viene eseguita una onResume (ovvero quando l'app viene richiamata 
-             * dal background). In questi casi (ossia quando Utente.Instance.getBitLogin == 1) 
-             * non viene eseguito il logOut utente quando quando si va in modalità di onSleep 
-             * ma viene aperta la pagina Login.
-             * */
-            
-            if (Utente.Instance.getBitLogin == 1)
-            {
-                await Navigation.PushModalAsync(new Login());
-            }
-            else
-            {
-                await Navigation.PushAsync(new LogOut());
-            }
         }
     }
 }

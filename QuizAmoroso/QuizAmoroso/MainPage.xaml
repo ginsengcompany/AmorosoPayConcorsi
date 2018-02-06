@@ -7,9 +7,9 @@
             NavigationPage.HasBackButton="False">
     <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
-        <me:Info NavigationPage.HasNavigationBar="False"></me:Info>
+        <me:Info NavigationPage.HasNavigationBar="False"></me:Info>   
+        <me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>
         <me:PianoFormativo NavigationPage.HasNavigationBar="False"></me:PianoFormativo>
-        <!--<me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>-->
         <me:Historyquiz NavigationPage.HasNavigationBar="False"></me:Historyquiz>
         <!--<me:Statistiche NavigationPage.HasNavigationBar="False"></me:Statistiche>-->
        

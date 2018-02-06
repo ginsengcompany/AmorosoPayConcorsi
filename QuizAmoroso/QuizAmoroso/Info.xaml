@@ -99,19 +99,6 @@
                     </Grid>
                 </StackLayout>
                 
-                <StackLayout HorizontalOptions="Center" VerticalOptions="End">
-                    <Label x:Name="LabelInformazioneLog" TextColor="Black"  HorizontalOptions="Center" VerticalOptions="Center" FontSize="Small" FontAttributes="Italic"></Label>
-                    <Button x:Name="LogOut" 
-                            FontAttributes="Bold"
-                            FontSize="Large"
-                            WidthRequest="200"
-                            Clicked="LogOut_Clicked" 
-                            Text="Logout"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Style="{StaticResource buttonStyle}"/>
-                </StackLayout>
-                
                 <StackLayout VerticalOptions="End">
                     <StackLayout.IsVisible>
                         <OnPlatform x:TypeArguments="x:Boolean" WinPhone="true" Android="true" iOS="false"/>

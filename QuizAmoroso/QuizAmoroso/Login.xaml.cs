@@ -40,8 +40,6 @@ namespace QuizAmoroso
         {
             //inizializza i componenti, ad esempio label, entry ecc..
             InitializeComponent();
-            //Abbiamo inizializzato ad uno il git di login
-            Utente.Instance.getBitLogin = 1;
             //La classe cross connectivity avverte che la connessione sta cambiando da online a offline, o viceversa
             CrossConnectivity.Current.ConnectivityChanged += Current_ConnectivityChanged;
             //In questo controllo, si ricerca se il metodo recuperaUserName ha salvato l'username, se non l'ha salvato allora settiamo la entry a null, cioè ci farà vedere la entry vuota.
@@ -64,7 +62,6 @@ namespace QuizAmoroso
         //il metodo onAppearing ci visualizzerà a schermo un display alert del cambiamento di stato della connessione;
         protected async override void OnAppearing()
         {
-            await ConnessionePostAdmin();
             base.OnAppearing();
             if (!CrossConnectivity.Current.IsConnected)
             {
@@ -87,12 +84,7 @@ namespace QuizAmoroso
             if ((string.IsNullOrEmpty(inputUsername.Text) || string.IsNullOrEmpty(inputPassword.Text)) || (string.IsNullOrWhiteSpace(inputUsername.Text) || (string.IsNullOrWhiteSpace(inputPassword.Text))))
             {
                 await DisplayAlert("Errore", "Inserire tutti i campi!", "Ok");
-            }
-            else if ((inputUsername.Text.Length < 16) || (inputUsername.Text.Length > 16))
-            {
-                await DisplayAlert("Errore", "Codice fiscale non corretto, ricontrolla!", "Ok");
-            }
-            else
+            }            else
             {
                 //se i controlli sono stati superati, allora apparirà un' activity indicator.
                 caricamentoPagina.IsRunning = true;
@@ -145,18 +137,7 @@ namespace QuizAmoroso
         {
             string username = inputUsername.Text.ToUpper();
             string password = inputPassword.Text;
-
-            string descrizioneDeviceConnessi = "";
-            if (Device.RuntimePlatform == Device.iOS)
-            {
-                descrizioneDeviceConnessi = CrossDeviceInfo.Current.Idiom + " " + CrossDeviceInfo.Current.Model + " " + CrossDeviceInfo.Current.Platform;
-            } else if (Device.RuntimePlatform == Device.Android) {
-                descrizioneDeviceConnessi = CrossDeviceInfo.Current.Idiom + " " + CrossDeviceInfo.Current.Model + " " + CrossDeviceInfo.Current.Platform;
-            } else if (Device.RuntimePlatform == Device.RuntimePlatform)
-            {
-                descrizioneDeviceConnessi = CrossDeviceInfo.Current.Model;
-            }
-            string generatedAppId = CrossDeviceInfo.Current.Id; 
+            
             var client = new HttpClient();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             client.Timeout = TimeSpan.FromSeconds(20);
@@ -166,13 +147,11 @@ namespace QuizAmoroso
                 var values = new List<KeyValuePair<string, string>>();
                 values.Add(new KeyValuePair<string, string>("username", username));
                 values.Add(new KeyValuePair<string, string>("password", password));
-                values.Add(new KeyValuePair<string, string>("devInfo", generatedAppId));
-                values.Add(new KeyValuePair<string, string>("devDescrizione", descrizioneDeviceConnessi));
                 var content = new FormUrlEncodedContent(values);
                 var result = await client.PostAsync(Costanti.login, content);
                 rispostaRichiestaLoginIniziale = await result.Content.ReadAsStringAsync();
 
-                if (rispostaRichiestaLoginIniziale.ToString() == "Utente non registrato" || rispostaRichiestaLoginIniziale.ToString() == "Utenza scaduta" || rispostaRichiestaLoginIniziale.Contains("connesso col dispositivo") || rispostaRichiestaLoginIniziale.Contains("associare altri dispositivi") || rispostaRichiestaLoginIniziale.ToString() == "Associazione device non riuscita")
+                if (rispostaRichiestaLoginIniziale.ToString() == "Utente non registrato" )
                 {
                     flagConnessioneAccettata = true;
                 }    
@@ -183,13 +162,9 @@ namespace QuizAmoroso
                 }else 
                 {
                     flagConnessioneAccettata = false;
-                    
                     jsonAccount = JsonConvert.DeserializeObject<JsonAccount>(rispostaRichiestaLoginIniziale);
-                   
                     Utente.Instance.getPassword = jsonAccount.password;
                     Utente.Instance.getUserName = jsonAccount.username;
-                    Utente.Instance.getNomeDiBattesimo = jsonAccount.nome;
-                    Utente.Instance.getDevInfo = generatedAppId;
                 }
             }
             catch (Exception e)
@@ -199,30 +174,11 @@ namespace QuizAmoroso
             }
         }
 
-        public async Task ConnessionePostAdmin()
-        {
-            var client = new HttpClient();
-            try
-            {
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                var result = await client.GetAsync(Costanti.commenti);
-                var resultcontent = await result.Content.ReadAsStringAsync();
-                lblNews.Text = resultcontent;
-            }
-            catch
-            {
-                await DisplayAlert("Errore", "errore nel prelievo dei messaggi di benvenuto!", "OK");
-                lblNews.Text = "Benvenuto!";
-            }
-        }
-
         //La classe seguente, definisce tutti i campi che avrà il JSON
         public class JsonAccount
         {
             public string username { get; set; }
             public string password { get; set; }
-            public string nome { get; set; }
-            public string cognome { get; set; }
         }
         //Il seguente metodo ha lo scopo di mostrare o meno la password all'utente, tramite una tapgesture dell'immagine.
 
@@ -242,42 +198,7 @@ namespace QuizAmoroso
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            try
-            {
-                var productId = "test_pagamento.1";
-
-                var connected = await CrossInAppBilling.Current.ConnectAsync();
-
-                if (!connected)
-                {
-                    //Couldn't connect to billing, could be offline, alert user
-                    return;
-                }
-
-                //try to purchase item
-                var purchase = await CrossInAppBilling.Current.PurchaseAsync(productId, ItemType.InAppPurchase, "apppayload");
-                if (purchase == null)
-                {
-                    //Not purchased, alert the user
-                }
-                else
-                {
-                    //Purchased, save this information
-                    var id = purchase.Id;
-                    var token = purchase.PurchaseToken;
-                    var state = purchase.State;
-                }
-            }
-            catch (Exception ex)
-            {
-                //Something bad has occurred, alert user
-            }
-            finally
-            {
-                //Disconnect, it is okay if we never connected
-                await CrossInAppBilling.Current.DisconnectAsync();
-            }
-
+            await Navigation.PushAsync(new Registrazione());
         }
     }
 }

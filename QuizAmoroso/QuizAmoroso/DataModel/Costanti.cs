@@ -23,8 +23,7 @@ namespace QuizAmoroso.DataModel
         public const string domandeNew = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/domandeNew";
 
-        public const string login = 
-            "https://amorosoconcorsi.ak12srl.it/services/servizioapp/login";
+       
 
         public const string logout = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/logout";
@@ -84,5 +83,13 @@ namespace QuizAmoroso.DataModel
         public const int numeroMassimoDomandeDelTestSuInteroDB = 100;
 
         public const string eseguiTestSuInteroDb = "Esercitazione su tutti i Concorsi";
+
+        public const string login =
+           "http://192.168.125.97/servizioPayApp/login.php";
+        public const string salvaPagamento =
+           "http://192.168.125.97/servizioPayApp/cronologiaAcquisti.php";
+        public const string concorsiDisponibili =
+           "http://192.168.125.97/servizioPayApp/concorsiAcquisti.php";
+
     }
 }

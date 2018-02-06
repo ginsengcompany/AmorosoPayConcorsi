@@ -78,12 +78,12 @@ namespace QuizAmoroso
                 if (QuizVeloce.numeroDomandeQuizVeloceSelezionato != 0)
                 {
                     values.Add(new KeyValuePair<string, string>("numerodomande", QuizVeloce.numeroDomandeQuizVeloceSelezionato.ToString()));
-                    RisultatoSimulazione.conteggioDomandeSvoltePerSimulazione = QuizVeloce.numeroDomandeQuizVeloceSelezionato;
+              //      RisultatoSimulazione.conteggioDomandeSvoltePerSimulazione = QuizVeloce.numeroDomandeQuizVeloceSelezionato;
                 }
                 else
                 {
                     values.Add(new KeyValuePair<string, string>("numerodomande", QuizVeloce.numeroDomandeMassimoDelTestQuizVeloce.ToString()));
-                    RisultatoSimulazione.conteggioDomandeSvoltePerSimulazione = QuizVeloce.numeroDomandeMassimoDelTestQuizVeloce;
+                //    RisultatoSimulazione.conteggioDomandeSvoltePerSimulazione = QuizVeloce.numeroDomandeMassimoDelTestQuizVeloce;
                 }
                 var content = new FormUrlEncodedContent(values);
                 if (modalitaSelezionata == "Modalità Casuale" && QuizVeloce.idConcorsoSelezionato != Costanti.eseguiTestSuInteroDb)
@@ -320,7 +320,7 @@ namespace QuizAmoroso
             await InvioDatiStatistiche();
             //var page = Navigation.NavigationStack.ElementAtOrDefault(Navigation.NavigationStack.Count - 1);
             bool flagPunteggio = true;
-            await Navigation.PushAsync(new RisultatoSimulazione(contSbagliateTot, contEsatteTot, TmpTotale, lstdatirisultati, flagPunteggio, contNonRisposteTot));
+          //  await Navigation.PushAsync(new RisultatoSimulazione(contSbagliateTot, contEsatteTot, TmpTotale, lstdatirisultati, flagPunteggio, contNonRisposteTot));
             //Navigation.RemovePage(page);
         }
 

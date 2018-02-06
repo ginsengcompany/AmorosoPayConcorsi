@@ -38,6 +38,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataModel\ConcorsiAquistabili.cs" />
     <Compile Include="DataModel\DatiPianoFormativo.cs" />
     <Compile Include="DataModel\DatiRisultati.cs" />
     <Compile Include="DataModel\Costanti.cs" />
@@ -69,20 +70,14 @@
     <Compile Include="QuizVeloce.xaml.cs">
       <DependentUpon>QuizVeloce.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SetDomande.xaml.cs">
-      <DependentUpon>SetDomande.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="RisultatoSimulazione.xaml.cs">
-      <DependentUpon>RisultatoSimulazione.xaml</DependentUpon>
+    <Compile Include="Registrazione.xaml.cs">
+      <DependentUpon>Registrazione.xaml</DependentUpon>
     </Compile>
     <Compile Include="Info.xaml.cs">
       <DependentUpon>Info.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="LogOut.xaml.cs">
-      <DependentUpon>LogOut.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -196,24 +191,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SetDomande.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="LogOut.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="RisultatoSimulazione.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Statistiche.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -251,6 +228,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="NuovaModalitaQuizVeloceNew.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Registrazione.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
