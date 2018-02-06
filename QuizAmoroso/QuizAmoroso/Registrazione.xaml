@@ -6,15 +6,15 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
-                            <Entry Placeholder="E-mail"
+                <Entry Placeholder="E-mail"
             VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" 
                    />
-            <Entry Placeholder="Password"
+                <Entry Placeholder="Password"
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand" 
                    />
-            <Button Text="Registrati"
+                <Button Text="Registrati"
                     Style="{StaticResource buttonStyle}"
                     />
             </StackLayout>

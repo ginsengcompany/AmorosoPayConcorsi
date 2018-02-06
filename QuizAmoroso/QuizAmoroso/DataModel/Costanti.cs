@@ -46,8 +46,7 @@ namespace QuizAmoroso.DataModel
         public const string setdomande = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/setdomande";
 
-        public const string concorsi = 
-            "https://amorosoconcorsi.ak12srl.it/services/servizioapp/concorsi";
+
 
         public const string materieconcorso = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/materieconcorso";
@@ -90,6 +89,8 @@ namespace QuizAmoroso.DataModel
            "http://192.168.125.97/servizioPayApp/cronologiaAcquisti.php";
         public const string concorsiDisponibili =
            "http://192.168.125.97/servizioPayApp/concorsiAcquisti.php";
+        public const string concorsi =
+            "http://192.168.125.97/servizioPayApp/concorsi.php";
 
     }
 }

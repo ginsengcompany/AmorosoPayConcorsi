@@ -45,14 +45,14 @@ namespace QuizAmoroso
             base.OnAppearing();
             try
             {
-               DisabilitaLayoutActivityIndicator.IsVisible = true;
-               caricamentoPagina.IsRunning = true;
-               caricamentoPagina.IsVisible = true;
+                DisabilitaLayoutActivityIndicator.IsVisible = true;
+                caricamentoPagina.IsRunning = true;
+                caricamentoPagina.IsVisible = true;
                 await creaGriglia();
 
-               caricamentoPagina.IsVisible = false;
-               caricamentoPagina.IsRunning = false;
-               DisabilitaLayoutActivityIndicator.IsVisible = false;
+                caricamentoPagina.IsVisible = false;
+                caricamentoPagina.IsRunning = false;
+                DisabilitaLayoutActivityIndicator.IsVisible = false;
             }
             catch (Exception errore)
             {
@@ -109,27 +109,27 @@ namespace QuizAmoroso
             prova.Descrizione = "test1";
             prova.ProductId = "test_pagamento.1";
             ListaConcorsi.Add(prova);*/
-            int righe =0 , colonne = 0;
-                foreach (var i in ListaConcorsi)
-                {
-                    grigliaConcorsitemp.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-                    
+            int righe = 0, colonne = 0;
+            foreach (var i in ListaConcorsi)
+            {
+                grigliaConcorsitemp.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
-                    StackLayout prova = new StackLayout
-                    {
-                        Orientation = StackOrientation.Vertical
-                    };
-                    StackLayout provabtn = new StackLayout
-                    {
-                        Orientation = StackOrientation.Vertical
-                    };
-                    Label titolo = new Label();
-                    Label descrizione = new Label();
-                    Label prezzo = new Label();
+
+                StackLayout prova = new StackLayout
+                {
+                    Orientation = StackOrientation.Vertical
+                };
+                StackLayout provabtn = new StackLayout
+                {
+                    Orientation = StackOrientation.Vertical
+                };
+                Label titolo = new Label();
+                Label descrizione = new Label();
+                Label prezzo = new Label();
                 Button acquista = new Button
                 {
                     Text = ""
-                 };
+                };
                 if (i.state.Equals("Purchased"))
                 {
                     acquista.Text = "ACQUISTATO";
@@ -183,56 +183,55 @@ namespace QuizAmoroso
                         }
                     };
                 }
-               
-                    titolo.Text = i.Titolo;
-                    descrizione.Text = i.Descrizione;
-                    prezzo.Text = i.Prezzo + "€";
 
-                    prova.Children.Add(titolo);
-                    prova.Children.Add(descrizione);
-                    prova.Children.Add(prezzo);
+                titolo.Text = i.Titolo;
+                descrizione.Text = i.Descrizione;
+                prezzo.Text = i.Prezzo + "€";
+
+                prova.Children.Add(titolo);
+                prova.Children.Add(descrizione);
+                prova.Children.Add(prezzo);
 
 
-                    grigliaConcorsitemp.Children.Add(prova, colonne, righe);
-                    provabtn.Children.Add(acquista);
+                grigliaConcorsitemp.Children.Add(prova, colonne, righe);
+                provabtn.Children.Add(acquista);
                 colonne++;
-                    grigliaConcorsitemp.Children.Add(provabtn, colonne, righe);
+                grigliaConcorsitemp.Children.Add(provabtn, colonne, righe);
                 colonne = 0;
                 righe++;
 
-                }
+            }
             steckGrigliaConcorsi.Children.Clear();
             steckGrigliaConcorsi.Children.Add(grigliaConcorsitemp);
         }
 
-        private async Task invioDatiPagamento(string productId,string purchaseId, string token, string state, string codiceControllo, string data)
+        private async Task invioDatiPagamento(string productId, string purchaseId, string token, string state, string codiceControllo, string data)
         {
             string username = Utente.Instance.getUserName;
-             var client = new HttpClient();
-             try
-             {
-                 var values = new List<KeyValuePair<string, string>>();
-                 values.Add(new KeyValuePair<string, string>("username", username));
-                 values.Add(new KeyValuePair<string, string>("productId", productId));
-                 values.Add(new KeyValuePair<string, string>("purchaseId", purchaseId));
-                 values.Add(new KeyValuePair<string, string>("token", token));
-                 values.Add(new KeyValuePair<string, string>("state", state));
-                 values.Add(new KeyValuePair<string, string>("codiceControllo", codiceControllo));
-                 values.Add(new KeyValuePair<string, string>("data", data));
-                 var content = new FormUrlEncodedContent(values);
-                 var result = await client.PostAsync(Costanti.salvaPagamento, content);
-                 risultatojson = await result.Content.ReadAsStringAsync();
-                 if (risultatojson == "Impossibile connettersi al servizio")
-                 {
-                     await invioDatiPagamento(productId,purchaseId, token, state, codiceControllo, data);
-                 }
-             }
-             catch (Exception e)
-             {
-                 await invioDatiPagamento(productId, purchaseId, token, state, codiceControllo, data);
-             }
+            var client = new HttpClient();
+            try
+            {
+                var values = new List<KeyValuePair<string, string>>();
+                values.Add(new KeyValuePair<string, string>("username", username));
+                values.Add(new KeyValuePair<string, string>("productId", productId));
+                values.Add(new KeyValuePair<string, string>("purchaseId", purchaseId));
+                values.Add(new KeyValuePair<string, string>("token", token));
+                values.Add(new KeyValuePair<string, string>("state", state));
+                values.Add(new KeyValuePair<string, string>("codiceControllo", codiceControllo));
+                values.Add(new KeyValuePair<string, string>("data", data));
+                var content = new FormUrlEncodedContent(values);
+                var result = await client.PostAsync(Costanti.salvaPagamento, content);
+                risultatojson = await result.Content.ReadAsStringAsync();
+                if (risultatojson == "Impossibile connettersi al servizio")
+                {
+                    await invioDatiPagamento(productId, purchaseId, token, state, codiceControllo, data);
+                }
+            }
+            catch (Exception e)
+            {
+                await invioDatiPagamento(productId, purchaseId, token, state, codiceControllo, data);
+            }
         }
 
-
-    }   
+    }
 }

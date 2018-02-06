@@ -23,6 +23,7 @@ namespace QuizAmoroso
         public List<int> listaNumeroDomandeDelConcorso = new List<int>();
         public List<int> listaNumeroDomandeMassimoDelTestQuizVeloce = new List<int>();
         public List<string> listaMaterieQuizVeloce = new List<string>();
+
         public static float valoreCorrezioneRispostaEsatta = 0.0F;
         public static float valoreCorrezioneRispostaErrata = 0.0F;
         public static int numeroDomandeMassimoDelTestQuizVeloce = 0;
@@ -31,11 +32,13 @@ namespace QuizAmoroso
         public static int numeroSelezionatoArrotondato;
         public static string idConcorsoSelezionato;
         public static string materiaSelezionata;
+
         public int numeroMassimoDomandeAmmessoPerMateria = 0;
         public int differenza;
         public int StepValue = 5;
         public int flag = 1;
         const int minDomandeSlider = 10;
+
         public string risualtatoChiamataMaterie;
         public string risultatoChiamataQuizVeloce;
         public string corpoSelezionato;
@@ -46,16 +49,7 @@ namespace QuizAmoroso
         public string estremoMinimoSlider = minDomandeSlider.ToString();
         public string estremoMassimoSlider = numeroDomandeMassimoDelTestQuizVeloce.ToString();
         public string nomeMateriaScelta;
-        public StrutturaPickerConcorso testSuInteroDB = new StrutturaPickerConcorso
-        {
-            Corpo = Costanti.eseguiTestSuInteroDb,
-            id_concorso = Costanti.eseguiTestSuInteroDb,
-            codice_concorso = Costanti.eseguiTestSuInteroDb,
-            rispostaerrata = "0",
-            rispostaesatta = "1",
-            numerodomande = Costanti.numeroMassimoDomandeDelTestSuInteroDB.ToString(),
-            domandemax = Costanti.numeroMassimoDomandeAmmesso.ToString()
-        };
+
         Timer t = new Timer();
 
         /*
@@ -112,7 +106,7 @@ namespace QuizAmoroso
                 if (picker_selezioneMateria.Items.Any())
                 {
                     picker_selezioneMateria.Items.Clear();
-                    listaMaterie.Clear();                    
+                    listaMaterie.Clear();
                     listaMaterieQuizVeloce.Clear();
 
                     picker_selezioneMateria.IsVisible = false;
@@ -158,47 +152,33 @@ namespace QuizAmoroso
                 {
                     var result = await client.PostAsync(Costanti.concorsi, content);
                     risultatoChiamataQuizVeloce = await result.Content.ReadAsStringAsync();
-                    if (risultatoChiamataQuizVeloce == "null")
-                    {
-                        listaConcorsi.Add(testSuInteroDB);
-                        listaIdConcorsi.Add(testSuInteroDB.id_concorso);
-                        picker_selezioneConcorso.Items.Add(Costanti.eseguiTestSuInteroDb);
-                        listaCorrezioneEsatte.Add(Single.Parse(testSuInteroDB.rispostaesatta, CultureInfo.InvariantCulture));
-                        listaCorrezioneErrate.Add(Single.Parse(testSuInteroDB.rispostaerrata, CultureInfo.InvariantCulture));
-                        listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Convert.ToInt16(testSuInteroDB.numerodomande));
-                        listaNumeroDomandeDelConcorso.Add(Convert.ToInt16(testSuInteroDB.domandemax));
-                        Exception errore = new Exception();
-                        throw errore;
-                    }
-                    else
-                    {
-                        listaConcorsi = JsonConvert.DeserializeObject<List<StrutturaPickerConcorso>>(risultatoChiamataQuizVeloce);
-                        if (listaConcorsi.Any())
-                        {
-                            if (picker_selezioneConcorso.Items.Any())
-                            {
-                                picker_selezioneConcorso.Items.Clear();
-                            }
 
-                            foreach (StrutturaPickerConcorso i in listaConcorsi)
-                            {
-                                corpo = i.Corpo;
-                                idConcorso = i.id_concorso;
-                                string codice_concorso = i.codice_concorso;
-                                listaIdConcorsi.Add(idConcorso);
-                                picker_selezioneConcorso.Items.Add(" Concorso: " + corpo + "\n" + " Codice: " + codice_concorso);
-                                listaCorrezioneEsatte.Add(Single.Parse(i.rispostaesatta, CultureInfo.InvariantCulture));
-                                listaCorrezioneErrate.Add(float.Parse(i.rispostaerrata, CultureInfo.InvariantCulture));
-                                listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Convert.ToInt16(i.numerodomande));
-                                listaNumeroDomandeDelConcorso.Add(Convert.ToInt16(i.domandemax));
-                            }
-                            listaIdConcorsi.Add(Costanti.eseguiTestSuInteroDb);
-                            picker_selezioneConcorso.Items.Add(Costanti.eseguiTestSuInteroDb);
-                            listaCorrezioneEsatte.Add(1);
-                            listaCorrezioneErrate.Add(0);
-                            listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Costanti.numeroMassimoDomandeAmmesso);
-                            listaNumeroDomandeDelConcorso.Add(Costanti.numeroMassimoDomandeAmmesso);
+                    listaConcorsi = JsonConvert.DeserializeObject<List<StrutturaPickerConcorso>>(risultatoChiamataQuizVeloce);
+                    if (listaConcorsi.Any())
+                    {
+                        if (picker_selezioneConcorso.Items.Any())
+                        {
+                            picker_selezioneConcorso.Items.Clear();
                         }
+
+                        foreach (StrutturaPickerConcorso i in listaConcorsi)
+                        {
+                            corpo = i.Corpo;
+                            idConcorso = i.id_concorso;
+                            string codice_concorso = i.codice_concorso;
+                            listaIdConcorsi.Add(idConcorso);
+                            picker_selezioneConcorso.Items.Add(" Concorso: " + corpo + "\n" + " Codice: " + codice_concorso);
+                            listaCorrezioneEsatte.Add(Single.Parse(i.rispostaesatta, CultureInfo.InvariantCulture));
+                            listaCorrezioneErrate.Add(float.Parse(i.rispostaerrata, CultureInfo.InvariantCulture));
+                            listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Convert.ToInt16(i.numerodomande));
+                            listaNumeroDomandeDelConcorso.Add(Convert.ToInt16(i.domandemax));
+                        }
+                        listaIdConcorsi.Add(Costanti.eseguiTestSuInteroDb);
+                        picker_selezioneConcorso.Items.Add(Costanti.eseguiTestSuInteroDb);
+                        listaCorrezioneEsatte.Add(1);
+                        listaCorrezioneErrate.Add(0);
+                        listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Costanti.numeroMassimoDomandeAmmesso);
+                        listaNumeroDomandeDelConcorso.Add(Costanti.numeroMassimoDomandeAmmesso);
                     }
                 }
                 catch (Exception errore)
@@ -268,22 +248,12 @@ namespace QuizAmoroso
 
             try
             {
-                listaMaterie.Clear(); 
+                listaMaterie.Clear();
                 var client = new HttpClient();
                 var values = new List<KeyValuePair<string, string>>();
                 string rotta = "";
-
-                if (corpoSelezionato == Costanti.eseguiTestSuInteroDb)
-                {
-                    values.Add(new KeyValuePair<string, string>("id_concorso", Costanti.eseguiTestSuInteroDb));
-                    rotta = Costanti.materietotali;
-                }
-                else
-                {
-                    values.Add(new KeyValuePair<string, string>("id_concorso", idConcorsoSelezionato));
-                    rotta = Costanti.materieconcorso;
-                }
-
+                values.Add(new KeyValuePair<string, string>("id_concorso", idConcorsoSelezionato));
+                rotta = Costanti.materieconcorso;
                 var content = new FormUrlEncodedContent(values);
                 var result = await client.PostAsync(rotta, content);
                 risualtatoChiamataMaterie = await result.Content.ReadAsStringAsync();
@@ -307,8 +277,10 @@ namespace QuizAmoroso
                         listaNumeroDomandeDelConcorso.Add(Convert.ToInt16(i.domandemateriamax));
                         listaMaterieQuizVeloce.Add(i.materia);
                     }
-                    
-                } else {
+
+                }
+                else
+                {
                     Exception errore = new ArgumentNullException();
                     await DisplayAlert("Attenzione", "Il concorso non ha materie o non sono state assegnate.", "Ok");
                     throw errore;
@@ -518,7 +490,8 @@ namespace QuizAmoroso
         public void LinkSitoWebAk12()
         {
             var tapGestureLinkSito = new TapGestureRecognizer();
-            tapGestureLinkSito.Tapped += (s, e) => {
+            tapGestureLinkSito.Tapped += (s, e) =>
+            {
                 Device.OpenUri(new Uri(Costanti.sitoAK12));
             };
             logoFooter.GestureRecognizers.Add(tapGestureLinkSito);
