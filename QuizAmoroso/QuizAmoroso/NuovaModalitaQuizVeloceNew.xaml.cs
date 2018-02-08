@@ -53,10 +53,7 @@ namespace QuizAmoroso
 
         private void IngressoPagina()
         {
-            if (QuizVeloce.materiaSelezionata != Costanti.eseguiTestSuInteroDb)
-                LabelTitoloHeader.Text = "Speed Quiz: " + Costanti.eseguiTestSuInteroDb;
-            else
-                LabelTitoloHeader.Text = "Speed Quiz: " + QuizVeloce.materiaSelezionata;
+            LabelTitoloHeader.Text = "Speed Quiz: " + QuizVeloce.materiaSelezionata;
             btn_ApriPDF.IsEnabled = false;
             btn_ApriPDF.IsVisible = false;
             immagine.IsVisible = false;
@@ -86,15 +83,10 @@ namespace QuizAmoroso
                 //    RisultatoSimulazione.conteggioDomandeSvoltePerSimulazione = QuizVeloce.numeroDomandeMassimoDelTestQuizVeloce;
                 }
                 var content = new FormUrlEncodedContent(values);
-                if (modalitaSelezionata == "Modalità Casuale" && QuizVeloce.idConcorsoSelezionato != Costanti.eseguiTestSuInteroDb)
+                if (modalitaSelezionata == "Modalità Casuale")
                 {
                     content = new FormUrlEncodedContent(values);
                     result = await client.PostAsync(Costanti.domconcorsorandomNew, content);
-                }
-                else if (modalitaSelezionata == "Modalità Casuale" && QuizVeloce.idConcorsoSelezionato == Costanti.eseguiTestSuInteroDb)
-                {
-                    content = new FormUrlEncodedContent(values);
-                    result = await client.PostAsync(Costanti.domconcorsorandomtotaliNew, content);
                 }
                 else
                 {
@@ -331,16 +323,7 @@ namespace QuizAmoroso
                 string output = JsonConvert.SerializeObject(lstDatiStatistica, Formatting.Indented);
                 StringContent stringContent = new StringContent(output, UnicodeEncoding.UTF8, "application/json");
                 HttpClient client = new HttpClient();
-                string rotta = "";
-
-                if (QuizVeloce.idConcorsoSelezionato == Costanti.eseguiTestSuInteroDb)
-                {
-                    rotta = Costanti.sessionePerTuttiConcorsi;
-                }
-                else
-                {
-                    rotta = Costanti.sessione;
-                }
+                string rotta = Costanti.sessione;
                 HttpResponseMessage response = await client.PostAsync(rotta, stringContent);
                 string resultContent = await response.Content.ReadAsStringAsync();
                 flagInvioDatiStatistiche = true;
