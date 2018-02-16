@@ -152,8 +152,8 @@ namespace QuizAmoroso
                 {
                     var result = await client.PostAsync(Costanti.concorsi, content);
                     risultatoChiamataQuizVeloce = await result.Content.ReadAsStringAsync();
-
                     listaConcorsi = JsonConvert.DeserializeObject<List<StrutturaPickerConcorso>>(risultatoChiamataQuizVeloce);
+
                     if (listaConcorsi.Any())
                     {
                         if (picker_selezioneConcorso.Items.Any())
@@ -173,12 +173,6 @@ namespace QuizAmoroso
                             listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Convert.ToInt16(i.numerodomande));
                             listaNumeroDomandeDelConcorso.Add(Convert.ToInt16(i.domandemax));
                         }
-                        listaIdConcorsi.Add(Costanti.eseguiTestSuInteroDb);
-                        picker_selezioneConcorso.Items.Add(Costanti.eseguiTestSuInteroDb);
-                        listaCorrezioneEsatte.Add(1);
-                        listaCorrezioneErrate.Add(0);
-                        listaNumeroDomandeMassimoDelTestQuizVeloce.Add(Costanti.numeroMassimoDomandeAmmesso);
-                        listaNumeroDomandeDelConcorso.Add(Costanti.numeroMassimoDomandeAmmesso);
                     }
                 }
                 catch (Exception errore)
@@ -251,11 +245,9 @@ namespace QuizAmoroso
                 listaMaterie.Clear();
                 var client = new HttpClient();
                 var values = new List<KeyValuePair<string, string>>();
-                string rotta = "";
                 values.Add(new KeyValuePair<string, string>("id_concorso", idConcorsoSelezionato));
-                rotta = Costanti.materieconcorso;
                 var content = new FormUrlEncodedContent(values);
-                var result = await client.PostAsync(rotta, content);
+                var result = await client.PostAsync(Costanti.materieconcorso, content);
                 risualtatoChiamataMaterie = await result.Content.ReadAsStringAsync();
                 listaMaterie = JsonConvert.DeserializeObject<List<StrutturaPickerMaterie>>(risualtatoChiamataMaterie);
 

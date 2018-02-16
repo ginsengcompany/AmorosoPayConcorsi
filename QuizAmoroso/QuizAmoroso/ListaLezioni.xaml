@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizAmoroso.ListaLezioni">
+    <ContentPage.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="White" iOS="LightCyan"/>
+        </ContentPage.BackgroundColor>
+
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,30,0,0"/>
+        </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
+                <ActivityIndicator x:Name="caricamentoPagina"
+                                   Color="#2196f3" 
+                                   HorizontalOptions="Center">
+                </ActivityIndicator>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout  x:Name="steckGrigliaConcorsi"/>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

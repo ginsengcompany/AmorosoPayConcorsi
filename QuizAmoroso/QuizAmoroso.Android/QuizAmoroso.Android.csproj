@@ -96,6 +96,18 @@
     <Reference Include="Plugin.InAppBilling.VendingLibrary, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.VendingLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.MediaManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.0.4.5\lib\MonoAndroid\Plugin.MediaManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.0.4.5\lib\MonoAndroid\Plugin.MediaManager.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.Forms.0.4.5\lib\MonoAndroid\Plugin.MediaManager.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager.Forms.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.Forms.0.4.5\lib\MonoAndroid\Plugin.MediaManager.Forms.Android.dll</HintPath>
+    </Reference>
     <Reference Include="Plugin.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Messaging.5.0.0\lib\MonoAndroid10\Plugin.Messaging.dll</HintPath>
     </Reference>
@@ -206,6 +218,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsVideoLibrary\VideoPicker.cs" />
+    <Compile Include="FormsVideoLibrary\VideoPlayerRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -358,6 +372,12 @@
     <AndroidResource Include="Resources\drawable-xhdpi\shwpsswblueSegnato.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\shwpsswblueSegnato.png" />
     <AndroidResource Include="Resources\drawable\frecceT.png" />
+    <AndroidResource Include="Resources\drawable\btn_Play.png" />
+    <AndroidResource Include="Resources\drawable\btn_PlayDisabled.png" />
+    <AndroidResource Include="Resources\drawable\btn_Stop.png" />
+    <AndroidResource Include="Resources\drawable\btn_StopDisabled.png" />
+    <AndroidResource Include="Resources\drawable\btn_PauseDisabled.png" />
+    <AndroidResource Include="Resources\drawable\btn_Pause.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>

@@ -28,12 +28,7 @@ namespace QuizAmoroso.DataModel
         public const string logout = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/logout";
 
-        public const string domconcorsorandomNew = 
-            "https://amorosoconcorsi.ak12srl.it/services/servizioapp/domconcorsorandomNew";
-
-        public const string domconcorsosequenzaNew = 
-            "https://amorosoconcorsi.ak12srl.it/services/servizioapp/domconcorsosequenzaNew";
-
+      
         public const string sessione = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/sessione";
 
@@ -47,9 +42,7 @@ namespace QuizAmoroso.DataModel
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/setdomande";
 
 
-
-        public const string materieconcorso = 
-            "https://amorosoconcorsi.ak12srl.it/services/servizioapp/materieconcorso";
+        
 
         public const string statisticheURL = 
             "https://amorosoconcorsi.ak12srl.it/services/statistiche/homes.html?username=";
@@ -66,8 +59,7 @@ namespace QuizAmoroso.DataModel
         public const string domconcorsorandomtotaliNew = 
             "https://amorosoconcorsi.ak12srl.it/services/servizioapp/domconcorsorandomtotaliNew";
 
-        public const string invioTempiGlobali = 
-            "https://amorosoconcorsi.ak12srl.it/services/servizioapp/invioTempi";
+
 
         /**
          * Costanti di servizio
@@ -91,6 +83,20 @@ namespace QuizAmoroso.DataModel
            "http://192.168.125.97/servizioPayApp/concorsiAcquisti.php";
         public const string concorsi =
             "http://192.168.125.97/servizioPayApp/concorsi.php";
+        public const string materieconcorso =
+    "http://192.168.125.97/servizioPayApp/materieconcorso.php";
+        public const string domconcorsorandomNew =
+          "http://192.168.125.97/servizioPayApp/domandeconcorsorandomNew.php";
+
+        public const string domconcorsosequenzaNew =
+            "http://192.168.125.97/servizioPayApp/domandeconcorsosequenzaNew.php";
+        public const string invioTempiGlobali =
+            "http://192.168.125.97/servizioPayApp/tempoUtilizzo.php";
+        public const string ConcorsiLezioni =
+            "http://192.168.125.97/servizioPayApp/lezioniConcorso.php";
+        public const string ListaLezioni =
+            "http://192.168.125.97/servizioPayApp/listaLezioni.php";
+
 
     }
 }

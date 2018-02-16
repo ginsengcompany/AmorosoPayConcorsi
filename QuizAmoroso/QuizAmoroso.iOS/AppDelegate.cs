@@ -11,6 +11,7 @@ using static QuizAmoroso.iOS.AppDelegate;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using Xfx;
+using Plugin.MediaManager.Forms.iOS;
 
 [assembly: ExportRenderer(typeof(Button), typeof(MyButtonRenderer))]
 namespace QuizAmoroso.iOS
@@ -34,6 +35,7 @@ namespace QuizAmoroso.iOS
             Xamarin.FormsMaps.Init();
             
             XfxControls.Init();
+            VideoViewRenderer.Init();
 
             LoadApplication(new App());
             ImageCircleRenderer.Init();

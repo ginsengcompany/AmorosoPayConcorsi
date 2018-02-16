@@ -9,16 +9,18 @@ using static QuizAmoroso.Droid.MainActivity;
 using Xfx;
 using Android.Content;
 using Plugin.InAppBilling;
+using Plugin.MediaManager.Forms.Android;
+using System.Threading.Tasks;
+
 
 [assembly: ExportRenderer(typeof(WebView), typeof(ScrollableWebViewRendererAndroid))]
-
 namespace QuizAmoroso.Droid
 {
 
-    [Activity(Label = "Amoroso Concorsi", Icon = "@drawable/icon", Theme = "@style/MainTheme", ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges =  ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Amoroso Concorsi", Icon = "@drawable/icon", Theme = "@style/MainTheme", /*ScreenOrientation = ScreenOrientation.Portrait,*/ ConfigurationChanges =  ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-
+        public TaskCompletionSource<string> PickImageTaskCompletionSource { get; internal set; }
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -28,6 +30,7 @@ namespace QuizAmoroso.Droid
             base.OnCreate(bundle);
             
             XfxControls.Init();
+            VideoViewRenderer.Init();
 
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
 
@@ -44,8 +47,20 @@ namespace QuizAmoroso.Droid
 
             base.OnActivityResult(requestCode, resultCode, data);
 
-            InAppBillingImplementation.HandleActivityResult(requestCode, resultCode, data);
+           /* if (requestCode == PickImageId)
+            {
+                if ((resultCode == Result.Ok) && (data != null))
+                {
+                    // Set the filename as the completion of the Task
+                    PickImageTaskCompletionSource.SetResult(data.DataString);
+                }
+                else
+                {
+                    PickImageTaskCompletionSource.SetResult(null);
+                }
+                InAppBillingImplementation.HandleActivityResult(requestCode, resultCode, data);
 
+            }*/
         }
         public override void OnBackPressed()
         {

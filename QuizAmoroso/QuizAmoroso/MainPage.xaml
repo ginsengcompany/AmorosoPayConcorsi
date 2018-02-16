@@ -10,7 +10,7 @@
         <me:Info NavigationPage.HasNavigationBar="False"></me:Info>   
         <me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>
         <me:PianoFormativo NavigationPage.HasNavigationBar="False"></me:PianoFormativo>
-        <me:Historyquiz NavigationPage.HasNavigationBar="False"></me:Historyquiz>
+        <me:ListaLezioniDisponibili NavigationPage.HasNavigationBar="False"></me:ListaLezioniDisponibili>
         <!--<me:Statistiche NavigationPage.HasNavigationBar="False"></me:Statistiche>-->
        
     </TabbedPage.Children>

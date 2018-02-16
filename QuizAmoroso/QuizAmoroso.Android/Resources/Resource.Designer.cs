@@ -26,6 +26,2117 @@ namespace QuizAmoroso.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_in = global::QuizAmoroso.Droid.Resource.Animation.abc_fade_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_fade_out = global::QuizAmoroso.Droid.Resource.Animation.abc_fade_out;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::QuizAmoroso.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_popup_enter = global::QuizAmoroso.Droid.Resource.Animation.abc_popup_enter;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_popup_exit = global::QuizAmoroso.Droid.Resource.Animation.abc_popup_exit;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::QuizAmoroso.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_in_bottom = global::QuizAmoroso.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_in_top = global::QuizAmoroso.Droid.Resource.Animation.abc_slide_in_top;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_out_bottom = global::QuizAmoroso.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.abc_slide_out_top = global::QuizAmoroso.Droid.Resource.Animation.abc_slide_out_top;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_bottom_sheet_slide_in = global::QuizAmoroso.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_bottom_sheet_slide_out = global::QuizAmoroso.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_fab_in = global::QuizAmoroso.Droid.Resource.Animation.design_fab_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_fab_out = global::QuizAmoroso.Droid.Resource.Animation.design_fab_out;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_snackbar_in = global::QuizAmoroso.Droid.Resource.Animation.design_snackbar_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animation.design_snackbar_out = global::QuizAmoroso.Droid.Resource.Animation.design_snackbar_out;
+			global::Plugin.MediaManager.Forms.Android.Resource.Animator.design_appbar_state_list_animator = global::QuizAmoroso.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarDivider = global::QuizAmoroso.Droid.Resource.Attribute.actionBarDivider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarItemBackground = global::QuizAmoroso.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarPopupTheme = global::QuizAmoroso.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarSize = global::QuizAmoroso.Droid.Resource.Attribute.actionBarSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarSplitStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTabBarStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTabStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTabTextStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarTheme = global::QuizAmoroso.Droid.Resource.Attribute.actionBarTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionBarWidgetTheme = global::QuizAmoroso.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionDropDownStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionLayout = global::QuizAmoroso.Droid.Resource.Attribute.actionLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionMenuTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionMenuTextColor = global::QuizAmoroso.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeBackground = global::QuizAmoroso.Droid.Resource.Attribute.actionModeBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCloseButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCloseDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCopyDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeCutDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeFindDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModePasteDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModePopupWindowStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeSelectAllDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeShareDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeSplitBackground = global::QuizAmoroso.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionModeStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionModeWebSearchDrawable = global::QuizAmoroso.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionOverflowButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionOverflowMenuStyle = global::QuizAmoroso.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionProviderClass = global::QuizAmoroso.Droid.Resource.Attribute.actionProviderClass;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.actionViewClass = global::QuizAmoroso.Droid.Resource.Attribute.actionViewClass;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.activityChooserViewStyle = global::QuizAmoroso.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::QuizAmoroso.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogCenterButtons = global::QuizAmoroso.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogStyle = global::QuizAmoroso.Droid.Resource.Attribute.alertDialogStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alertDialogTheme = global::QuizAmoroso.Droid.Resource.Attribute.alertDialogTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.allowStacking = global::QuizAmoroso.Droid.Resource.Attribute.allowStacking;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.alpha = global::QuizAmoroso.Droid.Resource.Attribute.alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.arrowHeadLength = global::QuizAmoroso.Droid.Resource.Attribute.arrowHeadLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.arrowShaftLength = global::QuizAmoroso.Droid.Resource.Attribute.arrowShaftLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.autoCompleteTextViewStyle = global::QuizAmoroso.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.background = global::QuizAmoroso.Droid.Resource.Attribute.background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundSplit = global::QuizAmoroso.Droid.Resource.Attribute.backgroundSplit;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundStacked = global::QuizAmoroso.Droid.Resource.Attribute.backgroundStacked;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundTint = global::QuizAmoroso.Droid.Resource.Attribute.backgroundTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.backgroundTintMode = global::QuizAmoroso.Droid.Resource.Attribute.backgroundTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.barLength = global::QuizAmoroso.Droid.Resource.Attribute.barLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_autoHide = global::QuizAmoroso.Droid.Resource.Attribute.behavior_autoHide;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_hideable = global::QuizAmoroso.Droid.Resource.Attribute.behavior_hideable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_overlapTop = global::QuizAmoroso.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_peekHeight = global::QuizAmoroso.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.behavior_skipCollapsed = global::QuizAmoroso.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.borderWidth = global::QuizAmoroso.Droid.Resource.Attribute.borderWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.borderlessButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.bottomSheetDialogTheme = global::QuizAmoroso.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.bottomSheetStyle = global::QuizAmoroso.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonBarStyle = global::QuizAmoroso.Droid.Resource.Attribute.buttonBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonGravity = global::QuizAmoroso.Droid.Resource.Attribute.buttonGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonPanelSideLayout = global::QuizAmoroso.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonStyle = global::QuizAmoroso.Droid.Resource.Attribute.buttonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonStyleSmall = global::QuizAmoroso.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonTint = global::QuizAmoroso.Droid.Resource.Attribute.buttonTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.buttonTintMode = global::QuizAmoroso.Droid.Resource.Attribute.buttonTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardBackgroundColor = global::QuizAmoroso.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardCornerRadius = global::QuizAmoroso.Droid.Resource.Attribute.cardCornerRadius;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardElevation = global::QuizAmoroso.Droid.Resource.Attribute.cardElevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardMaxElevation = global::QuizAmoroso.Droid.Resource.Attribute.cardMaxElevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardPreventCornerOverlap = global::QuizAmoroso.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.cardUseCompatPadding = global::QuizAmoroso.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.checkboxStyle = global::QuizAmoroso.Droid.Resource.Attribute.checkboxStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.checkedTextViewStyle = global::QuizAmoroso.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.closeIcon = global::QuizAmoroso.Droid.Resource.Attribute.closeIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.closeItemLayout = global::QuizAmoroso.Droid.Resource.Attribute.closeItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapseContentDescription = global::QuizAmoroso.Droid.Resource.Attribute.collapseContentDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapseIcon = global::QuizAmoroso.Droid.Resource.Attribute.collapseIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapsedTitleGravity = global::QuizAmoroso.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.collapsedTitleTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.color = global::QuizAmoroso.Droid.Resource.Attribute.color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorAccent = global::QuizAmoroso.Droid.Resource.Attribute.colorAccent;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorBackgroundFloating = global::QuizAmoroso.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorButtonNormal = global::QuizAmoroso.Droid.Resource.Attribute.colorButtonNormal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorControlActivated = global::QuizAmoroso.Droid.Resource.Attribute.colorControlActivated;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorControlHighlight = global::QuizAmoroso.Droid.Resource.Attribute.colorControlHighlight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorControlNormal = global::QuizAmoroso.Droid.Resource.Attribute.colorControlNormal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorPrimary = global::QuizAmoroso.Droid.Resource.Attribute.colorPrimary;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorPrimaryDark = global::QuizAmoroso.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.colorSwitchThumbNormal = global::QuizAmoroso.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.commitIcon = global::QuizAmoroso.Droid.Resource.Attribute.commitIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetEnd = global::QuizAmoroso.Droid.Resource.Attribute.contentInsetEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetEndWithActions = global::QuizAmoroso.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetLeft = global::QuizAmoroso.Droid.Resource.Attribute.contentInsetLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetRight = global::QuizAmoroso.Droid.Resource.Attribute.contentInsetRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetStart = global::QuizAmoroso.Droid.Resource.Attribute.contentInsetStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentInsetStartWithNavigation = global::QuizAmoroso.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPadding = global::QuizAmoroso.Droid.Resource.Attribute.contentPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingBottom = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingLeft = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingRight = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentPaddingTop = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.contentScrim = global::QuizAmoroso.Droid.Resource.Attribute.contentScrim;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.controlBackground = global::QuizAmoroso.Droid.Resource.Attribute.controlBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterEnabled = global::QuizAmoroso.Droid.Resource.Attribute.counterEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterMaxLength = global::QuizAmoroso.Droid.Resource.Attribute.counterMaxLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterOverflowTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.counterTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.counterTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.customNavigationLayout = global::QuizAmoroso.Droid.Resource.Attribute.customNavigationLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.defaultQueryHint = global::QuizAmoroso.Droid.Resource.Attribute.defaultQueryHint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dialogPreferredPadding = global::QuizAmoroso.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dialogTheme = global::QuizAmoroso.Droid.Resource.Attribute.dialogTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.displayOptions = global::QuizAmoroso.Droid.Resource.Attribute.displayOptions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.divider = global::QuizAmoroso.Droid.Resource.Attribute.divider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dividerHorizontal = global::QuizAmoroso.Droid.Resource.Attribute.dividerHorizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dividerPadding = global::QuizAmoroso.Droid.Resource.Attribute.dividerPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dividerVertical = global::QuizAmoroso.Droid.Resource.Attribute.dividerVertical;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.drawableSize = global::QuizAmoroso.Droid.Resource.Attribute.drawableSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.drawerArrowStyle = global::QuizAmoroso.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dropDownListViewStyle = global::QuizAmoroso.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::QuizAmoroso.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.editTextBackground = global::QuizAmoroso.Droid.Resource.Attribute.editTextBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.editTextColor = global::QuizAmoroso.Droid.Resource.Attribute.editTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.editTextStyle = global::QuizAmoroso.Droid.Resource.Attribute.editTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.elevation = global::QuizAmoroso.Droid.Resource.Attribute.elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.errorEnabled = global::QuizAmoroso.Droid.Resource.Attribute.errorEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.errorTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.errorTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::QuizAmoroso.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expanded = global::QuizAmoroso.Droid.Resource.Attribute.expanded;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleGravity = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMargin = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginBottom = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginEnd = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginStart = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleMarginTop = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.expandedTitleTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.externalRouteEnabledDrawable = global::QuizAmoroso.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.fabSize = global::QuizAmoroso.Droid.Resource.Attribute.fabSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.foregroundInsidePadding = global::QuizAmoroso.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.gapBetweenBars = global::QuizAmoroso.Droid.Resource.Attribute.gapBetweenBars;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.goIcon = global::QuizAmoroso.Droid.Resource.Attribute.goIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.headerLayout = global::QuizAmoroso.Droid.Resource.Attribute.headerLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.height = global::QuizAmoroso.Droid.Resource.Attribute.height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hideOnContentScroll = global::QuizAmoroso.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hintAnimationEnabled = global::QuizAmoroso.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hintEnabled = global::QuizAmoroso.Droid.Resource.Attribute.hintEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.hintTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.hintTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.homeAsUpIndicator = global::QuizAmoroso.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.homeLayout = global::QuizAmoroso.Droid.Resource.Attribute.homeLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.icon = global::QuizAmoroso.Droid.Resource.Attribute.icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.iconifiedByDefault = global::QuizAmoroso.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.imageButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.imageButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.indeterminateProgressStyle = global::QuizAmoroso.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.initialActivityCount = global::QuizAmoroso.Droid.Resource.Attribute.initialActivityCount;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.insetForeground = global::QuizAmoroso.Droid.Resource.Attribute.insetForeground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.isLightTheme = global::QuizAmoroso.Droid.Resource.Attribute.isLightTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemBackground = global::QuizAmoroso.Droid.Resource.Attribute.itemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemIconTint = global::QuizAmoroso.Droid.Resource.Attribute.itemIconTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemPadding = global::QuizAmoroso.Droid.Resource.Attribute.itemPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.itemTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.itemTextColor = global::QuizAmoroso.Droid.Resource.Attribute.itemTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.keylines = global::QuizAmoroso.Droid.Resource.Attribute.keylines;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout = global::QuizAmoroso.Droid.Resource.Attribute.layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layoutManager = global::QuizAmoroso.Droid.Resource.Attribute.layoutManager;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_anchor = global::QuizAmoroso.Droid.Resource.Attribute.layout_anchor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_anchorGravity = global::QuizAmoroso.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_behavior = global::QuizAmoroso.Droid.Resource.Attribute.layout_behavior;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_collapseMode = global::QuizAmoroso.Droid.Resource.Attribute.layout_collapseMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::QuizAmoroso.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_dodgeInsetEdges = global::QuizAmoroso.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_insetEdge = global::QuizAmoroso.Droid.Resource.Attribute.layout_insetEdge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_keyline = global::QuizAmoroso.Droid.Resource.Attribute.layout_keyline;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_scrollFlags = global::QuizAmoroso.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.layout_scrollInterpolator = global::QuizAmoroso.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::QuizAmoroso.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listDividerAlertDialog = global::QuizAmoroso.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listItemLayout = global::QuizAmoroso.Droid.Resource.Attribute.listItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listLayout = global::QuizAmoroso.Droid.Resource.Attribute.listLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listMenuViewStyle = global::QuizAmoroso.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPopupWindowStyle = global::QuizAmoroso.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemHeight = global::QuizAmoroso.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemHeightLarge = global::QuizAmoroso.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemHeightSmall = global::QuizAmoroso.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::QuizAmoroso.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.listPreferredItemPaddingRight = global::QuizAmoroso.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.logo = global::QuizAmoroso.Droid.Resource.Attribute.logo;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.logoDescription = global::QuizAmoroso.Droid.Resource.Attribute.logoDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.maxActionInlineWidth = global::QuizAmoroso.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.maxButtonHeight = global::QuizAmoroso.Droid.Resource.Attribute.maxButtonHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.measureWithLargestChild = global::QuizAmoroso.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteCloseDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRoutePauseDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRoutePlayDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteStopDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteTheme = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::QuizAmoroso.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.menu = global::QuizAmoroso.Droid.Resource.Attribute.menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.multiChoiceItemLayout = global::QuizAmoroso.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.navigationContentDescription = global::QuizAmoroso.Droid.Resource.Attribute.navigationContentDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.navigationIcon = global::QuizAmoroso.Droid.Resource.Attribute.navigationIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.navigationMode = global::QuizAmoroso.Droid.Resource.Attribute.navigationMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.overlapAnchor = global::QuizAmoroso.Droid.Resource.Attribute.overlapAnchor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingBottomNoButtons = global::QuizAmoroso.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingEnd = global::QuizAmoroso.Droid.Resource.Attribute.paddingEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingStart = global::QuizAmoroso.Droid.Resource.Attribute.paddingStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.paddingTopNoTitle = global::QuizAmoroso.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.panelBackground = global::QuizAmoroso.Droid.Resource.Attribute.panelBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.panelMenuListTheme = global::QuizAmoroso.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.panelMenuListWidth = global::QuizAmoroso.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleContentDescription = global::QuizAmoroso.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleDrawable = global::QuizAmoroso.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleEnabled = global::QuizAmoroso.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleTint = global::QuizAmoroso.Droid.Resource.Attribute.passwordToggleTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.passwordToggleTintMode = global::QuizAmoroso.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.popupMenuStyle = global::QuizAmoroso.Droid.Resource.Attribute.popupMenuStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.popupTheme = global::QuizAmoroso.Droid.Resource.Attribute.popupTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.popupWindowStyle = global::QuizAmoroso.Droid.Resource.Attribute.popupWindowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.preserveIconSpacing = global::QuizAmoroso.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.pressedTranslationZ = global::QuizAmoroso.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.progressBarPadding = global::QuizAmoroso.Droid.Resource.Attribute.progressBarPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.progressBarStyle = global::QuizAmoroso.Droid.Resource.Attribute.progressBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.queryBackground = global::QuizAmoroso.Droid.Resource.Attribute.queryBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.queryHint = global::QuizAmoroso.Droid.Resource.Attribute.queryHint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.radioButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.radioButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.ratingBarStyle = global::QuizAmoroso.Droid.Resource.Attribute.ratingBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.ratingBarStyleIndicator = global::QuizAmoroso.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.ratingBarStyleSmall = global::QuizAmoroso.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.reverseLayout = global::QuizAmoroso.Droid.Resource.Attribute.reverseLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.rippleColor = global::QuizAmoroso.Droid.Resource.Attribute.rippleColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.scrimAnimationDuration = global::QuizAmoroso.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::QuizAmoroso.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.searchHintIcon = global::QuizAmoroso.Droid.Resource.Attribute.searchHintIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.searchIcon = global::QuizAmoroso.Droid.Resource.Attribute.searchIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.searchViewStyle = global::QuizAmoroso.Droid.Resource.Attribute.searchViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.seekBarStyle = global::QuizAmoroso.Droid.Resource.Attribute.seekBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.selectableItemBackground = global::QuizAmoroso.Droid.Resource.Attribute.selectableItemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::QuizAmoroso.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showAsAction = global::QuizAmoroso.Droid.Resource.Attribute.showAsAction;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showDividers = global::QuizAmoroso.Droid.Resource.Attribute.showDividers;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showText = global::QuizAmoroso.Droid.Resource.Attribute.showText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.showTitle = global::QuizAmoroso.Droid.Resource.Attribute.showTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.singleChoiceItemLayout = global::QuizAmoroso.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spanCount = global::QuizAmoroso.Droid.Resource.Attribute.spanCount;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spinBars = global::QuizAmoroso.Droid.Resource.Attribute.spinBars;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spinnerDropDownItemStyle = global::QuizAmoroso.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.spinnerStyle = global::QuizAmoroso.Droid.Resource.Attribute.spinnerStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.splitTrack = global::QuizAmoroso.Droid.Resource.Attribute.splitTrack;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.srcCompat = global::QuizAmoroso.Droid.Resource.Attribute.srcCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.stackFromEnd = global::QuizAmoroso.Droid.Resource.Attribute.stackFromEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.state_above_anchor = global::QuizAmoroso.Droid.Resource.Attribute.state_above_anchor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.state_collapsed = global::QuizAmoroso.Droid.Resource.Attribute.state_collapsed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.state_collapsible = global::QuizAmoroso.Droid.Resource.Attribute.state_collapsible;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.statusBarBackground = global::QuizAmoroso.Droid.Resource.Attribute.statusBarBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.statusBarScrim = global::QuizAmoroso.Droid.Resource.Attribute.statusBarScrim;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subMenuArrow = global::QuizAmoroso.Droid.Resource.Attribute.subMenuArrow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.submitBackground = global::QuizAmoroso.Droid.Resource.Attribute.submitBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitle = global::QuizAmoroso.Droid.Resource.Attribute.subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitleTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitleTextColor = global::QuizAmoroso.Droid.Resource.Attribute.subtitleTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.subtitleTextStyle = global::QuizAmoroso.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.suggestionRowLayout = global::QuizAmoroso.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchMinWidth = global::QuizAmoroso.Droid.Resource.Attribute.switchMinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchPadding = global::QuizAmoroso.Droid.Resource.Attribute.switchPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchStyle = global::QuizAmoroso.Droid.Resource.Attribute.switchStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.switchTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.switchTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabBackground = global::QuizAmoroso.Droid.Resource.Attribute.tabBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabContentStart = global::QuizAmoroso.Droid.Resource.Attribute.tabContentStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabGravity = global::QuizAmoroso.Droid.Resource.Attribute.tabGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabIndicatorColor = global::QuizAmoroso.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabIndicatorHeight = global::QuizAmoroso.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabMaxWidth = global::QuizAmoroso.Droid.Resource.Attribute.tabMaxWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabMinWidth = global::QuizAmoroso.Droid.Resource.Attribute.tabMinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabMode = global::QuizAmoroso.Droid.Resource.Attribute.tabMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPadding = global::QuizAmoroso.Droid.Resource.Attribute.tabPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingBottom = global::QuizAmoroso.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingEnd = global::QuizAmoroso.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingStart = global::QuizAmoroso.Droid.Resource.Attribute.tabPaddingStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabPaddingTop = global::QuizAmoroso.Droid.Resource.Attribute.tabPaddingTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabSelectedTextColor = global::QuizAmoroso.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.tabTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tabTextColor = global::QuizAmoroso.Droid.Resource.Attribute.tabTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAllCaps = global::QuizAmoroso.Droid.Resource.Attribute.textAllCaps;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::QuizAmoroso.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceListItem = global::QuizAmoroso.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceListItemSmall = global::QuizAmoroso.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::QuizAmoroso.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::QuizAmoroso.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::QuizAmoroso.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::QuizAmoroso.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textColorAlertDialogListItem = global::QuizAmoroso.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textColorError = global::QuizAmoroso.Droid.Resource.Attribute.textColorError;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.textColorSearchUrl = global::QuizAmoroso.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.theme = global::QuizAmoroso.Droid.Resource.Attribute.theme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thickness = global::QuizAmoroso.Droid.Resource.Attribute.thickness;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thumbTextPadding = global::QuizAmoroso.Droid.Resource.Attribute.thumbTextPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thumbTint = global::QuizAmoroso.Droid.Resource.Attribute.thumbTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.thumbTintMode = global::QuizAmoroso.Droid.Resource.Attribute.thumbTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tickMark = global::QuizAmoroso.Droid.Resource.Attribute.tickMark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tickMarkTint = global::QuizAmoroso.Droid.Resource.Attribute.tickMarkTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.tickMarkTintMode = global::QuizAmoroso.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.title = global::QuizAmoroso.Droid.Resource.Attribute.title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleEnabled = global::QuizAmoroso.Droid.Resource.Attribute.titleEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMargin = global::QuizAmoroso.Droid.Resource.Attribute.titleMargin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginBottom = global::QuizAmoroso.Droid.Resource.Attribute.titleMarginBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginEnd = global::QuizAmoroso.Droid.Resource.Attribute.titleMarginEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginStart = global::QuizAmoroso.Droid.Resource.Attribute.titleMarginStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMarginTop = global::QuizAmoroso.Droid.Resource.Attribute.titleMarginTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleMargins = global::QuizAmoroso.Droid.Resource.Attribute.titleMargins;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleTextAppearance = global::QuizAmoroso.Droid.Resource.Attribute.titleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleTextColor = global::QuizAmoroso.Droid.Resource.Attribute.titleTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.titleTextStyle = global::QuizAmoroso.Droid.Resource.Attribute.titleTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.toolbarId = global::QuizAmoroso.Droid.Resource.Attribute.toolbarId;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::QuizAmoroso.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.toolbarStyle = global::QuizAmoroso.Droid.Resource.Attribute.toolbarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.track = global::QuizAmoroso.Droid.Resource.Attribute.track;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.trackTint = global::QuizAmoroso.Droid.Resource.Attribute.trackTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.trackTintMode = global::QuizAmoroso.Droid.Resource.Attribute.trackTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.useCompatPadding = global::QuizAmoroso.Droid.Resource.Attribute.useCompatPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.voiceIcon = global::QuizAmoroso.Droid.Resource.Attribute.voiceIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowActionBar = global::QuizAmoroso.Droid.Resource.Attribute.windowActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowActionBarOverlay = global::QuizAmoroso.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowActionModeOverlay = global::QuizAmoroso.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedHeightMajor = global::QuizAmoroso.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedHeightMinor = global::QuizAmoroso.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedWidthMajor = global::QuizAmoroso.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowFixedWidthMinor = global::QuizAmoroso.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowMinWidthMajor = global::QuizAmoroso.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowMinWidthMinor = global::QuizAmoroso.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Attribute.windowNoTitle = global::QuizAmoroso.Droid.Resource.Attribute.windowNoTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::QuizAmoroso.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::QuizAmoroso.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::QuizAmoroso.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::QuizAmoroso.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Plugin.MediaManager.Forms.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::QuizAmoroso.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::QuizAmoroso.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::QuizAmoroso.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::QuizAmoroso.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_btn_colored_text_material = global::QuizAmoroso.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_color_highlight_material = global::QuizAmoroso.Droid.Resource.Color.abc_color_highlight_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_hint_foreground_material_dark = global::QuizAmoroso.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_hint_foreground_material_light = global::QuizAmoroso.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_input_method_navigation_guard = global::QuizAmoroso.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::QuizAmoroso.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::QuizAmoroso.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_material_dark = global::QuizAmoroso.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_primary_text_material_light = global::QuizAmoroso.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text = global::QuizAmoroso.Droid.Resource.Color.abc_search_url_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text_normal = global::QuizAmoroso.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text_pressed = global::QuizAmoroso.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_search_url_text_selected = global::QuizAmoroso.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_secondary_text_material_dark = global::QuizAmoroso.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_secondary_text_material_light = global::QuizAmoroso.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_btn_checkable = global::QuizAmoroso.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_default = global::QuizAmoroso.Droid.Resource.Color.abc_tint_default;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_edittext = global::QuizAmoroso.Droid.Resource.Color.abc_tint_edittext;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_seek_thumb = global::QuizAmoroso.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_spinner = global::QuizAmoroso.Droid.Resource.Color.abc_tint_spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_switch_thumb = global::QuizAmoroso.Droid.Resource.Color.abc_tint_switch_thumb;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.abc_tint_switch_track = global::QuizAmoroso.Droid.Resource.Color.abc_tint_switch_track;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.accent_material_dark = global::QuizAmoroso.Droid.Resource.Color.accent_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.accent_material_light = global::QuizAmoroso.Droid.Resource.Color.accent_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_floating_material_dark = global::QuizAmoroso.Droid.Resource.Color.background_floating_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_floating_material_light = global::QuizAmoroso.Droid.Resource.Color.background_floating_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_material_dark = global::QuizAmoroso.Droid.Resource.Color.background_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.background_material_light = global::QuizAmoroso.Droid.Resource.Color.background_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_disabled_material_dark = global::QuizAmoroso.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_disabled_material_light = global::QuizAmoroso.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_inverse_material_dark = global::QuizAmoroso.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_inverse_material_light = global::QuizAmoroso.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_material_dark = global::QuizAmoroso.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.bright_foreground_material_light = global::QuizAmoroso.Droid.Resource.Color.bright_foreground_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.button_material_dark = global::QuizAmoroso.Droid.Resource.Color.button_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.button_material_light = global::QuizAmoroso.Droid.Resource.Color.button_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_dark_background = global::QuizAmoroso.Droid.Resource.Color.cardview_dark_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_light_background = global::QuizAmoroso.Droid.Resource.Color.cardview_light_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_shadow_end_color = global::QuizAmoroso.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.cardview_shadow_start_color = global::QuizAmoroso.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_bottom_navigation_shadow_color = global::QuizAmoroso.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_error = global::QuizAmoroso.Droid.Resource.Color.design_error;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_shadow_end_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_shadow_mid_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_shadow_start_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_end_inner_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_end_outer_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_top_inner_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_fab_stroke_top_outer_color = global::QuizAmoroso.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_snackbar_background_color = global::QuizAmoroso.Droid.Resource.Color.design_snackbar_background_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_textinput_error_color_dark = global::QuizAmoroso.Droid.Resource.Color.design_textinput_error_color_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_textinput_error_color_light = global::QuizAmoroso.Droid.Resource.Color.design_textinput_error_color_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.design_tint_password_toggle = global::QuizAmoroso.Droid.Resource.Color.design_tint_password_toggle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_disabled_material_dark = global::QuizAmoroso.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_disabled_material_light = global::QuizAmoroso.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_material_dark = global::QuizAmoroso.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.dim_foreground_material_light = global::QuizAmoroso.Droid.Resource.Color.dim_foreground_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.foreground_material_dark = global::QuizAmoroso.Droid.Resource.Color.foreground_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.foreground_material_light = global::QuizAmoroso.Droid.Resource.Color.foreground_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.highlighted_text_material_dark = global::QuizAmoroso.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.highlighted_text_material_light = global::QuizAmoroso.Droid.Resource.Color.highlighted_text_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_blue_grey_800 = global::QuizAmoroso.Droid.Resource.Color.material_blue_grey_800;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_blue_grey_900 = global::QuizAmoroso.Droid.Resource.Color.material_blue_grey_900;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_blue_grey_950 = global::QuizAmoroso.Droid.Resource.Color.material_blue_grey_950;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_deep_teal_200 = global::QuizAmoroso.Droid.Resource.Color.material_deep_teal_200;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_deep_teal_500 = global::QuizAmoroso.Droid.Resource.Color.material_deep_teal_500;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_100 = global::QuizAmoroso.Droid.Resource.Color.material_grey_100;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_300 = global::QuizAmoroso.Droid.Resource.Color.material_grey_300;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_50 = global::QuizAmoroso.Droid.Resource.Color.material_grey_50;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_600 = global::QuizAmoroso.Droid.Resource.Color.material_grey_600;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_800 = global::QuizAmoroso.Droid.Resource.Color.material_grey_800;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_850 = global::QuizAmoroso.Droid.Resource.Color.material_grey_850;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.material_grey_900 = global::QuizAmoroso.Droid.Resource.Color.material_grey_900;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.notification_action_color_filter = global::QuizAmoroso.Droid.Resource.Color.notification_action_color_filter;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.notification_icon_bg_color = global::QuizAmoroso.Droid.Resource.Color.notification_icon_bg_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.notification_material_background_media_default_color = global::QuizAmoroso.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_dark_material_dark = global::QuizAmoroso.Droid.Resource.Color.primary_dark_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_dark_material_light = global::QuizAmoroso.Droid.Resource.Color.primary_dark_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_material_dark = global::QuizAmoroso.Droid.Resource.Color.primary_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_material_light = global::QuizAmoroso.Droid.Resource.Color.primary_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_default_material_dark = global::QuizAmoroso.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_default_material_light = global::QuizAmoroso.Droid.Resource.Color.primary_text_default_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_disabled_material_dark = global::QuizAmoroso.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.primary_text_disabled_material_light = global::QuizAmoroso.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.ripple_material_dark = global::QuizAmoroso.Droid.Resource.Color.ripple_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.ripple_material_light = global::QuizAmoroso.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_default_material_dark = global::QuizAmoroso.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_default_material_light = global::QuizAmoroso.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_disabled_material_dark = global::QuizAmoroso.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.secondary_text_disabled_material_light = global::QuizAmoroso.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_disabled_material_dark = global::QuizAmoroso.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_disabled_material_light = global::QuizAmoroso.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_material_dark = global::QuizAmoroso.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_material_light = global::QuizAmoroso.Droid.Resource.Color.switch_thumb_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_normal_material_dark = global::QuizAmoroso.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Color.switch_thumb_normal_material_light = global::QuizAmoroso.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_default_height_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_elevation_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_button_min_height_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_button_min_width_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::QuizAmoroso.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_inset_vertical_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_button_padding_vertical_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::QuizAmoroso.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_config_prefDialogWidth = global::QuizAmoroso.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_control_corner_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_control_inset_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_control_padding_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_min_width_major = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_min_width_minor = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_padding_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_padding_top_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dialog_title_divider_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::QuizAmoroso.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::QuizAmoroso.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::QuizAmoroso.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::QuizAmoroso.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::QuizAmoroso.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_floating_window_z = global::QuizAmoroso.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_panel_menu_list_width = global::QuizAmoroso.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_progress_bar_height_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_search_view_preferred_height = global::QuizAmoroso.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_search_view_preferred_width = global::QuizAmoroso.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_switch_padding = global::QuizAmoroso.Droid.Resource.Dimension.abc_switch_padding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_body_1_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_body_2_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_button_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_caption_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_1_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_2_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_3_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_display_4_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_headline_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_large_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_medium_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_menu_header_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_menu_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_small_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_subhead_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_title_material = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::QuizAmoroso.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.cardview_compat_inset_shadow = global::QuizAmoroso.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.cardview_default_elevation = global::QuizAmoroso.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.cardview_default_radius = global::QuizAmoroso.Droid.Resource.Dimension.cardview_default_radius;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_appbar_elevation = global::QuizAmoroso.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_elevation = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_height = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_margin = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_navigation_text_size = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::QuizAmoroso.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_border_width = global::QuizAmoroso.Droid.Resource.Dimension.design_fab_border_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_elevation = global::QuizAmoroso.Droid.Resource.Dimension.design_fab_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_image_size = global::QuizAmoroso.Droid.Resource.Dimension.design_fab_image_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_size_mini = global::QuizAmoroso.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_size_normal = global::QuizAmoroso.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_fab_translation_z_pressed = global::QuizAmoroso.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_elevation = global::QuizAmoroso.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_icon_padding = global::QuizAmoroso.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_icon_size = global::QuizAmoroso.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_max_width = global::QuizAmoroso.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_padding_bottom = global::QuizAmoroso.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::QuizAmoroso.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_elevation = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_max_width = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_min_width = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_padding_vertical = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_snackbar_text_size = global::QuizAmoroso.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_max_width = global::QuizAmoroso.Droid.Resource.Dimension.design_tab_max_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_scrollable_min_width = global::QuizAmoroso.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_text_size = global::QuizAmoroso.Droid.Resource.Dimension.design_tab_text_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.design_tab_text_size_2line = global::QuizAmoroso.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.disabled_alpha_material_dark = global::QuizAmoroso.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.disabled_alpha_material_light = global::QuizAmoroso.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.highlight_alpha_material_colored = global::QuizAmoroso.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.highlight_alpha_material_dark = global::QuizAmoroso.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.highlight_alpha_material_light = global::QuizAmoroso.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_alpha_material_dark = global::QuizAmoroso.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_alpha_material_light = global::QuizAmoroso.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::QuizAmoroso.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::QuizAmoroso.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::QuizAmoroso.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::QuizAmoroso.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::QuizAmoroso.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::QuizAmoroso.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::QuizAmoroso.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::QuizAmoroso.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::QuizAmoroso.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::QuizAmoroso.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::QuizAmoroso.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_action_icon_size = global::QuizAmoroso.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_action_text_size = global::QuizAmoroso.Droid.Resource.Dimension.notification_action_text_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_big_circle_margin = global::QuizAmoroso.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_content_margin_start = global::QuizAmoroso.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_large_icon_height = global::QuizAmoroso.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_large_icon_width = global::QuizAmoroso.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_main_column_padding_top = global::QuizAmoroso.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_media_narrow_margin = global::QuizAmoroso.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_right_icon_size = global::QuizAmoroso.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_right_side_padding_top = global::QuizAmoroso.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_small_icon_background_padding = global::QuizAmoroso.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_small_icon_size_as_large = global::QuizAmoroso.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_subtext_size = global::QuizAmoroso.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_top_pad = global::QuizAmoroso.Droid.Resource.Dimension.notification_top_pad;
+			global::Plugin.MediaManager.Forms.Android.Resource.Dimension.notification_top_pad_large_text = global::QuizAmoroso.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_action_bar_item_background_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_borderless_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_check_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_colored_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_radio_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::QuizAmoroso.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_cab_background_internal_bg = global::QuizAmoroso.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_cab_background_top_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_control_background_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_control_background_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_dialog_material_background = global::QuizAmoroso.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_edit_text_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_ab_back_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_clear_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_go_search_api_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_search_api_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_black_16dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_black_36dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_black_48dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_item_background_holo_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_item_background_holo_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_focused_holo = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_longpressed_holo = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_pressed_holo_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_holo_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_list_selector_holo_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::QuizAmoroso.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::QuizAmoroso.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ratingbar_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_ratingbar_small_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::QuizAmoroso.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::QuizAmoroso.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_seekbar_thumb_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_seekbar_track_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_switch_thumb_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_tab_indicator_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_cursor_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::QuizAmoroso.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::QuizAmoroso.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_vector_test = global::QuizAmoroso.Droid.Resource.Drawable.abc_vector_test;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_1 = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_2 = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_3 = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password_3;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_1 = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password_1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_2 = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password_2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_3 = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password_3;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_bottom_navigation_item_background = global::QuizAmoroso.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_fab_background = global::QuizAmoroso.Droid.Resource.Drawable.design_fab_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_ic_visibility = global::QuizAmoroso.Droid.Resource.Drawable.design_ic_visibility;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_ic_visibility_off = global::QuizAmoroso.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_password_eye = global::QuizAmoroso.Droid.Resource.Drawable.design_password_eye;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_snackbar_background = global::QuizAmoroso.Droid.Resource.Drawable.design_snackbar_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_audiotrack_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_audiotrack_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_dialog_close_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_dialog_close_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_00 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_01 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_02 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_03 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_04 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_05 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_06 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_07 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_08 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_09 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_10 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_11 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_12 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_13 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_14 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_collapse_15 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_00 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_00;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_01 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_01;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_02 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_02;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_03 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_03;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_04 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_04;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_05 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_05;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_06 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_06;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_07 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_07;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_08 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_08;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_09 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_09;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_10 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_10;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_11 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_11;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_12 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_12;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_13 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_13;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_14 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_14;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_group_expand_15 = global::QuizAmoroso.Droid.Resource.Drawable.ic_group_expand_15;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_pause_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_pause_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_media_pause_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_play_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_media_play_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_play_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_media_play_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_stop_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_media_stop_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_media_stop_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_00_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_00_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_01_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_01_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_02_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_02_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_03_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_03_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_04_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_04_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_05_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_05_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_06_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_06_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_07_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_07_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_08_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_08_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_09_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_09_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_10_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_10_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_11_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_11_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_12_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_12_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_13_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_13_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_14_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_14_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_15_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_15_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_16_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_16_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_17_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_17_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_18_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_18_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_19_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_19_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_20_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_20_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_21_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_21_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_22_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connected_22_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_00_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_00_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_01_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_01_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_02_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_02_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_03_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_03_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_04_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_04_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_05_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_05_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_06_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_06_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_07_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_07_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_08_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_08_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_09_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_09_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_10_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_10_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_11_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_11_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_12_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_12_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_13_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_13_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_14_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_14_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_15_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_15_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_16_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_16_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_17_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_17_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_18_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_18_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_19_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_19_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_20_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_20_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_21_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_21_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_22_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_connecting_22_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disabled_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disabled_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disconnected_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_disconnected_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_mr_button_grey = global::QuizAmoroso.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_group_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_group_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_speaker_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_tv_dark = global::QuizAmoroso.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.ic_vol_type_tv_light = global::QuizAmoroso.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connected_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connected_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_button_connected_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connecting_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_connecting_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_button_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_button_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_button_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_close_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_close_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_material_background_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_dialog_material_background_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_group_collapse = global::QuizAmoroso.Droid.Resource.Drawable.mr_group_collapse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_group_expand = global::QuizAmoroso.Droid.Resource.Drawable.mr_group_expand;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_pause_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_pause_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_media_pause_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_play_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_media_play_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_play_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_media_play_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_stop_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_media_stop_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_media_stop_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_vol_type_audiotrack_dark = global::QuizAmoroso.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.mr_vol_type_audiotrack_light = global::QuizAmoroso.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.navigation_empty_icon = global::QuizAmoroso.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_action_background = global::QuizAmoroso.Droid.Resource.Drawable.notification_action_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg = global::QuizAmoroso.Droid.Resource.Drawable.notification_bg;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_low = global::QuizAmoroso.Droid.Resource.Drawable.notification_bg_low;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_low_normal = global::QuizAmoroso.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_low_pressed = global::QuizAmoroso.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_normal = global::QuizAmoroso.Droid.Resource.Drawable.notification_bg_normal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_bg_normal_pressed = global::QuizAmoroso.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_icon_background = global::QuizAmoroso.Droid.Resource.Drawable.notification_icon_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_template_icon_bg = global::QuizAmoroso.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_template_icon_low_bg = global::QuizAmoroso.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notification_tile_bg = global::QuizAmoroso.Droid.Resource.Drawable.notification_tile_bg;
+			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::QuizAmoroso.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action0 = global::QuizAmoroso.Droid.Resource.Id.action0;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar = global::QuizAmoroso.Droid.Resource.Id.action_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_activity_content = global::QuizAmoroso.Droid.Resource.Id.action_bar_activity_content;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_container = global::QuizAmoroso.Droid.Resource.Id.action_bar_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_root = global::QuizAmoroso.Droid.Resource.Id.action_bar_root;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_spinner = global::QuizAmoroso.Droid.Resource.Id.action_bar_spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_subtitle = global::QuizAmoroso.Droid.Resource.Id.action_bar_subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_bar_title = global::QuizAmoroso.Droid.Resource.Id.action_bar_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_container = global::QuizAmoroso.Droid.Resource.Id.action_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_context_bar = global::QuizAmoroso.Droid.Resource.Id.action_context_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_divider = global::QuizAmoroso.Droid.Resource.Id.action_divider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_image = global::QuizAmoroso.Droid.Resource.Id.action_image;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_menu_divider = global::QuizAmoroso.Droid.Resource.Id.action_menu_divider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_menu_presenter = global::QuizAmoroso.Droid.Resource.Id.action_menu_presenter;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_mode_bar = global::QuizAmoroso.Droid.Resource.Id.action_mode_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_mode_bar_stub = global::QuizAmoroso.Droid.Resource.Id.action_mode_bar_stub;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_mode_close_button = global::QuizAmoroso.Droid.Resource.Id.action_mode_close_button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.action_text = global::QuizAmoroso.Droid.Resource.Id.action_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.actions = global::QuizAmoroso.Droid.Resource.Id.actions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.activity_chooser_view_content = global::QuizAmoroso.Droid.Resource.Id.activity_chooser_view_content;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.add = global::QuizAmoroso.Droid.Resource.Id.add;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.alertTitle = global::QuizAmoroso.Droid.Resource.Id.alertTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.all = global::QuizAmoroso.Droid.Resource.Id.all;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.always = global::QuizAmoroso.Droid.Resource.Id.always;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.auto = global::QuizAmoroso.Droid.Resource.Id.auto;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.beginning = global::QuizAmoroso.Droid.Resource.Id.beginning;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.bottom = global::QuizAmoroso.Droid.Resource.Id.bottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.buttonPanel = global::QuizAmoroso.Droid.Resource.Id.buttonPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.cancel_action = global::QuizAmoroso.Droid.Resource.Id.cancel_action;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.center = global::QuizAmoroso.Droid.Resource.Id.center;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.center_horizontal = global::QuizAmoroso.Droid.Resource.Id.center_horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.center_vertical = global::QuizAmoroso.Droid.Resource.Id.center_vertical;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.checkbox = global::QuizAmoroso.Droid.Resource.Id.checkbox;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.chronometer = global::QuizAmoroso.Droid.Resource.Id.chronometer;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.clip_horizontal = global::QuizAmoroso.Droid.Resource.Id.clip_horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.clip_vertical = global::QuizAmoroso.Droid.Resource.Id.clip_vertical;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.collapseActionView = global::QuizAmoroso.Droid.Resource.Id.collapseActionView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.contentPanel = global::QuizAmoroso.Droid.Resource.Id.contentPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.custom = global::QuizAmoroso.Droid.Resource.Id.custom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.customPanel = global::QuizAmoroso.Droid.Resource.Id.customPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.decor_content_parent = global::QuizAmoroso.Droid.Resource.Id.decor_content_parent;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.default_activity_button = global::QuizAmoroso.Droid.Resource.Id.default_activity_button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_bottom_sheet = global::QuizAmoroso.Droid.Resource.Id.design_bottom_sheet;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_menu_item_action_area = global::QuizAmoroso.Droid.Resource.Id.design_menu_item_action_area;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_menu_item_action_area_stub = global::QuizAmoroso.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_menu_item_text = global::QuizAmoroso.Droid.Resource.Id.design_menu_item_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.design_navigation_view = global::QuizAmoroso.Droid.Resource.Id.design_navigation_view;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.disableHome = global::QuizAmoroso.Droid.Resource.Id.disableHome;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.edit_query = global::QuizAmoroso.Droid.Resource.Id.edit_query;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.end = global::QuizAmoroso.Droid.Resource.Id.end;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.end_padder = global::QuizAmoroso.Droid.Resource.Id.end_padder;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.enterAlways = global::QuizAmoroso.Droid.Resource.Id.enterAlways;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.enterAlwaysCollapsed = global::QuizAmoroso.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.exitUntilCollapsed = global::QuizAmoroso.Droid.Resource.Id.exitUntilCollapsed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.expand_activities_button = global::QuizAmoroso.Droid.Resource.Id.expand_activities_button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.expanded_menu = global::QuizAmoroso.Droid.Resource.Id.expanded_menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.fill = global::QuizAmoroso.Droid.Resource.Id.fill;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.fill_horizontal = global::QuizAmoroso.Droid.Resource.Id.fill_horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.fill_vertical = global::QuizAmoroso.Droid.Resource.Id.fill_vertical;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.@fixed = global::QuizAmoroso.Droid.Resource.Id.@fixed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.home = global::QuizAmoroso.Droid.Resource.Id.home;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.homeAsUp = global::QuizAmoroso.Droid.Resource.Id.homeAsUp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.icon = global::QuizAmoroso.Droid.Resource.Id.icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.icon_group = global::QuizAmoroso.Droid.Resource.Id.icon_group;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.ifRoom = global::QuizAmoroso.Droid.Resource.Id.ifRoom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.image = global::QuizAmoroso.Droid.Resource.Id.image;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.info = global::QuizAmoroso.Droid.Resource.Id.info;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.item_touch_helper_previous_elevation = global::QuizAmoroso.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.largeLabel = global::QuizAmoroso.Droid.Resource.Id.largeLabel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.left = global::QuizAmoroso.Droid.Resource.Id.left;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.line1 = global::QuizAmoroso.Droid.Resource.Id.line1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.line3 = global::QuizAmoroso.Droid.Resource.Id.line3;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.listMode = global::QuizAmoroso.Droid.Resource.Id.listMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.list_item = global::QuizAmoroso.Droid.Resource.Id.list_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.masked = global::QuizAmoroso.Droid.Resource.Id.masked;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.media_actions = global::QuizAmoroso.Droid.Resource.Id.media_actions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.middle = global::QuizAmoroso.Droid.Resource.Id.middle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mini = global::QuizAmoroso.Droid.Resource.Id.mini;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_art = global::QuizAmoroso.Droid.Resource.Id.mr_art;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_list = global::QuizAmoroso.Droid.Resource.Id.mr_chooser_list;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_route_desc = global::QuizAmoroso.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_route_icon = global::QuizAmoroso.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_route_name = global::QuizAmoroso.Droid.Resource.Id.mr_chooser_route_name;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_chooser_title = global::QuizAmoroso.Droid.Resource.Id.mr_chooser_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_close = global::QuizAmoroso.Droid.Resource.Id.mr_close;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_divider = global::QuizAmoroso.Droid.Resource.Id.mr_control_divider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_playback_ctrl = global::QuizAmoroso.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_subtitle = global::QuizAmoroso.Droid.Resource.Id.mr_control_subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_title = global::QuizAmoroso.Droid.Resource.Id.mr_control_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_control_title_container = global::QuizAmoroso.Droid.Resource.Id.mr_control_title_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_custom_control = global::QuizAmoroso.Droid.Resource.Id.mr_custom_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_default_control = global::QuizAmoroso.Droid.Resource.Id.mr_default_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_dialog_area = global::QuizAmoroso.Droid.Resource.Id.mr_dialog_area;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_expandable_area = global::QuizAmoroso.Droid.Resource.Id.mr_expandable_area;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_group_expand_collapse = global::QuizAmoroso.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_media_main_control = global::QuizAmoroso.Droid.Resource.Id.mr_media_main_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_name = global::QuizAmoroso.Droid.Resource.Id.mr_name;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_playback_control = global::QuizAmoroso.Droid.Resource.Id.mr_playback_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_title_bar = global::QuizAmoroso.Droid.Resource.Id.mr_title_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_control = global::QuizAmoroso.Droid.Resource.Id.mr_volume_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_group_list = global::QuizAmoroso.Droid.Resource.Id.mr_volume_group_list;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_item_icon = global::QuizAmoroso.Droid.Resource.Id.mr_volume_item_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.mr_volume_slider = global::QuizAmoroso.Droid.Resource.Id.mr_volume_slider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.multiply = global::QuizAmoroso.Droid.Resource.Id.multiply;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.navigation_header_container = global::QuizAmoroso.Droid.Resource.Id.navigation_header_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.never = global::QuizAmoroso.Droid.Resource.Id.never;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.none = global::QuizAmoroso.Droid.Resource.Id.none;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.normal = global::QuizAmoroso.Droid.Resource.Id.normal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.notification_background = global::QuizAmoroso.Droid.Resource.Id.notification_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.notification_main_column = global::QuizAmoroso.Droid.Resource.Id.notification_main_column;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.notification_main_column_container = global::QuizAmoroso.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.parallax = global::QuizAmoroso.Droid.Resource.Id.parallax;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.parentPanel = global::QuizAmoroso.Droid.Resource.Id.parentPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.pin = global::QuizAmoroso.Droid.Resource.Id.pin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.progress_circular = global::QuizAmoroso.Droid.Resource.Id.progress_circular;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.progress_horizontal = global::QuizAmoroso.Droid.Resource.Id.progress_horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.radio = global::QuizAmoroso.Droid.Resource.Id.radio;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.right = global::QuizAmoroso.Droid.Resource.Id.right;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.right_icon = global::QuizAmoroso.Droid.Resource.Id.right_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.right_side = global::QuizAmoroso.Droid.Resource.Id.right_side;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.screen = global::QuizAmoroso.Droid.Resource.Id.screen;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.scroll = global::QuizAmoroso.Droid.Resource.Id.scroll;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollIndicatorDown = global::QuizAmoroso.Droid.Resource.Id.scrollIndicatorDown;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollIndicatorUp = global::QuizAmoroso.Droid.Resource.Id.scrollIndicatorUp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollView = global::QuizAmoroso.Droid.Resource.Id.scrollView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.scrollable = global::QuizAmoroso.Droid.Resource.Id.scrollable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_badge = global::QuizAmoroso.Droid.Resource.Id.search_badge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_bar = global::QuizAmoroso.Droid.Resource.Id.search_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_button = global::QuizAmoroso.Droid.Resource.Id.search_button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_close_btn = global::QuizAmoroso.Droid.Resource.Id.search_close_btn;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_edit_frame = global::QuizAmoroso.Droid.Resource.Id.search_edit_frame;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_go_btn = global::QuizAmoroso.Droid.Resource.Id.search_go_btn;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_mag_icon = global::QuizAmoroso.Droid.Resource.Id.search_mag_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_plate = global::QuizAmoroso.Droid.Resource.Id.search_plate;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_src_text = global::QuizAmoroso.Droid.Resource.Id.search_src_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.search_voice_btn = global::QuizAmoroso.Droid.Resource.Id.search_voice_btn;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.select_dialog_listview = global::QuizAmoroso.Droid.Resource.Id.select_dialog_listview;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.shortcut = global::QuizAmoroso.Droid.Resource.Id.shortcut;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.showCustom = global::QuizAmoroso.Droid.Resource.Id.showCustom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.showHome = global::QuizAmoroso.Droid.Resource.Id.showHome;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.showTitle = global::QuizAmoroso.Droid.Resource.Id.showTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.smallLabel = global::QuizAmoroso.Droid.Resource.Id.smallLabel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.snackbar_action = global::QuizAmoroso.Droid.Resource.Id.snackbar_action;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.snackbar_text = global::QuizAmoroso.Droid.Resource.Id.snackbar_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.snap = global::QuizAmoroso.Droid.Resource.Id.snap;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.spacer = global::QuizAmoroso.Droid.Resource.Id.spacer;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.split_action_bar = global::QuizAmoroso.Droid.Resource.Id.split_action_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.src_atop = global::QuizAmoroso.Droid.Resource.Id.src_atop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.src_in = global::QuizAmoroso.Droid.Resource.Id.src_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.src_over = global::QuizAmoroso.Droid.Resource.Id.src_over;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.start = global::QuizAmoroso.Droid.Resource.Id.start;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.status_bar_latest_event_content = global::QuizAmoroso.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.submenuarrow = global::QuizAmoroso.Droid.Resource.Id.submenuarrow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.submit_area = global::QuizAmoroso.Droid.Resource.Id.submit_area;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.tabMode = global::QuizAmoroso.Droid.Resource.Id.tabMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.text = global::QuizAmoroso.Droid.Resource.Id.text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.text2 = global::QuizAmoroso.Droid.Resource.Id.text2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.textSpacerNoButtons = global::QuizAmoroso.Droid.Resource.Id.textSpacerNoButtons;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.textSpacerNoTitle = global::QuizAmoroso.Droid.Resource.Id.textSpacerNoTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.text_input_password_toggle = global::QuizAmoroso.Droid.Resource.Id.text_input_password_toggle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.textinput_counter = global::QuizAmoroso.Droid.Resource.Id.textinput_counter;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.textinput_error = global::QuizAmoroso.Droid.Resource.Id.textinput_error;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.time = global::QuizAmoroso.Droid.Resource.Id.time;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.title = global::QuizAmoroso.Droid.Resource.Id.title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.titleDividerNoCustom = global::QuizAmoroso.Droid.Resource.Id.titleDividerNoCustom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.title_template = global::QuizAmoroso.Droid.Resource.Id.title_template;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.top = global::QuizAmoroso.Droid.Resource.Id.top;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.topPanel = global::QuizAmoroso.Droid.Resource.Id.topPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.touch_outside = global::QuizAmoroso.Droid.Resource.Id.touch_outside;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.transition_current_scene = global::QuizAmoroso.Droid.Resource.Id.transition_current_scene;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.transition_scene_layoutid_cache = global::QuizAmoroso.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.up = global::QuizAmoroso.Droid.Resource.Id.up;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.useLogo = global::QuizAmoroso.Droid.Resource.Id.useLogo;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.view_offset_helper = global::QuizAmoroso.Droid.Resource.Id.view_offset_helper;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.visible = global::QuizAmoroso.Droid.Resource.Id.visible;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.volume_item_container = global::QuizAmoroso.Droid.Resource.Id.volume_item_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.withText = global::QuizAmoroso.Droid.Resource.Id.withText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Id.wrap_content = global::QuizAmoroso.Droid.Resource.Id.wrap_content;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.abc_config_activityDefaultDur = global::QuizAmoroso.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.abc_config_activityShortDur = global::QuizAmoroso.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.app_bar_elevation_anim_duration = global::QuizAmoroso.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.bottom_sheet_slide_duration = global::QuizAmoroso.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.cancel_button_image_alpha = global::QuizAmoroso.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.design_snackbar_text_max_lines = global::QuizAmoroso.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.hide_password_duration = global::QuizAmoroso.Droid.Resource.Integer.hide_password_duration;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::QuizAmoroso.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::QuizAmoroso.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::QuizAmoroso.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.show_password_duration = global::QuizAmoroso.Droid.Resource.Integer.show_password_duration;
+			global::Plugin.MediaManager.Forms.Android.Resource.Integer.status_bar_notification_info_maxnum = global::QuizAmoroso.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.MediaManager.Forms.Android.Resource.Interpolator.mr_fast_out_slow_in = global::QuizAmoroso.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Interpolator.mr_linear_out_slow_in = global::QuizAmoroso.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_bar_title_item = global::QuizAmoroso.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_bar_up_container = global::QuizAmoroso.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_bar_view_list_nav_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_menu_item_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_menu_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_mode_bar = global::QuizAmoroso.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_action_mode_close_item_material = global::QuizAmoroso.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_activity_chooser_view = global::QuizAmoroso.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::QuizAmoroso.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::QuizAmoroso.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_alert_dialog_material = global::QuizAmoroso.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_alert_dialog_title_material = global::QuizAmoroso.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_dialog_title_material = global::QuizAmoroso.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_expanded_menu_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_checkbox = global::QuizAmoroso.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_icon = global::QuizAmoroso.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_list_menu_item_radio = global::QuizAmoroso.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_popup_menu_item_layout = global::QuizAmoroso.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_content_include = global::QuizAmoroso.Droid.Resource.Layout.abc_screen_content_include;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_simple = global::QuizAmoroso.Droid.Resource.Layout.abc_screen_simple;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::QuizAmoroso.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_screen_toolbar = global::QuizAmoroso.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::QuizAmoroso.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_search_view = global::QuizAmoroso.Droid.Resource.Layout.abc_search_view;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.abc_select_dialog_material = global::QuizAmoroso.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_bottom_navigation_item = global::QuizAmoroso.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_bottom_sheet_dialog = global::QuizAmoroso.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_snackbar = global::QuizAmoroso.Droid.Resource.Layout.design_layout_snackbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_snackbar_include = global::QuizAmoroso.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_tab_icon = global::QuizAmoroso.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_layout_tab_text = global::QuizAmoroso.Droid.Resource.Layout.design_layout_tab_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_menu_item_action_area = global::QuizAmoroso.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item = global::QuizAmoroso.Droid.Resource.Layout.design_navigation_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item_header = global::QuizAmoroso.Droid.Resource.Layout.design_navigation_item_header;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item_separator = global::QuizAmoroso.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_item_subheader = global::QuizAmoroso.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_menu = global::QuizAmoroso.Droid.Resource.Layout.design_navigation_menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_navigation_menu_item = global::QuizAmoroso.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.design_text_input_password_icon = global::QuizAmoroso.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_chooser_dialog = global::QuizAmoroso.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_chooser_list_item = global::QuizAmoroso.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_controller_material_dialog_b = global::QuizAmoroso.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_controller_volume_item = global::QuizAmoroso.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_playback_control = global::QuizAmoroso.Droid.Resource.Layout.mr_playback_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.mr_volume_control = global::QuizAmoroso.Droid.Resource.Layout.mr_volume_control;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_action = global::QuizAmoroso.Droid.Resource.Layout.notification_action;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_action_tombstone = global::QuizAmoroso.Droid.Resource.Layout.notification_action_tombstone;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_media_action = global::QuizAmoroso.Droid.Resource.Layout.notification_media_action;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_media_cancel_action = global::QuizAmoroso.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media = global::QuizAmoroso.Droid.Resource.Layout.notification_template_big_media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media_custom = global::QuizAmoroso.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media_narrow = global::QuizAmoroso.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::QuizAmoroso.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_custom_big = global::QuizAmoroso.Droid.Resource.Layout.notification_template_custom_big;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_icon_group = global::QuizAmoroso.Droid.Resource.Layout.notification_template_icon_group;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_lines_media = global::QuizAmoroso.Droid.Resource.Layout.notification_template_lines_media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_media = global::QuizAmoroso.Droid.Resource.Layout.notification_template_media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_media_custom = global::QuizAmoroso.Droid.Resource.Layout.notification_template_media_custom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_part_chronometer = global::QuizAmoroso.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.notification_template_part_time = global::QuizAmoroso.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.select_dialog_item_material = global::QuizAmoroso.Droid.Resource.Layout.select_dialog_item_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.select_dialog_multichoice_material = global::QuizAmoroso.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.select_dialog_singlechoice_material = global::QuizAmoroso.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::QuizAmoroso.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.ApplicationName = global::QuizAmoroso.Droid.Resource.String.ApplicationName;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.Hello = global::QuizAmoroso.Droid.Resource.String.Hello;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_bar_home_description = global::QuizAmoroso.Droid.Resource.String.abc_action_bar_home_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_bar_home_description_format = global::QuizAmoroso.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_bar_home_subtitle_description_format = global::QuizAmoroso.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_bar_up_description = global::QuizAmoroso.Droid.Resource.String.abc_action_bar_up_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_menu_overflow_description = global::QuizAmoroso.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_action_mode_done = global::QuizAmoroso.Droid.Resource.String.abc_action_mode_done;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_activity_chooser_view_see_all = global::QuizAmoroso.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_activitychooserview_choose_application = global::QuizAmoroso.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_capital_off = global::QuizAmoroso.Droid.Resource.String.abc_capital_off;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_capital_on = global::QuizAmoroso.Droid.Resource.String.abc_capital_on;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_body_1_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_body_2_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_button_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_button_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_caption_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_caption_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_1_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_2_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_3_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_display_4_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_headline_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_headline_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_menu_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_menu_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_subhead_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_font_family_title_material = global::QuizAmoroso.Droid.Resource.String.abc_font_family_title_material;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_search_hint = global::QuizAmoroso.Droid.Resource.String.abc_search_hint;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_clear = global::QuizAmoroso.Droid.Resource.String.abc_searchview_description_clear;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_query = global::QuizAmoroso.Droid.Resource.String.abc_searchview_description_query;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_search = global::QuizAmoroso.Droid.Resource.String.abc_searchview_description_search;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_submit = global::QuizAmoroso.Droid.Resource.String.abc_searchview_description_submit;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_searchview_description_voice = global::QuizAmoroso.Droid.Resource.String.abc_searchview_description_voice;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_shareactionprovider_share_with = global::QuizAmoroso.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_shareactionprovider_share_with_application = global::QuizAmoroso.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.abc_toolbar_collapse_description = global::QuizAmoroso.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.appbar_scrolling_view_behavior = global::QuizAmoroso.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.bottom_sheet_behavior = global::QuizAmoroso.Droid.Resource.String.bottom_sheet_behavior;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.character_counter_pattern = global::QuizAmoroso.Droid.Resource.String.character_counter_pattern;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_button_content_description = global::QuizAmoroso.Droid.Resource.String.mr_button_content_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_cast_button_connected = global::QuizAmoroso.Droid.Resource.String.mr_cast_button_connected;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_cast_button_connecting = global::QuizAmoroso.Droid.Resource.String.mr_cast_button_connecting;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_cast_button_disconnected = global::QuizAmoroso.Droid.Resource.String.mr_cast_button_disconnected;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_chooser_searching = global::QuizAmoroso.Droid.Resource.String.mr_chooser_searching;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_chooser_title = global::QuizAmoroso.Droid.Resource.String.mr_chooser_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_album_art = global::QuizAmoroso.Droid.Resource.String.mr_controller_album_art;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_casting_screen = global::QuizAmoroso.Droid.Resource.String.mr_controller_casting_screen;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_close_description = global::QuizAmoroso.Droid.Resource.String.mr_controller_close_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_collapse_group = global::QuizAmoroso.Droid.Resource.String.mr_controller_collapse_group;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_disconnect = global::QuizAmoroso.Droid.Resource.String.mr_controller_disconnect;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_expand_group = global::QuizAmoroso.Droid.Resource.String.mr_controller_expand_group;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_no_info_available = global::QuizAmoroso.Droid.Resource.String.mr_controller_no_info_available;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_no_media_selected = global::QuizAmoroso.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_pause = global::QuizAmoroso.Droid.Resource.String.mr_controller_pause;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_play = global::QuizAmoroso.Droid.Resource.String.mr_controller_play;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_stop = global::QuizAmoroso.Droid.Resource.String.mr_controller_stop;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_stop_casting = global::QuizAmoroso.Droid.Resource.String.mr_controller_stop_casting;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_controller_volume_slider = global::QuizAmoroso.Droid.Resource.String.mr_controller_volume_slider;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_system_route_name = global::QuizAmoroso.Droid.Resource.String.mr_system_route_name;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.mr_user_route_category_name = global::QuizAmoroso.Droid.Resource.String.mr_user_route_category_name;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.password_toggle_content_description = global::QuizAmoroso.Droid.Resource.String.password_toggle_content_description;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_eye = global::QuizAmoroso.Droid.Resource.String.path_password_eye;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_eye_mask_strike_through = global::QuizAmoroso.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_eye_mask_visible = global::QuizAmoroso.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.path_password_strike_through = global::QuizAmoroso.Droid.Resource.String.path_password_strike_through;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.search_menu_title = global::QuizAmoroso.Droid.Resource.String.search_menu_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.String.status_bar_notification_info_overflow = global::QuizAmoroso.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.AlertDialog_AppCompat = global::QuizAmoroso.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.AlertDialog_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Animation_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::QuizAmoroso.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::QuizAmoroso.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_AlertDialog_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::QuizAmoroso.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_CardView = global::QuizAmoroso.Droid.Resource.Style.Base_CardView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::QuizAmoroso.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::QuizAmoroso.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::QuizAmoroso.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::QuizAmoroso.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V22_Theme_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V23_Theme_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::QuizAmoroso.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::QuizAmoroso.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Base_Widget_Design_TabLayout = global::QuizAmoroso.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.CardView = global::QuizAmoroso.Droid.Resource.Style.CardView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.CardView_Dark = global::QuizAmoroso.Droid.Resource.Style.CardView_Dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.CardView_Light = global::QuizAmoroso.Droid.Resource.Style.CardView_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Platform_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::QuizAmoroso.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V11_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V11_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V14_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V14_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V21_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_V21_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::QuizAmoroso.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::QuizAmoroso.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::QuizAmoroso.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::QuizAmoroso.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Button = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Large = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Small = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Counter = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Error = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Hint = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Design_Tab = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_MediaRouter_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_StatusBar_EventContent = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::QuizAmoroso.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design = global::QuizAmoroso.Droid.Resource.Style.Theme_Design;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::QuizAmoroso.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_Light = global::QuizAmoroso.Droid.Resource.Style.Theme_Design_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::QuizAmoroso.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_Design_NoActionBar = global::QuizAmoroso.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter = global::QuizAmoroso.Droid.Resource.Style.Theme_MediaRouter;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter_Light = global::QuizAmoroso.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::QuizAmoroso.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::QuizAmoroso.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.ThemeOverlay_MediaRouter_Light = global::QuizAmoroso.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionButton = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActionMode = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Button_Small = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_EditText = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ImageButton = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_NotificationActionContainer = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_NotificationActionContainer;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_NotificationActionText = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_NotificationActionText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_RatingBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SearchView = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SeekBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Toolbar = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::QuizAmoroso.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_AppBarLayout = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_BottomNavigationView = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_FloatingActionButton = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_NavigationView = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_Snackbar = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_TabLayout = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_Design_TextInputLayout = global::QuizAmoroso.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::QuizAmoroso.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::QuizAmoroso.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_background = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_backgroundSplit = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_backgroundStacked = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetRight = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetStart = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_displayOptions = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_divider = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_divider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_elevation = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_height = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_homeLayout = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_icon = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_itemPadding = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_logo = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_logo;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_navigationMode = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_popupTheme = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_progressBarPadding = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_progressBarStyle = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_subtitle = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_title = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBar_titleTextStyle = global::QuizAmoroso.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBarLayout = global::QuizAmoroso.Droid.Resource.Styleable.ActionBarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::QuizAmoroso.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMenuItemView = global::QuizAmoroso.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::QuizAmoroso.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMenuView = global::QuizAmoroso.Droid.Resource.Styleable.ActionMenuView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_background = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_backgroundSplit = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_closeItemLayout = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_height = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActionMode_titleTextStyle = global::QuizAmoroso.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActivityChooserView = global::QuizAmoroso.Droid.Resource.Styleable.ActivityChooserView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::QuizAmoroso.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::QuizAmoroso.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_android_layout = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_listItemLayout = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_listLayout = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_showTitle = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::QuizAmoroso.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_android_background = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_elevation = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_expanded = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayoutStates = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_Layout = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::QuizAmoroso.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatImageView = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatImageView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatImageView_android_src = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextView = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::QuizAmoroso.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView = global::QuizAmoroso.Droid.Resource.Styleable.BottomNavigationView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_elevation = global::QuizAmoroso.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::QuizAmoroso.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::QuizAmoroso.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::QuizAmoroso.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomNavigationView_menu = global::QuizAmoroso.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::QuizAmoroso.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::QuizAmoroso.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::QuizAmoroso.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::QuizAmoroso.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ButtonBarLayout = global::QuizAmoroso.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::QuizAmoroso.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView = global::QuizAmoroso.Droid.Resource.Styleable.CardView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_android_minHeight = global::QuizAmoroso.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_android_minWidth = global::QuizAmoroso.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardBackgroundColor = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardCornerRadius = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardElevation = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardMaxElevation = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPadding = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingBottom = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingLeft = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingRight = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CardView_contentPaddingTop = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::QuizAmoroso.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem = global::QuizAmoroso.Droid.Resource.Styleable.ColorStateListItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem_alpha = global::QuizAmoroso.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::QuizAmoroso.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ColorStateListItem_android_color = global::QuizAmoroso.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton = global::QuizAmoroso.Droid.Resource.Styleable.CompoundButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton_android_button = global::QuizAmoroso.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton_buttonTint = global::QuizAmoroso.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::QuizAmoroso.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_keylines = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::QuizAmoroso.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme = global::QuizAmoroso.Droid.Resource.Styleable.DesignTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::QuizAmoroso.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::QuizAmoroso.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DesignTheme_textColorError = global::QuizAmoroso.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_color = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::QuizAmoroso.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_elevation = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_fabSize = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::QuizAmoroso.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout = global::QuizAmoroso.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::QuizAmoroso.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::QuizAmoroso.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::QuizAmoroso.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_divider = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::QuizAmoroso.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ListPopupWindow = global::QuizAmoroso.Droid.Resource.Styleable.ListPopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::QuizAmoroso.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::QuizAmoroso.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton = global::QuizAmoroso.Droid.Resource.Styleable.MediaRouteButton;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::QuizAmoroso.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::QuizAmoroso.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_buttonTint = global::QuizAmoroso.Droid.Resource.Styleable.MediaRouteButton_buttonTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::QuizAmoroso.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_enabled = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_id = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuGroup_android_visible = global::QuizAmoroso.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_actionLayout = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_actionProviderClass = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_actionViewClass = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_checkable = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_checked = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_enabled = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_icon = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_id = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_menuCategory = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_onClick = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_title = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_android_visible = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuItem_showAsAction = global::QuizAmoroso.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView = global::QuizAmoroso.Droid.Resource.Styleable.MenuView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_headerBackground = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_itemBackground = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_verticalDivider = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.MenuView_subMenuArrow = global::QuizAmoroso.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_android_background = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_android_maxWidth = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_elevation = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_headerLayout = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemBackground = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemIconTint = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_itemTextColor = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.NavigationView_menu = global::QuizAmoroso.Droid.Resource.Styleable.NavigationView_menu;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow = global::QuizAmoroso.Droid.Resource.Styleable.PopupWindow;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::QuizAmoroso.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::QuizAmoroso.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::QuizAmoroso.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindowBackgroundState = global::QuizAmoroso.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::QuizAmoroso.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecycleListView = global::QuizAmoroso.Droid.Resource.Styleable.RecycleListView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::QuizAmoroso.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::QuizAmoroso.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_android_orientation = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_layoutManager = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_reverseLayout = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_spanCount = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::QuizAmoroso.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::QuizAmoroso.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::QuizAmoroso.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::QuizAmoroso.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::QuizAmoroso.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView = global::QuizAmoroso.Droid.Resource.Styleable.SearchView;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_focusable = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_imeOptions = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_inputType = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_android_maxWidth = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_closeIcon = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_commitIcon = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_defaultQueryHint = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_goIcon = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_layout = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_queryBackground = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_queryHint = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_searchHintIcon = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_searchIcon = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_submitBackground = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SearchView_voiceIcon = global::QuizAmoroso.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout = global::QuizAmoroso.Droid.Resource.Styleable.SnackbarLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::QuizAmoroso.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout_elevation = global::QuizAmoroso.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::QuizAmoroso.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner = global::QuizAmoroso.Droid.Resource.Styleable.Spinner;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::QuizAmoroso.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_entries = global::QuizAmoroso.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_popupBackground = global::QuizAmoroso.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_android_prompt = global::QuizAmoroso.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Spinner_popupTheme = global::QuizAmoroso.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_android_textOff = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_android_textOn = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_android_thumb = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_showText = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_splitTrack = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_switchPadding = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_thumbTint = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_track = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_trackTint = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::QuizAmoroso.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem = global::QuizAmoroso.Droid.Resource.Styleable.TabItem;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem_android_icon = global::QuizAmoroso.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem_android_layout = global::QuizAmoroso.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabItem_android_text = global::QuizAmoroso.Droid.Resource.Styleable.TabItem_android_text;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabBackground = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabContentStart = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabGravity = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabMinWidth = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabMode = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPadding = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TabLayout_tabTextColor = global::QuizAmoroso.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textColor = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textSize = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_textStyle = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_android_typeface = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextAppearance_textAllCaps = global::QuizAmoroso.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_android_hint = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::QuizAmoroso.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_android_gravity = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_android_minHeight = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_buttonGravity = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_collapseIcon = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetRight = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetStart = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_logo = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_logo;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_logoDescription = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_navigationIcon = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_popupTheme = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_subtitle = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_title = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_title;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMargin = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginStart = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMarginTop = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleMargins = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.Toolbar_titleTextColor = global::QuizAmoroso.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View = global::QuizAmoroso.Droid.Resource.Styleable.View;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_android_focusable = global::QuizAmoroso.Droid.Resource.Styleable.View_android_focusable;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_android_theme = global::QuizAmoroso.Droid.Resource.Styleable.View_android_theme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_paddingEnd = global::QuizAmoroso.Droid.Resource.Styleable.View_paddingEnd;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_paddingStart = global::QuizAmoroso.Droid.Resource.Styleable.View_paddingStart;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.View_theme = global::QuizAmoroso.Droid.Resource.Styleable.View_theme;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper = global::QuizAmoroso.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::QuizAmoroso.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::QuizAmoroso.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::QuizAmoroso.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_id = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::QuizAmoroso.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2336,758 +4447,776 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f020057
 			public const int avd_hide_password = 2130837591;
 			
-			// aapt resource value: 0x7f02014d
-			public const int avd_hide_password_1 = 2130837837;
+			// aapt resource value: 0x7f020153
+			public const int avd_hide_password_1 = 2130837843;
 			
-			// aapt resource value: 0x7f02014e
-			public const int avd_hide_password_2 = 2130837838;
+			// aapt resource value: 0x7f020154
+			public const int avd_hide_password_2 = 2130837844;
 			
-			// aapt resource value: 0x7f02014f
-			public const int avd_hide_password_3 = 2130837839;
+			// aapt resource value: 0x7f020155
+			public const int avd_hide_password_3 = 2130837845;
 			
 			// aapt resource value: 0x7f020058
 			public const int avd_show_password = 2130837592;
 			
-			// aapt resource value: 0x7f020150
-			public const int avd_show_password_1 = 2130837840;
+			// aapt resource value: 0x7f020156
+			public const int avd_show_password_1 = 2130837846;
 			
-			// aapt resource value: 0x7f020151
-			public const int avd_show_password_2 = 2130837841;
+			// aapt resource value: 0x7f020157
+			public const int avd_show_password_2 = 2130837847;
 			
-			// aapt resource value: 0x7f020152
-			public const int avd_show_password_3 = 2130837842;
+			// aapt resource value: 0x7f020158
+			public const int avd_show_password_3 = 2130837848;
 			
 			// aapt resource value: 0x7f020059
-			public const int button_apprendimento = 2130837593;
+			public const int btn_Pause = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int button_dispensa = 2130837594;
+			public const int btn_PauseDisabled = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int button_simulazione = 2130837595;
+			public const int btn_Play = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int button_simulazioneassistita = 2130837596;
+			public const int btn_PlayDisabled = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int cellulare = 2130837597;
+			public const int btn_Stop = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int cerchietto_ak12 = 2130837598;
+			public const int btn_StopDisabled = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int common_full_open_on_phone = 2130837599;
+			public const int button_apprendimento = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int common_google_signin_btn_icon_dark = 2130837600;
+			public const int button_dispensa = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int common_google_signin_btn_icon_dark_focused = 2130837601;
+			public const int button_simulazione = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int common_google_signin_btn_icon_dark_normal = 2130837602;
+			public const int button_simulazioneassistita = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int common_google_signin_btn_icon_dark_normal_background = 2130837603;
+			public const int cellulare = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int common_google_signin_btn_icon_disabled = 2130837604;
+			public const int cerchietto_ak12 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int common_google_signin_btn_icon_light = 2130837605;
+			public const int common_full_open_on_phone = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int common_google_signin_btn_icon_light_focused = 2130837606;
+			public const int common_google_signin_btn_icon_dark = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int common_google_signin_btn_icon_light_normal = 2130837607;
+			public const int common_google_signin_btn_icon_dark_focused = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int common_google_signin_btn_icon_light_normal_background = 2130837608;
+			public const int common_google_signin_btn_icon_dark_normal = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int common_google_signin_btn_text_dark = 2130837609;
+			public const int common_google_signin_btn_icon_dark_normal_background = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int common_google_signin_btn_text_dark_focused = 2130837610;
+			public const int common_google_signin_btn_icon_disabled = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int common_google_signin_btn_text_dark_normal = 2130837611;
+			public const int common_google_signin_btn_icon_light = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int common_google_signin_btn_text_dark_normal_background = 2130837612;
+			public const int common_google_signin_btn_icon_light_focused = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int common_google_signin_btn_text_disabled = 2130837613;
+			public const int common_google_signin_btn_icon_light_normal = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int common_google_signin_btn_text_light = 2130837614;
+			public const int common_google_signin_btn_icon_light_normal_background = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int common_google_signin_btn_text_light_focused = 2130837615;
+			public const int common_google_signin_btn_text_dark = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int common_google_signin_btn_text_light_normal = 2130837616;
+			public const int common_google_signin_btn_text_dark_focused = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int common_google_signin_btn_text_light_normal_background = 2130837617;
+			public const int common_google_signin_btn_text_dark_normal = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int cronologia = 2130837618;
+			public const int common_google_signin_btn_text_dark_normal_background = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int design_bottom_navigation_item_background = 2130837619;
+			public const int common_google_signin_btn_text_disabled = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int design_fab_background = 2130837620;
+			public const int common_google_signin_btn_text_light = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int design_ic_visibility = 2130837621;
+			public const int common_google_signin_btn_text_light_focused = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int design_ic_visibility_off = 2130837622;
+			public const int common_google_signin_btn_text_light_normal = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int design_password_eye = 2130837623;
+			public const int common_google_signin_btn_text_light_normal_background = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int design_snackbar_background = 2130837624;
+			public const int cronologia = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int email = 2130837625;
+			public const int design_bottom_navigation_item_background = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int facebookIcon = 2130837626;
+			public const int design_fab_background = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int frecceT = 2130837627;
+			public const int design_ic_visibility = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int googleg_disabled_color_18 = 2130837628;
+			public const int design_ic_visibility_off = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int googleg_standard_color_18 = 2130837629;
+			public const int design_password_eye = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_arrow_back_white_48dp = 2130837630;
+			public const int design_snackbar_background = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_audiotrack_dark = 2130837631;
+			public const int email = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_audiotrack_light = 2130837632;
+			public const int facebookIcon = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_dialog_close_dark = 2130837633;
+			public const int frecceT = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_dialog_close_light = 2130837634;
+			public const int googleg_disabled_color_18 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_collapse_00 = 2130837635;
+			public const int googleg_standard_color_18 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_collapse_01 = 2130837636;
+			public const int ic_arrow_back_white_48dp = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_collapse_02 = 2130837637;
+			public const int ic_audiotrack_dark = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_collapse_03 = 2130837638;
+			public const int ic_audiotrack_light = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_group_collapse_04 = 2130837639;
+			public const int ic_dialog_close_dark = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_group_collapse_05 = 2130837640;
+			public const int ic_dialog_close_light = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_group_collapse_06 = 2130837641;
+			public const int ic_group_collapse_00 = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_group_collapse_07 = 2130837642;
+			public const int ic_group_collapse_01 = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_group_collapse_08 = 2130837643;
+			public const int ic_group_collapse_02 = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_group_collapse_09 = 2130837644;
+			public const int ic_group_collapse_03 = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_group_collapse_10 = 2130837645;
+			public const int ic_group_collapse_04 = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_group_collapse_11 = 2130837646;
+			public const int ic_group_collapse_05 = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_group_collapse_12 = 2130837647;
+			public const int ic_group_collapse_06 = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_group_collapse_13 = 2130837648;
+			public const int ic_group_collapse_07 = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_group_collapse_14 = 2130837649;
+			public const int ic_group_collapse_08 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_group_collapse_15 = 2130837650;
+			public const int ic_group_collapse_09 = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_group_expand_00 = 2130837651;
+			public const int ic_group_collapse_10 = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_group_expand_01 = 2130837652;
+			public const int ic_group_collapse_11 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_group_expand_02 = 2130837653;
+			public const int ic_group_collapse_12 = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_group_expand_03 = 2130837654;
+			public const int ic_group_collapse_13 = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_group_expand_04 = 2130837655;
+			public const int ic_group_collapse_14 = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_group_expand_05 = 2130837656;
+			public const int ic_group_collapse_15 = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_group_expand_06 = 2130837657;
+			public const int ic_group_expand_00 = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_group_expand_07 = 2130837658;
+			public const int ic_group_expand_01 = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_group_expand_08 = 2130837659;
+			public const int ic_group_expand_02 = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_group_expand_09 = 2130837660;
+			public const int ic_group_expand_03 = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_group_expand_10 = 2130837661;
+			public const int ic_group_expand_04 = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_group_expand_11 = 2130837662;
+			public const int ic_group_expand_05 = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_group_expand_12 = 2130837663;
+			public const int ic_group_expand_06 = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_group_expand_13 = 2130837664;
+			public const int ic_group_expand_07 = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_group_expand_14 = 2130837665;
+			public const int ic_group_expand_08 = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_group_expand_15 = 2130837666;
+			public const int ic_group_expand_09 = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_info_outline = 2130837667;
+			public const int ic_group_expand_10 = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_info_outline_2x = 2130837668;
+			public const int ic_group_expand_11 = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_info_outline_3x = 2130837669;
+			public const int ic_group_expand_12 = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_library_books = 2130837670;
+			public const int ic_group_expand_13 = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_library_books_2x = 2130837671;
+			public const int ic_group_expand_14 = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_library_books_3x = 2130837672;
+			public const int ic_group_expand_15 = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_media_pause_dark = 2130837673;
+			public const int ic_info_outline = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_media_pause_light = 2130837674;
+			public const int ic_info_outline_2x = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_media_play_dark = 2130837675;
+			public const int ic_info_outline_3x = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_media_play_light = 2130837676;
+			public const int ic_library_books = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_media_stop_dark = 2130837677;
+			public const int ic_library_books_2x = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_media_stop_light = 2130837678;
+			public const int ic_library_books_3x = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_00_dark = 2130837679;
+			public const int ic_media_pause_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_00_light = 2130837680;
+			public const int ic_media_pause_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_01_dark = 2130837681;
+			public const int ic_media_play_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_01_light = 2130837682;
+			public const int ic_media_play_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_02_dark = 2130837683;
+			public const int ic_media_stop_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_02_light = 2130837684;
+			public const int ic_media_stop_light = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_03_dark = 2130837685;
+			public const int ic_mr_button_connected_00_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_03_light = 2130837686;
+			public const int ic_mr_button_connected_00_light = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_04_dark = 2130837687;
+			public const int ic_mr_button_connected_01_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_04_light = 2130837688;
+			public const int ic_mr_button_connected_01_light = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_05_dark = 2130837689;
+			public const int ic_mr_button_connected_02_dark = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_05_light = 2130837690;
+			public const int ic_mr_button_connected_02_light = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_06_dark = 2130837691;
+			public const int ic_mr_button_connected_03_dark = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_06_light = 2130837692;
+			public const int ic_mr_button_connected_03_light = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_07_dark = 2130837693;
+			public const int ic_mr_button_connected_04_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_07_light = 2130837694;
+			public const int ic_mr_button_connected_04_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_08_dark = 2130837695;
+			public const int ic_mr_button_connected_05_dark = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_08_light = 2130837696;
+			public const int ic_mr_button_connected_05_light = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_09_dark = 2130837697;
+			public const int ic_mr_button_connected_06_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_09_light = 2130837698;
+			public const int ic_mr_button_connected_06_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_10_dark = 2130837699;
+			public const int ic_mr_button_connected_07_dark = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_10_light = 2130837700;
+			public const int ic_mr_button_connected_07_light = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_11_dark = 2130837701;
+			public const int ic_mr_button_connected_08_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_11_light = 2130837702;
+			public const int ic_mr_button_connected_08_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_12_dark = 2130837703;
+			public const int ic_mr_button_connected_09_dark = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_12_light = 2130837704;
+			public const int ic_mr_button_connected_09_light = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_13_dark = 2130837705;
+			public const int ic_mr_button_connected_10_dark = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connected_13_light = 2130837706;
+			public const int ic_mr_button_connected_10_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connected_14_dark = 2130837707;
+			public const int ic_mr_button_connected_11_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connected_14_light = 2130837708;
+			public const int ic_mr_button_connected_11_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connected_15_dark = 2130837709;
+			public const int ic_mr_button_connected_12_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connected_15_light = 2130837710;
+			public const int ic_mr_button_connected_12_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connected_16_dark = 2130837711;
+			public const int ic_mr_button_connected_13_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connected_16_light = 2130837712;
+			public const int ic_mr_button_connected_13_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connected_17_dark = 2130837713;
+			public const int ic_mr_button_connected_14_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connected_17_light = 2130837714;
+			public const int ic_mr_button_connected_14_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connected_18_dark = 2130837715;
+			public const int ic_mr_button_connected_15_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connected_18_light = 2130837716;
+			public const int ic_mr_button_connected_15_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connected_19_dark = 2130837717;
+			public const int ic_mr_button_connected_16_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connected_19_light = 2130837718;
+			public const int ic_mr_button_connected_16_light = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connected_20_dark = 2130837719;
+			public const int ic_mr_button_connected_17_dark = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connected_20_light = 2130837720;
+			public const int ic_mr_button_connected_17_light = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connected_21_dark = 2130837721;
+			public const int ic_mr_button_connected_18_dark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connected_21_light = 2130837722;
+			public const int ic_mr_button_connected_18_light = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connected_22_dark = 2130837723;
+			public const int ic_mr_button_connected_19_dark = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connected_22_light = 2130837724;
+			public const int ic_mr_button_connected_19_light = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_00_dark = 2130837725;
+			public const int ic_mr_button_connected_20_dark = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_00_light = 2130837726;
+			public const int ic_mr_button_connected_20_light = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_01_dark = 2130837727;
+			public const int ic_mr_button_connected_21_dark = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_01_light = 2130837728;
+			public const int ic_mr_button_connected_21_light = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_02_dark = 2130837729;
+			public const int ic_mr_button_connected_22_dark = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_02_light = 2130837730;
+			public const int ic_mr_button_connected_22_light = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_03_dark = 2130837731;
+			public const int ic_mr_button_connecting_00_dark = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_03_light = 2130837732;
+			public const int ic_mr_button_connecting_00_light = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_04_dark = 2130837733;
+			public const int ic_mr_button_connecting_01_dark = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_04_light = 2130837734;
+			public const int ic_mr_button_connecting_01_light = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_05_dark = 2130837735;
+			public const int ic_mr_button_connecting_02_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_05_light = 2130837736;
+			public const int ic_mr_button_connecting_02_light = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_06_dark = 2130837737;
+			public const int ic_mr_button_connecting_03_dark = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_06_light = 2130837738;
+			public const int ic_mr_button_connecting_03_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_07_dark = 2130837739;
+			public const int ic_mr_button_connecting_04_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_07_light = 2130837740;
+			public const int ic_mr_button_connecting_04_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_08_dark = 2130837741;
+			public const int ic_mr_button_connecting_05_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_08_light = 2130837742;
+			public const int ic_mr_button_connecting_05_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_09_dark = 2130837743;
+			public const int ic_mr_button_connecting_06_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_09_light = 2130837744;
+			public const int ic_mr_button_connecting_06_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_10_dark = 2130837745;
+			public const int ic_mr_button_connecting_07_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_10_light = 2130837746;
+			public const int ic_mr_button_connecting_07_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_11_dark = 2130837747;
+			public const int ic_mr_button_connecting_08_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_11_light = 2130837748;
+			public const int ic_mr_button_connecting_08_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_12_dark = 2130837749;
+			public const int ic_mr_button_connecting_09_dark = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_12_light = 2130837750;
+			public const int ic_mr_button_connecting_09_light = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_13_dark = 2130837751;
+			public const int ic_mr_button_connecting_10_dark = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_13_light = 2130837752;
+			public const int ic_mr_button_connecting_10_light = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_14_dark = 2130837753;
+			public const int ic_mr_button_connecting_11_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_14_light = 2130837754;
+			public const int ic_mr_button_connecting_11_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_15_dark = 2130837755;
+			public const int ic_mr_button_connecting_12_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_15_light = 2130837756;
+			public const int ic_mr_button_connecting_12_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_16_dark = 2130837757;
+			public const int ic_mr_button_connecting_13_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_16_light = 2130837758;
+			public const int ic_mr_button_connecting_13_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_17_dark = 2130837759;
+			public const int ic_mr_button_connecting_14_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_17_light = 2130837760;
+			public const int ic_mr_button_connecting_14_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_18_dark = 2130837761;
+			public const int ic_mr_button_connecting_15_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_18_light = 2130837762;
+			public const int ic_mr_button_connecting_15_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_19_dark = 2130837763;
+			public const int ic_mr_button_connecting_16_dark = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_19_light = 2130837764;
+			public const int ic_mr_button_connecting_16_light = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_20_dark = 2130837765;
+			public const int ic_mr_button_connecting_17_dark = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_20_light = 2130837766;
+			public const int ic_mr_button_connecting_17_light = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_21_dark = 2130837767;
+			public const int ic_mr_button_connecting_18_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_connecting_21_light = 2130837768;
+			public const int ic_mr_button_connecting_18_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_connecting_22_dark = 2130837769;
+			public const int ic_mr_button_connecting_19_dark = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_connecting_22_light = 2130837770;
+			public const int ic_mr_button_connecting_19_light = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_disabled_dark = 2130837771;
+			public const int ic_mr_button_connecting_20_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_disabled_light = 2130837772;
+			public const int ic_mr_button_connecting_20_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_mr_button_disconnected_dark = 2130837773;
+			public const int ic_mr_button_connecting_21_dark = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_mr_button_disconnected_light = 2130837774;
+			public const int ic_mr_button_connecting_21_light = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_mr_button_grey = 2130837775;
+			public const int ic_mr_button_connecting_22_dark = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_password = 2130837776;
+			public const int ic_mr_button_connecting_22_light = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_trending_up = 2130837777;
+			public const int ic_mr_button_disabled_dark = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_trending_up_2x = 2130837778;
+			public const int ic_mr_button_disabled_light = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_trending_up_3x = 2130837779;
+			public const int ic_mr_button_disconnected_dark = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_user = 2130837780;
+			public const int ic_mr_button_disconnected_light = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_vol_type_speaker_dark = 2130837781;
+			public const int ic_mr_button_grey = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_vol_type_speaker_group_dark = 2130837782;
+			public const int ic_password = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_vol_type_speaker_group_light = 2130837783;
+			public const int ic_trending_up = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_vol_type_speaker_light = 2130837784;
+			public const int ic_trending_up_2x = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_vol_type_tv_dark = 2130837785;
+			public const int ic_trending_up_3x = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_vol_type_tv_light = 2130837786;
+			public const int ic_user = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int icon = 2130837787;
+			public const int ic_vol_type_speaker_dark = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int icona_non_risposta = 2130837788;
+			public const int ic_vol_type_speaker_group_dark = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int icona_risposta_errata = 2130837789;
+			public const int ic_vol_type_speaker_group_light = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int icona_risposta_esatta = 2130837790;
+			public const int ic_vol_type_speaker_light = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int icona_tempo_trascorso = 2130837791;
+			public const int ic_vol_type_tv_dark = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int left = 2130837792;
+			public const int ic_vol_type_tv_light = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int LogoAmorosoSenzaSfondo = 2130837793;
+			public const int icon = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int luogo = 2130837794;
+			public const int icona_non_risposta = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_button_connected_dark = 2130837795;
+			public const int icona_risposta_errata = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_button_connected_light = 2130837796;
+			public const int icona_risposta_esatta = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_connecting_dark = 2130837797;
+			public const int icona_tempo_trascorso = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_button_connecting_light = 2130837798;
+			public const int left = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_button_dark = 2130837799;
+			public const int LogoAmorosoSenzaSfondo = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_button_light = 2130837800;
+			public const int luogo = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_dialog_close_dark = 2130837801;
+			public const int mr_button_connected_dark = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_dialog_close_light = 2130837802;
+			public const int mr_button_connected_light = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_dialog_material_background_dark = 2130837803;
+			public const int mr_button_connecting_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_dialog_material_background_light = 2130837804;
+			public const int mr_button_connecting_light = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_group_collapse = 2130837805;
+			public const int mr_button_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_group_expand = 2130837806;
+			public const int mr_button_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_media_pause_dark = 2130837807;
+			public const int mr_dialog_close_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_media_pause_light = 2130837808;
+			public const int mr_dialog_close_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_play_dark = 2130837809;
+			public const int mr_dialog_material_background_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_media_play_light = 2130837810;
+			public const int mr_dialog_material_background_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_media_stop_dark = 2130837811;
+			public const int mr_group_collapse = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mr_media_stop_light = 2130837812;
+			public const int mr_group_expand = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mr_vol_type_audiotrack_dark = 2130837813;
+			public const int mr_media_pause_dark = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int mr_vol_type_audiotrack_light = 2130837814;
+			public const int mr_media_pause_light = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int navigation_empty_icon = 2130837815;
+			public const int mr_media_play_dark = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notification_action_background = 2130837816;
+			public const int mr_media_play_light = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int notification_bg = 2130837817;
+			public const int mr_media_stop_dark = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int notification_bg_low = 2130837818;
+			public const int mr_media_stop_light = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int notification_bg_low_normal = 2130837819;
+			public const int mr_vol_type_audiotrack_dark = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_bg_low_pressed = 2130837820;
+			public const int mr_vol_type_audiotrack_light = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg_normal = 2130837821;
+			public const int navigation_empty_icon = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int notification_bg_normal_pressed = 2130837822;
+			public const int notification_action_background = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int notification_icon_background = 2130837823;
-			
-			// aapt resource value: 0x7f02014b
-			public const int notification_template_icon_bg = 2130837835;
-			
-			// aapt resource value: 0x7f02014c
-			public const int notification_template_icon_low_bg = 2130837836;
+			public const int notification_bg = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int notification_tile_bg = 2130837824;
+			public const int notification_bg_low = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int notify_panel_notification_icon_bg = 2130837825;
+			public const int notification_bg_low_normal = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int quizVeloce = 2130837826;
+			public const int notification_bg_low_pressed = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int right = 2130837827;
+			public const int notification_bg_normal = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int screen = 2130837828;
+			public const int notification_bg_normal_pressed = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int shwpssw = 2130837829;
+			public const int notification_icon_background = 2130837829;
+			
+			// aapt resource value: 0x7f020151
+			public const int notification_template_icon_bg = 2130837841;
+			
+			// aapt resource value: 0x7f020152
+			public const int notification_template_icon_low_bg = 2130837842;
 			
 			// aapt resource value: 0x7f020146
-			public const int shwpsswblue = 2130837830;
+			public const int notification_tile_bg = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int shwpsswblueSegnato = 2130837831;
+			public const int notify_panel_notification_icon_bg = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int sitoWeb = 2130837832;
+			public const int quizVeloce = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int splash_screen = 2130837833;
+			public const int right = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int telefonoFisso = 2130837834;
+			public const int screen = 2130837834;
+			
+			// aapt resource value: 0x7f02014b
+			public const int shwpssw = 2130837835;
+			
+			// aapt resource value: 0x7f02014c
+			public const int shwpsswblue = 2130837836;
+			
+			// aapt resource value: 0x7f02014d
+			public const int shwpsswblueSegnato = 2130837837;
+			
+			// aapt resource value: 0x7f02014e
+			public const int sitoWeb = 2130837838;
+			
+			// aapt resource value: 0x7f02014f
+			public const int splash_screen = 2130837839;
+			
+			// aapt resource value: 0x7f020150
+			public const int telefonoFisso = 2130837840;
 			
 			static Drawable()
 			{
@@ -3978,6 +6107,12 @@ namespace QuizAmoroso.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f080050
+			public const int ApplicationName = 2131230800;
+			
+			// aapt resource value: 0x7f08004f
+			public const int Hello = 2131230799;
 			
 			// aapt resource value: 0x7f080026
 			public const int abc_action_bar_home_description = 2131230758;
