@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuizAmoroso.Login"
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
+             xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="#37637F"
+             BackgroundColor="#072034"
               >
 
     
@@ -14,12 +15,14 @@
 
                 <StackLayout Spacing="20"
                              Orientation="Vertical">
-                    <Image Source="LogoAmorosoSenzaSfondo.png"
-                           WidthRequest="300"
-                           HeightRequest="200"
-                           VerticalOptions="Center"
-                           HorizontalOptions="CenterAndExpand">
-                    </Image>
+                    <abstractions:CircleImage Source="amorosoLogo.png"
+                                              HeightRequest="200"        
+                                              WidthRequest="300"
+                                              Aspect="AspectFit" 
+                                              VerticalOptions="Center" 
+                                              HorizontalOptions="CenterAndExpand"
+                                              Margin="4">
+                    </abstractions:CircleImage>
                 </StackLayout >
                 
                 <StackLayout Padding="10">
@@ -33,15 +36,13 @@
                                HorizontalOptions="Start"
                                Source="ic_user.png">
                         </Image>
-                        
+
                         <xfx:XfxEntry HeightRequest="50"
                                       x:Name="inputUsername"
                                       Placeholder="Inserisci E-mail"
                                       PlaceholderColor="White"
+                                      TextColor="White"
                                       HorizontalOptions="FillAndExpand">
-                            <Entry.TextColor>
-                                <OnPlatform x:TypeArguments="Color" WinPhone="#f30100" Android="White" iOS="White"/>
-                            </Entry.TextColor>
                         </xfx:XfxEntry>
                     </StackLayout>
 
@@ -57,12 +58,11 @@
                         <xfx:XfxEntry x:Name="inputPassword"
                                       HeightRequest="50"
                                       Placeholder="Password"
-                                      PlaceholderColor="LightGray"
+                                      PlaceholderColor="White"
                                       IsPassword="True"
+                                      TextColor="White"
                                       HorizontalOptions="FillAndExpand">
-                            <Entry.TextColor>
-                                <OnPlatform x:TypeArguments="Color" WinPhone="#f30100" Android="#0069c0" iOS="#0069c0"/>
-                            </Entry.TextColor>
+                            
                         </xfx:XfxEntry>
                         
                         <Image IsVisible="True" 
@@ -83,21 +83,26 @@
                 <Button x:Name="loginButton"
                         Text="Entra"
                         BorderRadius="25"
+                        BackgroundColor="#5294BF"
                         WidthRequest="100"
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="Center"                  
                         Clicked="loginButton_Clicked"
+                        TextColor="White"
                         Style="{StaticResource buttonStyle}">
                 </Button>
                 <Button
                     Text="Registrati"
                     Style="{StaticResource buttonStyle}"
                     Clicked="Button_Clicked"
+                    BackgroundColor="#5294BF"
+                    TextColor="White"
                 />
 
                 <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3"
-                                   IsVisible="False"/>
+                                   IsVisible="False"
+                                   />
                 
            
 
