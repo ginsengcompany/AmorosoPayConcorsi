@@ -81,6 +81,8 @@ namespace QuizAmoroso.DataModel
            "http://192.168.125.97/servizioPayApp/cronologiaAcquisti.php";
         public const string concorsiDisponibili =
            "http://192.168.125.97/servizioPayApp/concorsiAcquisti.php";
+        public const string MaterieDisponibili =
+   "http://192.168.125.97/servizioPayApp/mmterieAcquisti.php";
         public const string concorsi =
             "http://192.168.125.97/servizioPayApp/concorsi.php";
         public const string materieconcorso =

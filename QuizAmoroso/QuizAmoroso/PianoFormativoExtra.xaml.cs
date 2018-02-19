@@ -1,41 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.Net.Http;
-using Newtonsoft.Json;
-using QuizAmoroso.DataModel;
+﻿using Newtonsoft.Json;
 using Plugin.InAppBilling;
 using Plugin.InAppBilling.Abstractions;
-using System.Net.Http.Headers;
+using QuizAmoroso.DataModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 
-/*
- * @Author: Alessio Calabrese
- * 
- * Questa classe effettua la connessione al database inviando l'username dell'utente e
- * restituendo i piani formativi associati a quest'ultimo. Successivamente è possibile 
- * cliccare su di essi tramite listview. Facendo questo il piano formativo verrà inviato
- * al server e si aprirà la pagina setDomande
- * */
-
-
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace QuizAmoroso
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PianoFormativo : ContentPage
+    public partial class PianoFormativoExtra : ContentPage
     {
-
         private List<ConcorsiAquistabili> ListaConcorsi = new List<ConcorsiAquistabili>();
         private string risultatojson;
         private bool flagConnessione = false;
 
-
-        public PianoFormativo()
+        public PianoFormativoExtra(ConcorsiAquistabili i)
         {
             InitializeComponent();
         }
+
 
         /*
          * Questo metodo invia l'username dell'utente e vengono restituiti in formato json i piani formativi a lui associati
@@ -72,7 +62,7 @@ namespace QuizAmoroso
                 var values = new List<KeyValuePair<string, string>>();
                 values.Add(new KeyValuePair<string, string>("username", username));
                 var content = new FormUrlEncodedContent(values);
-                var result = await client.PostAsync(Costanti.concorsiDisponibili, content);
+                var result = await client.PostAsync(Costanti.MaterieDisponibili, content);
                 risultatojson = await result.Content.ReadAsStringAsync();
                 if (risultatojson == "Impossibile connettersi al servizio")
                 {
@@ -235,6 +225,5 @@ namespace QuizAmoroso
                 await invioDatiPagamento(productId, purchaseId, token, state, codiceControllo, data);
             }
         }
-
     }
 }
