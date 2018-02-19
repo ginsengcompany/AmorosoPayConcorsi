@@ -122,11 +122,8 @@ namespace QuizAmoroso
                 };
                 if (i.state.Equals("Purchased"))
                 {
-                    acquista.Text = "extra";
-                    acquista.Clicked += async delegate (object sender, EventArgs e)
-                    {
-                        await Navigation.PushAsync(new PianoFormativoExtra(i));
-                    };
+                    acquista.Text = "Acquistato";
+                    acquista.IsEnabled = false;
                 }
                 else
                 {
