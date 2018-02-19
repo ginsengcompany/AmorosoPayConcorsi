@@ -1,5 +1,4 @@
-﻿using Android.App;
-using Android.Content.PM;
+﻿
 using FormsVideoLibrary;
 using Plugin.MediaManager;
 using Plugin.MediaManager.Abstractions;
@@ -16,7 +15,6 @@ using Xamarin.Forms.Xaml;
 namespace QuizAmoroso
 {
 
-    [Activity(ScreenOrientation = ScreenOrientation.Landscape, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VideoLezioni : ContentPage
     {
