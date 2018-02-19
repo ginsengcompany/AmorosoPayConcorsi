@@ -4,11 +4,9 @@
              x:Class="QuizAmoroso.Login"
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
              NavigationPage.HasNavigationBar="False"
-             BackgroundImage="frecceT.png" >
+             BackgroundColor="#37637F"
+              >
 
-    <ContentPage.BackgroundColor>
-        <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="White" iOS="LightCyan"/>
-    </ContentPage.BackgroundColor>
     
     <ContentPage.Content>
         <ScrollView>
@@ -39,10 +37,10 @@
                         <xfx:XfxEntry HeightRequest="50"
                                       x:Name="inputUsername"
                                       Placeholder="Inserisci E-mail"
-                                      PlaceholderColor="LightGray"
+                                      PlaceholderColor="White"
                                       HorizontalOptions="FillAndExpand">
                             <Entry.TextColor>
-                                <OnPlatform x:TypeArguments="Color" WinPhone="#f30100" Android="#0069c0" iOS="#0069c0"/>
+                                <OnPlatform x:TypeArguments="Color" WinPhone="#f30100" Android="White" iOS="White"/>
                             </Entry.TextColor>
                         </xfx:XfxEntry>
                     </StackLayout>
@@ -101,16 +99,7 @@
                                    Color="#2196f3"
                                    IsVisible="False"/>
                 
-                <StackLayout VerticalOptions="EndAndExpand">
-
-                    <Image x:Name="ImmagineAK12Login"
-                           Source="ak12_senza_sfondo.png"
-                           WidthRequest="90"
-                           HeightRequest="50"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center"/>
-
-                </StackLayout>
+           
 
             </StackLayout>
         </ScrollView>

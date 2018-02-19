@@ -379,6 +379,7 @@
     <AndroidResource Include="Resources\drawable\btn_StopDisabled.png" />
     <AndroidResource Include="Resources\drawable\btn_PauseDisabled.png" />
     <AndroidResource Include="Resources\drawable\btn_Pause.png" />
+    <AndroidResource Include="Resources\drawable\carabinieri.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>

@@ -4,12 +4,8 @@
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
              x:Class="QuizAmoroso.QuizVeloce"
              Title="SpeedQuiz" 
-             Icon="quizVeloce.png"
              BackgroundColor="White">
 
-    <ContentPage.BackgroundColor>
-        <OnPlatform x:TypeArguments="Color" iOS="LightCyan"/>
-    </ContentPage.BackgroundColor>
 
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
@@ -25,7 +21,7 @@
                            TextColor="#0069c0"/>
                     <Picker x:Name="picker_selezioneConcorso" 
                             Title="Seleziona Concorso"
-                            TextColor="#6ec6ff"
+                            TextColor="#0069c0"
                             SelectedIndexChanged="picker_selezioneConcorso_SelectedIndexChanged">
                     </Picker>
 
@@ -35,7 +31,7 @@
                            IsVisible="False"/>
                     <Picker x:Name="picker_selezioneMateria"
                             Title="Seleziona Materia"
-                            TextColor="#6ec6ff"
+                            TextColor="#0069c0"
                             SelectedIndexChanged="picker_selezioneMateria_SelectedIndexChanged"
                             IsVisible="False">
                     </Picker>
@@ -46,7 +42,7 @@
                            IsVisible="False"/>
                     <Picker x:Name="picker_selezioneModalita" 
                             Title="Seleziona Modalità" 
-                            TextColor="#6ec6ff"
+                            TextColor="#0069c0"
                             SelectedIndexChanged="picker_selezioneModalita_SelectedIndexChanged"
                             IsVisible="False">
                     </Picker>
@@ -70,7 +66,7 @@
                                 VerticalOptions="Center"
                                 Placeholder="Inserisci"
                                 PlaceholderColor="LightGray"
-                                TextColor="#6ec6ff"
+                                TextColor="#0069c0"
                                 HorizontalTextAlignment="Center"
                                 WidthRequest="80" 
                                 Keyboard="Numeric" >
@@ -140,7 +136,7 @@
                     <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
                     <Frame>
                         <Frame.BackgroundColor>
-                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#2196f3" iOS="#2196f3"/>
+                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#072034" iOS="#072034"/>
                         </Frame.BackgroundColor>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal">

@@ -4,7 +4,6 @@
              xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              x:Class="QuizAmoroso.Info"
              Title="Info"
-             Icon="ic_info_outline"
              BackgroundColor="White"
              NavigationPage.HasNavigationBar="False">
 
@@ -16,7 +15,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <StackLayout BackgroundColor="#2196f3">
+                <StackLayout BackgroundColor="#072034">
                     <StackLayout  HorizontalOptions="StartAndExpand" >
                         
                         <StackLayout Orientation="Horizontal">
@@ -106,7 +105,7 @@
                     <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
                     <Frame>
                         <Frame.BackgroundColor>
-                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#2196f3" iOS="#2196f3"/>
+                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#072034" iOS="#072034"/>
                         </Frame.BackgroundColor>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal">

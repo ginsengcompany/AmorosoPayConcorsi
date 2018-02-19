@@ -10,7 +10,7 @@
     </ContentPage.Padding>
 
     <ContentPage.BackgroundColor>
-        <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="LightCyan" iOS="LightCyan"/>
+        <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#37637F" iOS="#37637F"/>
     </ContentPage.BackgroundColor>
 
     <ContentPage.Content>
@@ -19,7 +19,7 @@
                 <StackLayout VerticalOptions="Start" x:Name="LayoutPrincipalePaginaQuizVeloceCasuale">
                     <Frame>
                         <Frame.BackgroundColor>
-                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#2196f3" iOS="#2196f3"/>
+                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#37637F" iOS="#37637F"/>
                         </Frame.BackgroundColor>
                         <StackLayout>
                             <StackLayout Orientation="Horizontal">
@@ -146,7 +146,7 @@
                     <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
                     <Frame>
                         <Frame.BackgroundColor>
-                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#2196f3" iOS="#2196f3"/>
+                            <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#37637F" iOS="#37637F"/>
                         </Frame.BackgroundColor>
                         <StackLayout Orientation="Horizontal">
                             <Label x:Name="ContatoreDomande"

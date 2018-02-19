@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -74,6 +75,7 @@ namespace QuizAmoroso
                 var content = new FormUrlEncodedContent(values);
                 var result = await client.PostAsync(Costanti.concorsiDisponibili, content);
                 risultatojson = await result.Content.ReadAsStringAsync();
+                
                 if (risultatojson == "Impossibile connettersi al servizio")
                 {
                     flagConnessione = true;
@@ -115,23 +117,31 @@ namespace QuizAmoroso
                 DettagliConcorso.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
                 DettagliConcorso.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-                DettagliConcorso.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                DettagliConcorso.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 DettagliConcorso.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
-                StackLayout prova = new StackLayout//riga1
+                DettagliConcorso.ColumnSpacing = 0;
+
+                
+
+                var stackDescrizione = new StackLayout
                 {
-                    Orientation = StackOrientation.Vertical,
+                 HorizontalOptions = LayoutOptions.Center
+                };
+                var stackTitolo = new StackLayout
+                {
+                    BackgroundColor = Color.FromHex("#37637F"),
                     VerticalOptions = LayoutOptions.Center
                 };
-                StackLayout provabtn = new StackLayout//Acquista
+                var stackPrezzo= new StackLayout
                 {
-                    Orientation = StackOrientation.Vertical,
+                    BackgroundColor = Color.FromHex("#37637F"),
                     VerticalOptions = LayoutOptions.Center
                 };
 
                 Image logoConcorso = new Image
                 {
-                    Source = "btn_Pause.png",
+                    Source = "carabinieri.png",
                     WidthRequest = 50
                 };
                 Label titolo = new Label
@@ -139,25 +149,30 @@ namespace QuizAmoroso
                     FontAttributes = FontAttributes.Bold,
                     HorizontalOptions = LayoutOptions.Center,
                     HorizontalTextAlignment = TextAlignment.Center,
+                    TextColor = Color.White,
                     FontSize = 20
                 };
                 Label descrizione = new Label
                 {
-                    FontAttributes = FontAttributes.Bold,
                     HorizontalOptions = LayoutOptions.Center,
                     HorizontalTextAlignment = TextAlignment.Center,
-                    FontSize = 15
+                    FontSize = 20
                 };
                 Label prezzo = new Label
                 {
                     FontAttributes = FontAttributes.Bold,
                     HorizontalOptions = LayoutOptions.Center,
                     HorizontalTextAlignment = TextAlignment.Center,
-                    FontSize = 15
+                    VerticalOptions = LayoutOptions.Center,
+                    TextColor = Color.White,
+                    FontSize = 20
                 };
                 Button acquista = new Button
                 {
-                    Text = ""
+                    Text = "",
+                    BackgroundColor = Color.FromHex("#37637F"),
+                    TextColor = Color.White
+
                 };
                 if (i.state.Equals("Purchased"))
                 {
@@ -219,11 +234,15 @@ namespace QuizAmoroso
                 titolo.Text = i.Titolo;
                 descrizione.Text = i.Descrizione;
                 prezzo.Text = i.Prezzo + "€";
-
-                DettagliConcorso.Children.Add(titolo, 0, 0);
-                Grid.SetColumnSpan(titolo, 2);
-                DettagliConcorso.Children.Add(descrizione,1,1);
-                DettagliConcorso.Children.Add(prezzo,2,0);
+                logoConcorso.Source= Xamarin.Forms.ImageSource.FromStream(
+                    () => new MemoryStream(Convert.FromBase64String(i.logo)));
+                stackDescrizione.Children.Add(descrizione);
+                stackTitolo.Children.Add(titolo);
+                stackPrezzo.Children.Add(prezzo);
+                DettagliConcorso.Children.Add(stackTitolo, 0, 0);
+                Grid.SetColumnSpan(stackTitolo, 2);
+                DettagliConcorso.Children.Add(stackDescrizione,1,1);
+                DettagliConcorso.Children.Add(stackPrezzo,2,0);
                 DettagliConcorso.Children.Add(acquista,2,1);
                 DettagliConcorso.Children.Add(logoConcorso,0,1);
 
