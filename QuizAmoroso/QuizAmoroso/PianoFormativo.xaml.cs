@@ -98,34 +98,63 @@ namespace QuizAmoroso
          * */
         public async Task creaGriglia()
         {
-            Grid grigliaConcorsitemp = new Grid();
+            Grid grigliaConcorsi = new Grid();
 
-            grigliaConcorsitemp.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3, GridUnitType.Star) });
-            grigliaConcorsitemp.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            grigliaConcorsi.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
             List<ConcorsiAquistabili> ListaConcorsi = await ConnessioneConcorsi();
 
-            /*prova.Titolo = "Carabineri";
-            prova.Prezzo = "350€";
-            prova.Descrizione = "test1";
-            prova.ProductId = "test_pagamento.1";
-            ListaConcorsi.Add(prova);*/
             int righe = 0, colonne = 0;
             foreach (var i in ListaConcorsi)
             {
-                grigliaConcorsitemp.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                grigliaConcorsi.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
+                Grid DettagliConcorso = new Grid();
 
-                StackLayout prova = new StackLayout
+                DettagliConcorso.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                DettagliConcorso.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                DettagliConcorso.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+                DettagliConcorso.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                DettagliConcorso.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+
+                StackLayout prova = new StackLayout//riga1
                 {
-                    Orientation = StackOrientation.Vertical
+                    Orientation = StackOrientation.Vertical,
+                    VerticalOptions = LayoutOptions.Center
                 };
-                StackLayout provabtn = new StackLayout
+                StackLayout provabtn = new StackLayout//Acquista
                 {
-                    Orientation = StackOrientation.Vertical
+                    Orientation = StackOrientation.Vertical,
+                    VerticalOptions = LayoutOptions.Center
                 };
-                Label titolo = new Label();
-                Label descrizione = new Label();
-                Label prezzo = new Label();
+
+                Image logoConcorso = new Image
+                {
+                    Source = "btn_Pause.png",
+                    WidthRequest = 50
+                };
+                Label titolo = new Label
+                {
+                    FontAttributes = FontAttributes.Bold,
+                    HorizontalOptions = LayoutOptions.Center,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    FontSize = 20
+                };
+                Label descrizione = new Label
+                {
+                    FontAttributes = FontAttributes.Bold,
+                    HorizontalOptions = LayoutOptions.Center,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    FontSize = 15
+                };
+                Label prezzo = new Label
+                {
+                    FontAttributes = FontAttributes.Bold,
+                    HorizontalOptions = LayoutOptions.Center,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    FontSize = 15
+                };
                 Button acquista = new Button
                 {
                     Text = ""
@@ -191,21 +220,21 @@ namespace QuizAmoroso
                 descrizione.Text = i.Descrizione;
                 prezzo.Text = i.Prezzo + "€";
 
-                prova.Children.Add(titolo);
-                prova.Children.Add(descrizione);
-                prova.Children.Add(prezzo);
+                DettagliConcorso.Children.Add(titolo, 0, 0);
+                Grid.SetColumnSpan(titolo, 2);
+                DettagliConcorso.Children.Add(descrizione,1,1);
+                DettagliConcorso.Children.Add(prezzo,2,0);
+                DettagliConcorso.Children.Add(acquista,2,1);
+                DettagliConcorso.Children.Add(logoConcorso,0,1);
 
-
-                grigliaConcorsitemp.Children.Add(prova, colonne, righe);
-                provabtn.Children.Add(acquista);
                 colonne++;
-                grigliaConcorsitemp.Children.Add(provabtn, colonne, righe);
+                grigliaConcorsi.Children.Add(DettagliConcorso, 0, righe);
                 colonne = 0;
                 righe++;
 
             }
             steckGrigliaConcorsi.Children.Clear();
-            steckGrigliaConcorsi.Children.Add(grigliaConcorsitemp);
+            steckGrigliaConcorsi.Children.Add(grigliaConcorsi);
         }
 
         private async Task invioDatiPagamento(string productId, string purchaseId, string token, string state, string codiceControllo, string data)
