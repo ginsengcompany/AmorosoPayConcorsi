@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizAmoroso.ConcorsiESottocategorie"
+             Title="Concorsi">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
+                <ActivityIndicator x:Name="caricamentoPagina"
+                                   Color="#2196f3" 
+                                   HorizontalOptions="Center">
+                </ActivityIndicator>
+            </StackLayout>
+            <ScrollView>
+
+                <StackLayout x:Name="StackPrincipale"/>
+            </ScrollView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

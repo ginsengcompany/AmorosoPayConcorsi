@@ -508,16 +508,6 @@ namespace QuizAmoroso
             await Navigation.PushAsync(new MainPage());
         }
 
-        protected async override void OnDisappearing()
-        {
-            base.OnDisappearing();
-            switch (Device.RuntimePlatform)
-            {
-                case Device.UWP:
-                    if (flagInvioDatiStatistiche != true)
-                        await InvioDatiStatistiche();
-                    break;
-            }
-        }
+        
     }
 }

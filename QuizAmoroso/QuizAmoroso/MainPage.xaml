@@ -11,6 +11,8 @@
         <me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>
         <me:PianoFormativo NavigationPage.HasNavigationBar="False"></me:PianoFormativo>
         <me:ListaLezioniDisponibili NavigationPage.HasNavigationBar="False"></me:ListaLezioniDisponibili>
+        <me:ConcorsiESottocategorie NavigationPage.HasNavigationBar="False"></me:ConcorsiESottocategorie>
+
         <!--<me:Statistiche NavigationPage.HasNavigationBar="False"></me:Statistiche>-->
        
     </TabbedPage.Children>
