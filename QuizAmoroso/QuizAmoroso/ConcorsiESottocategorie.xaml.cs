@@ -69,15 +69,18 @@ namespace QuizAmoroso
                 grigliaConcorsiInDettaglio.RowDefinitions.Add(new RowDefinition { Height = new GridLength(0.3, GridUnitType.Auto) });
                 grigliaConcorsiInDettaglio.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 grigliaConcorsiInDettaglio.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                grigliaConcorsiInDettaglio.RowSpacing = 1;
+                grigliaConcorsiInDettaglio.BackgroundColor = Colori.TemaApp;
                 //connessione materie
                 var listaMaterieDelConcorsoSelezionato = await AttesaRicezioneMaterie(i.id_concorso);
                 Grid grigliaMaterie = await CreazioneGrigliaMaterie(listaMaterieDelConcorsoSelezionato);
                 grigliaMaterie.IsVisible = false;
+                grigliaMaterie.BackgroundColor = Colori.TemaApp;
 
                 var Titolo = new Label
                 {
                     Text = i.Corpo,
-                    FontSize = 30,
+                    FontSize = 35,
                     TextColor = Color.White,
                     VerticalOptions = LayoutOptions.Center,
                     VerticalTextAlignment = TextAlignment.Center,
@@ -88,7 +91,9 @@ namespace QuizAmoroso
                 var Descrizione = new Label
                 {
                     Text = i.codice_concorso,
-                    TextColor = Color.Black
+                    TextColor = Color.White,
+                    FontSize = 15,
+                    HorizontalOptions = LayoutOptions.Center
                 };
 
 
@@ -100,20 +105,19 @@ namespace QuizAmoroso
                         grigliaMaterie.IsVisible = true;
                         
                     }
-                       
                     else
                         grigliaMaterie.IsVisible = false;
-
-
                 };
                 var stackTitolo= new StackLayout
                 {
                     BackgroundColor = Colori.ColoriSecondario,
                 };
+                Grid.SetRowSpan(stackTitolo,2);
+
                 stackTitolo.GestureRecognizers.Add(tapGestureRecognizerCella);
                 var stackSottotitolo = new StackLayout
                 {
-                    BackgroundColor = Color.White,
+                    BackgroundColor = Colori.Descrizione,
 
                 };
                 stackTitolo.Children.Add(Titolo);
@@ -138,16 +142,19 @@ namespace QuizAmoroso
             foreach (var i in listaMaterie)
             {
                 GrigliaMaterie.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
+                GrigliaMaterie.RowSpacing = 1.5;
 
                 var stackTitoloMateria = new StackLayout
                 {
-                    BackgroundColor = Colori.coloreTerziario
+                    BackgroundColor = Color.White
                 };
 
                 var TitoloMateria = new Label
                 {
                     Text = i.materia,
-                    FontSize = 20,
+                    FontSize = 25,
+                    TextColor = Colori.TemaApp,
+                    FontAttributes = FontAttributes.Italic,
                     VerticalOptions = LayoutOptions.Center,
                     HorizontalOptions = LayoutOptions.Center
                 };
