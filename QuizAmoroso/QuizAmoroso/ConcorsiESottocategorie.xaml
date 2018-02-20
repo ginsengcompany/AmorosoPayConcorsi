@@ -4,7 +4,7 @@
              x:Class="QuizAmoroso.ConcorsiESottocategorie"
              Title="Concorsi">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="0,10,0,0">
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
                 <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3" 
