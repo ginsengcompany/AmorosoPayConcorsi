@@ -25,7 +25,7 @@ using System.Net.Http.Headers;
 namespace QuizAmoroso
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PianoFormativo : ContentPage
+    public partial class PianoFormativo : CarouselPage
     {
 
         private List<ConcorsiAquistabili> ListaConcorsi = new List<ConcorsiAquistabili>();

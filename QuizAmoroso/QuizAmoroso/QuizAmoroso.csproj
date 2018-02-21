@@ -116,7 +116,7 @@
     </Compile>
     <Compile Include="DataModel\Utente.cs" />
     <Compile Include="DataModel\StrutturaHistory.cs" />
-    <Compile Include="VideoInfo.cs" />
+    <Compile Include="DataModel\VideoInfo.cs" />
     <Compile Include="VideoLezioni.xaml.cs">
       <DependentUpon>VideoLezioni.xaml</DependentUpon>
     </Compile>

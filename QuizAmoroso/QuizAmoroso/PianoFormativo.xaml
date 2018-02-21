@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuizAmoroso.PianoFormativo" 
              Title = "Piani Formativi"
@@ -14,7 +14,7 @@
                     iOS="0,30,0,0"/>
     </ContentPage.Padding>
 
-    <ContentPage.Content>
+    <ContentPage>
         <StackLayout>
 
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
@@ -25,35 +25,12 @@
             </StackLayout>
 
             <StackLayout  x:Name="steckGrigliaConcorsi"/>
-            <!--
-        <StackLayout VerticalOptions="End">
-                <StackLayout.IsVisible>
-                    <OnPlatform x:TypeArguments="x:Boolean"
-                                 WinPhone="true" Android="true" iOS="false"/>
-                </StackLayout.IsVisible>
-                <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
-                <Frame>
-                    <Frame.BackgroundColor>
-                        <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#2196f3" iOS="#2196f3"/>
-                    </Frame.BackgroundColor>
-                    <StackLayout>
-                        <StackLayout Orientation="Horizontal" VerticalOptions="End">
-                            <Label Text="Powered by " 
-                                   YAlign="End"
-                                   FontAttributes="Italic">
-                                <Label.TextColor>
-                                    <OnPlatform x:TypeArguments="Color" WinPhone="Black" Android="White" iOS="#f30100"/>
-                                </Label.TextColor>
-                            </Label>
-                            <Image x:Name="logoFooter"
-                                Source="cerchietto_ak12.png" 
-                                HeightRequest="25"></Image>
-                        </StackLayout>
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
-            -->
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </ContentPage>
+
+    <ContentPage>
+        <StackLayout  x:Name="prova"/>
+    </ContentPage>
+    
+</CarouselPage>
 
