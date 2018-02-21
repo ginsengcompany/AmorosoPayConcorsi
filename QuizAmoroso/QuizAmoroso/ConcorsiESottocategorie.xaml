@@ -4,18 +4,20 @@
              x:Class="QuizAmoroso.ConcorsiESottocategorie"
              Title="Concorsi">
     <ContentPage.Content>
-        <StackLayout Padding="0,10,0,0">
+        <StackLayout>
+      
+            <ScrollView>
+
+                <StackLayout x:Name="StackPrincipale"/>
+            </ScrollView>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
                 <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3" 
                                    HorizontalOptions="Center">
                 </ActivityIndicator>
             </StackLayout>
-            <ScrollView>
-
-                <StackLayout x:Name="StackPrincipale"/>
-            </ScrollView>
         </StackLayout>
+        
         
     </ContentPage.Content>
 </ContentPage>
