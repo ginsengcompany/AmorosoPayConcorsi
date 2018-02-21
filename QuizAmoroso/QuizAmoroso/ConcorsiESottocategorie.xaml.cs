@@ -138,7 +138,9 @@ namespace QuizAmoroso
         {
             Grid GrigliaMaterie = new Grid();
             GrigliaMaterie.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            int riga=0, colonna = 0;
+            GrigliaMaterie.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(0.1, GridUnitType.Star) });
+
+            int riga =0, colonna = 0;
             foreach (var i in listaMaterie)
             {
                 GrigliaMaterie.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
@@ -146,7 +148,8 @@ namespace QuizAmoroso
 
                 var stackTitoloMateria = new StackLayout
                 {
-                    BackgroundColor = Color.White
+                    BackgroundColor = Color.White,
+                    Orientation = StackOrientation.Horizontal
                 };
 
                 var TitoloMateria = new Label
@@ -154,12 +157,18 @@ namespace QuizAmoroso
                     Text = i.materia,
                     FontSize = 25,
                     TextColor = Colori.TemaApp,
-                    FontAttributes = FontAttributes.Italic,
+                    FontAttributes = FontAttributes.None,
                     VerticalOptions = LayoutOptions.Center,
                     HorizontalOptions = LayoutOptions.Center
                 };
+                var image = new Image
+                {
+                    Source = "rightArrow.png",
+                    HorizontalOptions = LayoutOptions.End
+                };
            
                 stackTitoloMateria.Children.Add(TitoloMateria);
+                GrigliaMaterie.Children.Add(image,1,riga);
                 GrigliaMaterie.Children.Add(stackTitoloMateria,0,riga);
                 riga++;
             }

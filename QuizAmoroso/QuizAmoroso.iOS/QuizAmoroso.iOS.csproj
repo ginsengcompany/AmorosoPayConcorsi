@@ -552,6 +552,15 @@
   <ItemGroup>
     <BundleResource Include="Resources\frecceT.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rightArrow2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rightArrow3x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -8,9 +8,9 @@
     <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
         <me:Info NavigationPage.HasNavigationBar="False"></me:Info>   
-        <me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>
+       <!-- <me:QuizVeloce NavigationPage.HasNavigationBar="False"></me:QuizVeloce>-->
         <me:PianoFormativo NavigationPage.HasNavigationBar="False"></me:PianoFormativo>
-        <me:ListaLezioniDisponibili NavigationPage.HasNavigationBar="False"></me:ListaLezioniDisponibili>
+       <!-- <me:ListaLezioniDisponibili NavigationPage.HasNavigationBar="False"></me:ListaLezioniDisponibili>-->
         <me:ConcorsiESottocategorie NavigationPage.HasNavigationBar="False"></me:ConcorsiESottocategorie>
 
         <!--<me:Statistiche NavigationPage.HasNavigationBar="False"></me:Statistiche>-->
