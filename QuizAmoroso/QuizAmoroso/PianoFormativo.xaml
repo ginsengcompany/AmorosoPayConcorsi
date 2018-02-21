@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QuizAmoroso.PianoFormativo" 
-             Title = "Piani Formativi"
-             NavigationPage.HasNavigationBar="False">
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="QuizAmoroso.PianoFormativo" 
+              Title = "Piani Formativi"      
+              NavigationPage.HasNavigationBar="False">
 
     <ContentPage.BackgroundColor>
         <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="White" iOS="LightCyan"/>
@@ -14,23 +14,29 @@
                     iOS="0,30,0,0"/>
     </ContentPage.Padding>
 
-    <ContentPage>
-        <StackLayout>
-
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
-                <ActivityIndicator x:Name="caricamentoPagina"
+    <ContentPage >
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
+            <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3" 
                                    HorizontalOptions="Center">
-                </ActivityIndicator>
-            </StackLayout>
-
-            <StackLayout  x:Name="steckGrigliaConcorsi"/>
+            </ActivityIndicator>
         </StackLayout>
+        <StackLayout  x:Name="steckGrigliaConcorsi"/>
+        <StackLayout VerticalOptions="End">
+            <Label Text="Prova" VerticalOptions="End"/>
+        </StackLayout>
+
     </ContentPage>
 
     <ContentPage>
         <StackLayout  x:Name="prova"/>
+        <StackLayout VerticalOptions="End">
+            <Label Text="Prova" VerticalOptions="End"/>
+        </StackLayout>
     </ContentPage>
-    
+
+
+
+
 </CarouselPage>
 
