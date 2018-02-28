@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizAmoroso.ModalitàQuizRandom" 
+             Title="Modalità Libera">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="LabelSliderNumeroDomande"
+                               Text="Seleziona il numero di domande:"
+                               IsVisible="True"
+                               TextColor="#2196f3"
+                               FontSize="Medium"
+                               HorizontalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Vertical" >
+                <Slider x:Name="SliderSelezioneNumeroDomande"
+                        ValueChanged="SliderSelezioneNumeroDomande_ValueChanged"
+                                    />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label x:Name="LabelMinimoSlider"
+                                       TextColor="#2196f3"
+                                       XAlign="Start"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" >
+                    <Label         Text="Domande Selezionate"
+                                   HorizontalOptions="Center"
+                                   TextColor="#2196f3"/>
+                    <Label x:Name="LabelValoriSelezionatiConSlider"
+                                   HorizontalOptions="Center"
+                                   TextColor="#2196f3"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand">
+                    <Label x:Name="LabelMassimoSlider"
+                                       XAlign="End"
+                                       TextColor="#2196f3"/>
+                </StackLayout>
+                
+            </StackLayout>
+            <Button Text="Avvia Quiz"
+                    Clicked="Button_Clicked"
+                    x:Name="btnAvvio"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

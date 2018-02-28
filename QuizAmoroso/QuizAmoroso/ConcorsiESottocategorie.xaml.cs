@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using QuizAmoroso.Classi;
 using QuizAmoroso.DataModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,7 +16,8 @@ namespace QuizAmoroso
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ConcorsiESottocategorie : ContentPage
     {
-        public List<QuizVeloce.StrutturaPickerConcorso> listaConcorsi = new List<QuizVeloce.StrutturaPickerConcorso>();
+        public List<Concorsi> listaConcorsi = new List<Concorsi>();
+
         
         public ConcorsiESottocategorie()
         {
@@ -73,7 +75,7 @@ namespace QuizAmoroso
                 grigliaConcorsiInDettaglio.BackgroundColor = Colori.TemaApp;
                 //connessione materie
                 var listaMaterieDelConcorsoSelezionato = await AttesaRicezioneMaterie(i.id_concorso);
-                Grid grigliaMaterie = await CreazioneGrigliaMaterie(listaMaterieDelConcorsoSelezionato);
+                Grid grigliaMaterie = await CreazioneGrigliaMaterie(listaMaterieDelConcorsoSelezionato, i.id_concorso);
                 grigliaMaterie.IsVisible = false;
                 grigliaMaterie.BackgroundColor = Colori.TemaApp;
 
@@ -134,12 +136,13 @@ namespace QuizAmoroso
         }
 
 
-        public async Task<Grid> CreazioneGrigliaMaterie(List<QuizVeloce.StrutturaPickerMaterie> listaMaterie)
+
+        public async Task<Grid> CreazioneGrigliaMaterie(List<Materie> listaMaterie, string idconcorso)
         {
             Grid GrigliaMaterie = new Grid();
             GrigliaMaterie.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
             GrigliaMaterie.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(0.1, GridUnitType.Star) });
-
+            string id = idconcorso;
             int riga =0, colonna = 0;
             foreach (var i in listaMaterie)
             {
@@ -166,7 +169,12 @@ namespace QuizAmoroso
                     Source = "rightArrow.png",
                     HorizontalOptions = LayoutOptions.End
                 };
-           
+                var tapGestureRecognizerCella = new TapGestureRecognizer();
+                tapGestureRecognizerCella.Tapped += async (s, e) =>
+                {
+                    await Navigation.PushAsync(new SceltaModalità(i, id));
+                };
+                image.GestureRecognizers.Add(tapGestureRecognizerCella);
                 stackTitoloMateria.Children.Add(TitoloMateria);
                 GrigliaMaterie.Children.Add(image,1,riga);
                 GrigliaMaterie.Children.Add(stackTitoloMateria,0,riga);
@@ -198,7 +206,7 @@ namespace QuizAmoroso
                 {
                     var result = await client.PostAsync(Costanti.concorsi, content);
                    var risultatoChiamataQuizVeloce = await result.Content.ReadAsStringAsync();
-                    listaConcorsi = JsonConvert.DeserializeObject<List<QuizVeloce.StrutturaPickerConcorso>>(risultatoChiamataQuizVeloce);
+                    listaConcorsi = JsonConvert.DeserializeObject<List<Concorsi>>(risultatoChiamataQuizVeloce);
 
                    
                 }
@@ -212,10 +220,10 @@ namespace QuizAmoroso
                 await DisplayAlert("Attenzione", "Connessione persa durante il caricamento dei concorsi.", "Ok");
             }
         }
-        public async Task<List<QuizVeloce.StrutturaPickerMaterie>> AttesaRicezioneMaterie(string idConcorsoSelezionato)
+        public async Task<List<Materie>> AttesaRicezioneMaterie(string idConcorsoSelezionato)
         {
 
-            List<QuizVeloce.StrutturaPickerMaterie> listaMaterie = new List<QuizVeloce.StrutturaPickerMaterie>();
+            List<Materie> listaMaterie = new List<Materie>();
             try
             { 
                 var client = new HttpClient();
@@ -224,7 +232,7 @@ namespace QuizAmoroso
                 var content = new FormUrlEncodedContent(values);
                 var result = await client.PostAsync(Costanti.materieconcorso, content);
                 var risualtatoChiamataMaterie = await result.Content.ReadAsStringAsync();
-                 listaMaterie = JsonConvert.DeserializeObject<List<QuizVeloce.StrutturaPickerMaterie>>(risualtatoChiamataMaterie);
+                 listaMaterie = JsonConvert.DeserializeObject<List<Materie>>(risualtatoChiamataMaterie);
             
             }
             catch (Exception e)

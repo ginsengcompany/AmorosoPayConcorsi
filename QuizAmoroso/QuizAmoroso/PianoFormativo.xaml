@@ -3,7 +3,7 @@
               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               x:Class="QuizAmoroso.PianoFormativo" 
               Title = "Piani Formativi"      
-              NavigationPage.HasNavigationBar="False">
+              NavigationPage.HasNavigationBar="True">
 
     <ContentPage.BackgroundColor>
         <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="White" iOS="LightCyan"/>
@@ -14,28 +14,57 @@
                     iOS="0,30,0,0"/>
     </ContentPage.Padding>
 
-    <ContentPage >
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
-            <ActivityIndicator x:Name="caricamentoPagina"
+    <ContentPage Title="Aquista Concorsi" >
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
+                    <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3" 
                                    HorizontalOptions="Center">
-            </ActivityIndicator>
-        </StackLayout>
-        <StackLayout  x:Name="steckGrigliaConcorsi"/>
-        <StackLayout VerticalOptions="End">
-            <Label Text="Prova" VerticalOptions="End"/>
+                    </ActivityIndicator>
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout  x:Name="steckGrigliaConcorsi"/>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
+
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Aquista una Concorso" FontAttributes="Italic" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0"/>
+                    <Image Source="right.png" HorizontalOptions="End" VerticalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+            </StackLayout>
         </StackLayout>
 
     </ContentPage>
 
-    <ContentPage>
-        <StackLayout  x:Name="prova"/>
-        <StackLayout VerticalOptions="End">
-            <Label Text="Prova" VerticalOptions="End"/>
+    <ContentPage Title="Aquista Video Lezioni">
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout  x:Name="steckGrigliaMateria"/>
+            
+            <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Aquista le video Lezioni" FontAttributes="Italic" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="1"/>
+                    <Image Source="left.png" HorizontalOptions="Start" VerticalOptions="End" WidthRequest="20" Grid.Row="0" Grid.Column="0"/>
+                </Grid>
+            </StackLayout>
         </StackLayout>
     </ContentPage>
-
-
 
 
 </CarouselPage>

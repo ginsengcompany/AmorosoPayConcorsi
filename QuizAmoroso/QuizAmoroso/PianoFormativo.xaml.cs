@@ -31,6 +31,7 @@ namespace QuizAmoroso
         private List<ConcorsiAquistabili> ListaConcorsi = new List<ConcorsiAquistabili>();
         private string risultatojson;
         private bool flagConnessione = false;
+        private List<ConcorsiAquistabili> ListaVideoLezioni = new List<ConcorsiAquistabili>();
 
 
         public PianoFormativo()
@@ -49,8 +50,8 @@ namespace QuizAmoroso
                 DisabilitaLayoutActivityIndicator.IsVisible = true;
                 caricamentoPagina.IsRunning = true;
                 caricamentoPagina.IsVisible = true;
-                await creaGriglia();
-
+                await creaGriglia(Costanti.concorsiDisponibili);
+                await creaGriglia(Costanti.MaterieDisponibili);
                 caricamentoPagina.IsVisible = false;
                 caricamentoPagina.IsRunning = false;
                 DisabilitaLayoutActivityIndicator.IsVisible = false;
@@ -64,7 +65,7 @@ namespace QuizAmoroso
             }
         }
 
-        public async Task<List<ConcorsiAquistabili>> ConnessioneConcorsi()
+        public async Task<List<ConcorsiAquistabili>> ConnessioneConcorsi(string URL)
         {
             string username = Utente.Instance.getUserName;
             var client = new HttpClient();
@@ -73,7 +74,7 @@ namespace QuizAmoroso
                 var values = new List<KeyValuePair<string, string>>();
                 values.Add(new KeyValuePair<string, string>("username", username));
                 var content = new FormUrlEncodedContent(values);
-                var result = await client.PostAsync(Costanti.concorsiDisponibili, content);
+                var result = await client.PostAsync(URL, content);
                 risultatojson = await result.Content.ReadAsStringAsync();
                 
                 if (risultatojson == "Impossibile connettersi al servizio")
@@ -98,13 +99,13 @@ namespace QuizAmoroso
         /*
          * Questo metodo invia il piano formativo selezionato dall'utente  
          * */
-        public async Task creaGriglia()
+        public async Task creaGriglia(string URL)
         {
             Grid grigliaConcorsi = new Grid();
 
-            grigliaConcorsi.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            grigliaConcorsi.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) });
 
-            List<ConcorsiAquistabili> ListaConcorsi = await ConnessioneConcorsi();
+            List<ConcorsiAquistabili> ListaConcorsi = await ConnessioneConcorsi(URL);
 
             int righe = 0, colonne = 0;
             foreach (var i in ListaConcorsi)
@@ -176,11 +177,8 @@ namespace QuizAmoroso
                 };
                 if (i.state.Equals("Purchased"))
                 {
-                    acquista.Text = "extra";
-                    acquista.Clicked += async delegate (object sender, EventArgs e)
-                    {
-                        await Navigation.PushAsync(new PianoFormativoExtra(i));
-                    };
+                    acquista.Text = "AQUISTATO";
+                    acquista.IsEnabled = false;
                 }
                 else
                 {
@@ -252,8 +250,16 @@ namespace QuizAmoroso
                 righe++;
 
             }
+            if (URL.Contains(Costanti.concorsiDisponibili))
+            {
             steckGrigliaConcorsi.Children.Clear();
             steckGrigliaConcorsi.Children.Add(grigliaConcorsi);
+            }
+            else
+            {
+                steckGrigliaMateria.Children.Clear();
+                steckGrigliaMateria.Children.Add(grigliaConcorsi);
+            }
         }
 
         private async Task invioDatiPagamento(string productId, string purchaseId, string token, string state, string codiceControllo, string data)

@@ -27,8 +27,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <AndroidKeyStore>false</AndroidKeyStore>
-    <AndroidSigningKeyStore>
-    </AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>C:\Users\AlessioRivoli\AppData\Local\Xamarin\Mono for Android\Keystore\AmorosoPay\AmorosoPay.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>lavoro</AndroidSigningStorePass>
     <AndroidSigningKeyAlias>AmorosoPay</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>lavoro</AndroidSigningKeyPass>
@@ -383,6 +382,9 @@
     <AndroidResource Include="Resources\drawable-hdpi\rightArrow.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\rightArrow.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\rightArrow.png" />
+    <AndroidResource Include="Resources\drawable\sign_RispostaData.png" />
+    <AndroidResource Include="Resources\drawable\selected_circle.png" />
+    <AndroidResource Include="Resources\drawable\unselected_circle.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>

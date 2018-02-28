@@ -1,6 +1,6 @@
 ﻿using FormsVideoLibrary;
 
-namespace VideoPlayerDemos
+namespace QuizAmoroso
 {
     public class VideoInfo
     {

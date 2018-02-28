@@ -83,7 +83,7 @@
                 <Button x:Name="loginButton"
                         Text="Entra"
                         BorderRadius="25"
-                        BackgroundColor="#5294BF"
+                        BackgroundColor="#37637F"
                         WidthRequest="100"
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="Center"                  
@@ -95,7 +95,7 @@
                     Text="Registrati"
                     Style="{StaticResource buttonStyle}"
                     Clicked="Button_Clicked"
-                    BackgroundColor="#5294BF"
+                    BackgroundColor="#37637F"
                     TextColor="White"
                 />
 
