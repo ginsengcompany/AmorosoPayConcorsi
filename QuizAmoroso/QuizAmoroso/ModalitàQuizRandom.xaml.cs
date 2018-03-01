@@ -42,7 +42,7 @@ namespace QuizAmoroso
                 caricamentoPagina.IsVisible = true;
           */
             datiConnessione.materia = materia.materia;
-            datiConnessione.numeroDomande = SliderSelezioneNumeroDomande.Value.ToString();
+            datiConnessione.numeroDomande = Convert.ToInt32(SliderSelezioneNumeroDomande.Value).ToString();
             datiConnessione.modalitaSelezionata = "Libera";
 
                await Navigation.PushAsync(new Quiz(datiConnessione));
