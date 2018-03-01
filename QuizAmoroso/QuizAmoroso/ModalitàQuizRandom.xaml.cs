@@ -47,6 +47,7 @@ namespace QuizAmoroso
         {
             int ke = Convert.ToInt32(e.NewValue);
             LabelValoriSelezionatiConSlider.Text = ke.ToString();
+
         }
 
         private async Task Button_Clicked(object sender, EventArgs e)
