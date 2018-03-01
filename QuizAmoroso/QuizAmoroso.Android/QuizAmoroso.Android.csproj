@@ -385,6 +385,8 @@
     <AndroidResource Include="Resources\drawable\sign_RispostaData.png" />
     <AndroidResource Include="Resources\drawable\selected_circle.png" />
     <AndroidResource Include="Resources\drawable\unselected_circle.png" />
+    <AndroidResource Include="Resources\drawable\arrowLeft.png" />
+    <AndroidResource Include="Resources\drawable\arrowRight.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>

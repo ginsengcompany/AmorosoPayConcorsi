@@ -23,10 +23,23 @@ namespace QuizAmoroso
             InitializeComponent();
             btnAvvio.BackgroundColor = Colori.Button;
             SliderSelezioneNumeroDomande.Maximum =Convert.ToInt32(i.domandemateriamax);
-            SliderSelezioneNumeroDomande.Minimum = 10;
-            SliderSelezioneNumeroDomande.Value = 30;
+            if (Convert.ToInt32(i.domandemateriamax) > 10)
+            {
+
+                SliderSelezioneNumeroDomande.Minimum = 10;
+                if (Convert.ToInt32(i.domandemateriamax) > 30)
+                    SliderSelezioneNumeroDomande.Value = 30;
+                else
+                    SliderSelezioneNumeroDomande.Value = 10;
+            }
+            else
+            {
+                SliderSelezioneNumeroDomande.Minimum = 1;
+                SliderSelezioneNumeroDomande.Value = 1;
+            }
+
             LabelValoriSelezionatiConSlider.Text = "Max: " + SliderSelezioneNumeroDomande.Value.ToString();
-            LabelMinimoSlider.Text = "Min: 10";
+            LabelMinimoSlider.Text = "Min: " + SliderSelezioneNumeroDomande.Minimum.ToString();
             LabelMassimoSlider.Text = i.domandemateriamax;
         }
 
