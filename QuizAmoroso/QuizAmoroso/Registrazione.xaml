@@ -2,22 +2,52 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuizAmoroso.Registrazione"
+             xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
              Title="Registrati">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
-                <Entry Placeholder="E-mail"
-            VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                   />
-                <Entry Placeholder="Password"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" 
-                   />
-                <Button Text="Registrati"
-                    Style="{StaticResource buttonStyle}"
-                    />
+            <StackLayout VerticalOptions="Start" Padding="0,20,0,0">
+                <Label HorizontalOptions="CenterAndExpand" TextColor="#37637F" FontSize="Large" FontAttributes="Bold" Text="REGISTRAZIONE"></Label>
             </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+         
+            
+                <xfx:XfxEntry 
+                    Placeholder="Inserire E-mail"   
+                    ErrorDisplay="Underline"
+                    WidthRequest="200"
+                    VerticalOptions="Center"/>
+
+                   <xfx:XfxEntry 
+                                 Placeholder="Inserire gay1"   
+                                 ErrorDisplay="Underline"
+                                 WidthRequest="200"
+                                 VerticalOptions="Center"/>
+                   <xfx:XfxEntry 
+                                 Placeholder="Inserire gay2"   
+                                 ErrorDisplay="Underline"
+                                 WidthRequest="200"
+                                 VerticalOptions="Center"/>
+                   <xfx:XfxEntry 
+                                 Placeholder="Inserire gay3"   
+                                 ErrorDisplay="Underline"
+                                 WidthRequest="200"
+                                 VerticalOptions="Center"/>
+                    <xfx:XfxEntry 
+                              Placeholder="Inserire password"  
+                              ErrorDisplay="Underline"
+                              WidthRequest="200"
+                              IsPassword="True"
+                              VerticalOptions="Center"/>
+                <Button Text="Registrati"
+                        HeightRequest="100"
+                        WidthRequest="250"
+                        Style="{StaticResource buttonStyle}"
+                />
+            </StackLayout>
+           
+         
+   
 
         </StackLayout>
     </ContentPage.Content>
