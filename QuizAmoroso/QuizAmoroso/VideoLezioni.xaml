@@ -9,7 +9,7 @@
 
 
 
-            <video:VideoPlayer VerticalOptions="Start" HorizontalOptions="Center" x:Name="videoView"/>
+            <video:VideoPlayer  x:Name="videoView"/>
         <!--<StackLayout Grid.Row="1">
             <Label VerticalOptions="End" Text="prima lezione del piano come mangiare un coniglio" />
             <Label Text="Esercitazioni su la lezione"/>

@@ -20,7 +20,7 @@ namespace QuizAmoroso
         public VideoLezioni(string urlVideo)
         {
             InitializeComponent();
-            videoView.Source = VideoSource.FromUri(urlVideo);
+            videoView.Source= VideoSource.FromUri(urlVideo);
 
         }
     }
