@@ -57,5 +57,10 @@
 	<string>9.3</string>
 	<key>CFBundleName</key>
 	<string>Amoroso Concorsi</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
