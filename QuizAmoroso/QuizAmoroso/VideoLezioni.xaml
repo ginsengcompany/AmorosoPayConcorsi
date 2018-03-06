@@ -6,20 +6,5 @@
              x:Class="QuizAmoroso.VideoLezioni"
              Title="Video Lezioni" 
              Icon="quizVeloce.png">
-
-
-
-            <video:VideoPlayer VerticalOptions="Start" HorizontalOptions="Center" x:Name="videoView"/>
-        <!--<StackLayout Grid.Row="1">
-            <Label VerticalOptions="End" Text="prima lezione del piano come mangiare un coniglio" />
-            <Label Text="Esercitazioni su la lezione"/>
-        </StackLayout>
-        <StackLayout Grid.Row="2" x:Name="stackEsercitazioni"/>
-
-
-    </Grid>-->
-        
-    
-
-
+    <video:VideoPlayer x:Name="videoView"/>
 </ContentPage>
