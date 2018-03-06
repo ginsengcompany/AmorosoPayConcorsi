@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuizAmoroso.DataModel
 {
-    class RisultatoQuiz
+  public class RisultatoQuiz
     {
         public string contSbagliateTot { get; set; }
         public string contEsatteTot { get; set; }
