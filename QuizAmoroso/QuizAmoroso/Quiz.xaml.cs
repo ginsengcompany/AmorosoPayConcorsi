@@ -88,7 +88,7 @@ namespace QuizAmoroso
                     btnIndietro.IsVisible = false;
             }
         }
-        private void Avanti()
+        private async Task Avanti()
         {
             if (indice != grid_domande.Count() - 1)
             {
@@ -100,6 +100,18 @@ namespace QuizAmoroso
                     btnAvanti.Text = "FINE";
                 else
                     btnAvanti.Text = "AVANTI";
+            }
+            else
+            {
+                if(await App.Current.MainPage.DisplayAlert("ATTENZIONE", "Sei sicuro di voler concludere la simulazione?", "SI", "NO"))
+                {
+                    scelta = false;
+                    tempoQuiz.FermaTempo();
+                    RisultatoQuiz risultati = RisultatiQuiz();
+                    await Navigation.PushAsync(new RisultatiQuiz(risultati));
+                    Navigation.RemovePage(this);
+                    
+                }
             }
 
         }
@@ -171,9 +183,9 @@ namespace QuizAmoroso
             return GridGrande;
         }
 
-        private void ButtonClickedAvanti(object sender, EventArgs e)
+        private async void ButtonClickedAvanti(object sender, EventArgs e)
         {
-            Avanti();
+            await Avanti();
 
             /*  int count = this.count-1;
               if (indice+1 < countImage.Count)
@@ -230,7 +242,7 @@ namespace QuizAmoroso
         {
             Indietro();
 
-            /*int count = this.count - 1;
+          /*  int count = this.count - 1;
 
              if (indice != 0)
              {
@@ -386,6 +398,7 @@ namespace QuizAmoroso
                                     await Risposta(i, lettera.Text.ToString(), list);
                             }
                         }
+                        await Avanti();
                     };
                     Alfabeto = (Char)(Convert.ToUInt16(Alfabeto) + 1);
                     Label quesito = new Label
@@ -422,7 +435,29 @@ namespace QuizAmoroso
                     }
                 }
             }
+        }
+        private RisultatoQuiz RisultatiQuiz()
+        {
+            RisultatoQuiz risultati = new RisultatoQuiz();
+            int contEsatteTot=0,
+                contNonRisposteTot=0,
+                contSbagliateTot=0,
+                lstdatirisultati = 0;
+            foreach (var i in risultato)
+            {
+                if(i.rispostaEsattaYN=="true")
+                    contEsatteTot= contEsatteTot + 1;
+                else if(i.rispostaEsattaYN=="false")
+                    contSbagliateTot = contSbagliateTot + 1;
+                else
+                    contNonRisposteTot = contNonRisposteTot+1;
+            }
+            risultati.contEsatteTot = contEsatteTot.ToString();
+            risultati.contSbagliateTot = contSbagliateTot.ToString();
+            risultati.contNonRisposteTot = contNonRisposteTot.ToString();
+            risultati.TmpTotale = lblTimer.Text;
 
+            return risultati;
         }
     }
 }
