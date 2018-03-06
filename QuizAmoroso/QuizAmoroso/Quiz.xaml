@@ -13,7 +13,7 @@
         </StackLayout>
         
         <StackLayout x:Name="stackPagina" IsVisible="False">
-            <StackLayout x:Name="Prova"/>
+            <StackLayout x:Name="StackGridContatore"/>
         <StackLayout VerticalOptions="Start">
             <Frame x:Name="frameDomanda"
                            IsVisible="False"
@@ -29,11 +29,12 @@
 
 
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
-                <Button Clicked="Button_Clicked_1" HorizontalOptions="StartAndExpand" x:Name="btnIndietro" Text="indietro" VerticalOptions="End"></Button>
-                <Button Clicked="Button_Clicked" HorizontalOptions="EndAndExpand" x:Name="btnAvanti" Text="avanti" VerticalOptions="End"></Button>
-        </StackLayout>
-        </StackLayout>
         
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+            <Button  Clicked="ButtonClickedIndietro" HorizontalOptions="StartAndExpand" x:Name="btnIndietro" Text="indietro" VerticalOptions="End" IsVisible="False"></Button>
+            <Label Text="Tempo" x:Name="lblTimer" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="End"/>
+            <Button  Clicked="ButtonClickedAvanti" HorizontalOptions="EndAndExpand" x:Name="btnAvanti" Text="avanti" VerticalOptions="End"></Button>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
