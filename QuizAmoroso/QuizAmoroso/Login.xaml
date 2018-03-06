@@ -15,13 +15,14 @@
 
                 <StackLayout Spacing="20"
                              Orientation="Vertical">
-                    <abstractions:CircleImage Source="amorosoLogo.png"
-                                              HeightRequest="200"        
-                                              WidthRequest="300"
-                                              Aspect="AspectFit" 
-                                              VerticalOptions="Center" 
-                                              HorizontalOptions="CenterAndExpand"
-                                              Margin="4">
+                    <abstractions:CircleImage 
+                        Source="amorosoLogo.png"
+                        HeightRequest="200" 
+                        WidthRequest="300"
+                        Aspect="AspectFit"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="CenterAndExpand"
+                        Margin="4">
                     </abstractions:CircleImage>
                 </StackLayout >
                 

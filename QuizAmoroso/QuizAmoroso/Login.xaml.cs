@@ -103,7 +103,7 @@ namespace QuizAmoroso
                     caricamentoPagina.IsVisible = false;
                     if (flagConnessioneAccettata == false)
                     {
-                        var p = new NavigationPage(new MainPage());
+                        var p = new NavigationPage(new MenuHamburger());
                         await Navigation.PushModalAsync(p);
                         
                         loginButton.IsEnabled = true;
@@ -198,8 +198,8 @@ namespace QuizAmoroso
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-           // await Navigation.PushAsync(new Registrazione());
-            await Navigation.PushAsync(new VideoLezioni("http://vjs.zencdn.net/v/oceans.mp4"));
+           await Navigation.PushAsync(new Registrazione());
+           
         }
     }
 }

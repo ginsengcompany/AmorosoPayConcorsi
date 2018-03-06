@@ -86,6 +86,9 @@
     <Compile Include="ListaLezioniDisponibili.xaml.cs">
       <DependentUpon>ListaLezioniDisponibili.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MenuHamburger.xaml.cs">
+      <DependentUpon>MenuHamburger.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModalitàQuizRandom.xaml.cs">
       <DependentUpon>ModalitàQuizRandom.xaml</DependentUpon>
     </Compile>
@@ -331,6 +334,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Quiz.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuHamburger.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
