@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizAmoroso.MenuHamburger" NavigationPage.HasNavigationBar="False">
+    <MasterDetailPage.Detail>
+    </MasterDetailPage.Detail>
+    <MasterDetailPage.Master>
+        <ContentPage  Title="MyApp">
+            <StackLayout >
+                <StackLayout 
+                    BackgroundColor="Transparent" 
+                    HeightRequest="200" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="Center">
+                    <Image 
+                        x:Name="Image"  
+                        WidthRequest="240" 
+                        HorizontalOptions="CenterAndExpand" 
+                        VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+                <ListView
+                        x:Name="ListaMenu" 
+                        ItemSelected="SelezioneCellaMenu"
+                        VerticalOptions="Center">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout  
+                                        VerticalOptions="Center" 
+                                        Orientation="Horizontal" 
+                                        Spacing="10" 
+                                        HorizontalOptions="Start">
+                                       <!-- <Image 
+                                                Source="{Binding ImageIcon}" 
+                                                WidthRequest="30"
+                                                HeightRequest="30" 
+                                                VerticalOptions="Center"/>-->
+                                        <Label
+                                                Text="{Binding MenuTitle}"
+                                                Margin="10,0,0,0" 
+                                                TextColor="Black" 
+                                                HorizontalTextAlignment="Center" 
+                                                VerticalTextAlignment="Center"
+                                                FontAttributes="Bold"/>
+                                    </StackLayout>
+                                </ViewCell>
+                         
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+</MasterDetailPage>

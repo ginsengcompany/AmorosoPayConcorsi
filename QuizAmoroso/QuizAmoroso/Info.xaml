@@ -4,8 +4,7 @@
              xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              x:Class="QuizAmoroso.Info"
              Title="Info"
-             BackgroundColor="White"
-             NavigationPage.HasNavigationBar="False">
+             BackgroundColor="White">
 
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness"
@@ -25,7 +24,7 @@
                                                       Aspect="AspectFill" 
                                                       VerticalOptions="Center" 
                                                       HorizontalOptions="Start"
-                                                      Margin="4">
+                                                      >
                             </abstractions:CircleImage>
                             <Label x:Name="labelBenvenuto" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontSize="Large" FontAttributes="Italic"></Label>
                         </StackLayout>
