@@ -32,8 +32,9 @@
         
         </StackLayout>
         <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
-                <Button  Clicked="ButtonClickedIndietro" HorizontalOptions="StartAndExpand" x:Name="btnIndietro" Text="indietro" VerticalOptions="End" IsVisible="False"></Button>
-                <Button  Clicked="ButtonClickedAvanti" HorizontalOptions="EndAndExpand" x:Name="btnAvanti" Text="avanti" VerticalOptions="End"></Button>
+            <Button  Clicked="ButtonClickedIndietro" HorizontalOptions="StartAndExpand" x:Name="btnIndietro" Text="indietro" VerticalOptions="End" IsVisible="False"></Button>
+            <Label Text="Tempo" x:Name="lblTimer" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="End"/>
+            <Button  Clicked="ButtonClickedAvanti" HorizontalOptions="EndAndExpand" x:Name="btnAvanti" Text="avanti" VerticalOptions="End"></Button>
         </StackLayout>
     </StackLayout>
 </ContentPage>

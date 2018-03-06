@@ -17,15 +17,15 @@ namespace QuizAmoroso.Model
         /**
          * TEMPO TRASCORSO IN MODALITA SIMULAZIONE
          * */
-        public void AvvioTempo (bool start , string campo)
+        public void AvvioTempo (bool start , Label campo)
         {
-            nomeCampo = campo;
             avviaTempo = start;
             Device.StartTimer(TimeSpan.FromSeconds(0), () =>
             {
                 tempoGlobale.Start();
                 tempo = tempoGlobale.Elapsed;
                 tempoTotale = string.Format("{0:00}:{1:00}:{2:00}", tempo.Hours, tempo.Minutes, tempo.Seconds);
+                campo.Text = tempoTotale;
                 return avviaTempo;
             });
         }

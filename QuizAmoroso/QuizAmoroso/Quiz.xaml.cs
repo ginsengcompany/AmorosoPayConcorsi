@@ -16,6 +16,8 @@ namespace QuizAmoroso
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Quiz : ContentPage
     {
+        //timer
+        Timer tempoQuiz = new Timer();
         //Variabili dati
         private List<DatiRisultati> risultato = new List<DatiRisultati>();
         private List<Domande> list = new List<Domande>();
@@ -33,10 +35,11 @@ namespace QuizAmoroso
         private List<Image> countImage = new List<Image>();
         private double width, height;
 
-        private Image arrowleft = new Image{
-            Source= "arrowLeft.png",
-            WidthRequest=15
-            };
+        private Image arrowleft = new Image
+        {
+            Source = "arrowLeft.png",
+            WidthRequest = 15
+        };
         private Image arrowright = new Image
         {
             Source = "arrowRight.png",
@@ -57,11 +60,12 @@ namespace QuizAmoroso
             DisabilitaLayoutActivityIndicator.IsVisible = false;
             caricamentoPagina.IsRunning = false;
             stackPagina.IsVisible = true;
+            TempoTrascorsoGlobale();
         }
 
         private async void listRisultato()
         {
-            foreach(var i in list)
+            foreach (var i in list)
             {
                 DatiRisultati risposte = new DatiRisultati();
                 risposte.Domanda = i.Domanda;
@@ -78,13 +82,14 @@ namespace QuizAmoroso
                 indice--;
                 grigliaDomande.Children.Clear();
                 grigliaDomande.Children.Add(grid_domande[indice]);
-                if(indice==0)
+                if (indice == 0)
                     btnIndietro.IsVisible = false;
             }
         }
         private void Avanti()
         {
-            if (indice != grid_domande.Count() - 1) {
+            if (indice != grid_domande.Count() - 1)
+            {
                 btnIndietro.IsVisible = true;
                 indice++;
                 grigliaDomande.Children.Clear();
@@ -94,23 +99,23 @@ namespace QuizAmoroso
                 else
                     btnAvanti.Text = "AVANTI";
             }
-            
+
         }
         public Quiz(DatiConnessioneDomande datiConnessione)
         {
             this.datiConnessione = datiConnessione;
             InitializeComponent();
 
-            
-            for(int i = 0; i< Convert.ToInt32(datiConnessione.numeroDomande); i++)
+
+            for (int i = 0; i < Convert.ToInt32(datiConnessione.numeroDomande); i++)
             {
                 Image prova = new Image
-                { 
+                {
                     Source = statoPrecedente,
                     WidthRequest = 15
 
                 };
-                if (i == 2  || i == 5 || i==7 || i==25 || i==27 || i==29)
+                if (i == 2 || i == 5 || i == 7 || i == 25 || i == 27 || i == 29)
                 {
                     prova.Source = "sign_RispostaData.png";
                 }
@@ -148,8 +153,8 @@ namespace QuizAmoroso
             GridGrande.Children.Add(numeroDomande, colonne, 0);
             colonne++;
             count = 0;
-            double test = width-15.00;
-            while (test >15.00 && countImage.Count>count)
+            double test = width - 15.00;
+            while (test > 15.00 && countImage.Count > count)
             {
                 GridGrande.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
                 GridGrande.Children.Add(countImage[count], colonne, 0);
@@ -167,54 +172,54 @@ namespace QuizAmoroso
         private void ButtonClickedAvanti(object sender, EventArgs e)
         {
             Avanti();
-           /*  int count = this.count-1;
-             if (indice+1 < countImage.Count)
-             {
-                 indiceVisualizzato = indiceVisualizzato + 1;
-                 numeroDomande.Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande;
-                 countImage[indice].Source = statoPrecedente;
-                 statoPrecedente = countImage[indice + 1].Source.ToString();
-                 statoPrecedente = statoPrecedente.Substring(6);
-                 countImage[indice+1].Source = "selected_circle.png";
-                 indice++;
+            /*  int count = this.count-1;
+              if (indice+1 < countImage.Count)
+              {
+                  indiceVisualizzato = indiceVisualizzato + 1;
+                  numeroDomande.Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande;
+                  countImage[indice].Source = statoPrecedente;
+                  statoPrecedente = countImage[indice + 1].Source.ToString();
+                  statoPrecedente = statoPrecedente.Substring(6);
+                  countImage[indice+1].Source = "selected_circle.png";
+                  indice++;
 
-                 if(indice > count && indice>sign)
-                 {
-                    GridGrande.Children.Remove(countImage[0]);
-                    GridGrande.Children.Add(arrowleft, 1, 0);
-                     if (indice == countImage.Count - 1)
-                     {
-                         int test = indice - (count);
-                         int colonna = 2;
-                         count++;
-                        GridGrande.Children.Remove(arrowright);
-                         while (colonna <= count+1)
-                         {
-                            GridGrande.Children.Add(countImage[test], colonna, 0);
-                             colonna++;
-                             test = test + 1;
-                         }
-                     }
-                     else
-                     {
-                         int test = indice - (count-1);
-                         int colonna = 2;
-                         count++;
-                         while (colonna <= count)
-                         {
-                            GridGrande.Children.Add(countImage[test], colonna, 0);
-                             colonna++;
-                             test = test+ 1;
-                         }
-                     }
+                  if(indice > count && indice>sign)
+                  {
+                     GridGrande.Children.Remove(countImage[0]);
+                     GridGrande.Children.Add(arrowleft, 1, 0);
+                      if (indice == countImage.Count - 1)
+                      {
+                          int test = indice - (count);
+                          int colonna = 2;
+                          count++;
+                         GridGrande.Children.Remove(arrowright);
+                          while (colonna <= count+1)
+                          {
+                             GridGrande.Children.Add(countImage[test], colonna, 0);
+                              colonna++;
+                              test = test + 1;
+                          }
+                      }
+                      else
+                      {
+                          int test = indice - (count-1);
+                          int colonna = 2;
+                          count++;
+                          while (colonna <= count)
+                          {
+                             GridGrande.Children.Add(countImage[test], colonna, 0);
+                              colonna++;
+                              test = test+ 1;
+                          }
+                      }
 
 
-                  sign = indice;
-                 }
+                   sign = indice;
+                  }
 
-                    // prova.Children.Add(countImage[indice + 1- count], 1, 0);
+                     // prova.Children.Add(countImage[indice + 1- count], 1, 0);
 
-             }*/
+              }*/
 
         }
 
@@ -306,18 +311,18 @@ namespace QuizAmoroso
                 else
                 {
                     var flag = false;
-                   List<Domande> struttura = JsonConvert.DeserializeObject<List<Domande>>(resultcontent);
+                    List<Domande> struttura = JsonConvert.DeserializeObject<List<Domande>>(resultcontent);
                     if (datiConnessione.modalitaSelezionata == "Modalità Casuale")
                     {
                         struttura = ShuffleList.Shuffle<Domande>(struttura);
                     }
-                   var numeroTotaleDelSetDiDomande = struttura.Count;
-                   return struttura;
+                    var numeroTotaleDelSetDiDomande = struttura.Count;
+                    return struttura;
                 }
             }
             catch (Exception e)
             {
-                await DisplayAlert("Errore","fff", "Ok");
+                await DisplayAlert("Errore", "fff", "Ok");
                 return new List<Domande>();
             }
         }
@@ -374,8 +379,8 @@ namespace QuizAmoroso
                             if (y.GetType() == lettera.GetType())
                             {
                                 y.IsEnabled = false;
-                                if(y==lettera)
-                                    await Risposta(i,lettera.Text.ToString(), list);
+                                if (y == lettera)
+                                    await Risposta(i, lettera.Text.ToString(), list);
                             }
                         }
                     };
@@ -396,11 +401,11 @@ namespace QuizAmoroso
 
         }
 
-        private async Task Risposta(string i,string alfabeto, Domande list)
+        private async Task Risposta(string i, string alfabeto, Domande list)
         {
-            foreach(var k in risultato)
+            foreach (var k in risultato)
             {
-                if(k.Domanda==list.Domanda && k.risposta == list.Risposta)
+                if (k.Domanda == list.Domanda && k.risposta == list.Risposta)
                 {
                     k.tuaRisposta = i;
                     k.letteraSelezionata = alfabeto;
@@ -414,7 +419,16 @@ namespace QuizAmoroso
                     }
                 }
             }
-            
+
+        }
+        public void TempoTrascorsoGlobale()
+        {
+            Device.StartTimer(TimeSpan.FromSeconds(0), () =>
+            {
+                tempoQuiz.AvvioTempo(true, lblTimer);
+                return true;
+
+            });
         }
     }
 }
