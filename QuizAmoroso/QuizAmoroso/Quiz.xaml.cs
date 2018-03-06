@@ -16,15 +16,20 @@ namespace QuizAmoroso
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Quiz : ContentPage
     {
+        //Variabili dati
         private List<DatiRisultati> risultato = new List<DatiRisultati>();
-        private Grid prova;
-        private List<Grid> test2 = new List<Grid>();
         private List<Domande> list = new List<Domande>();
-        private DatiConnessioneDomande datiConnessione = new DatiConnessioneDomande();
-        private Label numeroDomande;
         private string statoPrecedente = "unselected_circle.png";
         private int indice, sign, count = 0;
         private int indiceVisualizzato = 1;
+        //Griglie
+        private Grid GridGrande;
+        private List<Grid> grid_domande = new List<Grid>();
+        //connessione
+        private DatiConnessioneDomande datiConnessione = new DatiConnessioneDomande();
+        //Form
+        private Label numeroDomande;
+
         private List<Image> countImage = new List<Image>();
         private double width, height;
 
@@ -71,15 +76,15 @@ namespace QuizAmoroso
             {
                 indice--;
                 grigliaDomande.Children.Clear();
-                grigliaDomande.Children.Add(test2[indice]);
+                grigliaDomande.Children.Add(grid_domande[indice]);
             }
         }
         private void Avanti()
         {
-            if(indice != test2.Count()-1){
+            if(indice != grid_domande.Count()-1){
                 indice++;
                 grigliaDomande.Children.Clear();
-                grigliaDomande.Children.Add(test2[indice]);
+                grigliaDomande.Children.Add(grid_domande[indice]);
             }
             
         }
@@ -113,8 +118,7 @@ namespace QuizAmoroso
                 this.width = width;
                 this.height = height;
               //  Prova.Children.Clear();
-
-                 //   Prova.Children.Add(GetLayoutData(width, height));
+             //   Prova.Children.Add(GetLayoutData(width, height));
 
 
             }
@@ -130,26 +134,26 @@ namespace QuizAmoroso
                 Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande,
                 FontSize = 15
             };
-            prova = new Grid();
-            prova.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-            prova.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) });
-            prova.Children.Add(numeroDomande, colonne, 0);
+            GridGrande = new Grid();
+            GridGrande.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            GridGrande.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) });
+            GridGrande.Children.Add(numeroDomande, colonne, 0);
             colonne++;
             count = 0;
             double test = width-15.00;
             while (test >15.00 && countImage.Count>count)
             {
-                prova.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                prova.Children.Add(countImage[count], colonne, 0);
+                GridGrande.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                GridGrande.Children.Add(countImage[count], colonne, 0);
                 test = test - 15;
                 colonne++;
                 count++;
             }
             if (count < countImage.Count)
             {
-                prova.Children.Add(arrowright, colonne--, 0);
+                GridGrande.Children.Add(arrowright, colonne--, 0);
             }
-            return prova;
+            return GridGrande;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -379,9 +383,9 @@ namespace QuizAmoroso
                     riga++;
                 }
                 gridDom.Children.Add(gridQuesiti, 0, 1);
-                test2.Add(gridDom);
+                grid_domande.Add(gridDom);
             }
-            grigliaDomande.Children.Add(test2[0]);
+            grigliaDomande.Children.Add(grid_domande[0]);
 
         }
 
