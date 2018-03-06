@@ -12,7 +12,7 @@
             </ActivityIndicator>
         </StackLayout>
         
-        <StackLayout x:Name="stackPagina" IsVisible="False">
+        <StackLayout x:Name="stackPagina" IsVisible="False" VerticalOptions="FillAndExpand">
             <StackLayout x:Name="StackGridContatore"/>
         <StackLayout VerticalOptions="Start">
             <Frame x:Name="frameDomanda"
@@ -29,9 +29,7 @@
 
 
         </StackLayout>
-        
-        </StackLayout>
-        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
             <Grid HorizontalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
@@ -44,5 +42,7 @@
                 <Button Grid.Column="2" Clicked="ButtonClickedAvanti" HorizontalOptions="Center" x:Name="btnAvanti" Text="avanti" ></Button>
             </Grid>
         </StackLayout>
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>

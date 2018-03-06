@@ -17,7 +17,8 @@ namespace QuizAmoroso
     public partial class Quiz : ContentPage
     {
         //timer
-        Timer tempoQuiz = new Timer();
+        private Timer tempoQuiz = new Timer();
+        private bool scelta = true;
         //Variabili dati
         private List<DatiRisultati> risultato = new List<DatiRisultati>();
         private List<Domande> list = new List<Domande>();
@@ -60,7 +61,8 @@ namespace QuizAmoroso
             DisabilitaLayoutActivityIndicator.IsVisible = false;
             caricamentoPagina.IsRunning = false;
             stackPagina.IsVisible = true;
-            TempoTrascorsoGlobale();
+            scelta = true;
+            tempoQuiz.AvvioTempo(scelta, lblTimer);
         }
 
         private async void listRisultato()
@@ -172,6 +174,7 @@ namespace QuizAmoroso
         private void ButtonClickedAvanti(object sender, EventArgs e)
         {
             Avanti();
+
             /*  int count = this.count-1;
               if (indice+1 < countImage.Count)
               {
@@ -420,15 +423,6 @@ namespace QuizAmoroso
                 }
             }
 
-        }
-        public void TempoTrascorsoGlobale()
-        {
-            Device.StartTimer(TimeSpan.FromSeconds(0), () =>
-            {
-                tempoQuiz.AvvioTempo(true, lblTimer);
-                return true;
-
-            });
         }
     }
 }

@@ -53,6 +53,7 @@
     <Compile Include="DataModel\Domande.cs" />
     <Compile Include="DataModel\DatiSetDomande.cs" />
     <Compile Include="DataModel\Lezioni.cs" />
+    <Compile Include="DataModel\RisultatiQuiz.cs" />
     <Compile Include="DataModel\RisultatoDomande.cs" />
     <Compile Include="DataModel\Sessioni.cs" />
     <Compile Include="DettagliTest.xaml.cs">
