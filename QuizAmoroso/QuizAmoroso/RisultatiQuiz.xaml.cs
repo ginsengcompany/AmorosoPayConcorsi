@@ -20,6 +20,7 @@ namespace QuizAmoroso
 		    LabelSbagliate.Text = risultati.contSbagliateTot;
 		    LabelSbagliateSopra.Text = risultati.contSbagliateTot;
 		    LabelNonRisposte.Text = risultati.contNonRisposteTot;
+		    LabelNumeroDomande.Text = risultati.numeroDomande;
 		    LabelTempo.Text = risultati.TmpTotale;
 		}
 	}

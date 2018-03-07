@@ -14,10 +14,31 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Image Source="risposteEsatte.png" Grid.Row="0" Grid.Column="0" HeightRequest="70" WidthRequest="70"></Image>
-                <Image Source="risposteSbagliate.png" Grid.Row="0" Grid.Column="1" HeightRequest="70" WidthRequest="70"></Image>
-                <Label x:Name="LabelEsatteSopra" Text="0" FontSize="Medium" Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand"></Label>
-                <Label x:Name="LabelSbagliateSopra" Text="0" FontSize="Medium" Grid.Row="1" Grid.Column="1" HorizontalOptions="CenterAndExpand"></Label>
+                <Image Source="risposteEsatte.png" 
+                       Grid.Row="0" 
+                       Grid.Column="0" 
+                       HeightRequest="70" 
+                       WidthRequest="70"></Image>
+                <Image 
+                    Source="risposteSbagliate.png" 
+                    Grid.Row="0"
+                    Grid.Column="1" 
+                    HeightRequest="70" 
+                    WidthRequest="70"></Image>
+                <Label 
+                    x:Name="LabelEsatteSopra" 
+                    Text="0" 
+                    FontSize="Medium" 
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                    HorizontalOptions="CenterAndExpand"></Label>
+                <Label 
+                    x:Name="LabelSbagliateSopra" 
+                    Text="0" 
+                    FontSize="Medium" 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    HorizontalOptions="CenterAndExpand"></Label>
 
             </Grid>
             <Grid Padding="2,2,2,2" ColumnSpacing="4" RowSpacing="5" BackgroundColor="Black">
@@ -66,13 +87,11 @@
                     <Label x:Name="LabelNonRisposte" FontSize="Large"  Text="0" HorizontalTextAlignment="Center"></Label>
                 </StackLayout>
                 <StackLayout  VerticalOptions="Center" Grid.Column="1" Grid.Row="4"  BackgroundColor="White" >
-                    <Label x:Name="LabelTempo" FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
+                    <Label x:Name="LabelTempo" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
                 </StackLayout>
                 <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="5"  BackgroundColor="White">
                     <Label x:Name="LabelPunteggio" FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
                 </StackLayout>
-
-
             </Grid>
         </StackLayout>
     </ContentPage.Content>
