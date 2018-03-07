@@ -5,31 +5,32 @@
              BackgroundColor="#072034">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Image Source="amorosoLogo.png" HorizontalOptions="CenterAndExpand"/>
             <Grid Margin="0,30,0,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="ic_quiz.png" Grid.Row="0" Grid.Column="0" x:Name="icQuiz">
+                <Image Source="amorosoLogo.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Image Source="ic_quiz.png" Grid.Row="1" Grid.Column="0" x:Name="icQuiz">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
                             Tapped="paginaQuiz"
                             NumberOfTapsRequired="1"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="ic_info.png" Grid.Row="0" Grid.Column="1" x:Name="icInfo">
+                <Image Source="ic_info.png" Grid.Row="1" Grid.Column="1" x:Name="icInfo">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
                             Tapped="paginaInfo"
                             NumberOfTapsRequired="1"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Image Source="ic_purchase.png" Grid.Row="1" Grid.Column="0" x:Name="icPurchase">
+                <Image Source="ic_purchase.png" Grid.Row="2" Grid.Column="0" x:Name="icPurchase">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
                             Tapped="paginaPurchase"

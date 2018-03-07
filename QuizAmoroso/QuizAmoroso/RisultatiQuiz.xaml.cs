@@ -14,7 +14,14 @@ namespace QuizAmoroso
 	{
 		public RisultatiQuiz (RisultatoQuiz risultati)
 		{
-			InitializeComponent();
+			InitializeComponent ();
+		    LabelEsatte.Text = risultati.contEsatteTot;
+            LabelEsatteSopra.Text= risultati.contEsatteTot;
+		    LabelSbagliate.Text = risultati.contSbagliateTot;
+		    LabelSbagliateSopra.Text = risultati.contSbagliateTot;
+		    LabelNonRisposte.Text = risultati.contNonRisposteTot;
+		    LabelNumeroDomande.Text = risultati.numeroDomande;
+		    LabelTempo.Text = risultati.TmpTotale;
 		}
 	}
 }
