@@ -15,17 +15,14 @@
         <StackLayout x:Name="stackPagina" IsVisible="False" VerticalOptions="FillAndExpand">
             <StackLayout x:Name="StackGridContatore"/>
         <StackLayout VerticalOptions="Start">
-            <Frame x:Name="frameDomanda"
+                <Frame x:Name="frameDomanda"
                            IsVisible="False"
                            HasShadow="True">
-                <Label x:Name="lblDomanda"
+                    <Label x:Name="lblDomanda"
                                FontSize="Medium"
                                FontAttributes="Bold"/>
-            </Frame>
-            <Image x:Name="immagine"
-                           IsVisible="False"/>
-
-            <StackLayout x:Name="grigliaDomande"/>
+                </Frame>
+                <StackLayout x:Name="grigliaDomande"/>
 
 
         </StackLayout>
