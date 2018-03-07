@@ -387,9 +387,18 @@
     <AndroidResource Include="Resources\drawable\unselected_circle.png" />
     <AndroidResource Include="Resources\drawable\arrowLeft.png" />
     <AndroidResource Include="Resources\drawable\arrowRight.png" />
-    <AndroidResource Include="Resources\drawable\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info.png" />
     <AndroidResource Include="Resources\drawable\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_purchase.png" />
     <AndroidResource Include="Resources\drawable\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable\ic_quiz.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>
