@@ -20,13 +20,11 @@
                            IsVisible="False"
                            HasShadow="True">
                     <Label x:Name="lblDomanda"
-                               FontSize="Medium"
+                               FontSize="Large"
                                FontAttributes="Bold"/>
                 </Frame>
                 <StackLayout x:Name="grigliaDomande"/>
-
-
-        </StackLayout>
+            </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
             <Grid HorizontalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
@@ -44,6 +42,7 @@
                 Clicked="ButtonClickedIndietro" 
                 HorizontalOptions="Center"
                 x:Name="btnIndietro" 
+                TextColor="White"
                 Text="indietro"  
                 IsVisible="False"></Button>
                 
@@ -61,6 +60,7 @@
                         Grid.Column="2" 
                         Clicked="ButtonClickedAvanti" 
                         HorizontalOptions="Center" 
+                        TextColor="White"
                         x:Name="btnAvanti" 
                         Text="avanti" ></Button>
             </Grid>

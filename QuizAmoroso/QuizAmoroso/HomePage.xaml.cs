@@ -41,19 +41,20 @@ namespace QuizAmoroso
         private async Task animateIcon(Image a)
         {
             /*
-            await a.TranslateTo(0, -5, 200);
-            await a.TranslateTo(0, 5, 200);
-            await a.TranslateTo(0, -5, 200);
-            await a.TranslateTo(0, 5, 200);
+            await a.TranslateTo(0, -1, 300);
+            await a.TranslateTo(0, 1, 300);
+            await a.TranslateTo(0, -1, 300);
+            await a.TranslateTo(0, 1, 300);
             */
             await a.RotateYTo(360, 2000);
         }
-
+        
         protected override void OnDisappearing()
         {
             icQuiz.RotationY = 0;
             icPurchase.RotationY = 0;
             icInfo.RotationY = 0;
         }
+        
     }
 }
