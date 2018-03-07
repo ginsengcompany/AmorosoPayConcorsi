@@ -38,7 +38,7 @@ namespace QuizAmoroso
                 SliderSelezioneNumeroDomande.Value = 1;
             }
 
-            LabelValoriSelezionatiConSlider.Text = "Max: " + SliderSelezioneNumeroDomande.Value.ToString();
+            LabelValoriSelezionatiConSlider.Text =  SliderSelezioneNumeroDomande.Value.ToString();
             LabelMinimoSlider.Text = "Min: " + SliderSelezioneNumeroDomande.Minimum.ToString();
             LabelMassimoSlider.Text = i.domandemateriamax;
         }
@@ -51,20 +51,11 @@ namespace QuizAmoroso
         }
 
         private async Task Button_Clicked(object sender, EventArgs e)
-        {/*
-                caricamentoPagina.IsRunning = true;
-                caricamentoPagina.IsVisible = true;
-          */
+        {
             datiConnessione.materia = materia.materia;
             datiConnessione.numeroDomande = Convert.ToInt32(SliderSelezioneNumeroDomande.Value).ToString();
             datiConnessione.modalitaSelezionata = "Libera";
-
-               await Navigation.PushAsync(new Quiz(datiConnessione));
-                      
-                   
-             /*   caricamentoPagina.IsRunning = false;
-                caricamentoPagina.IsVisible = false;
-                */
+            await Navigation.PushAsync(new Quiz(datiConnessione));
         }
     }
 }

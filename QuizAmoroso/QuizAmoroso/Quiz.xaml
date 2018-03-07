@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QuizAmoroso.Quiz">
+             x:Class="QuizAmoroso.Quiz" 
+             Title="QUIZ">
 
     <StackLayout>
         
@@ -19,13 +20,11 @@
                            IsVisible="False"
                            HasShadow="True">
                     <Label x:Name="lblDomanda"
-                               FontSize="Medium"
+                               FontSize="Large"
                                FontAttributes="Bold"/>
                 </Frame>
                 <StackLayout x:Name="grigliaDomande"/>
-
-
-        </StackLayout>
+            </StackLayout>
                 <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
             <Grid HorizontalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
@@ -43,6 +42,7 @@
                 Clicked="ButtonClickedIndietro" 
                 HorizontalOptions="Center"
                 x:Name="btnIndietro" 
+                TextColor="White"
                 Text="indietro"  
                 IsVisible="False"></Button>
                 
@@ -60,6 +60,7 @@
                         Grid.Column="2" 
                         Clicked="ButtonClickedAvanti" 
                         HorizontalOptions="Center" 
+                        TextColor="White"
                         x:Name="btnAvanti" 
                         Text="avanti" ></Button>
             </Grid>
