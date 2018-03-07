@@ -320,12 +320,10 @@ namespace QuizAmoroso
 
                 if (resultcontent.ToString() == "errore nella get")
                 {
-                    var flag = true;
                     return new List<Domande>();
                 }
                 else
                 {
-                    var flag = false;
                     List<Domande> struttura = JsonConvert.DeserializeObject<List<Domande>>(resultcontent);
                     if (datiConnessione.modalitaSelezionata == "Modalità Casuale")
                     {
@@ -363,7 +361,18 @@ namespace QuizAmoroso
                 };
                 if (list.link != string.Empty)
                 {
-                    
+                    if (list.tipo == "img")
+                    {
+                       string urlRisorsa = Costanti.urlBase + list.link;
+                        var urlProva = new System.Uri(urlRisorsa);
+                        Task<ImageSource> result = Task<ImageSource>.Factory.StartNew(() => ImageSource.FromUri(urlProva));
+                        immagine.Source = await result;
+                    }
+                    else if (list.tipo == "pdf")
+                    {
+                        string urlRisorsa = Costanti.urlBase + list.link;
+                    }
+
                 }
 
                 Label domanda = new Label
@@ -441,10 +450,10 @@ namespace QuizAmoroso
         private RisultatoQuiz RisultatiQuiz()
         {
             RisultatoQuiz risultati = new RisultatoQuiz();
-            int contEsatteTot=0,
-                contNonRisposteTot=0,
-                contSbagliateTot=0,
-                lstdatirisultati = 0;
+            int contEsatteTot = 0,
+                contNonRisposteTot = 0,
+                contSbagliateTot = 0;
+                //lstdatirisultati = 0;
             foreach (var i in risultato)
             {
                 if(i.rispostaEsattaYN=="true")

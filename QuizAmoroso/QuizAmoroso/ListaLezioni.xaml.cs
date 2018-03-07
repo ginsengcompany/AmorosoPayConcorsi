@@ -44,10 +44,10 @@ namespace QuizAmoroso
             }
             catch (Exception errore)
             {
-                //await DisplayAlert("Errore", "Problema sulla connessione", "Ok");
-                //DisabilitaLayoutActivityIndicator.IsVisible = false;
-                //caricamentoPagina.IsVisible = false;
-                //caricamentoPagina.IsRunning = false;
+                await DisplayAlert("Errore", "Problema sulla connessione", "Ok");
+                DisabilitaLayoutActivityIndicator.IsVisible = false;
+                caricamentoPagina.IsVisible = false;
+                caricamentoPagina.IsRunning = false;
             }
         }
 
