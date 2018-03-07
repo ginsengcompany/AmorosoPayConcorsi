@@ -23,6 +23,8 @@ namespace QuizAmoroso
         private List<DatiRisultati> risultato = new List<DatiRisultati>();
         private List<Domande> list = new List<Domande>();
         private string statoPrecedente = "unselected_circle.png";
+        private string statoSelected = "selected_circle.png";
+        private string statoRisposta = "sign_RispostaData.png";
         private int indice, sign, count = 0;
         private int indiceVisualizzato = 1;
         //Griglie
@@ -80,12 +82,18 @@ namespace QuizAmoroso
         {
             if (indice != 0)
             {
+                countImage[indice].Source = statoPrecedente;
                 btnAvanti.Text = "AVANTI";
                 indice--;
+                indiceVisualizzato--;
+                statoPrecedente = countImage[indice].Source.ToString();
+                statoPrecedente = statoPrecedente.Substring(6);
+                countImage[indice].Source = statoSelected;
                 grigliaDomande.Children.Clear();
                 grigliaDomande.Children.Add(grid_domande[indice]);
                 if (indice == 0)
                     btnIndietro.IsVisible = false;
+                numeroDomande.Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande;
             }
         }
         private async Task Avanti()
@@ -93,13 +101,20 @@ namespace QuizAmoroso
             if (indice != grid_domande.Count() - 1)
             {
                 btnIndietro.IsVisible = true;
+                countImage[indice].Source = statoPrecedente;
+                indiceVisualizzato++;
                 indice++;
+                statoPrecedente = countImage[indice].Source.ToString();
+                statoPrecedente = statoPrecedente.Substring(6);
+                countImage[indice].Source = statoSelected;
                 grigliaDomande.Children.Clear();
                 grigliaDomande.Children.Add(grid_domande[indice]);
                 if (indice == grid_domande.Count() - 1)
                     btnAvanti.Text = "FINE";
                 else
                     btnAvanti.Text = "AVANTI";
+                numeroDomande.Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande;
+                
             }
             else
             {
@@ -115,27 +130,28 @@ namespace QuizAmoroso
             }
 
         }
-        public Quiz(DatiConnessioneDomande datiConnessione)
+        private void riempicountImage()
         {
-            this.datiConnessione = datiConnessione;
-            InitializeComponent();
-
 
             for (int i = 0; i < Convert.ToInt32(datiConnessione.numeroDomande); i++)
             {
-                Image prova = new Image
+                Image cerchietto = new Image
                 {
                     Source = statoPrecedente,
                     WidthRequest = 15
 
                 };
-                if (i == 2 || i == 5 || i == 7 || i == 25 || i == 27 || i == 29)
-                {
-                    prova.Source = "sign_RispostaData.png";
-                }
-                countImage.Add(prova);
+                countImage.Add(cerchietto);
             }
-            countImage[0].Source = "selected_circle.png";
+            countImage[0].Source = statoSelected;
+            indice = 0;
+            
+        }
+        public Quiz(DatiConnessioneDomande datiConnessione)
+        {
+            this.datiConnessione = datiConnessione;
+            riempicountImage();
+            InitializeComponent();
         }
         protected override void OnSizeAllocated(double width, double height)
         {
@@ -168,10 +184,11 @@ namespace QuizAmoroso
             colonne++;
             count = 0;
             double test = width - 15.00;
-            while (test > 15.00 && countImage.Count > count)
+            while (test > 15.00)
             {
                 GridGrande.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                GridGrande.Children.Add(countImage[count], colonne, 0);
+                if(countImage.Count > count)
+                    GridGrande.Children.Add(countImage[count], colonne, 0);
                 test = test - 15;
                 colonne++;
                 count++;
@@ -187,54 +204,7 @@ namespace QuizAmoroso
         {
             await Avanti();
 
-            /*  int count = this.count-1;
-              if (indice+1 < countImage.Count)
-              {
-                  indiceVisualizzato = indiceVisualizzato + 1;
-                  numeroDomande.Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande;
-                  countImage[indice].Source = statoPrecedente;
-                  statoPrecedente = countImage[indice + 1].Source.ToString();
-                  statoPrecedente = statoPrecedente.Substring(6);
-                  countImage[indice+1].Source = "selected_circle.png";
-                  indice++;
-
-                  if(indice > count && indice>sign)
-                  {
-                     GridGrande.Children.Remove(countImage[0]);
-                     GridGrande.Children.Add(arrowleft, 1, 0);
-                      if (indice == countImage.Count - 1)
-                      {
-                          int test = indice - (count);
-                          int colonna = 2;
-                          count++;
-                         GridGrande.Children.Remove(arrowright);
-                          while (colonna <= count+1)
-                          {
-                             GridGrande.Children.Add(countImage[test], colonna, 0);
-                              colonna++;
-                              test = test + 1;
-                          }
-                      }
-                      else
-                      {
-                          int test = indice - (count-1);
-                          int colonna = 2;
-                          count++;
-                          while (colonna <= count)
-                          {
-                             GridGrande.Children.Add(countImage[test], colonna, 0);
-                              colonna++;
-                              test = test+ 1;
-                          }
-                      }
-
-
-                   sign = indice;
-                  }
-
-                     // prova.Children.Add(countImage[indice + 1- count], 1, 0);
-
-              }*/
+            
 
         }
 
@@ -242,53 +212,7 @@ namespace QuizAmoroso
         {
             Indietro();
 
-          /*  int count = this.count - 1;
-
-             if (indice != 0)
-             {
-                 if (indiceVisualizzato != 1)
-                 {
-                     indiceVisualizzato = indiceVisualizzato - 1;
-                     numeroDomande.Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande;
-                 }
-                 countImage[indice].Source = statoPrecedente;
-                 statoPrecedente = countImage[indice - 1].Source.ToString();
-                 statoPrecedente = statoPrecedente.Substring(6);
-                 countImage[indice - 1].Source = "selected_circle.png";
-                 indice--;
-                 if (sign > 0)
-                 {
-                     int prova = sign - (count);
-
-                     if (indice == 0 && prova>0)
-                     {
-                         //prova.Children.Remove(countImage[count]);
-
-                         if (prova == 1)
-                         {
-                         this.GridGrande.Children.Remove(arrowleft);
-                             int index = this.count + 1;
-                             this.GridGrande.Children.Add(arrowright, index, 0);
-                         }
-                         else
-                             this.GridGrande.Children.Add(arrowright, this.count, 0);
-
-                         int colonna;
-                         if (prova == 0)
-                             colonna = 1;
-                         else
-                             colonna = 2;
-                         count++;
-                         while (colonna <= count)
-                         {
-                             this.GridGrande.Children.Add(countImage[prova], colonna, 0);
-                             colonna++;
-                             prova = prova + 1;
-                         }
-                         sign = sign-1;
-                     }
-
-                 }*/
+          
 
         }
 
@@ -349,7 +273,7 @@ namespace QuizAmoroso
             {
                 Grid gridDom = new Grid();
                 gridDom.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
-                gridDom.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                gridDom.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
                 gridDom.ColumnDefinitions = new ColumnDefinitionCollection();
                 Frame frmDomanda = new Frame
                 {
@@ -386,7 +310,7 @@ namespace QuizAmoroso
                     };
                     lettera.Clicked += async delegate (object sender, EventArgs e)
                     {
-                        lettera.BackgroundColor = Color.Green;
+                        lettera.BackgroundColor = Colori.coloreTerziario;
                         foreach (var y in gridQuesiti.Children)
                         {
                             if (y.GetType() == lettera.GetType())
@@ -396,6 +320,7 @@ namespace QuizAmoroso
                                     await Risposta(i, lettera.Text.ToString(), list);
                             }
                         }
+                        statoPrecedente = statoRisposta;
                         await Avanti();
                     };
                     Alfabeto = (Char)(Convert.ToUInt16(Alfabeto) + 1);
@@ -420,8 +345,9 @@ namespace QuizAmoroso
                         Task<ImageSource> result = Task<ImageSource>.Factory.StartNew(() => ImageSource.FromUri(urlProva));
                         Image img = new Image();
                         img.Source = await result;
-                        gridQuesiti.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-                        gridDom.Children.Add(gridQuesiti, 0, riga);
+                        img.HorizontalOptions = LayoutOptions.Center;
+                        gridDom.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
+                        gridDom.Children.Add(img, 0, 2);
 
                     }
                     else if (list.tipo == "pdf")
@@ -436,6 +362,8 @@ namespace QuizAmoroso
                         {
                             Device.OpenUri(new Uri(urlRisorsa));
                         };
+                        gridDom.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
+                        gridDom.Children.Add(pdf, 0, 2);
                     }
                 }
                 grid_domande.Add(gridDom);
