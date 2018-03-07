@@ -54,6 +54,7 @@
     <Compile Include="DataModel\DatiSetDomande.cs" />
     <Compile Include="DataModel\Lezioni.cs" />
     <Compile Include="DataModel\RisultatoDomande.cs" />
+    <Compile Include="DataModel\RisultatoQuiz.cs" />
     <Compile Include="DataModel\Sessioni.cs" />
     <Compile Include="DettagliTest.xaml.cs">
       <DependentUpon>DettagliTest.xaml</DependentUpon>
@@ -122,6 +123,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RisultatiQuiz.xaml.cs">
+      <DependentUpon>RisultatiQuiz.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SceltaModalità.xaml.cs">
       <DependentUpon>SceltaModalità.xaml</DependentUpon>
     </Compile>
@@ -352,6 +356,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="RisultatiQuiz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
