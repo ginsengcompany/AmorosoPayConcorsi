@@ -17,8 +17,9 @@ namespace QuizAmoroso
             InitializeComponent();
         }
 
-        public void paginaQuiz(object sender, EventArgs args)
+        public async void paginaQuiz(object sender, EventArgs args)
         {
+            await icQuiz.TranslateTo(-100, -100, 1000);
             App.Current.MainPage = new NavigationPage(new ConcorsiESottocategorie());
         }
 
