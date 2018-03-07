@@ -14,7 +14,7 @@ namespace QuizAmoroso
 	{
 		public RisultatiQuiz (RisultatoQuiz risultati)
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 	}
 }
