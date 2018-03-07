@@ -17,19 +17,43 @@ namespace QuizAmoroso
             InitializeComponent();
         }
 
-        public void paginaQuiz(object sender, EventArgs args)
+        public async void paginaQuiz(object sender, EventArgs args)
         {
-            App.Current.MainPage = new NavigationPage(new ConcorsiESottocategorie());
+            var icon = sender as Image;
+            await animateIcon(icon);
+            await Navigation.PushAsync(new ConcorsiESottocategorie());
         }
 
-        public void paginaInfo(object sender, EventArgs args)
+        public async void paginaInfo(object sender, EventArgs args)
         {
-            App.Current.MainPage = new NavigationPage(new Info());
+            var icon = sender as Image;
+            await animateIcon(icon);
+            await Navigation.PushAsync(new Info());
         }
 
-        public void paginaPurchase(object sender, EventArgs args)
+        public async void paginaPurchase(object sender, EventArgs args)
         {
-            App.Current.MainPage = new NavigationPage(new PianoFormativo());
+            var icon = sender as Image;
+            await animateIcon(icon);
+            await Navigation.PushAsync(new PianoFormativo());
+        }
+
+        private async Task animateIcon(Image a)
+        {
+            /*
+            await a.TranslateTo(0, -5, 200);
+            await a.TranslateTo(0, 5, 200);
+            await a.TranslateTo(0, -5, 200);
+            await a.TranslateTo(0, 5, 200);
+            */
+            await a.RotateYTo(360, 2000);
+        }
+
+        protected override void OnDisappearing()
+        {
+            icQuiz.RotationY = 0;
+            icPurchase.RotationY = 0;
+            icInfo.RotationY = 0;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace QuizAmoroso.DataModel
 {
   public class RisultatoQuiz
     {
+        public string numeroDomande { get; set; }
         public string contSbagliateTot { get; set; }
         public string contEsatteTot { get; set; }
         public string TmpTotale { get; set; }

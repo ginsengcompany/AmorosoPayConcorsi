@@ -320,12 +320,10 @@ namespace QuizAmoroso
 
                 if (resultcontent.ToString() == "errore nella get")
                 {
-                    var flag = true;
                     return new List<Domande>();
                 }
                 else
                 {
-                    var flag = false;
                     List<Domande> struttura = JsonConvert.DeserializeObject<List<Domande>>(resultcontent);
                     if (datiConnessione.modalitaSelezionata == "Modalità Casuale")
                     {
@@ -361,11 +359,7 @@ namespace QuizAmoroso
                     Margin = 8,
                     CornerRadius = 5
                 };
-                if (list.link != string.Empty)
-                {
-                    
-                }
-
+                
                 Label domanda = new Label
                 {
                     Text = list.Domanda,
@@ -373,6 +367,35 @@ namespace QuizAmoroso
                     TextColor = Color.White
                 };
                 frmDomanda.Content = domanda;
+                if (list.link != string.Empty)
+                {
+                    string urlRisorsa = "";
+                    if (list.tipo == "img")
+                    {
+                        urlRisorsa = Costanti.urlBase + list.link;
+                        var urlProva = new System.Uri(urlRisorsa);
+                        Task<ImageSource> result = Task<ImageSource>.Factory.StartNew(() => ImageSource.FromUri(urlProva));
+                        Image img = new Image
+                        {
+                            Source = await result
+                        };
+                        frameDomanda.Content = img;
+                    }
+                    else if (list.tipo == "pdf")
+                    {
+                        urlRisorsa = Costanti.urlBase + list.link;
+                        Button pdf = new Button
+                        {
+                            Text = "PDF",
+                            BackgroundColor = Colori.Button
+                        };
+                        pdf.Clicked += async delegate (object sender, EventArgs e)
+                        {
+                            Device.OpenUri(new Uri(urlRisorsa));
+                        };
+                    }
+
+                }
                 gridDom.Children.Add(frmDomanda, 0, 0);
 
                 Grid gridQuesiti = new Grid();
@@ -427,7 +450,7 @@ namespace QuizAmoroso
                 {
                     k.tuaRisposta = i;
                     k.letteraSelezionata = alfabeto;
-                    if (k.tuaRisposta == k.risposta)
+                    if (k.letteraSelezionata == k.risposta)
                     {
                         k.rispostaEsattaYN = "true";
                     }
@@ -441,10 +464,10 @@ namespace QuizAmoroso
         private RisultatoQuiz RisultatiQuiz()
         {
             RisultatoQuiz risultati = new RisultatoQuiz();
-            int contEsatteTot=0,
-                contNonRisposteTot=0,
-                contSbagliateTot=0,
-                lstdatirisultati = 0;
+            int contEsatteTot = 0,
+                contNonRisposteTot = 0,
+                contSbagliateTot = 0;
+                //lstdatirisultati = 0;
             foreach (var i in risultato)
             {
                 if(i.rispostaEsattaYN=="true")
@@ -458,7 +481,7 @@ namespace QuizAmoroso
             risultati.contSbagliateTot = contSbagliateTot.ToString();
             risultati.contNonRisposteTot = contNonRisposteTot.ToString();
             risultati.TmpTotale = lblTimer.Text;
-
+            risultati.numeroDomande = risultato.Count.ToString();
             return risultati;
         }
     }
