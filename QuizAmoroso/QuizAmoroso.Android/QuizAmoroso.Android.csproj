@@ -390,7 +390,13 @@
     <AndroidResource Include="Resources\drawable\ic_quiz.png" />
     <AndroidResource Include="Resources\drawable\ic_info.png" />
     <AndroidResource Include="Resources\drawable\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\risposteEsatte.png" />
     <AndroidResource Include="Resources\drawable\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\risposteSbagliate.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\risposteSbagliate.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\risposteSbagliate.png" />
     <AndroidResource Include="Resources\drawable\risposteSbagliate.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
