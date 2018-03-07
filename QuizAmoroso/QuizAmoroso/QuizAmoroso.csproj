@@ -53,7 +53,6 @@
     <Compile Include="DataModel\Domande.cs" />
     <Compile Include="DataModel\DatiSetDomande.cs" />
     <Compile Include="DataModel\Lezioni.cs" />
-    <Compile Include="DataModel\RisultatoQuiz.cs" />
     <Compile Include="DataModel\RisultatoDomande.cs" />
     <Compile Include="DataModel\Sessioni.cs" />
     <Compile Include="DettagliTest.xaml.cs">
@@ -77,6 +76,9 @@
     </Compile>
     <Compile Include="HistorySessione.xaml.cs">
       <DependentUpon>HistorySessione.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Lezione.xaml.cs">
       <DependentUpon>Lezione.xaml</DependentUpon>
@@ -120,9 +122,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RisultatiQuiz.xaml.cs">
-      <DependentUpon>RisultatiQuiz.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SceltaModalità.xaml.cs">
       <DependentUpon>SceltaModalità.xaml</DependentUpon>
     </Compile>
@@ -349,7 +348,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RisultatiQuiz.xaml">
+    <EmbeddedResource Include="HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
