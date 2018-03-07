@@ -16,5 +16,20 @@ namespace QuizAmoroso
         {
             InitializeComponent();
         }
+
+        public void paginaQuiz(object sender, EventArgs args)
+        {
+            App.Current.MainPage = new NavigationPage(new ConcorsiESottocategorie());
+        }
+
+        public void paginaInfo(object sender, EventArgs args)
+        {
+            App.Current.MainPage = new NavigationPage(new Info());
+        }
+
+        public void paginaPurchase(object sender, EventArgs args)
+        {
+            App.Current.MainPage = new NavigationPage(new PianoFormativo());
+        }
     }
 }
