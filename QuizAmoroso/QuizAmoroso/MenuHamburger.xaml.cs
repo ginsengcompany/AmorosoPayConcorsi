@@ -29,7 +29,7 @@ namespace QuizAmoroso
 	            if (menu.MenuTitle.Equals("Home"))
 	            {
 	                IsPresented = false;
-	                Detail = new NavigationPage(new Info()); //Avvia la pagina principale
+	                Detail = new NavigationPage(new HomePage()); //Avvia la pagina principale
 	            }
 	            else if (menu.MenuTitle.Equals("Acquista"))
 	            {
@@ -60,7 +60,7 @@ namespace QuizAmoroso
                 new Menu{MenuTitle ="Info"}
             };
             ListaMenu.ItemsSource = menuPrincipale; //Assegna all'oggetto ListaMenu dello xaml della pagina la lista precedentemente inizializzata
-            Detail = new NavigationPage(new Info()); //Avvia la pagina principale
+            Detail = new NavigationPage(new HomePage()); //Avvia la pagina principale
         }
 
 
