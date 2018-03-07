@@ -12,7 +12,7 @@ namespace QuizAmoroso
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RisultatiQuiz : ContentPage
 	{
-		public RisultatiQuiz (RisultatoQuiz risultato)
+		public RisultatiQuiz (RisultatoQuiz risultati)
 		{
 			InitializeComponent();
 		}
