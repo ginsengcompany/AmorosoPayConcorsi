@@ -14,5 +14,6 @@ namespace QuizAmoroso.DataModel
         public string lstdatirisultati { get; set; }
         public string flagPunteggio { get; set; }
         public string contNonRisposteTot { get; set; }
+        
     }
 }

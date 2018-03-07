@@ -361,8 +361,10 @@ namespace QuizAmoroso
                     Margin = 8,
                     CornerRadius = 5
                 };
-
-
+                if (list.link != string.Empty)
+                {
+                    
+                }
 
                 Label domanda = new Label
                 {
