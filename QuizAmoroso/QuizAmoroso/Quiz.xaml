@@ -33,10 +33,35 @@
                     <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"></RowDefinition>
+                </Grid.RowDefinitions>
             
-            <Button Grid.Column="0" Clicked="ButtonClickedIndietro" HorizontalOptions="Center" x:Name="btnIndietro" Text="indietro"  IsVisible="False"></Button>
-                <Label Grid.Column="1" Text="Tempo" x:Name="lblTimer" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                <Button Grid.Column="2" Clicked="ButtonClickedAvanti" HorizontalOptions="Center" x:Name="btnAvanti" Text="avanti" ></Button>
+            <Button 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                Clicked="ButtonClickedIndietro" 
+                HorizontalOptions="Center"
+                x:Name="btnIndietro" 
+                Text="indietro"  
+                IsVisible="False"></Button>
+                
+                    <Label Grid.Row="0"  
+                           Grid.Column="1" 
+                           Text="Tempo" 
+                           x:Name="lblTimer" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" 
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+                    <Button 
+                        Grid.Row="0"  
+                        Grid.Column="2" 
+                        Clicked="ButtonClickedAvanti" 
+                        HorizontalOptions="Center" 
+                        x:Name="btnAvanti" 
+                        Text="avanti" ></Button>
             </Grid>
         </StackLayout>
         </StackLayout>

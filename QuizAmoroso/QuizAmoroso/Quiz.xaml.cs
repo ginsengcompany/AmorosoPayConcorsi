@@ -367,35 +367,7 @@ namespace QuizAmoroso
                     TextColor = Color.White
                 };
                 frmDomanda.Content = domanda;
-                if (list.link != string.Empty)
-                {
-                    string urlRisorsa = "";
-                    if (list.tipo == "img")
-                    {
-                        urlRisorsa = Costanti.urlBase + list.link;
-                        var urlProva = new System.Uri(urlRisorsa);
-                        Task<ImageSource> result = Task<ImageSource>.Factory.StartNew(() => ImageSource.FromUri(urlProva));
-                        Image img = new Image
-                        {
-                            Source = await result
-                        };
-                        frameDomanda.Content = img;
-                    }
-                    else if (list.tipo == "pdf")
-                    {
-                        urlRisorsa = Costanti.urlBase + list.link;
-                        Button pdf = new Button
-                        {
-                            Text = "PDF",
-                            BackgroundColor = Colori.Button
-                        };
-                        pdf.Clicked += async delegate (object sender, EventArgs e)
-                        {
-                            Device.OpenUri(new Uri(urlRisorsa));
-                        };
-                    }
 
-                }
                 gridDom.Children.Add(frmDomanda, 0, 0);
 
                 Grid gridQuesiti = new Grid();
@@ -410,6 +382,7 @@ namespace QuizAmoroso
                     {
                         Text = Alfabeto.ToString(),
                         BackgroundColor = Colori.Button,
+                        TextColor=Color.White
                     };
                     lettera.Clicked += async delegate (object sender, EventArgs e)
                     {
@@ -428,7 +401,8 @@ namespace QuizAmoroso
                     Alfabeto = (Char)(Convert.ToUInt16(Alfabeto) + 1);
                     Label quesito = new Label
                     {
-                        Text = i
+                        Text = i,
+                        VerticalOptions=LayoutOptions.Center
                     };
 
                     gridQuesiti.Children.Add(lettera, 0, riga);
@@ -436,6 +410,34 @@ namespace QuizAmoroso
                     riga++;
                 }
                 gridDom.Children.Add(gridQuesiti, 0, 1);
+                if (list.link != null)
+                {
+                    string urlRisorsa = "";
+                    if (list.tipo == "img")
+                    {
+                        urlRisorsa = Costanti.urlBase + list.link;
+                        var urlProva = new System.Uri(urlRisorsa);
+                        Task<ImageSource> result = Task<ImageSource>.Factory.StartNew(() => ImageSource.FromUri(urlProva));
+                        Image img = new Image();
+                        img.Source = await result;
+                        gridQuesiti.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+                        gridDom.Children.Add(gridQuesiti, 0, riga);
+
+                    }
+                    else if (list.tipo == "pdf")
+                    {
+                        urlRisorsa = Costanti.urlBase + list.link;
+                        Button pdf = new Button
+                        {
+                            Text = "PDF",
+                            BackgroundColor = Colori.Button
+                        };
+                        pdf.Clicked += async delegate (object sender, EventArgs e)
+                        {
+                            Device.OpenUri(new Uri(urlRisorsa));
+                        };
+                    }
+                }
                 grid_domande.Add(gridDom);
             }
             grigliaDomande.Children.Add(grid_domande[0]);
