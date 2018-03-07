@@ -17,7 +17,7 @@
                     <RowDefinition Height="80"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
                 </Grid.RowDefinitions>
-                
+
                 <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
                     <Label  FontSize="Large" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label>
                 </StackLayout>
@@ -36,7 +36,7 @@
                 <StackLayout Grid.Column="0" Grid.Row="5" BackgroundColor="White">
                     <Label  FontSize="Large" VerticalOptions="Center" Text="Punteggio"></Label>
                 </StackLayout>
-                
+
                 <StackLayout  Grid.Column="1" Grid.Row="0"  BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                     <Label FontSize="Large" Text="0" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
                 </StackLayout>
@@ -55,7 +55,7 @@
                 <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="5"  BackgroundColor="White">
                     <Label FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
                 </StackLayout>
-                
+
 
             </Grid>
         </StackLayout>
