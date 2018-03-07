@@ -40,13 +40,20 @@ namespace QuizAmoroso
 
         private async Task animateIcon(Image a)
         {
-            
+            /*
             await a.TranslateTo(0, -5, 200);
             await a.TranslateTo(0, 5, 200);
             await a.TranslateTo(0, -5, 200);
             await a.TranslateTo(0, 5, 200);
-            
-            //await a.RotateXTo(251 * 360, 2000);
+            */
+            await a.RotateYTo(360, 2000);
+        }
+
+        protected override void OnDisappearing()
+        {
+            icQuiz.RotationY = 0;
+            icPurchase.RotationY = 0;
+            icInfo.RotationY = 0;
         }
     }
 }
