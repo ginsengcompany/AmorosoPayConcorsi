@@ -5,11 +5,11 @@
              BackgroundColor="#072034">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Image Source="amorosoLogo.png" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="amorosoLogo.png" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150"/>
             <Grid Margin="0,30,0,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
