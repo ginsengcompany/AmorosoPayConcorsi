@@ -19,21 +19,26 @@
                 </Grid.RowDefinitions>
                 
                 <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label></StackLayout>
+                    <Label  FontSize="Large" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label>
+                </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero risposte esatte"></Label></StackLayout>
+                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero risposte esatte"></Label>
+                </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="2" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero risposte sbagliate"></Label></StackLayout>
+                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero risposte sbagliate"></Label>
+                </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="3" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero non risposte"></Label></StackLayout>
+                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero non risposte"></Label>
+                </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="4" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Tempo trascorso"></Label></StackLayout>
+                    <Label  FontSize="Large" VerticalOptions="Center" Text="Tempo trascorso"></Label>
+                </StackLayout>
                 <StackLayout Grid.Column="0" Grid.Row="5" BackgroundColor="White">
                     <Label  FontSize="Large" VerticalOptions="Center" Text="Punteggio"></Label>
                 </StackLayout>
                 
-                <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="0"  BackgroundColor="White">
-                    <Label FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
+                <StackLayout  Grid.Column="1" Grid.Row="0"  BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Label FontSize="Large" Text="0" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
                 </StackLayout>
                 <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="1"  BackgroundColor="White">
                     <Label FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
