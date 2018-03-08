@@ -7,41 +7,52 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout VerticalOptions="Start" Padding="0,20,0,0">
-                <Label HorizontalOptions="CenterAndExpand" TextColor="#37637F" FontSize="Large" FontAttributes="Bold" Text="REGISTRAZIONE"></Label>
+                <Label HorizontalOptions="CenterAndExpand" 
+                       TextColor="#37637F" 
+                       FontSize="Large" 
+                       FontAttributes="Bold" 
+                       Text="REGISTRAZIONE"></Label>
             </StackLayout>
             <StackLayout VerticalOptions="CenterAndExpand">
          
             
                 <xfx:XfxEntry 
-                    Placeholder="Inserire E-mail"   
+                    Placeholder="Inserire E-mail"
+                    x:Name="LabelEmail"
                     ErrorDisplay="Underline"
                     WidthRequest="200"
                     VerticalOptions="Center"/>
 
                    <xfx:XfxEntry 
-                                 Placeholder="Inserire gay1"   
+                                 Placeholder="Inserire Nome"
+                       x:Name="LabelNome"
                                  ErrorDisplay="Underline"
                                  WidthRequest="200"
                                  VerticalOptions="Center"/>
                    <xfx:XfxEntry 
-                                 Placeholder="Inserire gay2"   
+                                 Placeholder="Inserire Cognome"   
+                       x:Name="LabelCognome"
                                  ErrorDisplay="Underline"
                                  WidthRequest="200"
                                  VerticalOptions="Center"/>
                    <xfx:XfxEntry 
-                                 Placeholder="Inserire gay3"   
+                                 Placeholder="Inserire Password"   
                                  ErrorDisplay="Underline"
+                       x:Name="LabelPassword"
+                       IsPassword="True"
                                  WidthRequest="200"
                                  VerticalOptions="Center"/>
                     <xfx:XfxEntry 
-                              Placeholder="Inserire password"  
+                              Placeholder="Reinserire password"  
                               ErrorDisplay="Underline"
+                        x:Name="LabelReinserimento"
                               WidthRequest="200"
                               IsPassword="True"
                               VerticalOptions="Center"/>
                 <Button Text="Registrati"
                         HeightRequest="100"
                         WidthRequest="250"
+                        Clicked="Registrati"
                         Style="{StaticResource buttonStyle}"
                 />
             </StackLayout>

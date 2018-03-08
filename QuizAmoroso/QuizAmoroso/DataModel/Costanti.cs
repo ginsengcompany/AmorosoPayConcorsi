@@ -89,7 +89,7 @@ namespace QuizAmoroso.DataModel
     "http://192.168.125.97/servizioPayApp/materieconcorso.php";
         public const string domconcorsorandomNew =
           "http://192.168.125.97/servizioPayApp/domandeconcorsorandomNew.php";
-
+        public const string registrazione= "http://192.168.125.97/servizioPayApp/registrazione.php";
         public const string domconcorsosequenzaNew =
             "http://192.168.125.97/servizioPayApp/domandeconcorsosequenzaNew.php";
         public const string invioTempiGlobali =
