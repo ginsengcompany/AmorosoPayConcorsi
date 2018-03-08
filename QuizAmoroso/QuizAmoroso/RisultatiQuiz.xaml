@@ -17,12 +17,12 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Label Grid.Row="0" VerticalOptions="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="RISULTATI" TextColor="#37637F" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large"/>
-                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" VerticalOptions="StartAndExpand" Padding="0,20,0,0">
+                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" VerticalOptions="StartAndExpand" Padding="0,20,5,0">
                             <Label Text="Risposte Esatte" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
                             <Image Source="risposteEsatte.png" HorizontalOptions="Center"/>
                             <Label x:Name="LabelEsatteSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
                         </StackLayout>
-                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalOptions="StartAndExpand" Padding="0,20,0,0">
+                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalOptions="StartAndExpand" Padding="0,20,0,0" Margin="0,0,0,5">
                             <Label Text="Risposte Errate" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
                             <Image Source="risposteSbagliate.png" HorizontalOptions="Center"/>
                             <Label x:Name="LabelSbagliateSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
