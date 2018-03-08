@@ -576,6 +576,66 @@
   <ItemGroup>
     <BundleResource Include="Resources\arrowLeft.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info-87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_purchase-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_purchase-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_purchase-87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_purchase-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_quiz-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_quiz-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_quiz-87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_quiz-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteEsatte-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteEsatte-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteEsatte-87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteEsatte-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteSbagliate-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteSbagliate-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteSbagliate-87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\risposteSbagliate-128.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
