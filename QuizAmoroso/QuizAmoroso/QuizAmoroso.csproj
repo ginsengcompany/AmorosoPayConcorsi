@@ -56,6 +56,7 @@
     <Compile Include="DataModel\RisultatoDomande.cs" />
     <Compile Include="DataModel\RisultatoQuiz.cs" />
     <Compile Include="DataModel\Sessioni.cs" />
+    <Compile Include="DataModel\UtenteRegistrazione.cs" />
     <Compile Include="DettagliTest.xaml.cs">
       <DependentUpon>DettagliTest.xaml</DependentUpon>
     </Compile>
@@ -100,6 +101,9 @@
     <Compile Include="Model\Timer.cs" />
     <Compile Include="NuovaModalitaQuizVeloceNew.xaml.cs">
       <DependentUpon>NuovaModalitaQuizVeloceNew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PacchettiQuiz.xaml.cs">
+      <DependentUpon>PacchettiQuiz.xaml</DependentUpon>
     </Compile>
     <Compile Include="PianoFormativo.xaml.cs">
       <DependentUpon>PianoFormativo.xaml</DependentUpon>
@@ -359,6 +363,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RisultatiQuiz.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PacchettiQuiz.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
