@@ -22,12 +22,11 @@ namespace QuizAmoroso
         public ConcorsiESottocategorie()
         {
             InitializeComponent();
+            Ingresso();
         }
 
-        protected async override void OnAppearing()
+        public async void Ingresso()
         {
-            base.OnAppearing();
-
             try
             {
                 DisabilitaLayoutActivityIndicator.IsVisible = true;
@@ -46,12 +45,11 @@ namespace QuizAmoroso
                 //caricamentoPagina.IsVisible = false;
                 //caricamentoPagina.IsRunning = false;
             }
-           
         }
-
         public async Task IngressoPagina()
         {
-           await CreazioneGriglia();
+          
+            await CreazioneGriglia();
         }
 
         public async Task CreazioneGriglia()
@@ -174,7 +172,7 @@ namespace QuizAmoroso
                 {
                     await Navigation.PushAsync(new SceltaModalità(i, id));
                 };
-                image.GestureRecognizers.Add(tapGestureRecognizerCella);
+                stackTitoloMateria.GestureRecognizers.Add(tapGestureRecognizerCella);
                 stackTitoloMateria.Children.Add(TitoloMateria);
                 GrigliaMaterie.Children.Add(image,1,riga);
                 GrigliaMaterie.Children.Add(stackTitoloMateria,0,riga);
@@ -182,15 +180,6 @@ namespace QuizAmoroso
             }
             return GrigliaMaterie;
         }
-
-
-
-
-
-
-
-
-
 
 
         public async Task AttesaRicezioneConcorsi()
