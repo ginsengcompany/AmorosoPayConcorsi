@@ -19,13 +19,18 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
     <JavaMaximumHeapSize />
     <JavaOptions />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\AlessioRivoli\AppData\Local\Xamarin\Mono for Android\Keystore\AmorosoPay\AmorosoPay.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>lavoro</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>AmorosoPay</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>lavoro</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,14 +56,22 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <AndroidSupportedAbis />
     <AndroidTlsProvider>btls</AndroidTlsProvider>
-    <EnableProguard>false</EnableProguard>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.5.0.91635\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
     </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageCircle.Forms.Plugin.Android, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\MonoAndroid10\ImageCircle.Forms.Plugin.Android.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Plugin.Connectivity, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Connectivity.3.0.3\lib\MonoAndroid10\Plugin.Connectivity.dll</HintPath>
     </Reference>
@@ -73,6 +86,27 @@
     </Reference>
     <Reference Include="Plugin.DeviceInfo.Abstractions, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.DeviceInfo.3.0.2\lib\MonoAndroid10\Plugin.DeviceInfo.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling.Abstractions, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.InAppBilling.VendingLibrary, Version=1.2.4.123, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.InAppBilling.1.2.4.123-beta\lib\MonoAndroid10\Plugin.InAppBilling.VendingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.0.4.5\lib\MonoAndroid\Plugin.MediaManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.0.4.5\lib\MonoAndroid\Plugin.MediaManager.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.Forms.0.4.5\lib\MonoAndroid\Plugin.MediaManager.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.MediaManager.Forms.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.MediaManager.Forms.0.4.5\lib\MonoAndroid\Plugin.MediaManager.Forms.Android.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Messaging.5.0.0\lib\MonoAndroid10\Plugin.Messaging.dll</HintPath>
@@ -176,8 +210,16 @@
     <Reference Include="Xamarin.GooglePlayServices.Tasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.GooglePlayServices.Tasks.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Tasks.dll</HintPath>
     </Reference>
+    <Reference Include="Xfx.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xfx.Controls.1.1.3\lib\MonoAndroid\Xfx.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Xfx.Controls.Droid, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xfx.Controls.1.1.3\lib\MonoAndroid\Xfx.Controls.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsVideoLibrary\VideoPicker.cs" />
+    <Compile Include="FormsVideoLibrary\VideoPlayerRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -199,10 +241,14 @@
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\button_dispensa.png" />
+    <AndroidResource Include="Resources\drawable\button_apprendimento.png" />
+    <AndroidResource Include="Resources\drawable\button_simulazioneassistita.png" />
+    <AndroidResource Include="Resources\drawable\button_simulazione.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">
-      <Project>{296c6834-8007-4083-a4c8-6208ed24445f}</Project>
+      <Project>{C67A1C54-F6CA-4736-8381-056A681C1D1C}</Project>
       <Name>QuizAmoroso</Name>
     </ProjectReference>
   </ItemGroup>
@@ -301,9 +347,61 @@
     <AndroidResource Include="Resources\drawable-xhdpi\icona_tempo_trascorso.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icona_risposta_esatta.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icona_tempo_trascorso.png" />
+    <AndroidResource Include="Resources\drawable\icona_non_risposta.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\telefonoFisso.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cellulare.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\email.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\luogo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sitoWeb.png" />
+    <AndroidResource Include="Resources\drawable\amorosoLogo.png" />
+    <AndroidResource Include="Resources\drawable\sitoWeb.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\telefonoFisso.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cellulare.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\email.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\luogo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sitoWeb.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\telefonoFisso.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cellulare.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cronologia.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\email.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\luogo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\sitoWeb.png" />
+    <AndroidResource Include="Resources\drawable\facebookIcon.png" />
+    <AndroidResource Include="Resources\drawable\shwpsswblueSegnato.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shwpsswblueSegnato.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shwpsswblueSegnato.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shwpsswblueSegnato.png" />
+    <AndroidResource Include="Resources\drawable\frecceT.png" />
+    <AndroidResource Include="Resources\drawable\btn_Play.png" />
+    <AndroidResource Include="Resources\drawable\btn_PlayDisabled.png" />
+    <AndroidResource Include="Resources\drawable\btn_Stop.png" />
+    <AndroidResource Include="Resources\drawable\btn_StopDisabled.png" />
+    <AndroidResource Include="Resources\drawable\btn_PauseDisabled.png" />
+    <AndroidResource Include="Resources\drawable\btn_Pause.png" />
+    <AndroidResource Include="Resources\drawable\carabinieri.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\rightArrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\rightArrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\rightArrow.png" />
+    <AndroidResource Include="Resources\drawable\sign_RispostaData.png" />
+    <AndroidResource Include="Resources\drawable\selected_circle.png" />
+    <AndroidResource Include="Resources\drawable\unselected_circle.png" />
+    <AndroidResource Include="Resources\drawable\arrowLeft.png" />
+    <AndroidResource Include="Resources\drawable\arrowRight.png" />
+    <AndroidResource Include="Resources\drawable\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable\ic_info.png" />
+    <AndroidResource Include="Resources\drawable\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable\risposteEsatte.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\risposteSbagliate.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\risposteSbagliate.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\risposteSbagliate.png" />
+    <AndroidResource Include="Resources\drawable\risposteSbagliate.png" />
     <Content Include="res\drawable-mdpi\logo_amoroso.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Plugin\CurrentActivity\CrossCurrentActivity\Current\" />
     <Folder Include="res\drawable-hdpi\" />
     <Folder Include="res\drawable-xhdpi\" />
     <Folder Include="res\drawable-xxhdpi\" />
