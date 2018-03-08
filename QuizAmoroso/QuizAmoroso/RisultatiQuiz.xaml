@@ -4,104 +4,104 @@
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
              x:Class="QuizAmoroso.RisultatiQuiz" Title="Risultati" BackgroundColor="White" >
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand">
-            <xfx:XfxCardView CornerRadius="0" Elevation="0" VerticalOptions="FillAndExpand" BackgroundColor="White">
-                <StackLayout BackgroundColor="Transparent" Orientation="Vertical" VerticalOptions="Center">
-                    <Label Text="RISULTATI" TextColor="#37637F" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="Large"/>
+        <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#37637F">
+                <xfx:XfxCardView CornerRadius="20" Elevation="10" VerticalOptions="FillAndExpand" BackgroundColor="White">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="0.2*"/>
+                            <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-                        <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                        <Label Grid.Row="0" VerticalOptions="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="RISULTATI" TextColor="#37637F" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large"/>
+                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" VerticalOptions="StartAndExpand" Padding="0,20,0,0">
                             <Label Text="Risposte Esatte" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
-                            <Image Source="risposteEsatte.png" Grid.Row="1" Grid.Column="0"/>
+                            <Image Source="risposteEsatte.png"/>
                             <Label x:Name="LabelEsatteSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
                         </StackLayout>
-                        <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalOptions="StartAndExpand" Padding="0,20,0,0">
                             <Label Text="Risposte Errate" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
                             <Image Source="risposteSbagliate.png"/>
                             <Label x:Name="LabelSbagliateSopra" Text="0" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
                         </StackLayout>
                     </Grid>
-                </StackLayout>
-            </xfx:XfxCardView>
+                </xfx:XfxCardView>
+                <Grid  ColumnSpacing="4" RowSpacing="5" BackgroundColor="#072034" Padding="2,2,2,2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
 
-            <Grid  ColumnSpacing="4" RowSpacing="5" BackgroundColor="#072034" Padding="2,2,2,2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                </Grid.RowDefinitions>
+                    <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
+                        <Label  FontSize="Medium" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="LightGray" Grid.ColumnSpan="2">
+                        <Label  FontSize="Medium"  VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="2" BackgroundColor="White">
+                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Numero risposte esatte"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="3" BackgroundColor="LightGray" Grid.ColumnSpan="2">
+                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="4" BackgroundColor="White">
+                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Numero risposte sbagliate"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="5" BackgroundColor="LightGray" Grid.ColumnSpan="2">
+                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="6" BackgroundColor="White">
+                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Numero non risposte"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="7" BackgroundColor="LightGray" Grid.ColumnSpan="2">
+                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="8" BackgroundColor="White">
+                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Tempo trascorso"></Label>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="9" BackgroundColor="LightGray" Grid.ColumnSpan="2">
+                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="10" BackgroundColor="White">
+                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Punteggio"/>
+                    </StackLayout>
 
-                <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                    <Label  FontSize="Large"  VerticalTextAlignment="Center" VerticalOptions="Center"/>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="2" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero risposte esatte"/>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="3" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                    <Label  FontSize="Large" VerticalTextAlignment="Center" VerticalOptions="Center" />
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="4" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero risposte sbagliate"></Label>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="5" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                    <Label  FontSize="Large" VerticalTextAlignment="Center" VerticalOptions="Center" />
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="6" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Numero non risposte"></Label>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="7" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                    <Label  FontSize="Large" VerticalTextAlignment="Center" VerticalOptions="Center"/>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="8" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Tempo trascorso"></Label>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="9" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                    <Label  FontSize="Large" VerticalTextAlignment="Center" VerticalOptions="Center"/>
-                </StackLayout>
-                <StackLayout Grid.Column="0" Grid.Row="10" BackgroundColor="White">
-                    <Label  FontSize="Large" VerticalOptions="Center" Text="Punteggio"/>
-                </StackLayout>
-
-                <StackLayout  Grid.Column="1" Grid.Row="0"  BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                    <Label x:Name="LabelNumeroDomande" FontSize="Large" Text="0" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
-                </StackLayout>
-                <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="2"  BackgroundColor="White">
-                    <Label x:Name="LabelEsatte" FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
-                </StackLayout>
-                <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="4"  BackgroundColor="White">
-                    <Label x:Name="LabelSbagliate" FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
-                </StackLayout>
-                <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="6"  BackgroundColor="White">
-                    <Label x:Name="LabelNonRisposte" FontSize="Large"  Text="0" HorizontalTextAlignment="Center"></Label>
-                </StackLayout>
-                <StackLayout  VerticalOptions="Center" Grid.Column="1" Grid.Row="8"  BackgroundColor="White" >
-                    <Label x:Name="LabelTempo" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
-                </StackLayout>
-                <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="10"  BackgroundColor="White">
-                    <Label x:Name="LabelPunteggio" FontSize="Large" Text="0" HorizontalTextAlignment="Center"></Label>
-                </StackLayout>
-            </Grid>
-        </StackLayout>
+                    <StackLayout  Grid.Column="1" Grid.Row="0"  BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label x:Name="LabelNumeroDomande" FontSize="Medium" Text="0" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="2"  BackgroundColor="White">
+                        <Label x:Name="LabelEsatte" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="4"  BackgroundColor="White">
+                        <Label x:Name="LabelSbagliate" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="6"  BackgroundColor="White">
+                        <Label x:Name="LabelNonRisposte" FontSize="Medium"  Text="0" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout  VerticalOptions="Center" Grid.Column="1" Grid.Row="8"  BackgroundColor="White" >
+                        <Label x:Name="LabelTempo" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="10"  BackgroundColor="White">
+                        <Label x:Name="LabelPunteggio" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
