@@ -1,18 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QuizAmoroso.ModalitàQuizRandom" 
              Title="Modalità Libera">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="20,15,20,0">
             <Label x:Name="LabelSliderNumeroDomande"
                                Text="Seleziona il numero di domande:"
                                IsVisible="True"
                                TextColor="#2196f3"
                                FontSize="Medium"
+                               FontAttributes="Italic"
                                HorizontalOptions="CenterAndExpand"/>
             <StackLayout 
-                Orientation="Vertical" >
+                Orientation="Vertical" 
+                Padding="0,0,0,10">
                 <Slider 
                     x:Name="SliderSelezioneNumeroDomande"
                     ValueChanged="SliderSelezioneNumeroDomande_ValueChanged"/>
@@ -25,6 +27,7 @@
                     <Label 
                         x:Name="LabelMinimoSlider"
                                        TextColor="#2196f3"
+                                       FontAttributes="Bold"
                                        XAlign="Start"/>
                 </StackLayout>
                 <StackLayout
@@ -33,19 +36,23 @@
                     
                     <Label         Text="Domande Selezionate"
                                    HorizontalOptions="Center"
-                                   TextColor="#2196f3"/>
+                                   TextColor="#2196f3"
+                                   FontAttributes="Bold"/>
                     <Label x:Name="LabelValoriSelezionatiConSlider"
                                    HorizontalOptions="Center"
-                                   TextColor="#2196f3"/>
+                                   TextColor="#2196f3"
+                                   FontAttributes="Bold"/>
                 </StackLayout>
                 <StackLayout HorizontalOptions="EndAndExpand">
                     <Label x:Name="LabelMassimoSlider"
                            XAlign="End"
-                           TextColor="#2196f3"/>
+                           TextColor="#2196f3"
+                           FontAttributes="Bold"/>
                 </StackLayout>
             </StackLayout>
             <Button Text="Avvia Quiz"
                     TextColor="White"
+                    FontAttributes="Bold"
                     Clicked="Button_Clicked"
                     x:Name="btnAvvio"
                     />
