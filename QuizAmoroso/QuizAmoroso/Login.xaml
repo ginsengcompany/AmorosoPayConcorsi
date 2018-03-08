@@ -38,7 +38,7 @@
                                Source="ic_user.png">
                         </Image>
 
-                        <xfx:XfxEntry HeightRequest="50"
+                        <xfx:XfxEntry HeightRequest="60"
                                       x:Name="inputUsername"
                                       Placeholder="Inserisci E-mail"
                                       PlaceholderColor="White"
@@ -57,7 +57,7 @@
                         </Image>
                         
                         <xfx:XfxEntry x:Name="inputPassword"
-                                      HeightRequest="50"
+                                      HeightRequest="60"
                                       Placeholder="Password"
                                       PlaceholderColor="White"
                                       IsPassword="True"
