@@ -102,9 +102,6 @@
     <Compile Include="NuovaModalitaQuizVeloceNew.xaml.cs">
       <DependentUpon>NuovaModalitaQuizVeloceNew.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PacchettiQuiz.xaml.cs">
-      <DependentUpon>PacchettiQuiz.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PianoFormativo.xaml.cs">
       <DependentUpon>PianoFormativo.xaml</DependentUpon>
     </Compile>
@@ -363,12 +360,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="RisultatiQuiz.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="PacchettiQuiz.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

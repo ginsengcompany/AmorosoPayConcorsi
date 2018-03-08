@@ -17,8 +17,8 @@ namespace QuizAmoroso
     public partial class ConcorsiESottocategorie : ContentPage
     {
         public List<Concorsi> listaConcorsi = new List<Concorsi>();
-
         
+
         public ConcorsiESottocategorie()
         {
             InitializeComponent();
@@ -172,6 +172,7 @@ namespace QuizAmoroso
                 {
                     await Navigation.PushAsync(new SceltaModalità(i, id));
                 };
+                image.GestureRecognizers.Add(tapGestureRecognizerCella);
                 stackTitoloMateria.GestureRecognizers.Add(tapGestureRecognizerCella);
                 stackTitoloMateria.Children.Add(TitoloMateria);
                 GrigliaMaterie.Children.Add(image,1,riga);
