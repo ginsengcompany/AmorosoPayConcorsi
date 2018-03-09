@@ -245,6 +245,8 @@ namespace QuizAmoroso
             try
             {
                 var values = new List<KeyValuePair<string, string>>();
+                var user = Utente.Instance.getUserName;
+                values.Add(new KeyValuePair<string, string>("username", user));
                 values.Add(new KeyValuePair<string, string>("id_concorso", datiConnessione.idConcorso));
 
                 if(datiConnessione.materia!="SIMULAZIONE")
