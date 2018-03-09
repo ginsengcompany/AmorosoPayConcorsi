@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
-             x:Class="QuizAmoroso.RisultatiQuiz" Title="Risultati" BackgroundColor="White" >ù
+             x:Class="QuizAmoroso.RisultatiQuiz" Title="Risultati" BackgroundColor="White" >
     <ContentPage.ToolbarItems>
         <ToolbarItem 
             Name="RivediQuiz"
@@ -39,76 +39,76 @@
                         </Grid>
                     </xfx:XfxCardView>
 
-                <Grid VerticalOptions="End" ColumnSpacing="4" RowSpacing="5" BackgroundColor="#072034" Padding="2,2,2,2">
+                <Grid VerticalOptions="End" ColumnSpacing="4"  Padding="2,2,2,2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="0.5*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="60"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="60"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <StackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="White">
-                        <Label  FontSize="Medium" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label>
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalTextAlignment="Center" Text="Numero domande" VerticalOptions="Center" ></Label>
                     </StackLayout>
-                    <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                        <Label  FontSize="Medium"  VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="#37637F" Grid.ColumnSpan="2">
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium"  VerticalTextAlignment="Center" VerticalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="2" BackgroundColor="White">
-                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Numero risposte esatte"/>
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalOptions="Center" Text="Numero risposte esatte"/>
                     </StackLayout>
-                    <StackLayout Grid.Column="0" Grid.Row="3" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center" />
+                    <StackLayout Grid.Column="0" Grid.Row="3" BackgroundColor="#37637F" Grid.ColumnSpan="2">
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center" />
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="4" BackgroundColor="White">
-                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Numero risposte sbagliate"></Label>
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalOptions="Center" Text="Numero risposte sbagliate"></Label>
                     </StackLayout>
-                    <StackLayout Grid.Column="0" Grid.Row="5" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center" />
+                    <StackLayout Grid.Column="0" Grid.Row="5" BackgroundColor="#37637F" Grid.ColumnSpan="2">
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center" />
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="6" BackgroundColor="White">
-                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Numero non risposte"></Label>
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalOptions="Center" Text="Numero non risposte"></Label>
                     </StackLayout>
-                    <StackLayout Grid.Column="0" Grid.Row="7" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    <StackLayout Grid.Column="0" Grid.Row="7" BackgroundColor="#37637F" Grid.ColumnSpan="2">
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="8" BackgroundColor="White">
-                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Tempo trascorso"></Label>
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalOptions="Center" Text="Tempo trascorso"></Label>
                     </StackLayout>
-                    <StackLayout Grid.Column="0" Grid.Row="9" BackgroundColor="LightGray" Grid.ColumnSpan="2">
-                        <Label  FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center"/>
+                    <StackLayout Grid.Column="0" Grid.Row="9" BackgroundColor="#37637F" Grid.ColumnSpan="2">
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalTextAlignment="Center" VerticalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="10" BackgroundColor="White">
-                        <Label  FontSize="Medium" VerticalOptions="Center" Text="Punteggio"/>
+                        <Label FontAttributes="Bold" TextColor="#072034" FontSize="Medium" VerticalOptions="Center" Text="Punteggio"/>
                     </StackLayout>
 
                     <StackLayout  Grid.Column="1" Grid.Row="0"  BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                        <Label x:Name="LabelNumeroDomande" FontSize="Medium" Text="0" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
+                        <Label FontAttributes="Bold" TextColor="#072034" x:Name="LabelNumeroDomande" FontSize="Medium" Text="0" HorizontalTextAlignment="Center" VerticalOptions="Center"></Label>
                     </StackLayout>
-                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="2"  BackgroundColor="White">
-                        <Label x:Name="LabelEsatte" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    <StackLayout VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"  BackgroundColor="White">
+                        <Label FontAttributes="Bold" TextColor="#072034" x:Name="LabelEsatte" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
                     </StackLayout>
-                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="4"  BackgroundColor="White">
-                        <Label x:Name="LabelSbagliate" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    <StackLayout VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="4"  BackgroundColor="White">
+                        <Label FontAttributes="Bold" TextColor="#072034" x:Name="LabelSbagliate" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
                     </StackLayout>
-                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="6"  BackgroundColor="White">
-                        <Label x:Name="LabelNonRisposte" FontSize="Medium"  Text="0" HorizontalTextAlignment="Center"></Label>
+                    <StackLayout VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="6"  BackgroundColor="White">
+                        <Label FontAttributes="Bold" TextColor="#072034" x:Name="LabelNonRisposte" FontSize="Medium"  Text="0" HorizontalTextAlignment="Center"></Label>
                     </StackLayout>
-                    <StackLayout  VerticalOptions="Center" Grid.Column="1" Grid.Row="8"  BackgroundColor="White" >
-                        <Label x:Name="LabelTempo" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    <StackLayout  VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="8"  BackgroundColor="White" >
+                        <Label FontAttributes="Bold" TextColor="#072034" x:Name="LabelTempo" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
                     </StackLayout>
-                    <StackLayout VerticalOptions="Center" Grid.Column="1" Grid.Row="10"  BackgroundColor="White">
-                        <Label x:Name="LabelPunteggio" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
+                    <StackLayout VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="10"  BackgroundColor="White">
+                        <Label FontAttributes="Bold" TextColor="#072034" x:Name="LabelPunteggio" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
                     </StackLayout>
                 </Grid>
             

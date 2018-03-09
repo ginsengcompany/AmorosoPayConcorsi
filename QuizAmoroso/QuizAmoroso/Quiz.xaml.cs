@@ -123,9 +123,10 @@ namespace QuizAmoroso
                     scelta = false;
                     tempoQuiz.FermaTempo();
                     RisultatoQuiz risultati = RisultatiQuiz();
+                   await invioTempi();
                     await Navigation.PushAsync(new RisultatiQuiz(risultati,this));
                     Navigation.RemovePage(this);
-                    invioTempi();
+                  
                     
                 }
             }
@@ -141,7 +142,7 @@ namespace QuizAmoroso
                 var values = new List<KeyValuePair<string, string>>();
                 var user=Utente.Instance.getUserName;
                 values.Add(new KeyValuePair<string, string>("username", user));
-                values.Add(new KeyValuePair<string, string>("tempoQuiz", tempoQuiz.tempoTotale));
+                values.Add(new KeyValuePair<string, string>("tempoQuiz", lblTimer.Text));
                 values.Add(new KeyValuePair<string, string>("tempoLezioni", ""));
                 var content = new FormUrlEncodedContent(values);
                 result = await client.PostAsync(Costanti.invioTempiGlobali, content);
