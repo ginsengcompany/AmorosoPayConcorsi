@@ -370,22 +370,54 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default@2x-640x960.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%403x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%403x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%403x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">
