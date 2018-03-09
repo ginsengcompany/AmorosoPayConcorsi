@@ -43,6 +43,8 @@ namespace QuizAmoroso
             LabelMassimoSlider.Text = i.domandemateriamax;
         }
 
+
+
         private void SliderSelezioneNumeroDomande_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             int ke = Convert.ToInt32(e.NewValue);

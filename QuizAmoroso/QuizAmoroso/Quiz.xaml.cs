@@ -224,7 +224,13 @@ namespace QuizAmoroso
             {
                 var values = new List<KeyValuePair<string, string>>();
                 values.Add(new KeyValuePair<string, string>("id_concorso", datiConnessione.idConcorso));
-                values.Add(new KeyValuePair<string, string>("materia", datiConnessione.materia));
+
+                if(datiConnessione.materia!="SIMULAZIONE")
+                    values.Add(new KeyValuePair<string, string>("materia", datiConnessione.materia));
+                else
+                {
+                    values.Add(new KeyValuePair<string, string>("materia","null"));
+                }
                 values.Add(new KeyValuePair<string, string>("numerodomande", datiConnessione.numeroDomande));
 
                 var content = new FormUrlEncodedContent(values);
@@ -259,7 +265,7 @@ namespace QuizAmoroso
             }
             catch (Exception e)
             {
-                await DisplayAlert("Errore", "fff", "Ok");
+                await DisplayAlert("Errore", "Connessione non avvenuta", "Ok");
                 return new List<Domande>();
             }
         }

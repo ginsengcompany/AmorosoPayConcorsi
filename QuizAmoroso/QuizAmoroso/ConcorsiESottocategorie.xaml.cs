@@ -170,7 +170,7 @@ namespace QuizAmoroso
                 var tapGestureRecognizerCella = new TapGestureRecognizer();
                 tapGestureRecognizerCella.Tapped += async (s, e) =>
                 {
-                    await Navigation.PushAsync(new SceltaModalità(i, id));
+                    await Navigation.PushAsync(new ModalitàQuizRandom(i, id));
                 };
                 image.GestureRecognizers.Add(tapGestureRecognizerCella);
                 stackTitoloMateria.GestureRecognizers.Add(tapGestureRecognizerCella);

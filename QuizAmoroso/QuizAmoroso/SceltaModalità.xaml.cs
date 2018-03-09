@@ -17,7 +17,6 @@ namespace QuizAmoroso
         {
             this.Title = i.materia;
             this.Children.Add(new ModalitàQuizRandom(i,idconcorso));
-            this.Children.Add(new Info());
         }
     }
 }
