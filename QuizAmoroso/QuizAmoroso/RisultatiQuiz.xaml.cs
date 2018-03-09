@@ -12,7 +12,7 @@ namespace QuizAmoroso
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RisultatiQuiz : ContentPage
 	{
-		public RisultatiQuiz (RisultatoQuiz risultati)
+		public RisultatiQuiz (RisultatoQuiz risultati,Page pagRiassunto)
 		{
 			InitializeComponent ();
 		    LabelEsatte.Text = risultati.contEsatteTot;

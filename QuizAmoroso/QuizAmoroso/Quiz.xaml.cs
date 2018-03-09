@@ -123,7 +123,7 @@ namespace QuizAmoroso
                     scelta = false;
                     tempoQuiz.FermaTempo();
                     RisultatoQuiz risultati = RisultatiQuiz();
-                    await Navigation.PushAsync(new RisultatiQuiz(risultati));
+                    await Navigation.PushAsync(new RisultatiQuiz(risultati,this));
                     Navigation.RemovePage(this);
                     
                 }
