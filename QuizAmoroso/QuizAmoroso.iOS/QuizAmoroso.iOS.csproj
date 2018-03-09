@@ -177,32 +177,6 @@
     <BundleResource Include="Resources\button_simulazioneassistita.png" />
     <BundleResource Include="Resources\button_dispensa.png" />
     <BundleResource Include="Resources\button_apprendimento.png" />
-    <BundleResource Include="Resources\ic_quiz-60x60%403x.png" />
-    <BundleResource Include="Resources\ic_quiz-20x20%401x.png" />
-    <BundleResource Include="Resources\ic_quiz-20x20%402x.png" />
-    <BundleResource Include="Resources\ic_quiz-20x20%403x.png" />
-    <BundleResource Include="Resources\ic_quiz-29x29%401x.png" />
-    <BundleResource Include="Resources\ic_quiz-29x29%402x.png" />
-    <BundleResource Include="Resources\ic_quiz-29x29%403x.png" />
-    <BundleResource Include="Resources\ic_quiz-40x40%402x.png" />
-    <BundleResource Include="Resources\ic_quiz-40x40%403x.png" />
-    <BundleResource Include="Resources\ic_quiz-60x60%402x.png" />
-    <BundleResource Include="Resources\ic_quiz-76x76%401x.png" />
-    <BundleResource Include="Resources\ic_quiz-76x76%402x.png" />
-    <BundleResource Include="Resources\ic_quiz.png" />
-    <BundleResource Include="Resources\ic_purchase-20x20%401x.png" />
-    <BundleResource Include="Resources\ic_purchase-20x20%402x.png" />
-    <BundleResource Include="Resources\ic_purchase-20x20%403x.png" />
-    <BundleResource Include="Resources\ic_purchase-29x29%401x.png" />
-    <BundleResource Include="Resources\ic_purchase-29x29%402x.png" />
-    <BundleResource Include="Resources\ic_purchase-29x29%403x.png" />
-    <BundleResource Include="Resources\ic_purchase-40x40%402x.png" />
-    <BundleResource Include="Resources\ic_purchase-40x40%403x.png" />
-    <BundleResource Include="Resources\ic_purchase-60x60%402x.png" />
-    <BundleResource Include="Resources\ic_purchase-60x60%403x.png" />
-    <BundleResource Include="Resources\ic_purchase-76x76%401x.png" />
-    <BundleResource Include="Resources\ic_purchase-76x76%402x.png" />
-    <BundleResource Include="Resources\ic_purchase.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -396,18 +370,22 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default@2x-640x960.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate.png">
-      <Visible>false</Visible>
-    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%402x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%401x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\ic_purchase%403x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%401x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%402x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\ic_quiz%403x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%401x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%402x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte%403x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%401x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%402x.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">
@@ -625,6 +603,13 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\arrowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\" />
+    <Folder Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\" />
+    <Folder Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\" />
+    <Folder Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\" />
+    <Folder Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
