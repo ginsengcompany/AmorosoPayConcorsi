@@ -16,7 +16,7 @@ namespace QuizAmoroso.DataModel
         public string link { get; set; }
         public string NumeroRisposte { get; set; }
         public List<Quesiti> lstQuesiti { get; set; }
-        public string urlvideo { get; set; }
+        public string urlVideo { get; set; }
     }
 
     public class Quesiti

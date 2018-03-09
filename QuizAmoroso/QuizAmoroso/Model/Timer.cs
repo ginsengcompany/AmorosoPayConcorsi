@@ -35,6 +35,10 @@ namespace QuizAmoroso.Model
             tempoGlobale.Stop();
         }
 
+        public void RiprendiTempo()
+        {
+            avviaTempo = true;
+        }
         public void ResetTempo()
         {
             avviaTempo = false;
