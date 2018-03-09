@@ -5,17 +5,17 @@
              Title="QUIZ">
 
     <StackLayout>
-        
+
         <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="DisabilitaLayoutActivityIndicator">
             <ActivityIndicator x:Name="caricamentoPagina"
                                    Color="#2196f3" 
                                    HorizontalOptions="Center">
             </ActivityIndicator>
         </StackLayout>
-        
+
         <StackLayout x:Name="stackPagina" IsVisible="False" VerticalOptions="FillAndExpand">
             <StackLayout x:Name="StackGridContatore"/>
-        <StackLayout VerticalOptions="Start">
+            <StackLayout VerticalOptions="Start">
                 <Frame x:Name="frameDomanda"
                            IsVisible="False"
                            HasShadow="True">
@@ -25,18 +25,18 @@
                 </Frame>
                 <StackLayout x:Name="grigliaDomande"/>
             </StackLayout>
-                <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
-            <Grid HorizontalOptions="FillAndExpand">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="2*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70"></RowDefinition>
-                </Grid.RowDefinitions>
-            
-            <Button 
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Button 
                 Grid.Row="0" 
                 Grid.Column="0" 
                 Clicked="ButtonClickedIndietro" 
@@ -45,7 +45,7 @@
                 TextColor="White"
                 Text="indietro"  
                 IsVisible="False"></Button>
-                
+
                     <Label Grid.Row="0"  
                            Grid.Column="1" 
                            Text="Tempo" 
@@ -63,8 +63,8 @@
                         TextColor="White"
                         x:Name="btnAvanti" 
                         Text="avanti" ></Button>
-            </Grid>
-        </StackLayout>
+                </Grid>
+            </StackLayout>
         </StackLayout>
 
     </StackLayout>

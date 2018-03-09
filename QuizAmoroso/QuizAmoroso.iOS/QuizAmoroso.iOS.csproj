@@ -177,19 +177,6 @@
     <BundleResource Include="Resources\button_simulazioneassistita.png" />
     <BundleResource Include="Resources\button_dispensa.png" />
     <BundleResource Include="Resources\button_apprendimento.png" />
-    <BundleResource Include="Resources\ic_info-20x20%401x.png" />
-    <BundleResource Include="Resources\ic_info-20x20%402x.png" />
-    <BundleResource Include="Resources\ic_info-20x20%403x.png" />
-    <BundleResource Include="Resources\ic_info-29x29%401x.png" />
-    <BundleResource Include="Resources\ic_info-29x29%402x.png" />
-    <BundleResource Include="Resources\ic_info-29x29%403x.png" />
-    <BundleResource Include="Resources\ic_info-40x40%402x.png" />
-    <BundleResource Include="Resources\ic_info-40x40%403x.png" />
-    <BundleResource Include="Resources\ic_info-60x60%402x.png" />
-    <BundleResource Include="Resources\ic_info-60x60%403x.png" />
-    <BundleResource Include="Resources\ic_info-76x76%401x.png" />
-    <BundleResource Include="Resources\ic_info-76x76%402x.png" />
-    <BundleResource Include="Resources\ic_info.png" />
     <BundleResource Include="Resources\ic_quiz-60x60%403x.png" />
     <BundleResource Include="Resources\ic_quiz-20x20%401x.png" />
     <BundleResource Include="Resources\ic_quiz-20x20%402x.png" />
@@ -216,23 +203,6 @@
     <BundleResource Include="Resources\ic_purchase-76x76%401x.png" />
     <BundleResource Include="Resources\ic_purchase-76x76%402x.png" />
     <BundleResource Include="Resources\ic_purchase.png" />
-    <BundleResource Include="Resources\risposteSbagliate-20x20%401x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-20x20%402x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-20x20%403x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-29x29%401x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-29x29%402x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-29x29%403x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-40x40%402x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-40x40%403x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-60x60%402x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-60x60%403x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-76x76%401x.png" />
-    <BundleResource Include="Resources\risposteSbagliate-76x76%402x.png" />
-    <BundleResource Include="Resources\risposteSbagliate.png" />
-    <BundleResource Include="Resources\risposteEsatte-20x20%401x.png" />
-    <BundleResource Include="Resources\risposteEsatte-29x29%401x.png" />
-    <BundleResource Include="Resources\risposteEsatte-76x76%401x.png" />
-    <BundleResource Include="Resources\risposteEsatte.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -393,6 +363,18 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Icone app.appiconset\Icon-small@3x.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_info.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_info.imageset\ic_info@1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_info.imageset\ic_info@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_info.imageset\ic_info@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -412,6 +394,18 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default@2x-640x960.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\risposteEsatte.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
