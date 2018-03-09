@@ -2,8 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
-             x:Class="QuizAmoroso.RisultatiQuiz" Title="Risultati" BackgroundColor="White" >
+             x:Class="QuizAmoroso.RisultatiQuiz" Title="Risultati" BackgroundColor="White" >ù
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Name="RivediQuiz"
+            Order="Primary" 
+            Text="Rivedi Quiz" 
+            Priority="0"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
+   
         <ScrollView>
         <StackLayout BackgroundColor="#37637F">
             
