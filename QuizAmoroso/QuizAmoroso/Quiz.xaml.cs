@@ -123,12 +123,34 @@ namespace QuizAmoroso
                     scelta = false;
                     tempoQuiz.FermaTempo();
                     RisultatoQuiz risultati = RisultatiQuiz();
-                    await Navigation.PushAsync(new RisultatiQuiz(risultati));
+                    await Navigation.PushAsync(new RisultatiQuiz(risultati,this));
                     Navigation.RemovePage(this);
+                    invioTempi();
                     
                 }
             }
 
+        }
+        private async Task invioTempi()
+        {
+
+            var client = new HttpClient();
+            var result = new HttpResponseMessage();
+            try
+            {
+                var values = new List<KeyValuePair<string, string>>();
+                var user=Utente.Instance.getUserName;
+                values.Add(new KeyValuePair<string, string>("username", user));
+                values.Add(new KeyValuePair<string, string>("tempoQuiz", tempoQuiz.tempoTotale));
+                values.Add(new KeyValuePair<string, string>("tempoLezioni", ""));
+                var content = new FormUrlEncodedContent(values);
+                result = await client.PostAsync(Costanti.invioTempiGlobali, content);
+                
+            }
+            catch (Exception e)
+            {
+
+            }
         }
         private void riempicountImage()
         {
