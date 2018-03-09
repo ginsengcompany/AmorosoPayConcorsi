@@ -5,31 +5,33 @@
              x:Class="QuizAmoroso.RisultatiQuiz" Title="Risultati" BackgroundColor="White" >
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#37637F">
-                <xfx:XfxCardView CornerRadius="20" Elevation="10" VerticalOptions="FillAndExpand" BackgroundColor="White">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="0.2*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Label Grid.Row="0" VerticalOptions="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="RISULTATI" TextColor="#37637F" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large"/>
-                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" VerticalOptions="StartAndExpand" Padding="0,20,0,0" Margin="0,0,0,5">
-                            <Label Text="Risposte Esatte" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
-                            <Image Source="risposteEsatte.png" HorizontalOptions="Center"/>
-                            <Label x:Name="LabelEsatteSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                        <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalOptions="StartAndExpand" Padding="0,20,0,0" Margin="1,0,0,5">
-                            <Label Text="Risposte Errate" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
-                            <Image Source="risposteSbagliate.png" HorizontalOptions="Center"/>
-                            <Label x:Name="LabelSbagliateSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                    </Grid>
-                </xfx:XfxCardView>
-                <Grid  ColumnSpacing="4" RowSpacing="5" BackgroundColor="#072034" Padding="2,2,2,2">
+        <StackLayout BackgroundColor="#37637F">
+            
+                <xfx:XfxCardView VerticalOptions="Start" HeightRequest="300" CornerRadius="20" Elevation="10" BackgroundColor="White">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" VerticalOptions="Center" Grid.Column="0" Grid.ColumnSpan="2" Text="RISULTATI" TextColor="#37637F" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large"/>
+                            <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" VerticalOptions="Start" Padding="0,20,0,0" Margin="0,0,0,5">
+                                <Label Text="Risposte Esatte" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Image Source="risposteEsatte.png" HorizontalOptions="Center"/>
+                                <Label x:Name="LabelEsatteSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalOptions="Start" Padding="0,20,0,0" Margin="1,0,0,5">
+                                <Label Text="Risposte Errate" HorizontalOptions="Center" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Image Source="risposteSbagliate.png" HorizontalOptions="Center"/>
+                                <Label x:Name="LabelSbagliateSopra" Text="0" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </Grid>
+                    </xfx:XfxCardView>
+
+                <Grid VerticalOptions="End" ColumnSpacing="4" RowSpacing="5" BackgroundColor="#072034" Padding="2,2,2,2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="0.5*"></ColumnDefinition>
@@ -101,7 +103,8 @@
                         <Label x:Name="LabelPunteggio" FontSize="Medium" Text="0" HorizontalTextAlignment="Center"></Label>
                     </StackLayout>
                 </Grid>
-            </StackLayout>
+            
+        </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
