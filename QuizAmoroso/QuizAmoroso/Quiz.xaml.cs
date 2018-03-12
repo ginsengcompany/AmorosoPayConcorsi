@@ -136,8 +136,6 @@ namespace QuizAmoroso
                    await invioTempi();
                     await Navigation.PushAsync(new RisultatiQuiz(risultati,this));
                     Navigation.RemovePage(this);
-                  
-                    
                 }
             }
 
@@ -444,6 +442,7 @@ namespace QuizAmoroso
                     if (k.letteraSelezionata == k.risposta)
                     {
                         k.rispostaEsattaYN = "true";
+                        
                     }
                     else
                     {

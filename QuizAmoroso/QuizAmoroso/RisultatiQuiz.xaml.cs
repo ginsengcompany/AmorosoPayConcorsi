@@ -23,5 +23,10 @@ namespace QuizAmoroso
 		    LabelNumeroDomande.Text = risultati.numeroDomande;
 		    LabelTempo.Text = risultati.TmpTotale;
 		}
+
+	    private void RivediQuizMethod(object sender, EventArgs e)
+	    {
+	        DisplayAlert("Qui", "rivedrai il quiz", "ok");
+	    }
 	}
 }
