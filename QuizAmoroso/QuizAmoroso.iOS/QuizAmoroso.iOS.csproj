@@ -364,24 +364,6 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default-568h@2x-640x1136.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default-Landscape-1024x768.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default-Landscape@2x-2048x1536.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default-Portrait-768x1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default-Portrait@2x-1536x2048.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\Default@2x-640x960.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\ic_purchase.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -430,30 +412,21 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen%402x~iphone_640x960.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-568h%402x~iphone_640x1136.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Portrait%402x~ipad_1536x2048.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Portrait%401x~ipad_768x1024.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Landscape%401x~ipad_1024x768.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Landscape%402x~ipad_2048x1536.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-1242%403x~iphone6s-landscape_2208x1242.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-750%402x~iphone6-portrait_750x1334.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-1242%403x~iphone6s-portrait_1242x2208.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">
       <Project>{c67a1c54-f6ca-4736-8381-056a681c1d1c}</Project>
       <Name>QuizAmoroso</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default%402x-640x960.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x-640x1136.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-Landscape%402x-2048x1536.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-Landscape-1024x768.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-Portrait%402x-1536x2048.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Default-Portrait-768x1024.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\shwpssw.png" />

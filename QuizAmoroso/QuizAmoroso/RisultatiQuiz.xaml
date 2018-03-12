@@ -9,6 +9,7 @@
             Name="RivediQuiz"
             Order="Primary" 
             Text="Rivedi Quiz" 
+            Clicked="RivediQuizMethod"
             Priority="0"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
