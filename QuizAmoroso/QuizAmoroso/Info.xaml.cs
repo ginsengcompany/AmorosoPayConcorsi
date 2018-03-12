@@ -1,7 +1,6 @@
 ﻿using Plugin.DeviceInfo;
 using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
 using QuizAmoroso.DataModel;
 using System.Threading.Tasks;
