@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizAmoroso.QuizCompletato"
+             Title="Risultati">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ListView x:Name="ListaRisultati" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Domanda}" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" BackgroundColor="#37637F" ></Label>
+                                <Label Margin="8,0,0,0" Text="Risposta esatta:" FontSize="Medium" TextColor="Black"></Label>
+                                <Label Margin="8,0,0,0" Text="{Binding risposta}" ></Label>
+                                <Label Margin="8,0,0,0" Text="Tua risposta:" FontSize="Medium" TextColor="Black"></Label>
+                                <Label Margin="8,0,0,0" Text="{Binding tuaRisposta}"></Label>
+                                <Label Margin="8,0,0,0" Text="Esito:" FontSize="Medium" TextColor="Black"></Label>
+                                <Label Margin="8,0,0,0" Text="{Binding rispostaEsattaYN}"></Label>
+                                <Label BackgroundColor="#072034" HeightRequest="25" ></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

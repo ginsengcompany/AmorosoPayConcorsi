@@ -12,9 +12,13 @@ namespace QuizAmoroso
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RisultatiQuiz : ContentPage
 	{
-		public RisultatiQuiz (RisultatoQuiz risultati,Page pagRiassunto)
+        private RisultatoQuiz risultato = new RisultatoQuiz();
+        private List<Domande>lista = new List<Domande>();
+		public RisultatiQuiz (RisultatoQuiz risultati,List<Domande> listaDomande)
 		{
 			InitializeComponent ();
+		    this.lista = listaDomande;
+		    this.risultato = risultati;
 		    LabelEsatte.Text = risultati.contEsatteTot;
             LabelEsatteSopra.Text= risultati.contEsatteTot;
 		    LabelSbagliate.Text = risultati.contSbagliateTot;
@@ -26,7 +30,7 @@ namespace QuizAmoroso
 
 	    private void RivediQuizMethod(object sender, EventArgs e)
 	    {
-	        DisplayAlert("Qui", "rivedrai il quiz", "ok");
+	        Navigation.PushAsync(new QuizCompletato(risultato,lista));
 	    }
 	}
 }
