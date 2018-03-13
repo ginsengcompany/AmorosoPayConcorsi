@@ -3,7 +3,7 @@
     {
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "appletv@1x.png",
+      "filename": "uno.png",
       "size": "1920x1080",
       "scale": "1x",
       "idiom": "tv",
@@ -12,7 +12,7 @@
     {
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "appletv@2x.png",
+      "filename": "due.png",
       "size": "1920x1080",
       "scale": "2x",
       "idiom": "tv",
@@ -22,7 +22,7 @@
       "minimum-system-version": "11.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-Portrait~iphoneX_1125x2436.png",
+      "filename": "tre.png",
       "size": "375x812",
       "subtype": "2436h",
       "scale": "3x",
@@ -32,7 +32,7 @@
       "minimum-system-version": "11.0",
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "splashscreen-Portrait~iphoneX_2436x1125.png",
+      "filename": "quattro.png",
       "size": "812x375",
       "subtype": "2436h",
       "scale": "3x",
@@ -42,7 +42,7 @@
       "minimum-system-version": "8.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-portrait_1242x2208.png",
+      "filename": "cinque.png",
       "size": "414x736",
       "subtype": "736h",
       "scale": "3x",
@@ -52,7 +52,7 @@
       "minimum-system-version": "8.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-iphone-portrait_750x1334.png",
+      "filename": "sei.png",
       "size": "375x667",
       "subtype": "667h",
       "scale": "2x",
@@ -62,7 +62,7 @@
       "minimum-system-version": "8.0",
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "splashscreen-Landscape~iphone_2208x1242.png",
+      "filename": "sette.png",
       "size": "736x414",
       "subtype": "736h",
       "scale": "3x",
@@ -72,7 +72,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "ipadpro@2x.png",
+      "filename": "otto.png",
       "size": "1024x1366",
       "scale": "2x",
       "idiom": "ipad"
@@ -81,7 +81,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-portrait~iphone_640x960@2x.png",
+      "filename": "nove.png",
       "size": "320x480",
       "scale": "2x",
       "idiom": "iphone"
@@ -90,7 +90,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-portrait@2x~iphone_640x1136.png",
+      "filename": "dieci.png",
       "size": "320x568",
       "subtype": "retina4",
       "scale": "2x",
@@ -100,7 +100,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-ipad-portrait-768x1024@1x.png",
+      "filename": "undici.png",
       "size": "768x1024",
       "scale": "1x",
       "idiom": "ipad"
@@ -109,7 +109,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-ipad-portrait-1536x2048@2x.png",
+      "filename": "dodici.png",
       "size": "768x1024",
       "scale": "2x",
       "idiom": "ipad"
@@ -118,7 +118,7 @@
       "minimum-system-version": "7.0",
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "splashscreen-ipad-landscape-1024x768@1x.png",
+      "filename": "tredici.png",
       "size": "1024x768",
       "scale": "1x",
       "idiom": "ipad"
@@ -127,7 +127,7 @@
       "minimum-system-version": "7.0",
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "splashscreen-ipad-landscape-2048x1536@2x.png",
+      "filename": "quattordici.png",
       "size": "1024x768",
       "scale": "2x",
       "idiom": "ipad"
@@ -135,7 +135,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "splashscreen-320x480@1x.png",
+      "filename": "quindici.png",
       "size": "320x480",
       "scale": "1x",
       "idiom": "iphone"
@@ -143,7 +143,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "640x960@2x.png",
+      "filename": "sedici.png",
       "size": "320x480",
       "scale": "2x",
       "idiom": "iphone"
@@ -151,7 +151,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "640x1136.png",
+      "filename": "diciassette.png",
       "size": "320x568",
       "subtype": "retina4",
       "scale": "2x",
@@ -160,7 +160,7 @@
     {
       "orientation": "portrait",
       "extent": "to-status-bar",
-      "filename": "768x1004.png",
+      "filename": "diciotto.png",
       "size": "768x1004",
       "scale": "1x",
       "idiom": "ipad"
@@ -168,7 +168,7 @@
     {
       "orientation": "portrait",
       "extent": "to-status-bar",
-      "filename": "1536x2008.png",
+      "filename": "diciannove.png",
       "size": "768x1004",
       "scale": "2x",
       "idiom": "ipad"
@@ -176,7 +176,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "768x1024.png",
+      "filename": "venti.png",
       "size": "768x1024",
       "scale": "1x",
       "idiom": "ipad"
@@ -184,7 +184,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "1536x2048.png",
+      "filename": "ventuno.png",
       "size": "768x1024",
       "scale": "2x",
       "idiom": "ipad"
@@ -192,7 +192,7 @@
     {
       "orientation": "landscape",
       "extent": "to-status-bar",
-      "filename": "1024x748.png",
+      "filename": "ventidue.png",
       "size": "1024x748",
       "scale": "1x",
       "idiom": "ipad"
@@ -200,7 +200,7 @@
     {
       "orientation": "landscape",
       "extent": "to-status-bar",
-      "filename": "2048x1496.png",
+      "filename": "ventitre.png",
       "size": "1024x748",
       "scale": "2x",
       "idiom": "ipad"
@@ -208,7 +208,7 @@
     {
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "1024x768.png",
+      "filename": "ventiquattro.png",
       "size": "1024x768",
       "scale": "1x",
       "idiom": "ipad"
@@ -216,7 +216,7 @@
     {
       "orientation": "landscape",
       "extent": "full-screen",
-      "filename": "2048x1536.png",
+      "filename": "venticinque.png",
       "size": "1024x768",
       "scale": "2x",
       "idiom": "ipad"

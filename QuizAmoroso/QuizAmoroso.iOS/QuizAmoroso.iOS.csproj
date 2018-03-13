@@ -412,31 +412,31 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Portrait~iphoneX_1125x2436.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Portrait~iphoneX_2436x1125.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-portrait_1242x2208.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Landscape~iphone_2208x1242.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-iphone-portrait_750x1334.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-portrait%402x~iphone_640x1136.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\appletv%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\appletv%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ipadpro%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-portrait~iphone_640x960%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-ipad-portrait-768x1024%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-ipad-portrait-1536x2048%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-ipad-landscape-1024x768%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-ipad-landscape-2048x1536%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-320x480%401x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\640x960%402x.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\640x1136.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\768x1004.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\1536x2008.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\768x1024.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\1536x2048.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\1024x748.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\2048x1496.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\1024x768.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\2048x1536.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\uno.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\due.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tre.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattro.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\cinque.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sei.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sette.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\otto.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\nove.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dieci.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\undici.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dodici.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tredici.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattordici.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quindici.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sedici.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciassette.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciotto.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciannove.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venti.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventuno.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventidue.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventitre.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventiquattro.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venticinque.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">
