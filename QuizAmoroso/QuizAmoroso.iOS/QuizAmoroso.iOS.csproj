@@ -412,31 +412,81 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\uno.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\due.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tre.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattro.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\cinque.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sei.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sette.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\otto.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\nove.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dieci.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\undici.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dodici.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tredici.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattordici.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quindici.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sedici.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciassette.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciotto.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciannove.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venti.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventuno.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventidue.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventitre.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventiquattro.png" />
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venticinque.png" />
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\uno.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\due.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tre.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattro.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\cinque.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sei.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sette.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\otto.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\nove.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dieci.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\undici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dodici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tredici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattordici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quindici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sedici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciassette.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciotto.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciannove.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venti.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventuno.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventidue.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventitre.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventiquattro.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venticinque.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">

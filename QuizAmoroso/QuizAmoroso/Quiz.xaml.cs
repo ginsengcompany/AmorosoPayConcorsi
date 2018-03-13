@@ -128,15 +128,19 @@ namespace QuizAmoroso
             }
             else
             {
+                btnAvanti.IsEnabled = false;
                 if(await App.Current.MainPage.DisplayAlert("ATTENZIONE", "Sei sicuro di voler concludere la simulazione?", "SI", "NO"))
                 {
                     scelta = false;
                     tempoQuiz.FermaTempo();
                     RisultatoQuiz risultati = RisultatiQuiz();
-
-                   await invioTempi();
+                    await invioTempi();
                     await Navigation.PushAsync(new RisultatiQuiz(risultati,list));
                     Navigation.RemovePage(this);
+                }
+                else
+                {
+                    btnAvanti.IsEnabled = true;
                 }
             }
         }
