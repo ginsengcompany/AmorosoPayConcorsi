@@ -46,6 +46,11 @@ namespace QuizAmoroso
 	                IsPresented = false;
 	                Detail = new NavigationPage(new ConcorsiESottocategorie()); //Avvia la pagina per la scelta della struttura preferita
 	            }
+                else if (menu.MenuTitle.Equals("Statistiche"))
+                {
+                    IsPresented = false;
+                    Detail = new NavigationPage(new Statistiche());
+                }
 	        }
         }
 
@@ -57,7 +62,8 @@ namespace QuizAmoroso
               //  new Menu { MenuTitle = "Scegli Struttura Preferita", ImageIcon = "modify.png"},
                 new Menu { MenuTitle ="Acquista"},
                 new Menu{MenuTitle ="Quiz"},
-                new Menu{MenuTitle ="Info"}
+                new Menu{MenuTitle ="Info"},
+                new Menu{MenuTitle = "Statistiche"}
             };
             ListaMenu.ItemsSource = menuPrincipale; //Assegna all'oggetto ListaMenu dello xaml della pagina la lista precedentemente inizializzata
             Detail = new NavigationPage(new HomePage()); //Avvia la pagina principale

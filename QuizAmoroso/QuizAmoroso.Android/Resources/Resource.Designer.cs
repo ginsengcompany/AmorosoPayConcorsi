@@ -2111,6 +2111,81 @@ namespace QuizAmoroso.Droid
 			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_id = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Plugin.MediaManager.Forms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::QuizAmoroso.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadein = global::QuizAmoroso.Droid.Resource.Animation.Fadein;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Fadeout = global::QuizAmoroso.Droid.Resource.Animation.Fadeout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Scale_in = global::QuizAmoroso.Droid.Resource.Animation.Scale_in;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.Scale_out = global::QuizAmoroso.Droid.Resource.Animation.Scale_out;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardBackgroundColor = global::QuizAmoroso.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardCornerRadius = global::QuizAmoroso.Droid.Resource.Attribute.cardCornerRadius;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardElevation = global::QuizAmoroso.Droid.Resource.Attribute.cardElevation;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardMaxElevation = global::QuizAmoroso.Droid.Resource.Attribute.cardMaxElevation;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardPreventCornerOverlap = global::QuizAmoroso.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.cardUseCompatPadding = global::QuizAmoroso.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPadding = global::QuizAmoroso.Droid.Resource.Attribute.contentPadding;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingBottom = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingLeft = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingRight = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingRight;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Attribute.contentPaddingTop = global::QuizAmoroso.Droid.Resource.Attribute.contentPaddingTop;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_dark_background = global::QuizAmoroso.Droid.Resource.Color.cardview_dark_background;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_light_background = global::QuizAmoroso.Droid.Resource.Color.cardview_light_background;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_shadow_end_color = global::QuizAmoroso.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Color.cardview_shadow_start_color = global::QuizAmoroso.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::QuizAmoroso.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.cardview_default_elevation = global::QuizAmoroso.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Dimension.cardview_default_radius = global::QuizAmoroso.Droid.Resource.Dimension.cardview_default_radius;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.annotationLayout = global::QuizAmoroso.Droid.Resource.Id.annotationLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.axisLayout = global::QuizAmoroso.Droid.Resource.Id.axisLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.bottom_labels = global::QuizAmoroso.Droid.Resource.Id.bottom_labels;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartBehaviorLayout = global::QuizAmoroso.Droid.Resource.Id.chartBehaviorLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.chartLegendScrollView = global::QuizAmoroso.Droid.Resource.Id.chartLegendScrollView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.content = global::QuizAmoroso.Droid.Resource.Id.content;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.dataMarkerLayout = global::QuizAmoroso.Droid.Resource.Id.dataMarkerLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLineLayout = global::QuizAmoroso.Droid.Resource.Id.gridLineLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.gridLinesLayout = global::QuizAmoroso.Droid.Resource.Id.gridLinesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.iconView = global::QuizAmoroso.Droid.Resource.Id.iconView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.label = global::QuizAmoroso.Droid.Resource.Id.label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendHeader = global::QuizAmoroso.Droid.Resource.Id.legendHeader;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendItemsLayout = global::QuizAmoroso.Droid.Resource.Id.legendItemsLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendLayout = global::QuizAmoroso.Droid.Resource.Id.legendLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendScrollView = global::QuizAmoroso.Droid.Resource.Id.legendScrollView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.legendViewGroup = global::QuizAmoroso.Droid.Resource.Id.legendViewGroup;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.rootLayout = global::QuizAmoroso.Droid.Resource.Id.rootLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.seriesLayout = global::QuizAmoroso.Droid.Resource.Id.seriesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.stripLinesLayout = global::QuizAmoroso.Droid.Resource.Id.stripLinesLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.technicalIndicatorLayout = global::QuizAmoroso.Droid.Resource.Id.technicalIndicatorLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.thumbLayout = global::QuizAmoroso.Droid.Resource.Id.thumbLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.titleLayout = global::QuizAmoroso.Droid.Resource.Id.titleLayout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.top_labels = global::QuizAmoroso.Droid.Resource.Id.top_labels;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_layout = global::QuizAmoroso.Droid.Resource.Layout.chart_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend = global::QuizAmoroso.Droid.Resource.Layout.chart_legend;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.chart_legend_item = global::QuizAmoroso.Droid.Resource.Layout.chart_legend_item;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Layout.range_navigator_layout = global::QuizAmoroso.Droid.Resource.Layout.range_navigator_layout;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.q = global::QuizAmoroso.Droid.Resource.String.q;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.quarter = global::QuizAmoroso.Droid.Resource.String.quarter;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_close_label = global::QuizAmoroso.Droid.Resource.String.sfchart_close_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_high_label = global::QuizAmoroso.Droid.Resource.String.sfchart_high_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_low_label = global::QuizAmoroso.Droid.Resource.String.sfchart_low_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_open_label = global::QuizAmoroso.Droid.Resource.String.sfchart_open_label;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.w = global::QuizAmoroso.Droid.Resource.String.w;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.String.week = global::QuizAmoroso.Droid.Resource.String.week;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.Base_CardView = global::QuizAmoroso.Droid.Resource.Style.Base_CardView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.CardView = global::QuizAmoroso.Droid.Resource.Style.CardView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.CardView_Dark = global::QuizAmoroso.Droid.Resource.Style.CardView_Dark;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Style.CardView_Light = global::QuizAmoroso.Droid.Resource.Style.CardView_Light;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView = global::QuizAmoroso.Droid.Resource.Styleable.CardView;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_android_minHeight = global::QuizAmoroso.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_android_minWidth = global::QuizAmoroso.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_cardCornerRadius = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_cardElevation = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_cardMaxElevation = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::QuizAmoroso.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPadding = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingRight = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Styleable.CardView_contentPaddingTop = global::QuizAmoroso.Droid.Resource.Styleable.CardView_contentPaddingTop;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::QuizAmoroso.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2160,10 +2235,22 @@ namespace QuizAmoroso.Droid
 			public const int design_snackbar_out = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int tooltip_enter = 2130968590;
+			public const int Fadein = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int tooltip_exit = 2130968591;
+			public const int Fadeout = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int Scale_in = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int Scale_out = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int tooltip_enter = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int tooltip_exit = 2130968595;
 			
 			static Animation()
 			{
@@ -5502,8 +5589,8 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0042
 			public const int SYM = 2131427394;
 			
-			// aapt resource value: 0x7f0b00c0
-			public const int action0 = 2131427520;
+			// aapt resource value: 0x7f0b00d2
+			public const int action0 = 2131427538;
 			
 			// aapt resource value: 0x7f0b0086
 			public const int action_bar = 2131427462;
@@ -5526,17 +5613,17 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0064
 			public const int action_bar_title = 2131427428;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int action_container = 2131427517;
+			// aapt resource value: 0x7f0b00cf
+			public const int action_container = 2131427535;
 			
 			// aapt resource value: 0x7f0b0087
 			public const int action_context_bar = 2131427463;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int action_divider = 2131427524;
+			// aapt resource value: 0x7f0b00d6
+			public const int action_divider = 2131427542;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int action_image = 2131427518;
+			// aapt resource value: 0x7f0b00d0
+			public const int action_image = 2131427536;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -5553,11 +5640,11 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0066
 			public const int action_mode_close_button = 2131427430;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int action_text = 2131427519;
+			// aapt resource value: 0x7f0b00d1
+			public const int action_text = 2131427537;
 			
-			// aapt resource value: 0x7f0b00cd
-			public const int actions = 2131427533;
+			// aapt resource value: 0x7f0b00df
+			public const int actions = 2131427551;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int activity_chooser_view_content = 2131427431;
@@ -5580,11 +5667,17 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0043
 			public const int always = 2131427395;
 			
+			// aapt resource value: 0x7f0b009f
+			public const int annotationLayout = 2131427487;
+			
 			// aapt resource value: 0x7f0b0060
 			public const int async = 2131427424;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int auto = 2131427367;
+			
+			// aapt resource value: 0x7f0b009c
+			public const int axisLayout = 2131427484;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int beginning = 2131427386;
@@ -5595,11 +5688,14 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0048
 			public const int bottom = 2131427400;
 			
+			// aapt resource value: 0x7f0b00e3
+			public const int bottom_labels = 2131427555;
+			
 			// aapt resource value: 0x7f0b006d
 			public const int buttonPanel = 2131427437;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int cancel_action = 2131427521;
+			// aapt resource value: 0x7f0b00d3
+			public const int cancel_action = 2131427539;
 			
 			// aapt resource value: 0x7f0b004f
 			public const int center = 2131427407;
@@ -5610,11 +5706,17 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0051
 			public const int center_vertical = 2131427409;
 			
+			// aapt resource value: 0x7f0b009e
+			public const int chartBehaviorLayout = 2131427486;
+			
+			// aapt resource value: 0x7f0b00a2
+			public const int chartLegendScrollView = 2131427490;
+			
 			// aapt resource value: 0x7f0b007d
 			public const int checkbox = 2131427453;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int chronometer = 2131427529;
+			// aapt resource value: 0x7f0b00db
+			public const int chronometer = 2131427547;
 			
 			// aapt resource value: 0x7f0b0058
 			public const int clip_horizontal = 2131427416;
@@ -5625,14 +5727,17 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0044
 			public const int collapseActionView = 2131427396;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int container = 2131427479;
+			// aapt resource value: 0x7f0b00a9
+			public const int container = 2131427497;
+			
+			// aapt resource value: 0x7f0b00e4
+			public const int content = 2131427556;
 			
 			// aapt resource value: 0x7f0b0070
 			public const int contentPanel = 2131427440;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int coordinator = 2131427480;
+			// aapt resource value: 0x7f0b00aa
+			public const int coordinator = 2131427498;
 			
 			// aapt resource value: 0x7f0b0077
 			public const int custom = 2131427447;
@@ -5643,26 +5748,29 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0028
 			public const int dark = 2131427368;
 			
+			// aapt resource value: 0x7f0b009a
+			public const int dataMarkerLayout = 2131427482;
+			
 			// aapt resource value: 0x7f0b0084
 			public const int decor_content_parent = 2131427460;
 			
 			// aapt resource value: 0x7f0b006a
 			public const int default_activity_button = 2131427434;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int design_bottom_sheet = 2131427482;
+			// aapt resource value: 0x7f0b00ac
+			public const int design_bottom_sheet = 2131427500;
 			
-			// aapt resource value: 0x7f0b00a1
-			public const int design_menu_item_action_area = 2131427489;
+			// aapt resource value: 0x7f0b00b3
+			public const int design_menu_item_action_area = 2131427507;
 			
-			// aapt resource value: 0x7f0b00a0
-			public const int design_menu_item_action_area_stub = 2131427488;
+			// aapt resource value: 0x7f0b00b2
+			public const int design_menu_item_action_area_stub = 2131427506;
 			
-			// aapt resource value: 0x7f0b009f
-			public const int design_menu_item_text = 2131427487;
+			// aapt resource value: 0x7f0b00b1
+			public const int design_menu_item_text = 2131427505;
 			
-			// aapt resource value: 0x7f0b009e
-			public const int design_navigation_view = 2131427486;
+			// aapt resource value: 0x7f0b00b0
+			public const int design_navigation_view = 2131427504;
 			
 			// aapt resource value: 0x7f0b002c
 			public const int disableHome = 2131427372;
@@ -5673,8 +5781,8 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b003b
 			public const int end = 2131427387;
 			
-			// aapt resource value: 0x7f0b00cf
-			public const int end_padder = 2131427535;
+			// aapt resource value: 0x7f0b00e1
+			public const int end_padder = 2131427553;
 			
 			// aapt resource value: 0x7f0b004a
 			public const int enterAlways = 2131427402;
@@ -5709,6 +5817,12 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
 			
+			// aapt resource value: 0x7f0b0097
+			public const int gridLineLayout = 2131427479;
+			
+			// aapt resource value: 0x7f0b00e5
+			public const int gridLinesLayout = 2131427557;
+			
 			// aapt resource value: 0x7f0b0005
 			public const int home = 2131427333;
 			
@@ -5721,8 +5835,11 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b006c
 			public const int icon = 2131427436;
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int icon_group = 2131427534;
+			// aapt resource value: 0x7f0b00a5
+			public const int iconView = 2131427493;
+			
+			// aapt resource value: 0x7f0b00e0
+			public const int icon_group = 2131427552;
 			
 			// aapt resource value: 0x7f0b0024
 			public const int icon_only = 2131427364;
@@ -5733,8 +5850,8 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0069
 			public const int image = 2131427433;
 			
-			// aapt resource value: 0x7f0b00ca
-			public const int info = 2131427530;
+			// aapt resource value: 0x7f0b00dc
+			public const int info = 2131427548;
 			
 			// aapt resource value: 0x7f0b0063
 			public const int italic = 2131427427;
@@ -5742,11 +5859,29 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0000
 			public const int item_touch_helper_previous_elevation = 2131427328;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int largeLabel = 2131427478;
+			// aapt resource value: 0x7f0b00a6
+			public const int label = 2131427494;
+			
+			// aapt resource value: 0x7f0b00a8
+			public const int largeLabel = 2131427496;
 			
 			// aapt resource value: 0x7f0b0053
 			public const int left = 2131427411;
+			
+			// aapt resource value: 0x7f0b00a1
+			public const int legendHeader = 2131427489;
+			
+			// aapt resource value: 0x7f0b00a4
+			public const int legendItemsLayout = 2131427492;
+			
+			// aapt resource value: 0x7f0b009d
+			public const int legendLayout = 2131427485;
+			
+			// aapt resource value: 0x7f0b00a3
+			public const int legendScrollView = 2131427491;
+			
+			// aapt resource value: 0x7f0b00a0
+			public const int legendViewGroup = 2131427488;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int light = 2131427369;
@@ -5763,14 +5898,14 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b006b
 			public const int list_item = 2131427435;
 			
-			// aapt resource value: 0x7f0b00d4
-			public const int masked = 2131427540;
+			// aapt resource value: 0x7f0b00eb
+			public const int masked = 2131427563;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int media_actions = 2131427523;
+			// aapt resource value: 0x7f0b00d5
+			public const int media_actions = 2131427541;
 			
-			// aapt resource value: 0x7f0b00d2
-			public const int message = 2131427538;
+			// aapt resource value: 0x7f0b00e9
+			public const int message = 2131427561;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int middle = 2131427388;
@@ -5778,86 +5913,86 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b005d
 			public const int mini = 2131427421;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int mr_art = 2131427503;
-			
-			// aapt resource value: 0x7f0b00a4
-			public const int mr_chooser_list = 2131427492;
-			
-			// aapt resource value: 0x7f0b00a7
-			public const int mr_chooser_route_desc = 2131427495;
-			
-			// aapt resource value: 0x7f0b00a5
-			public const int mr_chooser_route_icon = 2131427493;
-			
-			// aapt resource value: 0x7f0b00a6
-			public const int mr_chooser_route_name = 2131427494;
-			
-			// aapt resource value: 0x7f0b00a3
-			public const int mr_chooser_title = 2131427491;
-			
-			// aapt resource value: 0x7f0b00ac
-			public const int mr_close = 2131427500;
-			
-			// aapt resource value: 0x7f0b00b2
-			public const int mr_control_divider = 2131427506;
-			
-			// aapt resource value: 0x7f0b00b8
-			public const int mr_control_playback_ctrl = 2131427512;
-			
-			// aapt resource value: 0x7f0b00bb
-			public const int mr_control_subtitle = 2131427515;
-			
-			// aapt resource value: 0x7f0b00ba
-			public const int mr_control_title = 2131427514;
-			
-			// aapt resource value: 0x7f0b00b9
-			public const int mr_control_title_container = 2131427513;
-			
-			// aapt resource value: 0x7f0b00ad
-			public const int mr_custom_control = 2131427501;
-			
-			// aapt resource value: 0x7f0b00ae
-			public const int mr_default_control = 2131427502;
-			
-			// aapt resource value: 0x7f0b00a9
-			public const int mr_dialog_area = 2131427497;
-			
-			// aapt resource value: 0x7f0b00a8
-			public const int mr_expandable_area = 2131427496;
-			
-			// aapt resource value: 0x7f0b00bc
-			public const int mr_group_expand_collapse = 2131427516;
-			
-			// aapt resource value: 0x7f0b00b0
-			public const int mr_media_main_control = 2131427504;
-			
-			// aapt resource value: 0x7f0b00ab
-			public const int mr_name = 2131427499;
-			
-			// aapt resource value: 0x7f0b00b1
-			public const int mr_playback_control = 2131427505;
-			
-			// aapt resource value: 0x7f0b00aa
-			public const int mr_title_bar = 2131427498;
-			
-			// aapt resource value: 0x7f0b00b3
-			public const int mr_volume_control = 2131427507;
-			
-			// aapt resource value: 0x7f0b00b4
-			public const int mr_volume_group_list = 2131427508;
+			// aapt resource value: 0x7f0b00c1
+			public const int mr_art = 2131427521;
 			
 			// aapt resource value: 0x7f0b00b6
-			public const int mr_volume_item_icon = 2131427510;
+			public const int mr_chooser_list = 2131427510;
+			
+			// aapt resource value: 0x7f0b00b9
+			public const int mr_chooser_route_desc = 2131427513;
 			
 			// aapt resource value: 0x7f0b00b7
-			public const int mr_volume_slider = 2131427511;
+			public const int mr_chooser_route_icon = 2131427511;
+			
+			// aapt resource value: 0x7f0b00b8
+			public const int mr_chooser_route_name = 2131427512;
+			
+			// aapt resource value: 0x7f0b00b5
+			public const int mr_chooser_title = 2131427509;
+			
+			// aapt resource value: 0x7f0b00be
+			public const int mr_close = 2131427518;
+			
+			// aapt resource value: 0x7f0b00c4
+			public const int mr_control_divider = 2131427524;
+			
+			// aapt resource value: 0x7f0b00ca
+			public const int mr_control_playback_ctrl = 2131427530;
+			
+			// aapt resource value: 0x7f0b00cd
+			public const int mr_control_subtitle = 2131427533;
+			
+			// aapt resource value: 0x7f0b00cc
+			public const int mr_control_title = 2131427532;
+			
+			// aapt resource value: 0x7f0b00cb
+			public const int mr_control_title_container = 2131427531;
+			
+			// aapt resource value: 0x7f0b00bf
+			public const int mr_custom_control = 2131427519;
+			
+			// aapt resource value: 0x7f0b00c0
+			public const int mr_default_control = 2131427520;
+			
+			// aapt resource value: 0x7f0b00bb
+			public const int mr_dialog_area = 2131427515;
+			
+			// aapt resource value: 0x7f0b00ba
+			public const int mr_expandable_area = 2131427514;
+			
+			// aapt resource value: 0x7f0b00ce
+			public const int mr_group_expand_collapse = 2131427534;
+			
+			// aapt resource value: 0x7f0b00c2
+			public const int mr_media_main_control = 2131427522;
+			
+			// aapt resource value: 0x7f0b00bd
+			public const int mr_name = 2131427517;
+			
+			// aapt resource value: 0x7f0b00c3
+			public const int mr_playback_control = 2131427523;
+			
+			// aapt resource value: 0x7f0b00bc
+			public const int mr_title_bar = 2131427516;
+			
+			// aapt resource value: 0x7f0b00c5
+			public const int mr_volume_control = 2131427525;
+			
+			// aapt resource value: 0x7f0b00c6
+			public const int mr_volume_group_list = 2131427526;
+			
+			// aapt resource value: 0x7f0b00c8
+			public const int mr_volume_item_icon = 2131427528;
+			
+			// aapt resource value: 0x7f0b00c9
+			public const int mr_volume_slider = 2131427529;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int multiply = 2131427379;
 			
-			// aapt resource value: 0x7f0b009d
-			public const int navigation_header_container = 2131427485;
+			// aapt resource value: 0x7f0b00af
+			public const int navigation_header_container = 2131427503;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int never = 2131427398;
@@ -5868,14 +6003,14 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b001f
 			public const int normal = 2131427359;
 			
-			// aapt resource value: 0x7f0b00cc
-			public const int notification_background = 2131427532;
+			// aapt resource value: 0x7f0b00de
+			public const int notification_background = 2131427550;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int notification_main_column = 2131427526;
+			// aapt resource value: 0x7f0b00d8
+			public const int notification_main_column = 2131427544;
 			
-			// aapt resource value: 0x7f0b00c5
-			public const int notification_main_column_container = 2131427525;
+			// aapt resource value: 0x7f0b00d7
+			public const int notification_main_column_container = 2131427543;
 			
 			// aapt resource value: 0x7f0b0056
 			public const int parallax = 2131427414;
@@ -5901,11 +6036,14 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0054
 			public const int right = 2131427412;
 			
-			// aapt resource value: 0x7f0b00cb
-			public const int right_icon = 2131427531;
+			// aapt resource value: 0x7f0b00dd
+			public const int right_icon = 2131427549;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int right_side = 2131427527;
+			// aapt resource value: 0x7f0b00d9
+			public const int right_side = 2131427545;
+			
+			// aapt resource value: 0x7f0b0095
+			public const int rootLayout = 2131427477;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int satellite = 2131427360;
@@ -5970,6 +6108,9 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0094
 			public const int select_dialog_listview = 2131427476;
 			
+			// aapt resource value: 0x7f0b0099
+			public const int seriesLayout = 2131427481;
+			
 			// aapt resource value: 0x7f0b007e
 			public const int shortcut = 2131427454;
 			
@@ -5982,17 +6123,17 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0030
 			public const int showTitle = 2131427376;
 			
-			// aapt resource value: 0x7f0b00d0
-			public const int sliding_tabs = 2131427536;
+			// aapt resource value: 0x7f0b00e7
+			public const int sliding_tabs = 2131427559;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int smallLabel = 2131427477;
+			// aapt resource value: 0x7f0b00a7
+			public const int smallLabel = 2131427495;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int snackbar_action = 2131427484;
+			// aapt resource value: 0x7f0b00ae
+			public const int snackbar_action = 2131427502;
 			
-			// aapt resource value: 0x7f0b009b
-			public const int snackbar_text = 2131427483;
+			// aapt resource value: 0x7f0b00ad
+			public const int snackbar_text = 2131427501;
 			
 			// aapt resource value: 0x7f0b004e
 			public const int snap = 2131427406;
@@ -6018,8 +6159,11 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0055
 			public const int start = 2131427413;
 			
-			// aapt resource value: 0x7f0b00c2
-			public const int status_bar_latest_event_content = 2131427522;
+			// aapt resource value: 0x7f0b00d4
+			public const int status_bar_latest_event_content = 2131427540;
+			
+			// aapt resource value: 0x7f0b0098
+			public const int stripLinesLayout = 2131427480;
 			
 			// aapt resource value: 0x7f0b0080
 			public const int submenuarrow = 2131427456;
@@ -6032,6 +6176,9 @@ namespace QuizAmoroso.Droid
 			
 			// aapt resource value: 0x7f0b0019
 			public const int tag_transition_group = 2131427353;
+			
+			// aapt resource value: 0x7f0b009b
+			public const int technicalIndicatorLayout = 2131427483;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int terrain = 2131427361;
@@ -6048,8 +6195,8 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0073
 			public const int textSpacerNoTitle = 2131427443;
 			
-			// aapt resource value: 0x7f0b00a2
-			public const int text_input_password_toggle = 2131427490;
+			// aapt resource value: 0x7f0b00b4
+			public const int text_input_password_toggle = 2131427508;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int textinput_counter = 2131427348;
@@ -6057,8 +6204,11 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0015
 			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int time = 2131427528;
+			// aapt resource value: 0x7f0b00e6
+			public const int thumbLayout = 2131427558;
+			
+			// aapt resource value: 0x7f0b00da
+			public const int time = 2131427546;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int title = 2131427356;
@@ -6066,11 +6216,14 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b007b
 			public const int titleDividerNoCustom = 2131427451;
 			
+			// aapt resource value: 0x7f0b0096
+			public const int titleLayout = 2131427478;
+			
 			// aapt resource value: 0x7f0b0079
 			public const int title_template = 2131427449;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int toolbar = 2131427537;
+			// aapt resource value: 0x7f0b00e8
+			public const int toolbar = 2131427560;
 			
 			// aapt resource value: 0x7f0b0049
 			public const int top = 2131427401;
@@ -6078,8 +6231,11 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0078
 			public const int topPanel = 2131427448;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int touch_outside = 2131427481;
+			// aapt resource value: 0x7f0b00e2
+			public const int top_labels = 2131427554;
+			
+			// aapt resource value: 0x7f0b00ab
+			public const int touch_outside = 2131427499;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int transition_current_scene = 2131427343;
@@ -6108,11 +6264,11 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int visible = 2131427539;
+			// aapt resource value: 0x7f0b00ea
+			public const int visible = 2131427562;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int volume_item_container = 2131427509;
+			// aapt resource value: 0x7f0b00c7
+			public const int volume_item_container = 2131427527;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int wide = 2131427366;
@@ -6289,130 +6445,142 @@ namespace QuizAmoroso.Droid
 			public const int abc_select_dialog_material = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int design_bottom_navigation_item = 2130903066;
+			public const int chart_layout = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_bottom_sheet_dialog = 2130903067;
+			public const int chart_legend = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_layout_snackbar = 2130903068;
+			public const int chart_legend_item = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_snackbar_include = 2130903069;
+			public const int design_bottom_navigation_item = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_layout_tab_icon = 2130903070;
+			public const int design_bottom_sheet_dialog = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_layout_tab_text = 2130903071;
+			public const int design_layout_snackbar = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_menu_item_action_area = 2130903072;
+			public const int design_layout_snackbar_include = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_navigation_item = 2130903073;
+			public const int design_layout_tab_icon = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_item_header = 2130903074;
+			public const int design_layout_tab_text = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_navigation_item_separator = 2130903075;
+			public const int design_menu_item_action_area = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_navigation_item_subheader = 2130903076;
+			public const int design_navigation_item = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int design_navigation_menu = 2130903077;
+			public const int design_navigation_item_header = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int design_navigation_menu_item = 2130903078;
+			public const int design_navigation_item_separator = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int design_text_input_password_icon = 2130903079;
+			public const int design_navigation_item_subheader = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int mr_chooser_dialog = 2130903080;
+			public const int design_navigation_menu = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int mr_chooser_list_item = 2130903081;
+			public const int design_navigation_menu_item = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_controller_material_dialog_b = 2130903082;
+			public const int design_text_input_password_icon = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int mr_controller_volume_item = 2130903083;
+			public const int mr_chooser_dialog = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_playback_control = 2130903084;
+			public const int mr_chooser_list_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_volume_control = 2130903085;
+			public const int mr_controller_material_dialog_b = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_action = 2130903086;
+			public const int mr_controller_volume_item = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_action_tombstone = 2130903087;
+			public const int mr_playback_control = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_media_action = 2130903088;
+			public const int mr_volume_control = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_media_cancel_action = 2130903089;
+			public const int notification_action = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_big_media = 2130903090;
+			public const int notification_action_tombstone = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_template_big_media_custom = 2130903091;
+			public const int notification_media_action = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_big_media_narrow = 2130903092;
+			public const int notification_media_cancel_action = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_big_media_narrow_custom = 2130903093;
+			public const int notification_template_big_media = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_custom_big = 2130903094;
+			public const int notification_template_big_media_custom = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_icon_group = 2130903095;
+			public const int notification_template_big_media_narrow = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_lines_media = 2130903096;
+			public const int notification_template_big_media_narrow_custom = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_media = 2130903097;
+			public const int notification_template_custom_big = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_media_custom = 2130903098;
+			public const int notification_template_icon_group = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_part_chronometer = 2130903099;
+			public const int notification_template_lines_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_part_time = 2130903100;
+			public const int notification_template_media = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int select_dialog_item_material = 2130903101;
+			public const int notification_template_media_custom = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int select_dialog_multichoice_material = 2130903102;
+			public const int notification_template_part_chronometer = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int select_dialog_singlechoice_material = 2130903103;
+			public const int notification_template_part_time = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int support_simple_spinner_dropdown_item = 2130903104;
+			public const int range_navigator_layout = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int Tabbar = 2130903105;
+			public const int select_dialog_item_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int Toolbar = 2130903106;
+			public const int select_dialog_multichoice_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int tooltip = 2130903107;
+			public const int select_dialog_singlechoice_material = 2130903107;
+			
+			// aapt resource value: 0x7f030044
+			public const int support_simple_spinner_dropdown_item = 2130903108;
+			
+			// aapt resource value: 0x7f030045
+			public const int Tabbar = 2130903109;
+			
+			// aapt resource value: 0x7f030046
+			public const int Toolbar = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int tooltip = 2130903111;
 			
 			static Layout()
 			{
@@ -6427,11 +6595,11 @@ namespace QuizAmoroso.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f08004e
-			public const int ApplicationName = 2131230798;
+			// aapt resource value: 0x7f080056
+			public const int ApplicationName = 2131230806;
 			
-			// aapt resource value: 0x7f08004d
-			public const int Hello = 2131230797;
+			// aapt resource value: 0x7f080055
+			public const int Hello = 2131230805;
 			
 			// aapt resource value: 0x7f080026
 			public const int abc_action_bar_home_description = 2131230758;
@@ -6658,11 +6826,35 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f08004b
 			public const int path_password_strike_through = 2131230795;
 			
+			// aapt resource value: 0x7f08004e
+			public const int q = 2131230798;
+			
+			// aapt resource value: 0x7f08004d
+			public const int quarter = 2131230797;
+			
 			// aapt resource value: 0x7f080037
 			public const int search_menu_title = 2131230775;
 			
+			// aapt resource value: 0x7f080054
+			public const int sfchart_close_label = 2131230804;
+			
+			// aapt resource value: 0x7f080051
+			public const int sfchart_high_label = 2131230801;
+			
+			// aapt resource value: 0x7f080052
+			public const int sfchart_low_label = 2131230802;
+			
+			// aapt resource value: 0x7f080053
+			public const int sfchart_open_label = 2131230803;
+			
 			// aapt resource value: 0x7f08004c
 			public const int status_bar_notification_info_overflow = 2131230796;
+			
+			// aapt resource value: 0x7f080050
+			public const int w = 2131230800;
+			
+			// aapt resource value: 0x7f08004f
+			public const int week = 2131230799;
 			
 			static String()
 			{

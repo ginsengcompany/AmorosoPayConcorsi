@@ -1,56 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sys="clr-namespace:System;assembly=mscorlib"
-             x:Class="QuizAmoroso.Statistiche"
-             NavigationPage.HasNavigationBar="False"
-             Title = "Statistiche" 
-             Icon="ic_trending_up"
-             BackgroundColor="White">
-
-    <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0,20,0,0"/>
-    </ContentPage.Padding>
-    
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="QuizAmoroso.Statistiche" Title="Statistiche">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <chart:ChartColorCollection x:Key="Colors">
+                <Color>Green</Color>
+                <Color>Red</Color>
+                <Color>#1C7ECD</Color>
+            </chart:ChartColorCollection>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="stackwebview"  >
-                <WebView x:Name="Browser" 
-                         IsVisible="True"  
-                         WidthRequest="700" 
-                         HeightRequest="950" 
-                         />
-        </StackLayout>
-            <StackLayout BackgroundColor="#2196f3"
-                VerticalOptions="Center">
+        <ScrollView>
+            <StackLayout Orientation="Vertical" BackgroundColor="#072034">
+                <Picker SelectedIndex="0" BackgroundColor="#37637F" TextColor="White" Title="Seleziona la materia" ItemsSource="{Binding _listamaterie}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
+                <Grid BackgroundColor="Transparent" IsVisible="{Binding _visible}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="Domande totali:" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding _statistiche.numerodomande}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Risposte esatte:" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding _statistiche.risposteesatte}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="2" Grid.Column="0" Text="Risposte errate:" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding _statistiche.rispostesbagliate}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="3" Grid.Column="0" Text="Domande senza risposta:" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding _statistiche.domandesenzarisposta}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="4" Grid.Column="0" Text="Tempo totale (minuti)" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding _statistiche.tempototale}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                </Grid>
+                <chart:SfChart VerticalOptions="FillAndExpand" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand">
+
+                    <chart:SfChart.Legend>
+                        <chart:ChartLegend IsIconVisible="True" IconHeight="20" IconWidth="20" OverflowMode="Wrap">
+                            <chart:ChartLegend.LabelStyle>
+                                <chart:ChartLegendLabelStyle TextColor="White" Margin="5" Font="Bold,18"/>
+                            </chart:ChartLegend.LabelStyle>
+                        </chart:ChartLegend>
+                    </chart:SfChart.Legend>
+
+                    <chart:PieSeries SelectedDataPointColor="#49C3CD" EnableAnimation="True" AnimationDuration="2" EnableDataPointSelection="True" CircularCoefficient="0.5" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value"
+                                 EnableSmartLabels="True" ConnectorLineType="Bezier" DataMarkerPosition="OutsideExtended" LegendIcon="Diamond" ExplodeOnTouch="True">
+                        <chart:PieSeries.ColorModel>
+                            <chart:ChartColorModel Palette="Custom" CustomBrushes="{StaticResource Colors}"/>
+                        </chart:PieSeries.ColorModel>
+                        <chart:PieSeries.DataMarker>
+                            <chart:ChartDataMarker />
+                        </chart:PieSeries.DataMarker>
+                    </chart:PieSeries>
+
+                </chart:SfChart>
             </StackLayout>
-            <StackLayout VerticalOptions="CenterAndExpand"></StackLayout>
-            <StackLayout VerticalOptions="End">
-                <StackLayout.IsVisible>
-                    <OnPlatform x:TypeArguments="x:Boolean" WinPhone="true" Android="true" iOS="false"/>
-                </StackLayout.IsVisible>
-                <StackLayout HorizontalOptions="StartAndExpand"></StackLayout>
-                <Frame>
-                    <Frame.BackgroundColor>
-                        <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="#2196f3" iOS="#2196f3"/>
-                    </Frame.BackgroundColor>
-                    <StackLayout>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Powered by " 
-                                   YAlign="End"
-                                   FontAttributes="Italic">
-                                <Label.TextColor>
-                                    <OnPlatform x:TypeArguments="Color" WinPhone="#f30100" Android="White" iOS="White"/>
-                                </Label.TextColor>
-                            </Label>
-                            <Image x:Name="logoFooter"
-                                   Source="cerchietto_ak12.png" 
-                                   HeightRequest="25"></Image>
-                        </StackLayout>
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

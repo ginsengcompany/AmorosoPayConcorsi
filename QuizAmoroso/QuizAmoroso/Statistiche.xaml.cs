@@ -1,35 +1,39 @@
-﻿using System;
+﻿using QuizAmoroso.ModelView;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using QuizAmoroso.DataModel;
-
-/**
- * Author: Antonio Fabrizio Fiume
- * 
- * Questa classe è stata pensata per riportare le statistiche dell'utente in una schermata di tipo
- * WebView. La scelta è stata fatta per snellire lo sviluppo utilizzando la tecnologia di ChartJS
- * */
 
 namespace QuizAmoroso
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Statistiche : ContentPage
     {
-        /**
-         * Il costruttore inizializza sia il componente che la WebView
-         * */
+        private StatisticheModelView modelView;
+
         public Statistiche()
         {
             InitializeComponent();
+            modelView = new StatisticheModelView();
+            BindingContext = modelView;
         }
 
-        public void LinkSitoWebAk12()
+        private void Picker_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var tapGestureLinkSito = new TapGestureRecognizer();
-            tapGestureLinkSito.Tapped += (s, e) => {
-                Device.OpenUri(new Uri(Costanti.sitoAK12));
-            };
-            logoFooter.GestureRecognizers.Add(tapGestureLinkSito);
+            Picker picker = sender as Picker;
+            if (picker.SelectedIndex > 0)
+            {
+                string materia = picker.SelectedItem as string;
+                modelView.getStatistiche(materia);
+            }
+            else if(picker.SelectedIndex == 0)
+            {
+                modelView.getStatistiche("");
+            }
         }
     }
 }

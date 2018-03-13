@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using Xfx;
 using Plugin.MediaManager.Forms.iOS;
+using Syncfusion.SfChart.iOS;
 
 [assembly: ExportRenderer(typeof(Button), typeof(MyButtonRenderer))]
 namespace QuizAmoroso.iOS
@@ -32,11 +33,10 @@ namespace QuizAmoroso.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            Xamarin.FormsMaps.Init();
             
             XfxControls.Init();
             VideoViewRenderer.Init();
-
+            Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer.Init();
             LoadApplication(new App());
             ImageCircleRenderer.Init();
             // Serve per non far andare l'applicazione in onSleep automaticamente
