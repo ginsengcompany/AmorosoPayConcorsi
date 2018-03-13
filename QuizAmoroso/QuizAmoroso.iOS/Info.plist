@@ -52,7 +52,7 @@
 	<key>XSAppIconAssets</key>
 	<string>Resources/Elementi multimediali.xcassets/Icone app.appiconset</string>
 	<key>XSLaunchImageAssets</key>
-	<string>Resources/Elementi multimediali.xcassets/Immagini di avvio.launchimage</string>
+	<string>Resources/Elementi multimediali.xcassets/LaunchImage.launchimage</string>
 	<key>MinimumOSVersion</key>
 	<string>9.3</string>
 	<key>CFBundleName</key>
