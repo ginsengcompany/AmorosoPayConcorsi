@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -134,7 +134,9 @@ namespace QuizAmoroso
                     scelta = false;
                     tempoQuiz.FermaTempo();
                     RisultatoQuiz risultati = RisultatiQuiz();
+                    
                     await invioTempi();
+                    await invioDeiDatiStatistica(risultati);
                     await Navigation.PushAsync(new RisultatiQuiz(risultati,list));
                     Navigation.RemovePage(this);
                 }
@@ -145,6 +147,34 @@ namespace QuizAmoroso
             }
         }
 
+        private async Task invioDeiDatiStatistica(RisultatoQuiz risultati)
+        {
+            InvioDatiStatistica dati = new InvioDatiStatistica();
+            dati.username = Utente.Instance.getUserName;
+            dati.tempoQuiz = lblTimer.Text;
+            dati.data = string.Format("{0:dd/MM/yyyy}",DateTime.Today);
+            dati.domande = list.Count;
+            dati.materia = datiConnessione.materia;
+            dati.ora = DateTime.Now.Hour.ToString()+":"+DateTime.Now.Minute.ToString();
+            dati.risposteN = risultati.contSbagliateTot;
+            dati.risposteY = risultati.contEsatteTot;
+            HttpClient client = new HttpClient();
+            string ContentType = "application/json"; // or application/xml
+            string json = JsonConvert.SerializeObject(dati);
+            var uri = new Uri(string.Format(Costanti.DatiStatistica, String.Empty));
+            try
+            {
+                var result = await client.PostAsync(Costanti.DatiStatistica, new StringContent(json.ToString(), Encoding.UTF8, ContentType));
+                var response = await result.Content.ReadAsStringAsync();
+                var responseMessage = result.StatusCode;
+                var isValid = JToken.Parse(response);
+                var Item = JsonConvert.DeserializeObject<string>(response);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
      
         private async Task invioTempi()
         {

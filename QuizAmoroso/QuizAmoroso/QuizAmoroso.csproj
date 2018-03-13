@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataModel\DatiConnessioneDomande.cs" />
+    <Compile Include="DataModel\InvioDatiStatistica.cs" />
     <Compile Include="DataModel\Materie.cs" />
     <Compile Include="ConcorsiESottocategorie.xaml.cs">
       <DependentUpon>ConcorsiESottocategorie.xaml</DependentUpon>
