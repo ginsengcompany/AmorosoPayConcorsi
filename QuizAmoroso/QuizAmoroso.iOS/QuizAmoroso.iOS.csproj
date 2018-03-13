@@ -316,6 +316,27 @@
     <BundleResource Include="Resources\quizVeloce.png" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\dieci.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\dodici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\nove.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\quattordici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\venti.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Elementi multimediali.xcassets\LaunchImage.launchimage\ventiquattro.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\Icone app.appiconset\appStore.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -418,31 +439,79 @@
     <ImageAsset Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\risposteSbagliate%403x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen%402x~iphone_640x960.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\uno.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-568h%402x~iphone_640x1136.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\due.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Portrait%402x~ipad_1536x2048.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tre.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Portrait%401x~ipad_768x1024.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattro.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Landscape%401x~ipad_1024x768.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\cinque.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-Landscape%402x~ipad_2048x1536.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sei.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-1242%403x~iphone6s-landscape_2208x1242.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sette.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-750%402x~iphone6-portrait_750x1334.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\otto.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\splashscreen-1242%403x~iphone6s-portrait_1242x2208.png">
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\nove.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dieci.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\undici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\dodici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\tredici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quattordici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\quindici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\sedici.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciassette.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciotto.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\diciannove.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venti.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventuno.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventidue.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventitre.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\ventiquattro.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Elementi multimediali.xcassets\Immagini di avvio.launchimage\venticinque.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
@@ -650,6 +719,24 @@
     <Folder Include="Resources\Elementi multimediali.xcassets\ic_quiz.imageset\" />
     <Folder Include="Resources\Elementi multimediali.xcassets\risposteEsatte.imageset\" />
     <Folder Include="Resources\Elementi multimediali.xcassets\risposteSbagliate.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ventiquattro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\quattordici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dodici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\venti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dieci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nove.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

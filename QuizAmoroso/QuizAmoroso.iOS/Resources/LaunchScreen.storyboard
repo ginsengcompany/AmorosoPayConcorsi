@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5k-f2-b5h" launchScreen="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5k-f2-b5h">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,14 +15,15 @@
                         <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
                     </layoutGuides>
                     <view key="view" userInteractionEnabled="NO" contentMode="center" id="yd7-JS-zBw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default-Landscape-1024x768.png" translatesAutoresizingMaskIntoConstraints="NO" id="490" highlighted="YES" preservesSuperviewLayoutMargins="YES">
-                                <rect key="frame" x="0.0" y="62" width="600" height="496"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="490" image="dodici.png" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinX="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,18 +31,6 @@
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                         </accessibility>
-                        <constraints>
-                            <constraint id="4237" firstItem="490" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="42"/>
-                            <constraint id="4238" firstItem="yd7-JS-zBw" firstAttribute="bottom" secondItem="490" secondAttribute="bottom" constant="42">
-                                <variation key="heightClass=regular-widthClass=compact" constant="55"/>
-                            </constraint>
-                            <constraint id="4239" firstItem="490" firstAttribute="trailing" secondItem="yd7-JS-zBw" secondAttribute="trailingMargin" constant="20">
-                                <variation key="heightClass=regular-widthClass=compact" constant="65"/>
-                            </constraint>
-                            <constraint id="4240" firstItem="yd7-JS-zBw" firstAttribute="leadingMargin" secondItem="490" secondAttribute="leading" constant="20">
-                                <variation key="heightClass=regular-widthClass=compact" constant="65"/>
-                            </constraint>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,19 +39,29 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default-Landscape-1024x768.png" width="1024" height="768"/>
         <image name="ak12.jpg" width="399" height="155"/>
         <image name="ak12_senza_sfondo.png" width="399" height="155"/>
+        <image name="amorosoLogo.png" width="279" height="281"/>
+        <image name="appStore.png" width="1024" height="1024"/>
         <image name="arrow_back_white.png" width="48" height="48"/>
+        <image name="arrowLeft.png" width="195" height="322"/>
+        <image name="arrowRight.png" width="195" height="322"/>
+        <image name="button_apprendimento.png" width="217" height="39"/>
+        <image name="button_dispensa.png" width="217" height="39"/>
+        <image name="button_simulazione.png" width="217" height="39"/>
+        <image name="button_simulazioneassistita.png" width="217" height="39"/>
+        <image name="cellulare.png" width="24" height="24"/>
+        <image name="cellulare2x.png" width="48" height="48"/>
+        <image name="cellulare3x.png" width="72" height="72"/>
         <image name="cerchietto_ak12.png" width="192" height="192"/>
         <image name="cronologia.png" width="24" height="24"/>
         <image name="cronologia_3x.png" width="72" height="72"/>
         <image name="cronologia2x.png" width="48" height="48"/>
-        <image name="Default-568h.png" width="320" height="568"/>
-        <image name="Default-Landscape.png" width="1024" height="768"/>
-        <image name="Default-Portrait-768x1024.png" width="768" height="1024"/>
-        <image name="Default-Portrait.png" width="768" height="1024"/>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="email.png" width="24" height="24"/>
+        <image name="email2x.png" width="48" height="48"/>
+        <image name="email3x.png" width="72" height="72"/>
+        <image name="facebookIcon.png" width="512" height="512"/>
+        <image name="frecceT.png" width="1000" height="666"/>
         <image name="ic_info_outline.png" width="24" height="24"/>
         <image name="ic_info_outline_2x.png" width="48" height="48"/>
         <image name="ic_info_outline_3x.png" width="72" height="72"/>
@@ -86,18 +86,48 @@
         <image name="Icon-small-29.png" width="29" height="29"/>
         <image name="Icon-Small.png" width="29" height="29"/>
         <image name="Icon-small.png" width="29" height="29"/>
+        <image name="icona_non_risposta.png" width="720" height="720"/>
         <image name="icona_risposta_errata.png" width="600" height="600"/>
         <image name="icona_risposta_esatta.png" width="128" height="128"/>
         <image name="icona_tempo_trascorso.png" width="64" height="64"/>
         <image name="logo_amoroso.jpg" width="960" height="477"/>
         <image name="LogoAmorosoSenzaSfondo.png" width="955" height="475"/>
+        <image name="luogo.png" width="24" height="24"/>
+        <image name="luogo2x.png" width="48" height="48"/>
+        <image name="luogo3x.png" width="72" height="72"/>
         <image name="quizVeloce.png" width="24" height="24"/>
         <image name="quizVeloce_2x.png" width="48" height="48"/>
         <image name="quizVeloce_3x.png" width="72" height="72"/>
+        <image name="rightArrow.png" width="48" height="48"/>
+        <image name="rightArrow2x.png" width="96" height="96"/>
+        <image name="rightArrow3x.png" width="144" height="144"/>
+        <image name="selected_circle.png" width="16" height="16"/>
         <image name="shwpssw-black.png" width="72" height="72"/>
         <image name="shwpssw.png" width="144" height="144"/>
-        <image name="appStore.png" width="1024" height="1024"/>
         <image name="shwpsswblue.png" width="48" height="48"/>
+        <image name="shwpsswblueSegnato-20x20.png" width="20" height="20"/>
+        <image name="shwpsswblueSegnato-29x29.png" width="29" height="29"/>
+        <image name="shwpsswblueSegnato-40x40.png" width="40" height="40"/>
+        <image name="shwpsswblueSegnato-60x60.png" width="60" height="60"/>
+        <image name="shwpsswblueSegnato-marketing-1024x1024.png" width="1024" height="1024"/>
+        <image name="shwpsswblueSegnato.png" width="80" height="80"/>
+        <image name="sign_RispostaData.png" width="16" height="16"/>
+        <image name="sitoWeb.png" width="512" height="512"/>
+        <image name="telefonoFisso.png" width="24" height="24"/>
+        <image name="telefonoFisso2x.png" width="48" height="48"/>
+        <image name="telefonoFisso3x.png" width="72" height="72"/>
+        <image name="unselected_circle.png" width="16" height="16"/>
+        <image name="ic_info" width="100" height="100"/>
+        <image name="ic_purchase" width="100" height="100"/>
+        <image name="ic_quiz" width="100" height="100"/>
+        <image name="risposteEsatte" width="100" height="100"/>
+        <image name="risposteSbagliate" width="100" height="100"/>
+        <image name="ventiquattro.png" width="1024" height="768"/>
+        <image name="quattordici.png" width="2048" height="1536"/>
+        <image name="dodici.png" width="1536" height="2048"/>
+        <image name="venti.png" width="768" height="1024"/>
+        <image name="dieci.png" width="640" height="1136"/>
+        <image name="nove.png" width="640" height="960"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

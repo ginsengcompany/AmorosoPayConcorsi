@@ -83,7 +83,7 @@ namespace QuizAmoroso
             {
                 DatiRisultati risposte = new DatiRisultati();
                 risposte.Domanda = i.Domanda;
-                risposte.risposta = i.Risposta;
+                risposte.letteraRisposta = i.Risposta;
                 risultato.Add(risposte);
             }
         }
@@ -128,18 +128,24 @@ namespace QuizAmoroso
             }
             else
             {
+                btnAvanti.IsEnabled = false;
                 if(await App.Current.MainPage.DisplayAlert("ATTENZIONE", "Sei sicuro di voler concludere la simulazione?", "SI", "NO"))
                 {
                     scelta = false;
                     tempoQuiz.FermaTempo();
                     RisultatoQuiz risultati = RisultatiQuiz();
-                   await invioTempi();
-                    await Navigation.PushAsync(new RisultatiQuiz(risultati,this));
+                    await invioTempi();
+                    await Navigation.PushAsync(new RisultatiQuiz(risultati,list));
                     Navigation.RemovePage(this);
                 }
+                else
+                {
+                    btnAvanti.IsEnabled = true;
+                }
             }
-
         }
+
+     
         private async Task invioTempi()
         {
 
@@ -234,17 +240,11 @@ namespace QuizAmoroso
         private async void ButtonClickedAvanti(object sender, EventArgs e)
         {
             await Avanti();
-
-            
-
         }
 
         private void ButtonClickedIndietro(object sender, EventArgs e)
         {
             Indietro();
-
-          
-
         }
 
         public async Task<List<Domande>> ConnessioneDomande()
@@ -435,11 +435,20 @@ namespace QuizAmoroso
         {
             foreach (var k in risultato)
             {
-                if (k.Domanda == list.Domanda && k.risposta == list.Risposta)
+                if (k.Domanda == list.Domanda && k.letteraRisposta == list.Risposta)
                 {
                     k.tuaRisposta = i;
                     k.letteraSelezionata = alfabeto;
-                    if (k.letteraSelezionata == k.risposta)
+                    char lettera = 'A';
+                    foreach (var j in list.Quesiti)
+                    {
+                        if (lettera.ToString() == list.Risposta)
+                        {
+                            k.risposta = j;
+                        }
+                       lettera= (Char)(Convert.ToUInt16(lettera) + 1);
+                    }
+                    if (k.letteraSelezionata == k.letteraRisposta)
                     {
                         k.rispostaEsattaYN = "true";
                         
@@ -472,6 +481,7 @@ namespace QuizAmoroso
             risultati.contNonRisposteTot = contNonRisposteTot.ToString();
             risultati.TmpTotale = lblTimer.Text;
             risultati.numeroDomande = risultato.Count.ToString();
+            risultati.risultati = risultato;
             return risultati;
         }
     }
