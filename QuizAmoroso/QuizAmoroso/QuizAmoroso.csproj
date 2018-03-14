@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataModel\DatiConnessioneDomande.cs" />
+    <Compile Include="DataModel\InvioDatiStatistica.cs" />
     <Compile Include="DataModel\Materie.cs" />
     <Compile Include="ConcorsiESottocategorie.xaml.cs">
       <DependentUpon>ConcorsiESottocategorie.xaml</DependentUpon>
@@ -56,6 +57,7 @@
     <Compile Include="DataModel\RisultatoDomande.cs" />
     <Compile Include="DataModel\RisultatoQuiz.cs" />
     <Compile Include="DataModel\Sessioni.cs" />
+    <Compile Include="DataModel\StatisticheMateria.cs" />
     <Compile Include="DataModel\UtenteRegistrazione.cs" />
     <Compile Include="DettagliTest.xaml.cs">
       <DependentUpon>DettagliTest.xaml</DependentUpon>
@@ -97,6 +99,7 @@
     <Compile Include="ModalitàQuizRandom.xaml.cs">
       <DependentUpon>ModalitàQuizRandom.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ModelView\StatisticheModelView.cs" />
     <Compile Include="Model\ShuffleList.cs" />
     <Compile Include="Model\Timer.cs" />
     <Compile Include="NuovaModalitaQuizVeloceNew.xaml.cs">
@@ -209,6 +212,9 @@
     </Reference>
     <Reference Include="Plugin.PdfRasterizer.Abstractions, Version=0.4.0.0, Culture=en, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.PdfRasterizer.0.4.0.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.PdfRasterizer.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms, Version=16.1451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfChart.16.1.0.26\lib\portable-win+net45+wp80+win81+wpa81\Syncfusion.SfChart.XForms.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>

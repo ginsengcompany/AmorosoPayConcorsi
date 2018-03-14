@@ -34,7 +34,7 @@ namespace QuizAmoroso.iOS
             global::Xamarin.Forms.Forms.Init();
             XfxControls.Init();
             VideoViewRenderer.Init();
-
+            Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer.Init();
             LoadApplication(new App());
             ImageCircleRenderer.Init();
             // Serve per non far andare l'applicazione in onSleep automaticamente

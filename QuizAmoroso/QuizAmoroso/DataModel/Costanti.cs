@@ -98,7 +98,10 @@ namespace QuizAmoroso.DataModel
             "http://192.168.125.97/servizioPayApp/lezioniConcorso.php";
         public const string ListaLezioni =
             "http://192.168.125.97/servizioPayApp/listaLezioni.php";
+        public const string DatiStatistica =
+            "http://192.168.125.97/servizioPayApp/salvaSessioni.php";
 
-
+        public const string listaMaterie = "http://192.168.125.97/servizioPayApp/materieutente.php";
+        public const string statisticheMateria = "http://192.168.125.97/servizioPayApp/inviaSessione.php";
     }
 }
