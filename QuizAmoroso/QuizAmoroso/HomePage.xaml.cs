@@ -38,6 +38,13 @@ namespace QuizAmoroso
             await Navigation.PushAsync(new PianoFormativo());
         }
 
+        public async void paginaStatistiche(object sender, EventArgs args)
+        {
+            var icon = sender as Image;
+            await animateIcon(icon);
+            await Navigation.PushAsync(new Statistiche());
+        }
+
         private async Task animateIcon(Image a)
         {
             /*
