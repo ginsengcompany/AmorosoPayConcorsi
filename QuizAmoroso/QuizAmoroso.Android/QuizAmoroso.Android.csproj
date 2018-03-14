@@ -308,6 +308,19 @@
     <AndroidResource Include="Resources\drawable\button_apprendimento.png" />
     <AndroidResource Include="Resources\drawable\button_simulazioneassistita.png" />
     <AndroidResource Include="Resources\drawable\button_simulazione.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_statistiche.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_statistiche.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_statistiche.png" />
+    <AndroidResource Include="Resources\drawable\ic_statistiche.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_info.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_purchase.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_quiz.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_quiz.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuizAmoroso\QuizAmoroso.csproj">
