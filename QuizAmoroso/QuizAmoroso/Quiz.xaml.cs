@@ -155,7 +155,7 @@ namespace QuizAmoroso
             dati.data = string.Format("{0:dd/MM/yyyy}",DateTime.Today);
             dati.domande = list.Count;
             dati.materia = datiConnessione.materia;
-            dati.ora = DateTime.Now.Hour.ToString()+":"+DateTime.Now.Minute.ToString();
+            dati.ora = String.Format("{0:HH:mm}", DateTime.Now);
             dati.risposteN = risultati.contSbagliateTot;
             dati.risposteY = risultati.contEsatteTot;
             HttpClient client = new HttpClient();
