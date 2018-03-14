@@ -52,27 +52,34 @@ namespace QuizAmoroso
         {
 
             base.OnAppearing();
-            if (list.Count ==0)
+            try
             {
-                btnAvanti.BackgroundColor = Colori.Button;
-                btnIndietro.BackgroundColor = Colori.Button;
-                DisabilitaLayoutActivityIndicator.IsVisible = true;
-                caricamentoPagina.IsRunning = true;
-                stackPagina.IsVisible = false;
-                list = await ConnessioneDomande();
-                listRisultato();
-                await Griglia();
-                DisabilitaLayoutActivityIndicator.IsVisible = false;
-                caricamentoPagina.IsRunning = false;
-                stackPagina.IsVisible = true;
-                scelta = true;
-                tempoQuiz.AvvioTempo(scelta, lblTimer);
-            }
-            else
-            {
-                scelta = true;
-                tempoQuiz.RiprendiTempo();
+                if (list.Count == 0)
+                {
+                    btnAvanti.BackgroundColor = Colori.Button;
+                    btnIndietro.BackgroundColor = Colori.Button;
+                    DisabilitaLayoutActivityIndicator.IsVisible = true;
+                    caricamentoPagina.IsRunning = true;
+                    stackPagina.IsVisible = false;
+                    list = await ConnessioneDomande();
+                    listRisultato();
+                    await Griglia();
+                    DisabilitaLayoutActivityIndicator.IsVisible = false;
+                    caricamentoPagina.IsRunning = false;
+                    stackPagina.IsVisible = true;
+                    scelta = true;
+                    tempoQuiz.AvvioTempo(scelta, lblTimer);
+                }
+                else
+                {
+                    scelta = true;
+                    tempoQuiz.RiprendiTempo();
 
+                }
+            }
+            catch (Exception)
+            {
+               await DisplayAlert("Attenzione", "errore nel prelevamento domande", "ok");
             }
            
         }
@@ -229,10 +236,7 @@ namespace QuizAmoroso
                 this.height = height;
                 StackGridContatore.Children.Clear();
                 StackGridContatore.Children.Add(GetLayoutData(width, height));
-
-
             }
-
         }
         private Grid GetLayoutData(double width, double height)
         {

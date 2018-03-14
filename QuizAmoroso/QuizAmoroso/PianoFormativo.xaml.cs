@@ -11,14 +11,6 @@ using Plugin.InAppBilling;
 using Plugin.InAppBilling.Abstractions;
 using System.Net.Http.Headers;
 
-/*
- * @Author: Alessio Calabrese
- * 
- * Questa classe effettua la connessione al database inviando l'username dell'utente e
- * restituendo i piani formativi associati a quest'ultimo. Successivamente è possibile 
- * cliccare su di essi tramite listview. Facendo questo il piano formativo verrà inviato
- * al server e si aprirà la pagina setDomande
- * */
 
 
 

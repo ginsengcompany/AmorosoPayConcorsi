@@ -5,14 +5,7 @@
               Title = "Piani Formativi"      
               NavigationPage.HasNavigationBar="True">
 
-    <ContentPage.BackgroundColor>
-        <OnPlatform x:TypeArguments="Color" WinPhone="White" Android="White" iOS="LightCyan"/>
-    </ContentPage.BackgroundColor>
-
-    <ContentPage.Padding>
-        <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0,30,0,0"/>
-    </ContentPage.Padding>
+   
 
     <ContentPage Title="Aquista Concorsi" >
         <StackLayout VerticalOptions="FillAndExpand">

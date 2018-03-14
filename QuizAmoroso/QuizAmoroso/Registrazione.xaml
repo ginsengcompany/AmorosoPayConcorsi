@@ -6,18 +6,19 @@
              Title="Registrati"
              BackgroundColor="#072034">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout VerticalOptions="Start" Padding="0,20,0,0">
-                <Label HorizontalOptions="CenterAndExpand" 
+        <ScrollView>
+            <StackLayout>
+                <StackLayout VerticalOptions="Start" Padding="0,20,0,0">
+                    <Label HorizontalOptions="CenterAndExpand" 
                        TextColor="White" 
                        FontSize="Large" 
                        FontAttributes="Bold" 
                        Text="REGISTRAZIONE"></Label>
-            </StackLayout>
-            <StackLayout VerticalOptions="CenterAndExpand" Padding="15">
-         
-            
-                <xfx:XfxEntry 
+                </StackLayout>
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="15">
+
+
+                    <xfx:XfxEntry 
                     Placeholder="Inserire E-mail"
                     PlaceholderColor="White"
                     x:Name="LabelEmail"
@@ -26,7 +27,7 @@
                     TextColor="White"
                     VerticalOptions="Center"/>
 
-                   <xfx:XfxEntry 
+                    <xfx:XfxEntry 
                                  Placeholder="Inserire Nome"
                        PlaceholderColor="White"
 
@@ -36,7 +37,7 @@
                        
                                  WidthRequest="200"
                                  VerticalOptions="Center"/>
-                   <xfx:XfxEntry 
+                    <xfx:XfxEntry 
                                  Placeholder="Inserire Cognome"   
                        x:Name="LabelCognome"
                        PlaceholderColor="White"
@@ -45,7 +46,7 @@
                                  ErrorDisplay="Underline"
                                  WidthRequest="200"
                                  VerticalOptions="Center"/>
-                   <xfx:XfxEntry 
+                    <xfx:XfxEntry 
                                  Placeholder="Inserire Password"   
                                  ErrorDisplay="Underline"
                        TextColor="White"
@@ -64,17 +65,15 @@
                               WidthRequest="200"
                               IsPassword="True"
                               VerticalOptions="Center"/>
-                <Button Text="Registrati"
+                    <Button Text="Registrati"
                         HeightRequest="100"
                         WidthRequest="250"
                         Clicked="Registrati"
-                        Style="{StaticResource buttonStyle}"
-                />
-            </StackLayout>
-           
-         
-   
+                        Style="{StaticResource buttonStyle}"/>
+                </StackLayout>
 
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>
