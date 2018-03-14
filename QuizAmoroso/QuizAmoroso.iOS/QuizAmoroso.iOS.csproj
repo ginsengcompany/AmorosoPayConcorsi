@@ -306,7 +306,6 @@
     <BundleResource Include="Resources\arrow_back_white.png" />
     <BundleResource Include="Resources\cerchietto_ak12.png" />
     <BundleResource Include="Resources\LogoAmorosoSenzaSfondo.png" />
-    <BundleResource Include="Resources\logo_amoroso.jpg" />
     <BundleResource Include="Resources\quizVeloce.png" />
   </ItemGroup>
   <ItemGroup>
