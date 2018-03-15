@@ -712,13 +712,7 @@ namespace QuizAmoroso.Droid
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_textfield_search_material = global::QuizAmoroso.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.abc_vector_test = global::QuizAmoroso.Droid.Resource.Drawable.abc_vector_test;
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_1 = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password_1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_2 = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password_2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_hide_password_3 = global::QuizAmoroso.Droid.Resource.Drawable.avd_hide_password_3;
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_1 = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password_1;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_2 = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password_2;
-			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.avd_show_password_3 = global::QuizAmoroso.Droid.Resource.Drawable.avd_show_password_3;
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_bottom_navigation_item_background = global::QuizAmoroso.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_fab_background = global::QuizAmoroso.Droid.Resource.Drawable.design_fab_background;
 			global::Plugin.MediaManager.Forms.Android.Resource.Drawable.design_ic_visibility = global::QuizAmoroso.Droid.Resource.Drawable.design_ic_visibility;
@@ -4652,26 +4646,8 @@ namespace QuizAmoroso.Droid
 			// aapt resource value: 0x7f020059
 			public const int avd_hide_password = 2130837593;
 			
-			// aapt resource value: 0x7f020183
-			public const int avd_hide_password_1 = 2130837891;
-			
-			// aapt resource value: 0x7f020184
-			public const int avd_hide_password_2 = 2130837892;
-			
-			// aapt resource value: 0x7f020185
-			public const int avd_hide_password_3 = 2130837893;
-			
 			// aapt resource value: 0x7f02005a
 			public const int avd_show_password = 2130837594;
-			
-			// aapt resource value: 0x7f020186
-			public const int avd_show_password_1 = 2130837894;
-			
-			// aapt resource value: 0x7f020187
-			public const int avd_show_password_2 = 2130837895;
-			
-			// aapt resource value: 0x7f020188
-			public const int avd_show_password_3 = 2130837896;
 			
 			// aapt resource value: 0x7f02005b
 			public const int btn_Pause = 2130837595;

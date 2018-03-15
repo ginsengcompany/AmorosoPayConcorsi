@@ -16,28 +16,33 @@ namespace QuizAmoroso
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Quiz : ContentPage
     {
+        #region variabili
         //timer
         private Timer tempoQuiz = new Timer();
         private bool scelta = true;
         //Variabili dati
         private List<DatiRisultati> risultato = new List<DatiRisultati>();
         private List<Domande> list = new List<Domande>();
+        //image
         private string statoPrecedente = "unselected_circle.png";
         private string statoSelected = "selected_circle.png";
         private string statoRisposta = "sign_RispostaData.png";
-        private int indice, sign, count = 0;
+        //dati GridImage
+        private int indice = 0;
+        private int posizioneInizialeGrid = 0;
+        private int posizioneFinaleGrid = 0;
+        private int count = 0;
         private int indiceVisualizzato = 1;
         //Griglie
-        private Grid GridGrande;
+        private Grid GridContatore;
         private List<Grid> grid_domande = new List<Grid>();
         //connessione
         private DatiConnessioneDomande datiConnessione = new DatiConnessioneDomande();
         //Form
         private Label numeroDomande;
-
         private List<Image> countImage = new List<Image>();
         private double width, height;
-
+        //Image
         private Image arrowleft = new Image
         {
             Source = "arrowLeft.png",
@@ -48,6 +53,17 @@ namespace QuizAmoroso
             Source = "arrowRight.png",
             WidthRequest = 15
         };
+        #endregion
+
+
+        #region IngressoPagina
+        public Quiz(DatiConnessioneDomande datiConnessione)
+        {
+            this.datiConnessione = datiConnessione;
+            riempicountImage();
+            InitializeComponent();
+        }
+        
         protected override async void OnAppearing()
         {
 
@@ -83,6 +99,115 @@ namespace QuizAmoroso
             }
            
         }
+        #endregion
+        #region Funzioni di connesisone
+        private async Task invioDeiDatiStatistica(RisultatoQuiz risultati)
+        {
+            InvioDatiStatistica dati = new InvioDatiStatistica();
+            dati.username = Utente.Instance.getUserName;
+            dati.tempoQuiz = lblTimer.Text;
+            dati.data = string.Format("{0:dd/MM/yyyy}",DateTime.Today);
+            dati.domande = list.Count;
+            dati.materia = datiConnessione.materia;
+            dati.ora = String.Format("{0:HH:mm}", DateTime.Now);
+            dati.risposteN = risultati.contSbagliateTot;
+            dati.risposteY = risultati.contEsatteTot;
+            HttpClient client = new HttpClient();
+            string ContentType = "application/json"; // or application/xml
+            string json = JsonConvert.SerializeObject(dati);
+            var uri = new Uri(string.Format(Costanti.DatiStatistica, String.Empty));
+            try
+            {
+                var result = await client.PostAsync(Costanti.DatiStatistica, new StringContent(json.ToString(), Encoding.UTF8, ContentType));
+                var response = await result.Content.ReadAsStringAsync();
+                var responseMessage = result.StatusCode;
+                var isValid = JToken.Parse(response);
+                var Item = JsonConvert.DeserializeObject<string>(response);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private async Task invioTempi()
+        {
+
+            var client = new HttpClient();
+            var result = new HttpResponseMessage();
+            try
+            {
+                var values = new List<KeyValuePair<string, string>>();
+                var user = Utente.Instance.getUserName;
+                values.Add(new KeyValuePair<string, string>("username", user));
+                values.Add(new KeyValuePair<string, string>("tempoQuiz", lblTimer.Text));
+                values.Add(new KeyValuePair<string, string>("tempoLezioni", ""));
+                var content = new FormUrlEncodedContent(values);
+                result = await client.PostAsync(Costanti.invioTempiGlobali, content);
+
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
+        public async Task<List<Domande>> ConnessioneDomande()
+        {
+            var client = new HttpClient();
+            var result = new HttpResponseMessage();
+            try
+            {
+                var values = new List<KeyValuePair<string, string>>();
+                var user = Utente.Instance.getUserName;
+                values.Add(new KeyValuePair<string, string>("username", user));
+                values.Add(new KeyValuePair<string, string>("id_concorso", datiConnessione.idConcorso));
+
+                if (datiConnessione.materia != "SIMULAZIONE")
+                    values.Add(new KeyValuePair<string, string>("materia", datiConnessione.materia));
+                else
+                {
+                    values.Add(new KeyValuePair<string, string>("materia", "null"));
+                }
+                values.Add(new KeyValuePair<string, string>("numerodomande", datiConnessione.numeroDomande));
+
+                var content = new FormUrlEncodedContent(values);
+                if (datiConnessione.modalitaSelezionata == "Libera")
+                {
+                    content = new FormUrlEncodedContent(values);
+                    result = await client.PostAsync(Costanti.domconcorsorandomNew, content);
+                }
+                else
+                {
+                    values.Add(new KeyValuePair<string, string>("domandainiziale", QuizVeloce.numeroselezionato.ToString()));
+                    content = new FormUrlEncodedContent(values);
+                    result = await client.PostAsync(Costanti.domconcorsosequenzaNew, content);
+                }
+
+                var resultcontent = await result.Content.ReadAsStringAsync();
+
+                if (resultcontent.ToString() == "errore nella get")
+                {
+                    return new List<Domande>();
+                }
+                else
+                {
+                    List<Domande> struttura = JsonConvert.DeserializeObject<List<Domande>>(resultcontent);
+                    if (datiConnessione.modalitaSelezionata == "Modalità Casuale")
+                    {
+                        struttura = ShuffleList.Shuffle<Domande>(struttura);
+                    }
+                    var numeroTotaleDelSetDiDomande = struttura.Count;
+                    return struttura;
+                }
+            }
+            catch (Exception e)
+            {
+                await DisplayAlert("Errore", "Connessione non avvenuta", "Ok");
+                return new List<Domande>();
+            }
+        }
+
+        #endregion
 
         private async void listRisultato()
         {
@@ -153,57 +278,32 @@ namespace QuizAmoroso
                 }
             }
         }
-
-        private async Task invioDeiDatiStatistica(RisultatoQuiz risultati)
+        private RisultatoQuiz RisultatiQuiz()
         {
-            InvioDatiStatistica dati = new InvioDatiStatistica();
-            dati.username = Utente.Instance.getUserName;
-            dati.tempoQuiz = lblTimer.Text;
-            dati.data = string.Format("{0:dd/MM/yyyy}",DateTime.Today);
-            dati.domande = list.Count;
-            dati.materia = datiConnessione.materia;
-            dati.ora = String.Format("{0:HH:mm}", DateTime.Now);
-            dati.risposteN = risultati.contSbagliateTot;
-            dati.risposteY = risultati.contEsatteTot;
-            HttpClient client = new HttpClient();
-            string ContentType = "application/json"; // or application/xml
-            string json = JsonConvert.SerializeObject(dati);
-            var uri = new Uri(string.Format(Costanti.DatiStatistica, String.Empty));
-            try
+            RisultatoQuiz risultati = new RisultatoQuiz();
+            int contEsatteTot = 0,
+                contNonRisposteTot = 0,
+                contSbagliateTot = 0;
+            //lstdatirisultati = 0;
+            foreach (var i in risultato)
             {
-                var result = await client.PostAsync(Costanti.DatiStatistica, new StringContent(json.ToString(), Encoding.UTF8, ContentType));
-                var response = await result.Content.ReadAsStringAsync();
-                var responseMessage = result.StatusCode;
-                var isValid = JToken.Parse(response);
-                var Item = JsonConvert.DeserializeObject<string>(response);
+                if (i.rispostaEsattaYN == "true")
+                    contEsatteTot = contEsatteTot + 1;
+                else if (i.rispostaEsattaYN == "false")
+                    contSbagliateTot = contSbagliateTot + 1;
+                else
+                    contNonRisposteTot = contNonRisposteTot + 1;
             }
-            catch (Exception)
-            {
-
-            }
+            risultati.contEsatteTot = contEsatteTot.ToString();
+            risultati.contSbagliateTot = contSbagliateTot.ToString();
+            risultati.contNonRisposteTot = contNonRisposteTot.ToString();
+            risultati.TmpTotale = lblTimer.Text;
+            risultati.numeroDomande = risultato.Count.ToString();
+            risultati.risultati = risultato;
+            return risultati;
         }
-     
-        private async Task invioTempi()
-        {
 
-            var client = new HttpClient();
-            var result = new HttpResponseMessage();
-            try
-            {
-                var values = new List<KeyValuePair<string, string>>();
-                var user=Utente.Instance.getUserName;
-                values.Add(new KeyValuePair<string, string>("username", user));
-                values.Add(new KeyValuePair<string, string>("tempoQuiz", lblTimer.Text));
-                values.Add(new KeyValuePair<string, string>("tempoLezioni", ""));
-                var content = new FormUrlEncodedContent(values);
-                result = await client.PostAsync(Costanti.invioTempiGlobali, content);
-                
-            }
-            catch (Exception e)
-            {
 
-            }
-        }
         private void riempicountImage()
         {
 
@@ -212,7 +312,7 @@ namespace QuizAmoroso
                 Image cerchietto = new Image
                 {
                     Source = statoPrecedente,
-                    WidthRequest = 15
+                    WidthRequest = 30
 
                 };
                 countImage.Add(cerchietto);
@@ -221,12 +321,7 @@ namespace QuizAmoroso
             indice = 0;
             
         }
-        public Quiz(DatiConnessioneDomande datiConnessione)
-        {
-            this.datiConnessione = datiConnessione;
-            riempicountImage();
-            InitializeComponent();
-        }
+        
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);
@@ -245,30 +340,46 @@ namespace QuizAmoroso
             int colonne = 0;
             numeroDomande = new Label
             {
-                Text = indiceVisualizzato + "/" + datiConnessione.numeroDomande,
-                FontSize = 15
+                Text = "Domanda: " + indiceVisualizzato + "/" + datiConnessione.numeroDomande,
+                FontSize = 20
+                
             };
-            GridGrande = new Grid();
-            GridGrande.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-            GridGrande.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) });
-            GridGrande.Children.Add(numeroDomande, colonne, 0);
+            GridContatore = new Grid();
+            GridContatore.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            GridContatore.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Auto) });
+            GridContatore.Children.Add(numeroDomande, colonne, 0);
             colonne++;
-            count = 0;
-            double test = width - 15.00;
-            while (test > 15.00)
+         /*   double test = width - 30.00;
+            if (posizioneFinaleGrid > indice || posizioneFinaleGrid==0)
+                count = 0;
+            else
+                count = indice;
+            posizioneInizialeGrid = indice;
+            
+            if (count != 0)
             {
-                GridGrande.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                GridContatore.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                if (countImage.Count > count)
+                    GridContatore.Children.Add(arrowleft, colonne, 0);
+                test = test - 30;
+                colonne++;
+            }
+            while (test > 30.00)
+            {
+                GridContatore.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
                 if(countImage.Count > count)
-                    GridGrande.Children.Add(countImage[count], colonne, 0);
-                test = test - 15;
+                    GridContatore.Children.Add(countImage[count], colonne, 0);
+                test = test - 30;
+                posizioneInizialeGrid = count;
+                
                 colonne++;
                 count++;
-            }
+            }posizioneFinaleGrid = count;
             if (count < countImage.Count)
             {
-                GridGrande.Children.Add(arrowright, colonne--, 0);
-            }
-            return GridGrande;
+                GridContatore.Children.Add(arrowright, colonne--, 0);
+            }*/
+            return GridContatore;
         }
 
         private async void ButtonClickedAvanti(object sender, EventArgs e)
@@ -281,61 +392,6 @@ namespace QuizAmoroso
             Indietro();
         }
 
-        public async Task<List<Domande>> ConnessioneDomande()
-        {
-            var client = new HttpClient();
-            var result = new HttpResponseMessage();
-            try
-            {
-                var values = new List<KeyValuePair<string, string>>();
-                var user = Utente.Instance.getUserName;
-                values.Add(new KeyValuePair<string, string>("username", user));
-                values.Add(new KeyValuePair<string, string>("id_concorso", datiConnessione.idConcorso));
-
-                if(datiConnessione.materia!="SIMULAZIONE")
-                    values.Add(new KeyValuePair<string, string>("materia", datiConnessione.materia));
-                else
-                {
-                    values.Add(new KeyValuePair<string, string>("materia","null"));
-                }
-                values.Add(new KeyValuePair<string, string>("numerodomande", datiConnessione.numeroDomande));
-
-                var content = new FormUrlEncodedContent(values);
-                if (datiConnessione.modalitaSelezionata == "Libera")
-                {
-                    content = new FormUrlEncodedContent(values);
-                    result = await client.PostAsync(Costanti.domconcorsorandomNew, content);
-                }
-                else
-                {
-                    values.Add(new KeyValuePair<string, string>("domandainiziale", QuizVeloce.numeroselezionato.ToString()));
-                    content = new FormUrlEncodedContent(values);
-                    result = await client.PostAsync(Costanti.domconcorsosequenzaNew, content);
-                }
-
-                var resultcontent = await result.Content.ReadAsStringAsync();
-
-                if (resultcontent.ToString() == "errore nella get")
-                {
-                    return new List<Domande>();
-                }
-                else
-                {
-                    List<Domande> struttura = JsonConvert.DeserializeObject<List<Domande>>(resultcontent);
-                    if (datiConnessione.modalitaSelezionata == "Modalità Casuale")
-                    {
-                        struttura = ShuffleList.Shuffle<Domande>(struttura);
-                    }
-                    var numeroTotaleDelSetDiDomande = struttura.Count;
-                    return struttura;
-                }
-            }
-            catch (Exception e)
-            {
-                await DisplayAlert("Errore", "Connessione non avvenuta", "Ok");
-                return new List<Domande>();
-            }
-        }
         public async Task Griglia()
         {/*
               GrigliaDomande.Children.Clear();
@@ -493,30 +549,6 @@ namespace QuizAmoroso
                     }
                 }
             }
-        }
-        private RisultatoQuiz RisultatiQuiz()
-        {
-            RisultatoQuiz risultati = new RisultatoQuiz();
-            int contEsatteTot = 0,
-                contNonRisposteTot = 0,
-                contSbagliateTot = 0;
-                //lstdatirisultati = 0;
-            foreach (var i in risultato)
-            {
-                if(i.rispostaEsattaYN=="true")
-                    contEsatteTot= contEsatteTot + 1;
-                else if(i.rispostaEsattaYN=="false")
-                    contSbagliateTot = contSbagliateTot + 1;
-                else
-                    contNonRisposteTot = contNonRisposteTot+1;
-            }
-            risultati.contEsatteTot = contEsatteTot.ToString();
-            risultati.contSbagliateTot = contSbagliateTot.ToString();
-            risultati.contNonRisposteTot = contNonRisposteTot.ToString();
-            risultati.TmpTotale = lblTimer.Text;
-            risultati.numeroDomande = risultato.Count.ToString();
-            risultati.risultati = risultato;
-            return risultati;
         }
     }
 }
