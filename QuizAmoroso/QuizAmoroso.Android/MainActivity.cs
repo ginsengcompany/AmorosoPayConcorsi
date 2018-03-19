@@ -8,8 +8,6 @@ using Xamarin.Forms.Platform.Android;
 using static QuizAmoroso.Droid.MainActivity;
 using Xfx;
 using Android.Content;
-using Plugin.InAppBilling;
-using Plugin.MediaManager.Forms.Android;
 using System.Threading.Tasks;
 
 [assembly: ExportRenderer(typeof(WebView), typeof(ScrollableWebViewRendererAndroid))]
@@ -29,8 +27,7 @@ namespace QuizAmoroso.Droid
             base.OnCreate(bundle);
             
             XfxControls.Init();
-            VideoViewRenderer.Init();
-            
+
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
             global::Xamarin.Forms.Forms.Init(this, bundle);
             //Xamarin.FormsMaps.Init(this, bundle);

@@ -1,8 +1,5 @@
 ﻿
 using FormsVideoLibrary;
-using Plugin.MediaManager;
-using Plugin.MediaManager.Abstractions;
-using Plugin.MediaManager.Abstractions.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
